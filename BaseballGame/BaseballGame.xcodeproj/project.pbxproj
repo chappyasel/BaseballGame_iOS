@@ -15,12 +15,27 @@
 		F96329821B7E5E6400C63105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */; };
 		F963298D1B7E5E6500C63105 /* BaseballGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F963298C1B7E5E6500C63105 /* BaseballGameTests.m */; };
 		F96329981B7E5E6500C63105 /* BaseballGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329971B7E5E6500C63105 /* BaseballGameUITests.m */; };
-		F96329A71B7E5FCC00C63105 /* BGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329A61B7E5FCC00C63105 /* BGPlayer.m */; };
-		F96329AA1B7E5FE600C63105 /* BGTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329A91B7E5FE600C63105 /* BGTeam.m */; };
-		F96329AD1B7E601400C63105 /* BGRosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329AC1B7E601400C63105 /* BGRosterController.m */; };
-		F96329B01B7E65A900C63105 /* BGDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329AF1B7E65A900C63105 /* BGDatabase.m */; };
-		F96329B31B7E65BD00C63105 /* BGDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329B21B7E65BD00C63105 /* BGDoc.m */; };
-		F96329B61B7E697500C63105 /* BGData.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329B51B7E697500C63105 /* BGData.m */; };
+		F96329C11B7E9E4B00C63105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329B71B7E9E4B00C63105 /* UIKit.framework */; };
+		F96329C21B7E9E4B00C63105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329B81B7E9E4B00C63105 /* Foundation.framework */; };
+		F96329C31B7E9E4B00C63105 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329B91B7E9E4B00C63105 /* CFNetwork.framework */; };
+		F96329C41B7E9E4B00C63105 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BA1B7E9E4B00C63105 /* SystemConfiguration.framework */; };
+		F96329C51B7E9E4B00C63105 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BB1B7E9E4B00C63105 /* AudioToolbox.framework */; };
+		F96329C61B7E9E4B00C63105 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BC1B7E9E4B00C63105 /* Security.framework */; };
+		F96329C71B7E9E4B00C63105 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BD1B7E9E4B00C63105 /* QuartzCore.framework */; };
+		F96329C81B7E9E4B00C63105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */; };
+		F96329C91B7E9E4B00C63105 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BF1B7E9E4B00C63105 /* StoreKit.framework */; };
+		F96329CA1B7E9E4B00C63105 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329C01B7E9E4B00C63105 /* CoreLocation.framework */; };
+		F96329D11B7E9EA700C63105 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CC1B7E9EA700C63105 /* Bolts.framework */; };
+		F96329D21B7E9EA700C63105 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CD1B7E9EA700C63105 /* Parse.framework */; };
+		F96329D31B7E9EA700C63105 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */; };
+		F96329D41B7E9EA700C63105 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */; };
+		F96329D51B7E9EA700C63105 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329D01B7E9EA700C63105 /* ParseUI.framework */; };
+		F96329D91B7E9EBA00C63105 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329D61B7E9EBA00C63105 /* libsqlite3.dylib */; };
+		F96329DA1B7E9EBA00C63105 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329D71B7E9EBA00C63105 /* libz.1.1.3.dylib */; };
+		F96329DB1B7E9EBA00C63105 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329D81B7E9EBA00C63105 /* libstdc++.6.dylib */; };
+		F96329E21B7E9EE000C63105 /* BGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329DD1B7E9EE000C63105 /* BGPlayer.m */; };
+		F96329E31B7E9EE000C63105 /* BGRosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329DF1B7E9EE000C63105 /* BGRosterController.m */; };
+		F96329E41B7E9EE000C63105 /* BGTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329E11B7E9EE000C63105 /* BGTeam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,18 +72,31 @@
 		F96329931B7E5E6500C63105 /* BaseballGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseballGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96329971B7E5E6500C63105 /* BaseballGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseballGameUITests.m; sourceTree = "<group>"; };
 		F96329991B7E5E6500C63105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F96329A51B7E5FCC00C63105 /* BGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGPlayer.h; sourceTree = "<group>"; };
-		F96329A61B7E5FCC00C63105 /* BGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGPlayer.m; sourceTree = "<group>"; };
-		F96329A81B7E5FE600C63105 /* BGTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTeam.h; sourceTree = "<group>"; };
-		F96329A91B7E5FE600C63105 /* BGTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTeam.m; sourceTree = "<group>"; };
-		F96329AB1B7E601400C63105 /* BGRosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRosterController.h; sourceTree = "<group>"; };
-		F96329AC1B7E601400C63105 /* BGRosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRosterController.m; sourceTree = "<group>"; };
-		F96329AE1B7E65A900C63105 /* BGDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDatabase.h; sourceTree = "<group>"; };
-		F96329AF1B7E65A900C63105 /* BGDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDatabase.m; sourceTree = "<group>"; };
-		F96329B11B7E65BD00C63105 /* BGDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDoc.h; sourceTree = "<group>"; };
-		F96329B21B7E65BD00C63105 /* BGDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDoc.m; sourceTree = "<group>"; };
-		F96329B41B7E697500C63105 /* BGData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGData.h; sourceTree = "<group>"; };
-		F96329B51B7E697500C63105 /* BGData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGData.m; sourceTree = "<group>"; };
+		F96329B71B7E9E4B00C63105 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F96329B81B7E9E4B00C63105 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F96329B91B7E9E4B00C63105 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F96329BA1B7E9E4B00C63105 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F96329BB1B7E9E4B00C63105 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F96329BC1B7E9E4B00C63105 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F96329BD1B7E9E4B00C63105 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F96329BF1B7E9E4B00C63105 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F96329C01B7E9E4B00C63105 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F96329CC1B7E9EA700C63105 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F96329CD1B7E9EA700C63105 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		F96329D01B7E9EA700C63105 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		F96329D61B7E9EBA00C63105 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F96329D71B7E9EBA00C63105 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		F96329D81B7E9EBA00C63105 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		F96329DC1B7E9EE000C63105 /* BGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGPlayer.h; path = Classes/BGPlayer.h; sourceTree = "<group>"; };
+		F96329DD1B7E9EE000C63105 /* BGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGPlayer.m; path = Classes/BGPlayer.m; sourceTree = "<group>"; };
+		F96329DE1B7E9EE000C63105 /* BGRosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGRosterController.h; path = Classes/BGRosterController.h; sourceTree = "<group>"; };
+		F96329DF1B7E9EE000C63105 /* BGRosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGRosterController.m; path = Classes/BGRosterController.m; sourceTree = "<group>"; };
+		F96329E01B7E9EE000C63105 /* BGTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGTeam.h; path = Classes/BGTeam.h; sourceTree = "<group>"; };
+		F96329E11B7E9EE000C63105 /* BGTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGTeam.m; path = Classes/BGTeam.m; sourceTree = "<group>"; };
+		F96329E61B7EA12A00C63105 /* BaseballGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseballGame-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +104,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96329C91B7E9E4B00C63105 /* StoreKit.framework in Frameworks */,
+				F96329C31B7E9E4B00C63105 /* CFNetwork.framework in Frameworks */,
+				F96329D41B7E9EA700C63105 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				F96329C11B7E9E4B00C63105 /* UIKit.framework in Frameworks */,
+				F96329C71B7E9E4B00C63105 /* QuartzCore.framework in Frameworks */,
+				F96329C51B7E9E4B00C63105 /* AudioToolbox.framework in Frameworks */,
+				F96329DB1B7E9EBA00C63105 /* libstdc++.6.dylib in Frameworks */,
+				F96329C81B7E9E4B00C63105 /* CoreGraphics.framework in Frameworks */,
+				F96329CA1B7E9E4B00C63105 /* CoreLocation.framework in Frameworks */,
+				F96329C41B7E9E4B00C63105 /* SystemConfiguration.framework in Frameworks */,
+				F96329D11B7E9EA700C63105 /* Bolts.framework in Frameworks */,
+				F96329C61B7E9E4B00C63105 /* Security.framework in Frameworks */,
+				F96329D21B7E9EA700C63105 /* Parse.framework in Frameworks */,
+				F96329D51B7E9EA700C63105 /* ParseUI.framework in Frameworks */,
+				F96329C21B7E9E4B00C63105 /* Foundation.framework in Frameworks */,
+				F96329D91B7E9EBA00C63105 /* libsqlite3.dylib in Frameworks */,
+				F96329D31B7E9EA700C63105 /* ParseCrashReporting.framework in Frameworks */,
+				F96329DA1B7E9EBA00C63105 /* libz.1.1.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +149,7 @@
 				F963298B1B7E5E6500C63105 /* BaseballGameTests */,
 				F96329961B7E5E6500C63105 /* BaseballGameUITests */,
 				F96329701B7E5E6400C63105 /* Products */,
+				F96329CB1B7E9E9A00C63105 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,20 +168,9 @@
 			children = (
 				F96329751B7E5E6400C63105 /* AppDelegate.h */,
 				F96329761B7E5E6400C63105 /* AppDelegate.m */,
+				F96329E51B7E9EE400C63105 /* Classes */,
 				F96329781B7E5E6400C63105 /* ViewController.h */,
 				F96329791B7E5E6400C63105 /* ViewController.m */,
-				F96329A51B7E5FCC00C63105 /* BGPlayer.h */,
-				F96329A61B7E5FCC00C63105 /* BGPlayer.m */,
-				F96329A81B7E5FE600C63105 /* BGTeam.h */,
-				F96329A91B7E5FE600C63105 /* BGTeam.m */,
-				F96329AB1B7E601400C63105 /* BGRosterController.h */,
-				F96329AC1B7E601400C63105 /* BGRosterController.m */,
-				F96329B41B7E697500C63105 /* BGData.h */,
-				F96329B51B7E697500C63105 /* BGData.m */,
-				F96329B11B7E65BD00C63105 /* BGDoc.h */,
-				F96329B21B7E65BD00C63105 /* BGDoc.m */,
-				F96329AE1B7E65A900C63105 /* BGDatabase.h */,
-				F96329AF1B7E65A900C63105 /* BGDatabase.m */,
 				F963297B1B7E5E6400C63105 /* Main.storyboard */,
 				F963297E1B7E5E6400C63105 /* Assets.xcassets */,
 				F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */,
@@ -147,6 +183,7 @@
 		F96329721B7E5E6400C63105 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F96329E61B7EA12A00C63105 /* BaseballGame-Prefix.pch */,
 				F96329731B7E5E6400C63105 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -168,6 +205,44 @@
 				F96329991B7E5E6500C63105 /* Info.plist */,
 			);
 			path = BaseballGameUITests;
+			sourceTree = "<group>";
+		};
+		F96329CB1B7E9E9A00C63105 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F96329D61B7E9EBA00C63105 /* libsqlite3.dylib */,
+				F96329D71B7E9EBA00C63105 /* libz.1.1.3.dylib */,
+				F96329D81B7E9EBA00C63105 /* libstdc++.6.dylib */,
+				F96329CC1B7E9EA700C63105 /* Bolts.framework */,
+				F96329CD1B7E9EA700C63105 /* Parse.framework */,
+				F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */,
+				F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */,
+				F96329D01B7E9EA700C63105 /* ParseUI.framework */,
+				F96329B71B7E9E4B00C63105 /* UIKit.framework */,
+				F96329B81B7E9E4B00C63105 /* Foundation.framework */,
+				F96329B91B7E9E4B00C63105 /* CFNetwork.framework */,
+				F96329BA1B7E9E4B00C63105 /* SystemConfiguration.framework */,
+				F96329BB1B7E9E4B00C63105 /* AudioToolbox.framework */,
+				F96329BC1B7E9E4B00C63105 /* Security.framework */,
+				F96329BD1B7E9E4B00C63105 /* QuartzCore.framework */,
+				F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */,
+				F96329BF1B7E9E4B00C63105 /* StoreKit.framework */,
+				F96329C01B7E9E4B00C63105 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F96329E51B7E9EE400C63105 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F96329DC1B7E9EE000C63105 /* BGPlayer.h */,
+				F96329DD1B7E9EE000C63105 /* BGPlayer.m */,
+				F96329E01B7E9EE000C63105 /* BGTeam.h */,
+				F96329E11B7E9EE000C63105 /* BGTeam.m */,
+				F96329DE1B7E9EE000C63105 /* BGRosterController.h */,
+				F96329DF1B7E9EE000C63105 /* BGRosterController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +312,7 @@
 				TargetAttributes = {
 					F963296E1B7E5E6400C63105 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = AE4TCQ8Z49;
 					};
 					F96329871B7E5E6500C63105 = {
 						CreatedOnToolsVersion = 7.0;
@@ -300,15 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96329AA1B7E5FE600C63105 /* BGTeam.m in Sources */,
-				F96329B31B7E65BD00C63105 /* BGDoc.m in Sources */,
 				F963297A1B7E5E6400C63105 /* ViewController.m in Sources */,
-				F96329B61B7E697500C63105 /* BGData.m in Sources */,
 				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
-				F96329AD1B7E601400C63105 /* BGRosterController.m in Sources */,
 				F96329741B7E5E6400C63105 /* main.m in Sources */,
-				F96329A71B7E5FCC00C63105 /* BGPlayer.m in Sources */,
-				F96329B01B7E65A900C63105 /* BGDatabase.m in Sources */,
+				F96329E21B7E9EE000C63105 /* BGPlayer.m in Sources */,
+				F96329E31B7E9EE000C63105 /* BGRosterController.m in Sources */,
+				F96329E41B7E9EE000C63105 /* BGTeam.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +522,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/BaseballGame/BaseballGame-Prefix.pch";
 				INFOPLIST_FILE = BaseballGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
@@ -460,6 +540,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/BaseballGame/BaseballGame-Prefix.pch";
 				INFOPLIST_FILE = BaseballGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;

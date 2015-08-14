@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "BGRosterController.h"
 
 @interface AppDelegate ()
 
@@ -14,10 +16,19 @@
 
 @implementation AppDelegate
 
+BGRosterController *rosterController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSArray <BGDoc *> *data = [BGDatabase loadBaseballGameDocs];
-    
+    [Parse enableLocalDatastore];
+    [Parse setApplicationId:@"4RKvBnBgIjKOHP9AIdEWbhyRfoBfv7pxO7f0VQf3"
+                  clientKey:@"C6ZRa1UvSzU31ccK7lzSjMo3V3c5pC2AOawXcn50"];
+    PFQuery *query = [PFQuery queryWithClassName:@"BGRosterController"];
+    [query fromLocalDatastore];
+    NSError *error;
+    BGRosterController *localRC = (BGRosterController *)[query getFirstObject:&error];
+    if (error && error.code != 101) NSLog(@"%@",error);
+    else localRC = nil;
+    rosterController = [BGRosterController sharedInstance];
     return YES;
 }
 

@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BGDatabase.h"
-#import "BGData.h"
-#import "BGDoc.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
