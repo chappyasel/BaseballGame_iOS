@@ -15,6 +15,9 @@
 		F96329821B7E5E6400C63105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */; };
 		F963298D1B7E5E6500C63105 /* BaseballGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F963298C1B7E5E6500C63105 /* BaseballGameTests.m */; };
 		F96329981B7E5E6500C63105 /* BaseballGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329971B7E5E6500C63105 /* BaseballGameUITests.m */; };
+		F96329A71B7E5FCC00C63105 /* BGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329A61B7E5FCC00C63105 /* BGPlayer.m */; };
+		F96329AA1B7E5FE600C63105 /* BGTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329A91B7E5FE600C63105 /* BGTeam.m */; };
+		F96329AD1B7E601400C63105 /* BGRosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329AC1B7E601400C63105 /* BGRosterController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		F96329931B7E5E6500C63105 /* BaseballGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseballGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96329971B7E5E6500C63105 /* BaseballGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseballGameUITests.m; sourceTree = "<group>"; };
 		F96329991B7E5E6500C63105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F96329A51B7E5FCC00C63105 /* BGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGPlayer.h; sourceTree = "<group>"; };
+		F96329A61B7E5FCC00C63105 /* BGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGPlayer.m; sourceTree = "<group>"; };
+		F96329A81B7E5FE600C63105 /* BGTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTeam.h; sourceTree = "<group>"; };
+		F96329A91B7E5FE600C63105 /* BGTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTeam.m; sourceTree = "<group>"; };
+		F96329AB1B7E601400C63105 /* BGRosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRosterController.h; sourceTree = "<group>"; };
+		F96329AC1B7E601400C63105 /* BGRosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRosterController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				F96329761B7E5E6400C63105 /* AppDelegate.m */,
 				F96329781B7E5E6400C63105 /* ViewController.h */,
 				F96329791B7E5E6400C63105 /* ViewController.m */,
+				F96329A51B7E5FCC00C63105 /* BGPlayer.h */,
+				F96329A61B7E5FCC00C63105 /* BGPlayer.m */,
+				F96329A81B7E5FE600C63105 /* BGTeam.h */,
+				F96329A91B7E5FE600C63105 /* BGTeam.m */,
+				F96329AB1B7E601400C63105 /* BGRosterController.h */,
+				F96329AC1B7E601400C63105 /* BGRosterController.m */,
 				F963297B1B7E5E6400C63105 /* Main.storyboard */,
 				F963297E1B7E5E6400C63105 /* Assets.xcassets */,
 				F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */,
@@ -270,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96329AA1B7E5FE600C63105 /* BGTeam.m in Sources */,
 				F963297A1B7E5E6400C63105 /* ViewController.m in Sources */,
 				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
+				F96329AD1B7E601400C63105 /* BGRosterController.m in Sources */,
 				F96329741B7E5E6400C63105 /* main.m in Sources */,
+				F96329A71B7E5FCC00C63105 /* BGPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +516,7 @@
 				F963299E1B7E5E6500C63105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F963299F1B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGameTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +525,7 @@
 				F96329A11B7E5E6500C63105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F96329A21B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +534,7 @@
 				F96329A41B7E5E6500C63105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
