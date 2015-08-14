@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F96329741B7E5E6400C63105 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329731B7E5E6400C63105 /* main.m */; };
+		F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329761B7E5E6400C63105 /* AppDelegate.m */; };
+		F963297A1B7E5E6400C63105 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329791B7E5E6400C63105 /* ViewController.m */; };
+		F963297D1B7E5E6400C63105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F963297B1B7E5E6400C63105 /* Main.storyboard */; };
+		F963297F1B7E5E6400C63105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F963297E1B7E5E6400C63105 /* Assets.xcassets */; };
+		F96329821B7E5E6400C63105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */; };
+		F963298D1B7E5E6500C63105 /* BaseballGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F963298C1B7E5E6500C63105 /* BaseballGameTests.m */; };
+		F96329981B7E5E6500C63105 /* BaseballGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329971B7E5E6500C63105 /* BaseballGameUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F96329891B7E5E6500C63105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F96329671B7E5E6400C63105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F963296E1B7E5E6400C63105;
+			remoteInfo = BaseballGame;
+		};
+		F96329941B7E5E6500C63105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F96329671B7E5E6400C63105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F963296E1B7E5E6400C63105;
+			remoteInfo = BaseballGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F963296F1B7E5E6400C63105 /* BaseballGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseballGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96329731B7E5E6400C63105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F96329751B7E5E6400C63105 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F96329761B7E5E6400C63105 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F96329781B7E5E6400C63105 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F96329791B7E5E6400C63105 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F963297C1B7E5E6400C63105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F963297E1B7E5E6400C63105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F96329811B7E5E6400C63105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F96329831B7E5E6400C63105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F96329881B7E5E6500C63105 /* BaseballGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseballGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F963298C1B7E5E6500C63105 /* BaseballGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseballGameTests.m; sourceTree = "<group>"; };
+		F963298E1B7E5E6500C63105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F96329931B7E5E6500C63105 /* BaseballGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseballGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96329971B7E5E6500C63105 /* BaseballGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseballGameUITests.m; sourceTree = "<group>"; };
+		F96329991B7E5E6500C63105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F963296C1B7E5E6400C63105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96329851B7E5E6500C63105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96329901B7E5E6500C63105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F96329661B7E5E6400C63105 = {
+			isa = PBXGroup;
+			children = (
+				F96329711B7E5E6400C63105 /* BaseballGame */,
+				F963298B1B7E5E6500C63105 /* BaseballGameTests */,
+				F96329961B7E5E6500C63105 /* BaseballGameUITests */,
+				F96329701B7E5E6400C63105 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F96329701B7E5E6400C63105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F963296F1B7E5E6400C63105 /* BaseballGame.app */,
+				F96329881B7E5E6500C63105 /* BaseballGameTests.xctest */,
+				F96329931B7E5E6500C63105 /* BaseballGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F96329711B7E5E6400C63105 /* BaseballGame */ = {
+			isa = PBXGroup;
+			children = (
+				F96329751B7E5E6400C63105 /* AppDelegate.h */,
+				F96329761B7E5E6400C63105 /* AppDelegate.m */,
+				F96329781B7E5E6400C63105 /* ViewController.h */,
+				F96329791B7E5E6400C63105 /* ViewController.m */,
+				F963297B1B7E5E6400C63105 /* Main.storyboard */,
+				F963297E1B7E5E6400C63105 /* Assets.xcassets */,
+				F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */,
+				F96329831B7E5E6400C63105 /* Info.plist */,
+				F96329721B7E5E6400C63105 /* Supporting Files */,
+			);
+			path = BaseballGame;
+			sourceTree = "<group>";
+		};
+		F96329721B7E5E6400C63105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F96329731B7E5E6400C63105 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F963298B1B7E5E6500C63105 /* BaseballGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				F963298C1B7E5E6500C63105 /* BaseballGameTests.m */,
+				F963298E1B7E5E6500C63105 /* Info.plist */,
+			);
+			path = BaseballGameTests;
+			sourceTree = "<group>";
+		};
+		F96329961B7E5E6500C63105 /* BaseballGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F96329971B7E5E6500C63105 /* BaseballGameUITests.m */,
+				F96329991B7E5E6500C63105 /* Info.plist */,
+			);
+			path = BaseballGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F963296E1B7E5E6400C63105 /* BaseballGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F963299C1B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGame" */;
+			buildPhases = (
+				F963296B1B7E5E6400C63105 /* Sources */,
+				F963296C1B7E5E6400C63105 /* Frameworks */,
+				F963296D1B7E5E6400C63105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaseballGame;
+			productName = BaseballGame;
+			productReference = F963296F1B7E5E6400C63105 /* BaseballGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F96329871B7E5E6500C63105 /* BaseballGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F963299F1B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGameTests" */;
+			buildPhases = (
+				F96329841B7E5E6500C63105 /* Sources */,
+				F96329851B7E5E6500C63105 /* Frameworks */,
+				F96329861B7E5E6500C63105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F963298A1B7E5E6500C63105 /* PBXTargetDependency */,
+			);
+			name = BaseballGameTests;
+			productName = BaseballGameTests;
+			productReference = F96329881B7E5E6500C63105 /* BaseballGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F96329921B7E5E6500C63105 /* BaseballGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F96329A21B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGameUITests" */;
+			buildPhases = (
+				F963298F1B7E5E6500C63105 /* Sources */,
+				F96329901B7E5E6500C63105 /* Frameworks */,
+				F96329911B7E5E6500C63105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F96329951B7E5E6500C63105 /* PBXTargetDependency */,
+			);
+			name = BaseballGameUITests;
+			productName = BaseballGameUITests;
+			productReference = F96329931B7E5E6500C63105 /* BaseballGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F96329671B7E5E6400C63105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = CD;
+				TargetAttributes = {
+					F963296E1B7E5E6400C63105 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F96329871B7E5E6500C63105 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F963296E1B7E5E6400C63105;
+					};
+					F96329921B7E5E6500C63105 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F963296E1B7E5E6400C63105;
+					};
+				};
+			};
+			buildConfigurationList = F963296A1B7E5E6400C63105 /* Build configuration list for PBXProject "BaseballGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F96329661B7E5E6400C63105;
+			productRefGroup = F96329701B7E5E6400C63105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F963296E1B7E5E6400C63105 /* BaseballGame */,
+				F96329871B7E5E6500C63105 /* BaseballGameTests */,
+				F96329921B7E5E6500C63105 /* BaseballGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F963296D1B7E5E6400C63105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96329821B7E5E6400C63105 /* LaunchScreen.storyboard in Resources */,
+				F963297F1B7E5E6400C63105 /* Assets.xcassets in Resources */,
+				F963297D1B7E5E6400C63105 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96329861B7E5E6500C63105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96329911B7E5E6500C63105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F963296B1B7E5E6400C63105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F963297A1B7E5E6400C63105 /* ViewController.m in Sources */,
+				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
+				F96329741B7E5E6400C63105 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96329841B7E5E6500C63105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F963298D1B7E5E6500C63105 /* BaseballGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F963298F1B7E5E6500C63105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96329981B7E5E6500C63105 /* BaseballGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F963298A1B7E5E6500C63105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F963296E1B7E5E6400C63105 /* BaseballGame */;
+			targetProxy = F96329891B7E5E6500C63105 /* PBXContainerItemProxy */;
+		};
+		F96329951B7E5E6500C63105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F963296E1B7E5E6400C63105 /* BaseballGame */;
+			targetProxy = F96329941B7E5E6500C63105 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F963297B1B7E5E6400C63105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F963297C1B7E5E6400C63105 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F96329811B7E5E6400C63105 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F963299A1B7E5E6500C63105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F963299B1B7E5E6500C63105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F963299D1B7E5E6500C63105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BaseballGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F963299E1B7E5E6500C63105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BaseballGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F96329A01B7E5E6500C63105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BaseballGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseballGame.app/BaseballGame";
+			};
+			name = Debug;
+		};
+		F96329A11B7E5E6500C63105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BaseballGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseballGame.app/BaseballGame";
+			};
+			name = Release;
+		};
+		F96329A31B7E5E6500C63105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BaseballGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BaseballGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F96329A41B7E5E6500C63105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BaseballGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BaseballGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F963296A1B7E5E6400C63105 /* Build configuration list for PBXProject "BaseballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F963299A1B7E5E6500C63105 /* Debug */,
+				F963299B1B7E5E6500C63105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F963299C1B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F963299D1B7E5E6500C63105 /* Debug */,
+				F963299E1B7E5E6500C63105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F963299F1B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96329A01B7E5E6500C63105 /* Debug */,
+				F96329A11B7E5E6500C63105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F96329A21B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96329A31B7E5E6500C63105 /* Debug */,
+				F96329A41B7E5E6500C63105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F96329671B7E5E6400C63105 /* Project object */;
+}
