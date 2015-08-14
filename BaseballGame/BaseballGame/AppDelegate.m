@@ -16,7 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSArray <BGDoc *> *data = [BGDatabase loadBaseballGameDocs];
+    
     return YES;
 }
 

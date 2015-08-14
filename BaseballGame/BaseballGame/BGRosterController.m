@@ -32,17 +32,4 @@
     
 }
 
-#pragma mark - NSCoding
-
-#define kTeams @"Teams"
-
-- (id)initWithCoder:(NSCoder *)decoder {
-    NSMutableArray <BGTeam *> *teams = [decoder decodeObjectForKey:kTeams];
-    return [self initWithTeams:teams];
-}
-
-- (void) encodeWithCoder:(NSCoder *)encoder {
-    [encoder encodeObject:self.teams forKey:kTeams];
-}
-
 @end

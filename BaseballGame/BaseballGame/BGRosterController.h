@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BGTeam.h"
 
-@interface BGRosterController : NSObject <NSCoding>
+@interface BGRosterController : NSObject
 
 @property NSMutableArray <BGTeam *> *teams;
 

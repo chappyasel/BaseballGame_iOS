@@ -18,6 +18,9 @@
 		F96329A71B7E5FCC00C63105 /* BGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329A61B7E5FCC00C63105 /* BGPlayer.m */; };
 		F96329AA1B7E5FE600C63105 /* BGTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329A91B7E5FE600C63105 /* BGTeam.m */; };
 		F96329AD1B7E601400C63105 /* BGRosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329AC1B7E601400C63105 /* BGRosterController.m */; };
+		F96329B01B7E65A900C63105 /* BGDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329AF1B7E65A900C63105 /* BGDatabase.m */; };
+		F96329B31B7E65BD00C63105 /* BGDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329B21B7E65BD00C63105 /* BGDoc.m */; };
+		F96329B61B7E697500C63105 /* BGData.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329B51B7E697500C63105 /* BGData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		F96329A91B7E5FE600C63105 /* BGTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTeam.m; sourceTree = "<group>"; };
 		F96329AB1B7E601400C63105 /* BGRosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRosterController.h; sourceTree = "<group>"; };
 		F96329AC1B7E601400C63105 /* BGRosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRosterController.m; sourceTree = "<group>"; };
+		F96329AE1B7E65A900C63105 /* BGDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDatabase.h; sourceTree = "<group>"; };
+		F96329AF1B7E65A900C63105 /* BGDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDatabase.m; sourceTree = "<group>"; };
+		F96329B11B7E65BD00C63105 /* BGDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDoc.h; sourceTree = "<group>"; };
+		F96329B21B7E65BD00C63105 /* BGDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDoc.m; sourceTree = "<group>"; };
+		F96329B41B7E697500C63105 /* BGData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGData.h; sourceTree = "<group>"; };
+		F96329B51B7E697500C63105 /* BGData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +129,12 @@
 				F96329A91B7E5FE600C63105 /* BGTeam.m */,
 				F96329AB1B7E601400C63105 /* BGRosterController.h */,
 				F96329AC1B7E601400C63105 /* BGRosterController.m */,
+				F96329B41B7E697500C63105 /* BGData.h */,
+				F96329B51B7E697500C63105 /* BGData.m */,
+				F96329B11B7E65BD00C63105 /* BGDoc.h */,
+				F96329B21B7E65BD00C63105 /* BGDoc.m */,
+				F96329AE1B7E65A900C63105 /* BGDatabase.h */,
+				F96329AF1B7E65A900C63105 /* BGDatabase.m */,
 				F963297B1B7E5E6400C63105 /* Main.storyboard */,
 				F963297E1B7E5E6400C63105 /* Assets.xcassets */,
 				F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */,
@@ -286,11 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F96329AA1B7E5FE600C63105 /* BGTeam.m in Sources */,
+				F96329B31B7E65BD00C63105 /* BGDoc.m in Sources */,
 				F963297A1B7E5E6400C63105 /* ViewController.m in Sources */,
+				F96329B61B7E697500C63105 /* BGData.m in Sources */,
 				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
 				F96329AD1B7E601400C63105 /* BGRosterController.m in Sources */,
 				F96329741B7E5E6400C63105 /* main.m in Sources */,
 				F96329A71B7E5FCC00C63105 /* BGPlayer.m in Sources */,
+				F96329B01B7E65A900C63105 /* BGDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
