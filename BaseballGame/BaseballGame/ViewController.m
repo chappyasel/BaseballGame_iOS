@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BGRosterController.h"
 
 @interface ViewController ()
 
@@ -14,9 +15,22 @@
 
 @implementation ViewController
 
+BGRosterController *rosterController;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    PFQuery *query = [PFQuery queryWithClassName:@"BGRosterController"];
+    [query fromLocalDatastore];
+    NSError *error;
+    BGRosterController *localRC = (BGRosterController *)[query getFirstObject:&error];
+    if (error) NSLog(@"%@",error);
+    rosterController = [BGRosterController sharedInstance];
+    if (localRC) rosterController = localRC;
+    else {
+        rosterController = [[BGRosterController alloc] init];
+        [rosterController loadRosterFromESPN];
+        [rosterController pinInBackground];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
