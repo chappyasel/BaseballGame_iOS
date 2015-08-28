@@ -16,6 +16,6 @@
 
 + (BGRosterController *)sharedInstance;
 
-- (void) loadRosterFromESPN;
+- (void) loadCurrentRosterFromBBR;
 
 @end

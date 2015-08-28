@@ -14,4 +14,6 @@
 @property NSString *firstName;
 @property NSString *lastName;
 
+@property NSString *position;
+
 @end

@@ -28,9 +28,10 @@ BGRosterController *rosterController;
     if (localRC) rosterController = localRC;
     else {
         rosterController = [[BGRosterController alloc] init];
-        [rosterController loadRosterFromESPN];
+        [rosterController loadCurrentRosterFromBBR];
         [rosterController pinInBackground];
     }
+    [rosterController loadCurrentRosterFromBBR]; //temporary
 }
 
 - (void)didReceiveMemoryWarning {

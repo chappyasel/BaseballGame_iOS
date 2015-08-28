@@ -14,7 +14,11 @@
 
 @property NSString *name;
 @property NSString *abbreviation;
+@property int year;
 
-@property NSMutableArray <BGPlayer *> *players;
+@property NSMutableArray <BGPlayer *> *hitters;
+@property NSMutableArray <BGPlayer *> *pitchers;
+
+- (instancetype) initWithAbbreviation: (NSString *) abbrev;
 
 @end
