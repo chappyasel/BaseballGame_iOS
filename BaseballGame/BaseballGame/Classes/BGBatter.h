@@ -6,16 +6,25 @@
 //  Copyright © 2015 CD. All rights reserved.
 //
 
-#import "BGPlayer.h"
+#import <Foundation/Foundation.h>
 
-@interface BGBatter : BGPlayer
+@interface BGBatter : PFObject <PFSubclassing>
 + (NSString *)parseClassName;
 
-@property int contact; //determined using AVG, SO/G             Hits
-@property int power; //determined using SLG                     HRs, 2B
-@property int speed; //determined using SB/G, CS/G, 3B/G        SBs, Extra bases
-@property int vision; //determined using BB/G, SO/G             walk tendency
-@property int clutch; //determined using GDP/G, (RBI-HR)/G      with RISP bonus
-@property int fielding; //determined using ADV STATS - DEF 50   determining errors
+@property NSString *firstName;
+@property NSString *lastName;
+
+@property NSString *position;
+
+@property NSNumber *overall;
+
+@property NSNumber *contact; //determined using AVG, SO/AB             Hits
+@property NSNumber *power; //determined using SLG                     HRs, 2B
+@property NSNumber *speed; //determined using SB/G, CS/G, 3B/AB        SBs, Extra bases
+@property NSNumber *vision; //determined using BB/AB, SO/AB             walk tendency
+@property NSNumber *clutch; //determined using GDP/AB, (RBI-HR)/AB      with RISP bonus
+@property NSNumber *fielding; //determined using ADV STATS - DEF 50   determining errors
+
+- (void) calculateOverall;
 
 @end

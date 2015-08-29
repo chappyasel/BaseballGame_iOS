@@ -6,15 +6,20 @@
 //  Copyright © 2015 CD. All rights reserved.
 //
 
-#import "BGPlayer.h"
+#import <Foundation/Foundation.h>
 
-@interface BGPitcher : BGPlayer
+@interface BGPitcher : PFObject <PFSubclassing>
 + (NSString *)parseClassName;
 
-@property int velocity; //determined using SO9                  Strikeouts
-@property int accuracy; //determined using SO/BB, HBP/IP, WP    Walks
-@property int deception; //determined using BAbip, HR/H         Power against
-@property int endurance; //determined using IP/G                Innings without losing effectivness
-@property int composure; //determined using ERA, WL%            How good pitcher is!
+@property NSString *firstName;
+@property NSString *lastName;
+
+@property NSNumber *overall;
+
+@property NSNumber *velocity; //determined using SO9                        Strikeouts
+@property NSNumber *accuracy; //determined using BB9, SO/BB, HBP/IP, WP     Walks
+@property NSNumber *deception; //determined using BAbip, HR/H               Power against
+@property NSNumber *endurance; //determined using IP/G                      Innings without losing effectivness
+@property NSNumber *composure; //determined using ERA, WL%                  How good pitcher is!
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BGPlayer.h"
+#import "BGBatter.h"
+#import "BGPitcher.h"
 
 @interface BGTeam : PFObject <PFSubclassing>
 + (NSString *)parseClassName;
@@ -16,9 +17,9 @@
 @property NSString *abbreviation;
 @property int year;
 
-@property NSMutableArray <BGPlayer *> *hitters;
-@property NSMutableArray <BGPlayer *> *pitchers;
+@property (nonatomic, strong) NSMutableArray <BGBatter *> *batters;
+@property (nonatomic, strong) NSMutableArray <BGPitcher *> *pitchers;
 
-- (instancetype) initWithAbbreviation: (NSString *) abbrev;
+- (void) loadTeamFromAbbreviation: (NSString *) abbrev;
 
 @end

@@ -33,7 +33,6 @@
 		F96329D31B7E9EA700C63105 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */; };
 		F96329D41B7E9EA700C63105 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */; };
 		F96329D51B7E9EA700C63105 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329D01B7E9EA700C63105 /* ParseUI.framework */; };
-		F96329E21B7E9EE000C63105 /* BGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329DD1B7E9EE000C63105 /* BGPlayer.m */; };
 		F96329E31B7E9EE000C63105 /* BGRosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329DF1B7E9EE000C63105 /* BGRosterController.m */; };
 		F96329E41B7E9EE000C63105 /* BGTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329E11B7E9EE000C63105 /* BGTeam.m */; };
 		F9EF7C861B8FC67B006DC37F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EF7C831B8FC67B006DC37F /* libsqlite3.dylib */; };
@@ -99,8 +98,6 @@
 		F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		F96329D01B7E9EA700C63105 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		F96329DC1B7E9EE000C63105 /* BGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGPlayer.h; path = Classes/BGPlayer.h; sourceTree = "<group>"; };
-		F96329DD1B7E9EE000C63105 /* BGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGPlayer.m; path = Classes/BGPlayer.m; sourceTree = "<group>"; };
 		F96329DE1B7E9EE000C63105 /* BGRosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGRosterController.h; path = Classes/BGRosterController.h; sourceTree = "<group>"; };
 		F96329DF1B7E9EE000C63105 /* BGRosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGRosterController.m; path = Classes/BGRosterController.m; sourceTree = "<group>"; };
 		F96329E01B7E9EE000C63105 /* BGTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGTeam.h; path = Classes/BGTeam.h; sourceTree = "<group>"; };
@@ -276,8 +273,6 @@
 		F96329E51B7E9EE400C63105 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F96329DC1B7E9EE000C63105 /* BGPlayer.h */,
-				F96329DD1B7E9EE000C63105 /* BGPlayer.m */,
 				F9EF7C8B1B8FF516006DC37F /* BGPitcher.h */,
 				F9EF7C8C1B8FF516006DC37F /* BGPitcher.m */,
 				F9EF7C8E1B8FF580006DC37F /* BGBatter.h */,
@@ -429,7 +424,6 @@
 				F9EF7C901B8FF580006DC37F /* BGBatter.m in Sources */,
 				F93B22081B80E5530003312A /* XPathQuery.m in Sources */,
 				F93B22061B80E5530003312A /* TFHpple.m in Sources */,
-				F96329E21B7E9EE000C63105 /* BGPlayer.m in Sources */,
 				F96329E31B7E9EE000C63105 /* BGRosterController.m in Sources */,
 				F96329E41B7E9EE000C63105 /* BGTeam.m in Sources */,
 			);

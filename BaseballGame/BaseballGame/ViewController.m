@@ -27,7 +27,7 @@ BGRosterController *rosterController;
     rosterController = [BGRosterController sharedInstance];
     if (localRC) rosterController = localRC;
     else {
-        rosterController = [[BGRosterController alloc] init];
+        rosterController = [BGRosterController object];
         [rosterController loadCurrentRosterFromBBR];
         [rosterController pinInBackground];
     }
