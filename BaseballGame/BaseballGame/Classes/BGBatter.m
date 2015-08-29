@@ -26,4 +26,12 @@
     return [NSString stringWithFormat:@"%@ %@ (%@): Overall: %@           (%@         %@         %@         %@         %@         %@)",self.firstName,self.lastName,self.position,self.overall,self.contact,self.power,self.speed,self.vision,self.clutch,self.fielding];
 }
 
+- (BOOL)isEqual: (BGBatter *) object {
+    return [self.firstName isEqualToString:object.firstName] && [self.lastName isEqualToString:object.lastName];
+}
+
+- (NSUInteger)hash {
+    return self.firstName.hash + self.lastName.hash;
+}
+
 @end

@@ -22,4 +22,8 @@
 
 - (void) loadTeamFromAbbreviation: (NSString *) abbrev;
 
+- (void) addBatter: (BGBatter *) batter;
+
+- (void) addPitcher: (BGPitcher *) pitcher;
+
 @end
