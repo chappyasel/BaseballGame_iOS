@@ -15,7 +15,7 @@
 
 @property NSString *name;
 @property NSString *abbreviation;
-@property int year;
+@property NSNumber *year;
 
 @property (nonatomic, strong) NSMutableArray <BGBatter *> *batters;
 @property (nonatomic, strong) NSMutableArray <BGPitcher *> *pitchers;
@@ -25,5 +25,7 @@
 - (void) addBatter: (BGBatter *) batter;
 
 - (void) addPitcher: (BGPitcher *) pitcher;
+
+- (NSString *) pinName;
 
 @end

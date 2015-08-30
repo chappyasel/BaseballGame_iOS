@@ -38,7 +38,11 @@
 }
 
 - (NSUInteger)hash {
-    return self.name.hash + self.year * 3;
+    return self.name.hash + self.year.intValue * 3;
+}
+
+- (NSString *) pinName {
+    return [NSString stringWithFormat:@"%@%@",self.abbreviation,self.year];
 }
 
 @end
