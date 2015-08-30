@@ -3,6 +3,9 @@
 
 target 'BaseballGame' do
     pod 'UCZProgressView'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
 end
 
 target 'BaseballGameTests' do

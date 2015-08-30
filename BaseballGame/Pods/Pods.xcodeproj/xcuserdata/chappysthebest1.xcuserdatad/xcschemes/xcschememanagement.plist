@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BaseballGame.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3A55721B257178D36485DED27DFAB71B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>771C8EC984C88240581F298A1E92E99A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9208090DAC733DD944A63759FD3166C5</key>
+		<key>7A819D9B331808179F8BE53BDCDC1688</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B406289586B4828FC83C47A0F8F91024</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D498349DB656E4217A34105368CA0DE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8E75CAD9E19D50E1E34AF88F977FA54</key>
 		<dict>
 			<key>primary</key>
 			<true/>

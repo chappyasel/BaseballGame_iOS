@@ -155,6 +155,7 @@
     
     //NSLog(@"%@",team);
     NSLog(@"finished loading %@",abbrev);
+    [team pinWithName:@"Team"];
     [self.teams addObject:team];
 }
 

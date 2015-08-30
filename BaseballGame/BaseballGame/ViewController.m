@@ -31,11 +31,12 @@ UCZProgressView *progressView;
     progressView.showsText = YES;
     [self.view addSubview:progressView];
     
-    //[PFObject unpinAllObjects];
+    //[PFObject unpinAllObjectsWithName:@"RC"];
     
     PFQuery *query = [PFQuery queryWithClassName:@"BGRosterController"];
-    [query fromLocalDatastore];
+    //[query fromLocalDatastore];
     NSError *error;
+    NSArray *results = [query findObjects];
     BGRosterController *localRC = (BGRosterController *)[query getFirstObject:&error];
     if (error) NSLog(@"%@",error);
     rosterController = [BGRosterController sharedInstance];
@@ -52,7 +53,10 @@ UCZProgressView *progressView;
                     progressView.progress = progress;
                 });
             }];
-            [rosterController pinInBackground];
+            [rosterController saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                if (error) NSLog(@"%@",error);
+                if (succeeded) NSLog(@"SAVED ROSTER CONTROLLER");
+            }];
             [self loadTableView];
         });
     }

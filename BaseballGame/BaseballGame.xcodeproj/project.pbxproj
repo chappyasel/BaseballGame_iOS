@@ -29,10 +29,8 @@
 		F96329C81B7E9E4B00C63105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */; };
 		F96329C91B7E9E4B00C63105 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BF1B7E9E4B00C63105 /* StoreKit.framework */; };
 		F96329CA1B7E9E4B00C63105 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329C01B7E9E4B00C63105 /* CoreLocation.framework */; };
-		F96329D11B7E9EA700C63105 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CC1B7E9EA700C63105 /* Bolts.framework */; };
 		F96329D21B7E9EA700C63105 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CD1B7E9EA700C63105 /* Parse.framework */; };
 		F96329D31B7E9EA700C63105 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */; };
-		F96329D41B7E9EA700C63105 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */; };
 		F96329D51B7E9EA700C63105 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329D01B7E9EA700C63105 /* ParseUI.framework */; };
 		F96329E31B7E9EE000C63105 /* BGRosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329DF1B7E9EE000C63105 /* BGRosterController.m */; };
 		F96329E41B7E9EE000C63105 /* BGTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329E11B7E9EE000C63105 /* BGTeam.m */; };
@@ -42,6 +40,7 @@
 		F9EF7C8A1B8FC91F006DC37F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EF7C891B8FC91F006DC37F /* libxml2.tbd */; };
 		F9EF7C8D1B8FF516006DC37F /* BGPitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7C8C1B8FF516006DC37F /* BGPitcher.m */; };
 		F9EF7C901B8FF580006DC37F /* BGBatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7C8F1B8FF580006DC37F /* BGBatter.m */; };
+		F9FBE0D21B937C09000AC0BB /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C75A9A78BC9A3887F1B8E3C /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
 		62C97FF5ECC9AAA0244CACAA /* libPods-BaseballGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseballGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8179F7A00EA963D1395A9F2B /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
-		CF34CD4E365FD38670CDDDE7 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
+		6DD54B9FC1FC2732F66B3FBA /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
 		F93B22001B80E5530003312A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = "Third Party/Hpple/TFHpple.h"; sourceTree = "<group>"; };
 		F93B22011B80E5530003312A /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = "Third Party/Hpple/TFHpple.m"; sourceTree = "<group>"; };
 		F93B22021B80E5530003312A /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = "Third Party/Hpple/TFHppleElement.h"; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 		F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F96329BF1B7E9E4B00C63105 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F96329C01B7E9E4B00C63105 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F96329CC1B7E9EA700C63105 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F96329CD1B7E9EA700C63105 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
@@ -126,15 +124,14 @@
 				F9EF7C881B8FC67B006DC37F /* libstdc++.6.dylib in Frameworks */,
 				F96329C91B7E9E4B00C63105 /* StoreKit.framework in Frameworks */,
 				F96329C31B7E9E4B00C63105 /* CFNetwork.framework in Frameworks */,
-				F96329D41B7E9EA700C63105 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				F96329C11B7E9E4B00C63105 /* UIKit.framework in Frameworks */,
 				F96329C71B7E9E4B00C63105 /* QuartzCore.framework in Frameworks */,
 				F96329C51B7E9E4B00C63105 /* AudioToolbox.framework in Frameworks */,
 				F96329C81B7E9E4B00C63105 /* CoreGraphics.framework in Frameworks */,
 				F96329CA1B7E9E4B00C63105 /* CoreLocation.framework in Frameworks */,
 				F96329C41B7E9E4B00C63105 /* SystemConfiguration.framework in Frameworks */,
+				F9FBE0D21B937C09000AC0BB /* ParseFacebookUtilsV4.framework in Frameworks */,
 				F9EF7C861B8FC67B006DC37F /* libsqlite3.dylib in Frameworks */,
-				F96329D11B7E9EA700C63105 /* Bolts.framework in Frameworks */,
 				F96329C61B7E9E4B00C63105 /* Security.framework in Frameworks */,
 				F96329D21B7E9EA700C63105 /* Parse.framework in Frameworks */,
 				F9EF7C871B8FC67B006DC37F /* libz.1.1.3.dylib in Frameworks */,
@@ -162,11 +159,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10260A39AC14918463741010 /* Pods */ = {
+		872D8ABFA4C7FF6C4FC21302 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CF34CD4E365FD38670CDDDE7 /* Pods-BaseballGame.debug.xcconfig */,
-				8179F7A00EA963D1395A9F2B /* Pods-BaseballGame.release.xcconfig */,
+				3C75A9A78BC9A3887F1B8E3C /* Pods-BaseballGame.debug.xcconfig */,
+				6DD54B9FC1FC2732F66B3FBA /* Pods-BaseballGame.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -200,7 +197,7 @@
 				F96329961B7E5E6500C63105 /* BaseballGameUITests */,
 				F96329701B7E5E6400C63105 /* Products */,
 				F96329CB1B7E9E9A00C63105 /* Frameworks */,
-				10260A39AC14918463741010 /* Pods */,
+				872D8ABFA4C7FF6C4FC21302 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,7 +263,6 @@
 				F9EF7C831B8FC67B006DC37F /* libsqlite3.dylib */,
 				F9EF7C841B8FC67B006DC37F /* libz.1.1.3.dylib */,
 				F9EF7C851B8FC67B006DC37F /* libstdc++.6.dylib */,
-				F96329CC1B7E9EA700C63105 /* Bolts.framework */,
 				F96329CD1B7E9EA700C63105 /* Parse.framework */,
 				F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */,
 				F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */,
@@ -535,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -569,9 +566,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -579,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -607,16 +606,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
 		F963299D1B7E5E6500C63105 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF34CD4E365FD38670CDDDE7 /* Pods-BaseballGame.debug.xcconfig */;
+			baseConfigurationReference = 3C75A9A78BC9A3887F1B8E3C /* Pods-BaseballGame.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -631,16 +633,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-l\"UCZProgressView\"";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7, arm64";
 			};
 			name = Debug;
 		};
 		F963299E1B7E5E6500C63105 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8179F7A00EA963D1395A9F2B /* Pods-BaseballGame.release.xcconfig */;
+			baseConfigurationReference = 6DD54B9FC1FC2732F66B3FBA /* Pods-BaseballGame.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -655,9 +660,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-l\"UCZProgressView\"";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7, arm64";
 			};
 			name = Release;
 		};
