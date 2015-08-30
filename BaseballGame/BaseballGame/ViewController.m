@@ -24,12 +24,14 @@ UCZProgressView *progressView;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0, 0, 130, 130)];
     progressView.center = self.view.center;
     progressView.radius = 60.0;
     progressView.textSize = 25.0;
     progressView.showsText = YES;
     [self.view addSubview:progressView];
+    
+    //[PFObject unpinAllObjects];
     
     PFQuery *query = [PFQuery queryWithClassName:@"BGRosterController"];
     [query fromLocalDatastore];
@@ -37,24 +39,23 @@ UCZProgressView *progressView;
     BGRosterController *localRC = (BGRosterController *)[query getFirstObject:&error];
     if (error) NSLog(@"%@",error);
     rosterController = [BGRosterController sharedInstance];
-    if (localRC) rosterController = localRC;
+    if (localRC) {
+        rosterController = localRC;
+        [self loadTableView];
+    }
     else {
         rosterController = [BGRosterController object];
-        [rosterController loadCurrentRosterFromBBRWithProgressBlock:^void(float progress) {
-            progressView.progress = progress;
-        }];
-        [rosterController pinInBackgroundWithName:@"RC"];
+        dispatch_queue_t myQueue = dispatch_queue_create("My Queue",NULL);
+        dispatch_async(myQueue, ^{
+            [rosterController loadCurrentRosterFromBBRWithProgressBlock:^void(float progress) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    progressView.progress = progress;
+                });
+            }];
+            [rosterController pinInBackground];
+            [self loadTableView];
+        });
     }
-    dispatch_queue_t myQueue = dispatch_queue_create("My Queue",NULL);
-    dispatch_async(myQueue, ^{
-        [rosterController loadCurrentRosterFromBBRWithProgressBlock:^void(float progress) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-            progressView.progress = progress;
-            });
-        }]; //temporary
-        [rosterController pinInBackgroundWithName:@"RC"];
-        [self loadTableView];
-    });
 }
 
 - (void)loadTableView {

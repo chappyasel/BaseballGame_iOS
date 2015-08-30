@@ -155,11 +155,7 @@
     
     //NSLog(@"%@",team);
     NSLog(@"finished loading %@",abbrev);
-    
-    [team pinInBackgroundWithName:[team pinName] block:^(BOOL succeeded, NSError * _Nullable error) {
-        if (error) NSLog(@"Error: %@",error);
-        else NSLog(@"Saved");
-    }];
+    [self.teams addObject:team];
 }
 
 @end
