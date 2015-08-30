@@ -30,7 +30,7 @@
 
 #pragma mark - Public Methods
 
-- (void)loadCurrentRosterFromBBR {
+- (void)loadCurrentRosterFromBBRWithProgressBlock:(void (^)(float progress))blockName {
     self.teams = [[NSMutableArray alloc] init];
     NSCalendar *gregorian = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
     int year = (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
@@ -38,6 +38,7 @@
     for (int i = 0; i < abbrevs.count; i++) {
         @autoreleasepool {
             [self loadTeamWithAbbrev:abbrevs[i] andYear:[NSNumber numberWithInt:year]];
+            blockName(((float)i+1)/abbrevs.count);
         }
     }
     NSLog(@"finished loading all teams");

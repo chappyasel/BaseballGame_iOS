@@ -6,43 +6,201 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2D85E129124CDD30ED7D0D2746565A44 /* UCZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1205FA226F4448E9E3E31E1A3BB808E0 /* UCZProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6446E8316DE5CEE9931B5ADB321FCF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E96D069B9ADF96A0CED8F5FFB4DAA73 /* Foundation.framework */; };
+		998FBC0F0E2AC634BB5512BBAFEE5B67 /* Pods-BaseballGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAD60476101946203887E804BF154C8 /* Pods-BaseballGame-dummy.m */; };
+		C681343E4AF640A9F3CDD170DA16BCC5 /* UCZProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = A19F46817408A01A5C241BCED746B9CC /* UCZProgressView.h */; };
+		E39EA9306AFD22E236EFE5B5CCAA57AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E96D069B9ADF96A0CED8F5FFB4DAA73 /* Foundation.framework */; };
+		F06A144FCB3FFA97F66BDD126F11929D /* UCZProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BC2E82B73CBC849B47D574563A1295 /* UCZProgressView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F05DB28D3C421EC8FBD445E44E5CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 771C8EC984C88240581F298A1E92E99A;
+			remoteInfo = UCZProgressView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1047DA0217C75693058C557C000C445D /* Pods-BaseballGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaseballGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1205FA226F4448E9E3E31E1A3BB808E0 /* UCZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UCZProgressView.m; path = Lib/UCZProgressView.m; sourceTree = "<group>"; };
+		162F55272AAA5B5466CC66A000B0A6FD /* UCZProgressView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UCZProgressView-Private.xcconfig"; sourceTree = "<group>"; };
+		1C3B6D22403A5F0C8729041C67E1B3F8 /* UCZProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UCZProgressView.xcconfig; sourceTree = "<group>"; };
+		3E96D069B9ADF96A0CED8F5FFB4DAA73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3FBC538FD086A4BABCBD0CC19932CFBF /* Pods-BaseballGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseballGame-resources.sh"; sourceTree = "<group>"; };
+		5F2E082E418F30046FFE9AA3424F0B70 /* libPods-BaseballGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseballGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7719034965AEF8414B7DACE41125C990 /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
+		8E8DF0ECCDB2629BD1F2E41C6E63DDF2 /* Pods-BaseballGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseballGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		8FE1D9AF457A52E110B0617D646E5C77 /* UCZProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-prefix.pch"; sourceTree = "<group>"; };
+		A19F46817408A01A5C241BCED746B9CC /* UCZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UCZProgressView.h; path = Lib/UCZProgressView.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2469A811D220792AE9816D21B5EEC02 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
+		DDAD60476101946203887E804BF154C8 /* Pods-BaseballGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseballGame-dummy.m"; sourceTree = "<group>"; };
+		DDB607C0622BE581F71C55F2899BD959 /* libUCZProgressView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUCZProgressView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BC2E82B73CBC849B47D574563A1295 /* UCZProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UCZProgressView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		5FBEAB8BA45CE5825E331405BCA989A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6446E8316DE5CEE9931B5ADB321FCF02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1C99FEE8276D191768DF886CC264B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39EA9306AFD22E236EFE5B5CCAA57AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3E96D069B9ADF96A0CED8F5FFB4DAA73 /* Foundation.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		67D4671830A3AB9977339FD23B24610F /* UCZProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				A19F46817408A01A5C241BCED746B9CC /* UCZProgressView.h */,
+				1205FA226F4448E9E3E31E1A3BB808E0 /* UCZProgressView.m */,
+				F4F21E08854BD8CDF1D0A944C74980C2 /* Support Files */,
+			);
+			path = UCZProgressView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BD71AC2042032055D42558187E2770D7 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				F3AFB2BB4A07376036DD567345371096 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD71AC2042032055D42558187E2770D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67D4671830A3AB9977339FD23B24610F /* UCZProgressView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				5F2E082E418F30046FFE9AA3424F0B70 /* libPods-BaseballGame.a */,
+				DDB607C0622BE581F71C55F2899BD959 /* libUCZProgressView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		D0BFA98DD5B98C509E26B683AC3A0A50 /* Pods-BaseballGame */ = {
 			isa = PBXGroup;
 			children = (
+				1047DA0217C75693058C557C000C445D /* Pods-BaseballGame-acknowledgements.markdown */,
+				8E8DF0ECCDB2629BD1F2E41C6E63DDF2 /* Pods-BaseballGame-acknowledgements.plist */,
+				DDAD60476101946203887E804BF154C8 /* Pods-BaseballGame-dummy.m */,
+				3FBC538FD086A4BABCBD0CC19932CFBF /* Pods-BaseballGame-resources.sh */,
+				C2469A811D220792AE9816D21B5EEC02 /* Pods-BaseballGame.debug.xcconfig */,
+				7719034965AEF8414B7DACE41125C990 /* Pods-BaseballGame.release.xcconfig */,
+			);
+			name = "Pods-BaseballGame";
+			path = "Target Support Files/Pods-BaseballGame";
+			sourceTree = "<group>";
+		};
+		F3AFB2BB4A07376036DD567345371096 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0BFA98DD5B98C509E26B683AC3A0A50 /* Pods-BaseballGame */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F4F21E08854BD8CDF1D0A944C74980C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C3B6D22403A5F0C8729041C67E1B3F8 /* UCZProgressView.xcconfig */,
+				162F55272AAA5B5466CC66A000B0A6FD /* UCZProgressView-Private.xcconfig */,
+				F7BC2E82B73CBC849B47D574563A1295 /* UCZProgressView-dummy.m */,
+				8FE1D9AF457A52E110B0617D646E5C77 /* UCZProgressView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UCZProgressView";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C51700F12DAE05FB4AF320A72F6DCF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C681343E4AF640A9F3CDD170DA16BCC5 /* UCZProgressView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		771C8EC984C88240581F298A1E92E99A /* UCZProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8827682D7D45904D1ACC52AC99493FCD /* Build configuration list for PBXNativeTarget "UCZProgressView" */;
+			buildPhases = (
+				4093D80767148E8C73BFB8DE13C45C12 /* Sources */,
+				5FBEAB8BA45CE5825E331405BCA989A9 /* Frameworks */,
+				0C51700F12DAE05FB4AF320A72F6DCF2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UCZProgressView;
+			productName = UCZProgressView;
+			productReference = DDB607C0622BE581F71C55F2899BD959 /* libUCZProgressView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9208090DAC733DD944A63759FD3166C5 /* Pods-BaseballGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D63F4EF49ABB573DD30A2FB59F9EEF88 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */;
+			buildPhases = (
+				ECD68244E25E43DA4CB23BC3C18B2561 /* Sources */,
+				AD1C99FEE8276D191768DF886CC264B8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E88C171D90C5779F270AF5E7D9CA82 /* PBXTargetDependency */,
+			);
+			name = "Pods-BaseballGame";
+			productName = "Pods-BaseballGame";
+			productReference = 5F2E082E418F30046FFE9AA3424F0B70 /* libPods-BaseballGame.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -63,11 +221,74 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				9208090DAC733DD944A63759FD3166C5 /* Pods-BaseballGame */,
+				771C8EC984C88240581F298A1E92E99A /* UCZProgressView */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		4093D80767148E8C73BFB8DE13C45C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06A144FCB3FFA97F66BDD126F11929D /* UCZProgressView-dummy.m in Sources */,
+				2D85E129124CDD30ED7D0D2746565A44 /* UCZProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD68244E25E43DA4CB23BC3C18B2561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998FBC0F0E2AC634BB5512BBAFEE5B67 /* Pods-BaseballGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E88C171D90C5779F270AF5E7D9CA82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UCZProgressView;
+			target = 771C8EC984C88240581F298A1E92E99A /* UCZProgressView */;
+			targetProxy = 18F05DB28D3C421EC8FBD445E44E5CFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1099F37F5846CD4F74567DA85D36405D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7719034965AEF8414B7DACE41125C990 /* Pods-BaseballGame.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2669A9A0053893BE88F029503B796FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2469A811D220792AE9816D21B5EEC02 /* Pods-BaseballGame.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -107,6 +328,22 @@
 			};
 			name = Debug;
 		};
+		73D75B9712415694E4025B40AB1D5F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162F55272AAA5B5466CC66A000B0A6FD /* UCZProgressView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UCZProgressView/UCZProgressView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -141,6 +378,22 @@
 			};
 			name = Release;
 		};
+		8BF84BC47DE48549AD8C6B95AC6FC7EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162F55272AAA5B5466CC66A000B0A6FD /* UCZProgressView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UCZProgressView/UCZProgressView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -149,6 +402,24 @@
 			buildConfigurations = (
 				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
 				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8827682D7D45904D1ACC52AC99493FCD /* Build configuration list for PBXNativeTarget "UCZProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BF84BC47DE48549AD8C6B95AC6FC7EC /* Debug */,
+				73D75B9712415694E4025B40AB1D5F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D63F4EF49ABB573DD30A2FB59F9EEF88 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2669A9A0053893BE88F029503B796FFB /* Debug */,
+				1099F37F5846CD4F74567DA85D36405D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

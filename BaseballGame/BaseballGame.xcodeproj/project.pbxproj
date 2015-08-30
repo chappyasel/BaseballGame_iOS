@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5386BEFA4AB3FA02A3FEBBF6 /* libPods-BaseballGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C97FF5ECC9AAA0244CACAA /* libPods-BaseballGame.a */; };
 		F93B22061B80E5530003312A /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22011B80E5530003312A /* TFHpple.m */; };
 		F93B22071B80E5530003312A /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22031B80E5530003312A /* TFHppleElement.m */; };
 		F93B22081B80E5530003312A /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22051B80E5530003312A /* XPathQuery.m */; };
@@ -61,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62C97FF5ECC9AAA0244CACAA /* libPods-BaseballGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseballGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8179F7A00EA963D1395A9F2B /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
+		CF34CD4E365FD38670CDDDE7 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
 		F93B22001B80E5530003312A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = "Third Party/Hpple/TFHpple.h"; sourceTree = "<group>"; };
 		F93B22011B80E5530003312A /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = "Third Party/Hpple/TFHpple.m"; sourceTree = "<group>"; };
 		F93B22021B80E5530003312A /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = "Third Party/Hpple/TFHppleElement.h"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				F96329D51B7E9EA700C63105 /* ParseUI.framework in Frameworks */,
 				F96329C21B7E9E4B00C63105 /* Foundation.framework in Frameworks */,
 				F96329D31B7E9EA700C63105 /* ParseCrashReporting.framework in Frameworks */,
+				5386BEFA4AB3FA02A3FEBBF6 /* libPods-BaseballGame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10260A39AC14918463741010 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF34CD4E365FD38670CDDDE7 /* Pods-BaseballGame.debug.xcconfig */,
+				8179F7A00EA963D1395A9F2B /* Pods-BaseballGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F93B22091B80E5580003312A /* Hpple */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +200,7 @@
 				F96329961B7E5E6500C63105 /* BaseballGameUITests */,
 				F96329701B7E5E6400C63105 /* Products */,
 				F96329CB1B7E9E9A00C63105 /* Frameworks */,
+				10260A39AC14918463741010 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +281,7 @@
 				F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */,
 				F96329BF1B7E9E4B00C63105 /* StoreKit.framework */,
 				F96329C01B7E9E4B00C63105 /* CoreLocation.framework */,
+				62C97FF5ECC9AAA0244CACAA /* libPods-BaseballGame.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F963299C1B7E5E6500C63105 /* Build configuration list for PBXNativeTarget "BaseballGame" */;
 			buildPhases = (
+				0068FF7E794B779B4D56526B /* Check Pods Manifest.lock */,
 				F963296B1B7E5E6400C63105 /* Sources */,
 				F963296C1B7E5E6400C63105 /* Frameworks */,
 				F963296D1B7E5E6400C63105 /* Resources */,
+				F7FEC5CF78F3B3A9D02D8CAD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -410,6 +428,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0068FF7E794B779B4D56526B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7FEC5CF78F3B3A9D02D8CAD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F963296B1B7E5E6400C63105 /* Sources */ = {
@@ -564,6 +615,7 @@
 		};
 		F963299D1B7E5E6500C63105 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF34CD4E365FD38670CDDDE7 /* Pods-BaseballGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -579,6 +631,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-l\"UCZProgressView\"";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -586,6 +639,7 @@
 		};
 		F963299E1B7E5E6500C63105 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8179F7A00EA963D1395A9F2B /* Pods-BaseballGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -601,6 +655,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-l\"UCZProgressView\"";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
