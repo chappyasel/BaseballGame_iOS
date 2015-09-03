@@ -9,8 +9,11 @@
 #import "ViewController.h"
 #import "UCZProgressView.h"
 #import "BGLeagueController.h"
+#import "BGTeamInfo.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 @end
 
@@ -31,7 +34,6 @@ UCZProgressView *progressView;
     progressView.textSize = 25.0;
     progressView.showsText = YES;
     [self.view addSubview:progressView];
-    
 }
 
 - (void)loadTableView {

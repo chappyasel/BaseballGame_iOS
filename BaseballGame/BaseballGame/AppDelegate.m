@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
 #import "BGLeagueController.h"
+#import "BGLeagueInfo.h"
 
 @interface AppDelegate ()
 
@@ -28,16 +29,17 @@
     NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
     if (error) NSLog(@"%@",error);
     BGLeagueController *leagueController;
+    /*
     if (!fetchedObjects) {
-        rosterController = [BGRosterController object];
+        //rosterController = [BGRosterController object];
         dispatch_queue_t myQueue = dispatch_queue_create("My Queue",NULL);
         dispatch_async(myQueue, ^{
-            [rosterController loadCurrentRosterFromBBRWithProgressBlock:^void(float progress) {
+            [[[BGLeagueInfo alloc] init] loadCurrentRosterFromBBRWithProgressBlock:^void(float progress) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    progressView.progress = progress;
+                    //progressView.progress = progress;
                 });
             }];
-            [rosterController saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            //[rosterController saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
                 if (error) NSLog(@"%@",error);
                 if (succeeded) NSLog(@"SAVED ROSTER CONTROLLER");
             }];
@@ -48,6 +50,7 @@
         if (fetchedObjects.count != 1) NSLog(@"Error: Multiple leagueControllers");
         leagueController = fetchedObjects.firstObject;
     }
+     */
     return YES;
 }
 

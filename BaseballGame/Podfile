@@ -3,6 +3,7 @@
 
 target 'BaseballGame' do
     pod 'UCZProgressView'
+    pod 'hpple'
 end
 
 target 'BaseballGameTests' do

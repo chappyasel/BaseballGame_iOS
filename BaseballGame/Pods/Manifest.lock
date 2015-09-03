@@ -1,10 +1,13 @@
 PODS:
+  - hpple (0.2.0)
   - UCZProgressView (1.0.2)
 
 DEPENDENCIES:
+  - hpple
   - UCZProgressView
 
 SPEC CHECKSUMS:
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   UCZProgressView: 55836987c15ee6efb7cd6dfe297556602ee46c94
 
 COCOAPODS: 0.38.2

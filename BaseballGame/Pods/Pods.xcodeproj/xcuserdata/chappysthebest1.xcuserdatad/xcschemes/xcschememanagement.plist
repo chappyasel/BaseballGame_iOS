@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>hpple.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2EFF811BC8D03050C024942FFF4C8EAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>771C8EC984C88240581F298A1E92E99A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9208090DAC733DD944A63759FD3166C5</key>
+		<key>BA250BDE05647A8E5AE0B5FB0421E3CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -13,7 +13,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BGTeamInfo : NSManagedObject
+@interface BGTeamInfo : NSManagedObject;
+
+- (void)loadTeamWithAbbrev: (NSString *) abbrev andYear: (NSNumber *) year;
 
 @end
 

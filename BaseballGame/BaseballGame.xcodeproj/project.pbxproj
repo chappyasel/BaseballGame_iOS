@@ -24,9 +24,6 @@
 		F92CF68F1B98848600BE0428 /* BGPitcher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6801B98848600BE0428 /* BGPitcher+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		F92CF6901B98848600BE0428 /* BGPitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6821B98848600BE0428 /* BGPitcher.m */; settings = {ASSET_TAGS = (); }; };
 		F93553211B988CBE0097C98C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93553201B988CBE0097C98C /* CoreData.framework */; };
-		F93B22061B80E5530003312A /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22011B80E5530003312A /* TFHpple.m */; };
-		F93B22071B80E5530003312A /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22031B80E5530003312A /* TFHppleElement.m */; };
-		F93B22081B80E5530003312A /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22051B80E5530003312A /* XPathQuery.m */; };
 		F96329741B7E5E6400C63105 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329731B7E5E6400C63105 /* main.m */; };
 		F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329761B7E5E6400C63105 /* AppDelegate.m */; };
 		F963297A1B7E5E6400C63105 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329791B7E5E6400C63105 /* ViewController.m */; };
@@ -88,12 +85,6 @@
 		F92CF6811B98848600BE0428 /* BGPitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGPitcher.h; path = Classes/BGPitcher.h; sourceTree = "<group>"; };
 		F92CF6821B98848600BE0428 /* BGPitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGPitcher.m; path = Classes/BGPitcher.m; sourceTree = "<group>"; };
 		F93553201B988CBE0097C98C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F93B22001B80E5530003312A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = "Third Party/Hpple/TFHpple.h"; sourceTree = "<group>"; };
-		F93B22011B80E5530003312A /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = "Third Party/Hpple/TFHpple.m"; sourceTree = "<group>"; };
-		F93B22021B80E5530003312A /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = "Third Party/Hpple/TFHppleElement.h"; sourceTree = "<group>"; };
-		F93B22031B80E5530003312A /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHppleElement.m; path = "Third Party/Hpple/TFHppleElement.m"; sourceTree = "<group>"; };
-		F93B22041B80E5530003312A /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = "Third Party/Hpple/XPathQuery.h"; sourceTree = "<group>"; };
-		F93B22051B80E5530003312A /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = "Third Party/Hpple/XPathQuery.m"; sourceTree = "<group>"; };
 		F963296F1B7E5E6400C63105 /* BaseballGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseballGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96329731B7E5E6400C63105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F96329751B7E5E6400C63105 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -226,27 +217,6 @@
 			name = BGLeagueDetails;
 			sourceTree = "<group>";
 		};
-		F93B22091B80E5580003312A /* Hpple */ = {
-			isa = PBXGroup;
-			children = (
-				F93B22001B80E5530003312A /* TFHpple.h */,
-				F93B22011B80E5530003312A /* TFHpple.m */,
-				F93B22021B80E5530003312A /* TFHppleElement.h */,
-				F93B22031B80E5530003312A /* TFHppleElement.m */,
-				F93B22041B80E5530003312A /* XPathQuery.h */,
-				F93B22051B80E5530003312A /* XPathQuery.m */,
-			);
-			name = Hpple;
-			sourceTree = "<group>";
-		};
-		F93B220A1B80E55F0003312A /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-				F93B22091B80E5580003312A /* Hpple */,
-			);
-			name = "Third Party";
-			sourceTree = "<group>";
-		};
 		F96329661B7E5E6400C63105 = {
 			isa = PBXGroup;
 			children = (
@@ -282,7 +252,6 @@
 				F963297E1B7E5E6400C63105 /* Assets.xcassets */,
 				F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */,
 				F96329831B7E5E6400C63105 /* Info.plist */,
-				F93B220A1B80E55F0003312A /* Third Party */,
 				F96329721B7E5E6400C63105 /* Supporting Files */,
 			);
 			path = BaseballGame;
@@ -504,7 +473,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F93B22071B80E5530003312A /* TFHppleElement.m in Sources */,
 				F963297A1B7E5E6400C63105 /* ViewController.m in Sources */,
 				F92CF68D1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.m in Sources */,
 				F92CF6881B98848600BE0428 /* BGBatter.m in Sources */,
@@ -519,8 +487,6 @@
 				F92CF6661B987B5C00BE0428 /* BGDataModel.xcdatamodeld in Sources */,
 				F92CF6851B98848600BE0428 /* BGLeagueDetails+CoreDataProperties.m in Sources */,
 				F92CF6841B98848600BE0428 /* BGLeagueInfo.m in Sources */,
-				F93B22081B80E5530003312A /* XPathQuery.m in Sources */,
-				F93B22061B80E5530003312A /* TFHpple.m in Sources */,
 				F92CF6831B98848600BE0428 /* BGLeagueInfo+CoreDataProperties.m in Sources */,
 				F92CF68F1B98848600BE0428 /* BGPitcher+CoreDataProperties.m in Sources */,
 				F92CF6871B98848600BE0428 /* BGBatter+CoreDataProperties.m in Sources */,
@@ -677,8 +643,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Vendor/Facebook",
-					"$(PROJECT_DIR)/Vendor/Parse",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/BaseballGame/BaseballGame-Prefix.pch";
@@ -691,7 +655,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7, arm64";
+				VALID_ARCHS = "armv7, armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -706,8 +670,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Vendor/Facebook",
-					"$(PROJECT_DIR)/Vendor/Parse",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/BaseballGame/BaseballGame-Prefix.pch";
@@ -720,7 +682,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7, arm64";
+				VALID_ARCHS = "armv7, armv7s arm64";
 			};
 			name = Release;
 		};
