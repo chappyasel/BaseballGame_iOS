@@ -10,6 +10,4 @@
 
 @implementation BGLeagueInfo
 
-// Insert code here to add functionality to your managed object subclass
-
 @end

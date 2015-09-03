@@ -21,6 +21,7 @@ UCZProgressView *progressView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    rosterController = [BGLeagueController sharedInstance];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -30,6 +31,7 @@ UCZProgressView *progressView;
     progressView.textSize = 25.0;
     progressView.showsText = YES;
     [self.view addSubview:progressView];
+    
 }
 
 - (void)loadTableView {

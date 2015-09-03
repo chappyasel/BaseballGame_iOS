@@ -13,16 +13,20 @@
 
 @implementation BGPitcher (CoreDataProperties)
 
+@dynamic firstName;
+@dynamic lastName;
+
+@dynamic position;
+
+@dynamic overall;
+
 @dynamic endurance;
 @dynamic accuracy;
 @dynamic velocity;
 @dynamic composure;
 @dynamic deception;
 @dynamic unhittable;
-@dynamic overall;
-@dynamic position;
-@dynamic firstName;
-@dynamic lastName;
+
 @dynamic team;
 
 @end

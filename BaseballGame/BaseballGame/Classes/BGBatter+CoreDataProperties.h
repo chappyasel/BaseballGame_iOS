@@ -15,16 +15,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BGBatter (CoreDataProperties)
 
+@property (nullable, nonatomic, retain) NSString *firstName;
+@property (nullable, nonatomic, retain) NSString *lastName;
+
+@property (nullable, nonatomic, retain) NSString *position;
+
+@property (nullable, nonatomic, retain) NSNumber *overall;
+
 @property (nullable, nonatomic, retain) NSNumber *contact;
 @property (nullable, nonatomic, retain) NSNumber *clutch;
 @property (nullable, nonatomic, retain) NSNumber *fielding;
 @property (nullable, nonatomic, retain) NSNumber *power;
-@property (nullable, nonatomic, retain) NSString *firstName;
-@property (nullable, nonatomic, retain) NSString *lastName;
 @property (nullable, nonatomic, retain) NSNumber *speed;
-@property (nullable, nonatomic, retain) NSString *position;
 @property (nullable, nonatomic, retain) NSNumber *vision;
-@property (nullable, nonatomic, retain) NSManagedObject *team;
+
+@property (nullable, nonatomic, retain) BGTeamDetails *team;
 
 @end
 

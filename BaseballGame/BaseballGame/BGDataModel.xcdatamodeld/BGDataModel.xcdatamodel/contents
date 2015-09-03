@@ -6,6 +6,7 @@
         <attribute name="fielding" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overall" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="power" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -17,7 +18,7 @@
     </entity>
     <entity name="BGLeagueDetails" representedClassName="BGLeagueDetails" syncable="YES">
         <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueInfo" inverseName="details" inverseEntity="BGLeagueInfo" syncable="YES"/>
-        <relationship name="teams" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamInfo" inverseName="league" inverseEntity="BGTeamInfo" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="BGTeamInfo" inverseName="league" inverseEntity="BGTeamInfo" syncable="YES"/>
     </entity>
     <entity name="BGLeagueInfo" representedClassName="BGLeagueInfo" syncable="YES">
         <attribute name="isCustom" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -50,12 +51,12 @@
         <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueDetails" inverseName="teams" inverseEntity="BGLeagueDetails" syncable="YES"/>
     </entity>
     <elements>
-        <element name="BGPitcher" positionX="-225" positionY="-234" width="128" height="208"/>
-        <element name="BGBatter" positionX="-225" positionY="-9" width="128" height="193"/>
-        <element name="BGTeamInfo" positionX="-0" positionY="-148" width="128" height="118"/>
-        <element name="BGLeagueInfo" positionX="225" positionY="-117" width="128" height="88"/>
-        <element name="BGLeagueDetails" positionX="225" positionY="-9" width="128" height="73"/>
-        <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="88"/>
+        <element name="BGBatter" positionX="-225" positionY="-9" width="128" height="208"/>
         <element name="BGLeagueController" positionX="448" positionY="-85" width="128" height="58"/>
+        <element name="BGLeagueDetails" positionX="225" positionY="-9" width="128" height="73"/>
+        <element name="BGLeagueInfo" positionX="225" positionY="-117" width="128" height="88"/>
+        <element name="BGPitcher" positionX="-225" positionY="-234" width="128" height="208"/>
+        <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="88"/>
+        <element name="BGTeamInfo" positionX="-0" positionY="-148" width="128" height="118"/>
     </elements>
 </model>

@@ -13,15 +13,20 @@
 
 @implementation BGBatter (CoreDataProperties)
 
+@dynamic firstName;
+@dynamic lastName;
+
+@dynamic position;
+
+@dynamic overall;
+
 @dynamic contact;
 @dynamic clutch;
 @dynamic fielding;
 @dynamic power;
-@dynamic firstName;
-@dynamic lastName;
 @dynamic speed;
-@dynamic position;
 @dynamic vision;
+
 @dynamic team;
 
 @end

@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class BGBatter, BGTeamInfo;
+@class BGBatter, BGPitcher, BGTeamInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BGTeamDetails : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+- (void)loadTeamWithAbbrev: (NSString *) abbrev andYear: (NSNumber *) year;
 
 @end
 

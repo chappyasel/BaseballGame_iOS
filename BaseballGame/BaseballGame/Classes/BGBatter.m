@@ -10,6 +10,8 @@
 
 @implementation BGBatter
 
-// Insert code here to add functionality to your managed object subclass
+- (void) calculateOverall {
+    
+}
 
 @end

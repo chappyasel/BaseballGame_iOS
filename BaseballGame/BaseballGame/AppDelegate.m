@@ -48,8 +48,6 @@
         if (fetchedObjects.count != 1) NSLog(@"Error: Multiple leagueControllers");
         leagueController = fetchedObjects.firstObject;
     }
-    leagueController = [BGLeagueController sharedInstance];
-    leagueController = localRC;
     return YES;
 }
 

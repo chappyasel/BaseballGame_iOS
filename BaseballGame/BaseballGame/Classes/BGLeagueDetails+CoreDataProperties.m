@@ -14,6 +14,7 @@
 @implementation BGLeagueDetails (CoreDataProperties)
 
 @dynamic teams;
+
 @dynamic info;
 
 @end

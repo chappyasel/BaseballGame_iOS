@@ -15,6 +15,7 @@
 
 @dynamic pitchers;
 @dynamic batters;
+
 @dynamic info;
 
 @end

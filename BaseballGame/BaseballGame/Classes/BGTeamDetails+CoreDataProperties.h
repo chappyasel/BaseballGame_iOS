@@ -15,24 +15,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BGTeamDetails (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSOrderedSet<NSManagedObject *> *pitchers;
+@property (nullable, nonatomic, retain) NSOrderedSet<BGPitcher *> *pitchers;
 @property (nullable, nonatomic, retain) NSOrderedSet<BGBatter *> *batters;
+
 @property (nullable, nonatomic, retain) BGTeamInfo *info;
 
 @end
 
 @interface BGTeamDetails (CoreDataGeneratedAccessors)
 
-- (void)insertObject:(NSManagedObject *)value inPitchersAtIndex:(NSUInteger)idx;
+- (void)insertObject:(BGPitcher *)value inPitchersAtIndex:(NSUInteger)idx;
 - (void)removeObjectFromPitchersAtIndex:(NSUInteger)idx;
-- (void)insertPitchers:(NSArray<NSManagedObject *> *)value atIndexes:(NSIndexSet *)indexes;
+- (void)insertPitchers:(NSArray<BGPitcher *> *)value atIndexes:(NSIndexSet *)indexes;
 - (void)removePitchersAtIndexes:(NSIndexSet *)indexes;
-- (void)replaceObjectInPitchersAtIndex:(NSUInteger)idx withObject:(NSManagedObject *)value;
-- (void)replacePitchersAtIndexes:(NSIndexSet *)indexes withPitchers:(NSArray<NSManagedObject *> *)values;
-- (void)addPitchersObject:(NSManagedObject *)value;
-- (void)removePitchersObject:(NSManagedObject *)value;
-- (void)addPitchers:(NSOrderedSet<NSManagedObject *> *)values;
-- (void)removePitchers:(NSOrderedSet<NSManagedObject *> *)values;
+- (void)replaceObjectInPitchersAtIndex:(NSUInteger)idx withObject:(BGPitcher *)value;
+- (void)replacePitchersAtIndexes:(NSIndexSet *)indexes withPitchers:(NSArray<BGPitcher *> *)values;
+- (void)addPitchersObject:(BGPitcher *)value;
+- (void)removePitchersObject:(BGPitcher *)value;
+- (void)addPitchers:(NSOrderedSet<BGPitcher *> *)values;
+- (void)removePitchers:(NSOrderedSet<BGPitcher *> *)values;
 
 - (void)insertObject:(BGBatter *)value inBattersAtIndex:(NSUInteger)idx;
 - (void)removeObjectFromBattersAtIndex:(NSUInteger)idx;

@@ -11,6 +11,13 @@
 
 @implementation BGLeagueController
 
-// Insert code here to add functionality to your managed object subclass
++ (BGLeagueController *)sharedInstance {
+    static BGLeagueController *_sharedInstance = nil;
+    static dispatch_once_t oncePredicate;
+    dispatch_once(&oncePredicate, ^{
+        _sharedInstance = [[BGLeagueController alloc] init];
+    });
+    return _sharedInstance;
+}
 
 @end

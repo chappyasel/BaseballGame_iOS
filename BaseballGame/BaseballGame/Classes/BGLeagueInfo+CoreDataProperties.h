@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSNumber *year;
 @property (nullable, nonatomic, retain) NSNumber *isCustom;
-@property (nullable, nonatomic, retain) NSManagedObject *details;
+
+@property (nullable, nonatomic, retain) BGLeagueDetails *details;
 
 @end
 

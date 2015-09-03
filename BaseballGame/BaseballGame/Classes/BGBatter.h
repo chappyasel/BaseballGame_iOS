@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class BGTeamDetails;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BGBatter : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+- (void) calculateOverall;
 
 @end
 

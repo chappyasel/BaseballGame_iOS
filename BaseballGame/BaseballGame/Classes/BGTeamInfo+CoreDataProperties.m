@@ -15,8 +15,11 @@
 
 @dynamic name;
 @dynamic abbreviation;
+
 @dynamic year;
+
 @dynamic details;
+
 @dynamic league;
 
 @end

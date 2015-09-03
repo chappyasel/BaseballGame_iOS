@@ -15,6 +15,7 @@
 
 @dynamic year;
 @dynamic isCustom;
+
 @dynamic details;
 
 @end
