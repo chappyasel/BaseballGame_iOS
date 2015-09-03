@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5386BEFA4AB3FA02A3FEBBF6 /* libPods-BaseballGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C97FF5ECC9AAA0244CACAA /* libPods-BaseballGame.a */; };
+		F92CF6661B987B5C00BE0428 /* BGDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6641B987B5C00BE0428 /* BGDataModel.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		F92CF6831B98848600BE0428 /* BGLeagueInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6681B98848500BE0428 /* BGLeagueInfo+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF6841B98848600BE0428 /* BGLeagueInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF66A1B98848500BE0428 /* BGLeagueInfo.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF6851B98848600BE0428 /* BGLeagueDetails+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF66C1B98848500BE0428 /* BGLeagueDetails+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF6861B98848600BE0428 /* BGLeagueDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF66E1B98848500BE0428 /* BGLeagueDetails.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF6871B98848600BE0428 /* BGBatter+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6701B98848500BE0428 /* BGBatter+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF6881B98848600BE0428 /* BGBatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6721B98848500BE0428 /* BGBatter.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF6891B98848600BE0428 /* BGLeagueController+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6741B98848600BE0428 /* BGLeagueController+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF68A1B98848600BE0428 /* BGLeagueController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6761B98848600BE0428 /* BGLeagueController.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF68B1B98848600BE0428 /* BGTeamInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6781B98848600BE0428 /* BGTeamInfo+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF68C1B98848600BE0428 /* BGTeamInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF67A1B98848600BE0428 /* BGTeamInfo.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF68D1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF67C1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF68E1B98848600BE0428 /* BGTeamDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF67E1B98848600BE0428 /* BGTeamDetails.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF68F1B98848600BE0428 /* BGPitcher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6801B98848600BE0428 /* BGPitcher+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F92CF6901B98848600BE0428 /* BGPitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6821B98848600BE0428 /* BGPitcher.m */; settings = {ASSET_TAGS = (); }; };
+		F93553211B988CBE0097C98C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93553201B988CBE0097C98C /* CoreData.framework */; };
 		F93B22061B80E5530003312A /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22011B80E5530003312A /* TFHpple.m */; };
 		F93B22071B80E5530003312A /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22031B80E5530003312A /* TFHppleElement.m */; };
 		F93B22081B80E5530003312A /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B22051B80E5530003312A /* XPathQuery.m */; };
@@ -19,28 +35,6 @@
 		F96329821B7E5E6400C63105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */; };
 		F963298D1B7E5E6500C63105 /* BaseballGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F963298C1B7E5E6500C63105 /* BaseballGameTests.m */; };
 		F96329981B7E5E6500C63105 /* BaseballGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329971B7E5E6500C63105 /* BaseballGameUITests.m */; };
-		F96329C11B7E9E4B00C63105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329B71B7E9E4B00C63105 /* UIKit.framework */; };
-		F96329C21B7E9E4B00C63105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329B81B7E9E4B00C63105 /* Foundation.framework */; };
-		F96329C31B7E9E4B00C63105 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329B91B7E9E4B00C63105 /* CFNetwork.framework */; };
-		F96329C41B7E9E4B00C63105 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BA1B7E9E4B00C63105 /* SystemConfiguration.framework */; };
-		F96329C51B7E9E4B00C63105 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BB1B7E9E4B00C63105 /* AudioToolbox.framework */; };
-		F96329C61B7E9E4B00C63105 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BC1B7E9E4B00C63105 /* Security.framework */; };
-		F96329C71B7E9E4B00C63105 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BD1B7E9E4B00C63105 /* QuartzCore.framework */; };
-		F96329C81B7E9E4B00C63105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */; };
-		F96329C91B7E9E4B00C63105 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329BF1B7E9E4B00C63105 /* StoreKit.framework */; };
-		F96329CA1B7E9E4B00C63105 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329C01B7E9E4B00C63105 /* CoreLocation.framework */; };
-		F96329D21B7E9EA700C63105 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CD1B7E9EA700C63105 /* Parse.framework */; };
-		F96329D31B7E9EA700C63105 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */; };
-		F96329D51B7E9EA700C63105 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329D01B7E9EA700C63105 /* ParseUI.framework */; };
-		F96329E31B7E9EE000C63105 /* BGRosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329DF1B7E9EE000C63105 /* BGRosterController.m */; };
-		F96329E41B7E9EE000C63105 /* BGTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329E11B7E9EE000C63105 /* BGTeam.m */; };
-		F9EF7C861B8FC67B006DC37F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EF7C831B8FC67B006DC37F /* libsqlite3.dylib */; };
-		F9EF7C871B8FC67B006DC37F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EF7C841B8FC67B006DC37F /* libz.1.1.3.dylib */; };
-		F9EF7C881B8FC67B006DC37F /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EF7C851B8FC67B006DC37F /* libstdc++.6.dylib */; };
-		F9EF7C8A1B8FC91F006DC37F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EF7C891B8FC91F006DC37F /* libxml2.tbd */; };
-		F9EF7C8D1B8FF516006DC37F /* BGPitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7C8C1B8FF516006DC37F /* BGPitcher.m */; };
-		F9EF7C901B8FF580006DC37F /* BGBatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7C8F1B8FF580006DC37F /* BGBatter.m */; };
-		F9FBE0D21B937C09000AC0BB /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +58,36 @@
 		3C75A9A78BC9A3887F1B8E3C /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
 		62C97FF5ECC9AAA0244CACAA /* libPods-BaseballGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseballGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD54B9FC1FC2732F66B3FBA /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
+		F92CF6651B987B5C00BE0428 /* BGDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BGDataModel.xcdatamodel; sourceTree = "<group>"; };
+		F92CF6671B98848500BE0428 /* BGLeagueInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGLeagueInfo+CoreDataProperties.h"; path = "Classes/BGLeagueInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92CF6681B98848500BE0428 /* BGLeagueInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGLeagueInfo+CoreDataProperties.m"; path = "Classes/BGLeagueInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92CF6691B98848500BE0428 /* BGLeagueInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGLeagueInfo.h; path = Classes/BGLeagueInfo.h; sourceTree = "<group>"; };
+		F92CF66A1B98848500BE0428 /* BGLeagueInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGLeagueInfo.m; path = Classes/BGLeagueInfo.m; sourceTree = "<group>"; };
+		F92CF66B1B98848500BE0428 /* BGLeagueDetails+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGLeagueDetails+CoreDataProperties.h"; path = "Classes/BGLeagueDetails+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92CF66C1B98848500BE0428 /* BGLeagueDetails+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGLeagueDetails+CoreDataProperties.m"; path = "Classes/BGLeagueDetails+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92CF66D1B98848500BE0428 /* BGLeagueDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGLeagueDetails.h; path = Classes/BGLeagueDetails.h; sourceTree = "<group>"; };
+		F92CF66E1B98848500BE0428 /* BGLeagueDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGLeagueDetails.m; path = Classes/BGLeagueDetails.m; sourceTree = "<group>"; };
+		F92CF66F1B98848500BE0428 /* BGBatter+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGBatter+CoreDataProperties.h"; path = "Classes/BGBatter+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92CF6701B98848500BE0428 /* BGBatter+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGBatter+CoreDataProperties.m"; path = "Classes/BGBatter+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92CF6711B98848500BE0428 /* BGBatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGBatter.h; path = Classes/BGBatter.h; sourceTree = "<group>"; };
+		F92CF6721B98848500BE0428 /* BGBatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGBatter.m; path = Classes/BGBatter.m; sourceTree = "<group>"; };
+		F92CF6731B98848500BE0428 /* BGLeagueController+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGLeagueController+CoreDataProperties.h"; path = "Classes/BGLeagueController+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92CF6741B98848600BE0428 /* BGLeagueController+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGLeagueController+CoreDataProperties.m"; path = "Classes/BGLeagueController+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92CF6751B98848600BE0428 /* BGLeagueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGLeagueController.h; path = Classes/BGLeagueController.h; sourceTree = "<group>"; };
+		F92CF6761B98848600BE0428 /* BGLeagueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGLeagueController.m; path = Classes/BGLeagueController.m; sourceTree = "<group>"; };
+		F92CF6771B98848600BE0428 /* BGTeamInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGTeamInfo+CoreDataProperties.h"; path = "Classes/BGTeamInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92CF6781B98848600BE0428 /* BGTeamInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGTeamInfo+CoreDataProperties.m"; path = "Classes/BGTeamInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92CF6791B98848600BE0428 /* BGTeamInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGTeamInfo.h; path = Classes/BGTeamInfo.h; sourceTree = "<group>"; };
+		F92CF67A1B98848600BE0428 /* BGTeamInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGTeamInfo.m; path = Classes/BGTeamInfo.m; sourceTree = "<group>"; };
+		F92CF67B1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGTeamDetails+CoreDataProperties.h"; path = "Classes/BGTeamDetails+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92CF67C1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGTeamDetails+CoreDataProperties.m"; path = "Classes/BGTeamDetails+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92CF67D1B98848600BE0428 /* BGTeamDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGTeamDetails.h; path = Classes/BGTeamDetails.h; sourceTree = "<group>"; };
+		F92CF67E1B98848600BE0428 /* BGTeamDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGTeamDetails.m; path = Classes/BGTeamDetails.m; sourceTree = "<group>"; };
+		F92CF67F1B98848600BE0428 /* BGPitcher+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGPitcher+CoreDataProperties.h"; path = "Classes/BGPitcher+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92CF6801B98848600BE0428 /* BGPitcher+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGPitcher+CoreDataProperties.m"; path = "Classes/BGPitcher+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92CF6811B98848600BE0428 /* BGPitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGPitcher.h; path = Classes/BGPitcher.h; sourceTree = "<group>"; };
+		F92CF6821B98848600BE0428 /* BGPitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGPitcher.m; path = Classes/BGPitcher.m; sourceTree = "<group>"; };
+		F93553201B988CBE0097C98C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F93B22001B80E5530003312A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = "Third Party/Hpple/TFHpple.h"; sourceTree = "<group>"; };
 		F93B22011B80E5530003312A /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = "Third Party/Hpple/TFHpple.m"; sourceTree = "<group>"; };
 		F93B22021B80E5530003312A /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = "Third Party/Hpple/TFHppleElement.h"; sourceTree = "<group>"; };
@@ -86,33 +110,7 @@
 		F96329931B7E5E6500C63105 /* BaseballGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseballGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96329971B7E5E6500C63105 /* BaseballGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseballGameUITests.m; sourceTree = "<group>"; };
 		F96329991B7E5E6500C63105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F96329B71B7E9E4B00C63105 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F96329B81B7E9E4B00C63105 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F96329B91B7E9E4B00C63105 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		F96329BA1B7E9E4B00C63105 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F96329BB1B7E9E4B00C63105 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F96329BC1B7E9E4B00C63105 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		F96329BD1B7E9E4B00C63105 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F96329BF1B7E9E4B00C63105 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		F96329C01B7E9E4B00C63105 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F96329CD1B7E9EA700C63105 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		F96329D01B7E9EA700C63105 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		F96329DE1B7E9EE000C63105 /* BGRosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGRosterController.h; path = Classes/BGRosterController.h; sourceTree = "<group>"; };
-		F96329DF1B7E9EE000C63105 /* BGRosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGRosterController.m; path = Classes/BGRosterController.m; sourceTree = "<group>"; };
-		F96329E01B7E9EE000C63105 /* BGTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGTeam.h; path = Classes/BGTeam.h; sourceTree = "<group>"; };
-		F96329E11B7E9EE000C63105 /* BGTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGTeam.m; path = Classes/BGTeam.m; sourceTree = "<group>"; };
 		F96329E61B7EA12A00C63105 /* BaseballGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseballGame-Prefix.pch"; sourceTree = "<group>"; };
-		F9EF7C831B8FC67B006DC37F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		F9EF7C841B8FC67B006DC37F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
-		F9EF7C851B8FC67B006DC37F /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
-		F9EF7C891B8FC91F006DC37F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		F9EF7C8B1B8FF516006DC37F /* BGPitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGPitcher.h; path = Classes/BGPitcher.h; sourceTree = "<group>"; };
-		F9EF7C8C1B8FF516006DC37F /* BGPitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGPitcher.m; path = Classes/BGPitcher.m; sourceTree = "<group>"; };
-		F9EF7C8E1B8FF580006DC37F /* BGBatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGBatter.h; path = Classes/BGBatter.h; sourceTree = "<group>"; };
-		F9EF7C8F1B8FF580006DC37F /* BGBatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGBatter.m; path = Classes/BGBatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,24 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9EF7C8A1B8FC91F006DC37F /* libxml2.tbd in Frameworks */,
-				F9EF7C881B8FC67B006DC37F /* libstdc++.6.dylib in Frameworks */,
-				F96329C91B7E9E4B00C63105 /* StoreKit.framework in Frameworks */,
-				F96329C31B7E9E4B00C63105 /* CFNetwork.framework in Frameworks */,
-				F96329C11B7E9E4B00C63105 /* UIKit.framework in Frameworks */,
-				F96329C71B7E9E4B00C63105 /* QuartzCore.framework in Frameworks */,
-				F96329C51B7E9E4B00C63105 /* AudioToolbox.framework in Frameworks */,
-				F96329C81B7E9E4B00C63105 /* CoreGraphics.framework in Frameworks */,
-				F96329CA1B7E9E4B00C63105 /* CoreLocation.framework in Frameworks */,
-				F96329C41B7E9E4B00C63105 /* SystemConfiguration.framework in Frameworks */,
-				F9FBE0D21B937C09000AC0BB /* ParseFacebookUtilsV4.framework in Frameworks */,
-				F9EF7C861B8FC67B006DC37F /* libsqlite3.dylib in Frameworks */,
-				F96329C61B7E9E4B00C63105 /* Security.framework in Frameworks */,
-				F96329D21B7E9EA700C63105 /* Parse.framework in Frameworks */,
-				F9EF7C871B8FC67B006DC37F /* libz.1.1.3.dylib in Frameworks */,
-				F96329D51B7E9EA700C63105 /* ParseUI.framework in Frameworks */,
-				F96329C21B7E9E4B00C63105 /* Foundation.framework in Frameworks */,
-				F96329D31B7E9EA700C63105 /* ParseCrashReporting.framework in Frameworks */,
+				F93553211B988CBE0097C98C /* CoreData.framework in Frameworks */,
 				5386BEFA4AB3FA02A3FEBBF6 /* libPods-BaseballGame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +147,83 @@
 				6DD54B9FC1FC2732F66B3FBA /* Pods-BaseballGame.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F92CF6921B9884C400BE0428 /* BGLeagueInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF6691B98848500BE0428 /* BGLeagueInfo.h */,
+				F92CF66A1B98848500BE0428 /* BGLeagueInfo.m */,
+				F92CF6671B98848500BE0428 /* BGLeagueInfo+CoreDataProperties.h */,
+				F92CF6681B98848500BE0428 /* BGLeagueInfo+CoreDataProperties.m */,
+			);
+			name = BGLeagueInfo;
+			sourceTree = "<group>";
+		};
+		F92CF6931B9884D100BE0428 /* BGBatter */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF6711B98848500BE0428 /* BGBatter.h */,
+				F92CF6721B98848500BE0428 /* BGBatter.m */,
+				F92CF66F1B98848500BE0428 /* BGBatter+CoreDataProperties.h */,
+				F92CF6701B98848500BE0428 /* BGBatter+CoreDataProperties.m */,
+			);
+			name = BGBatter;
+			sourceTree = "<group>";
+		};
+		F92CF6941B98851100BE0428 /* BGLeagueController */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF6751B98848600BE0428 /* BGLeagueController.h */,
+				F92CF6761B98848600BE0428 /* BGLeagueController.m */,
+				F92CF6731B98848500BE0428 /* BGLeagueController+CoreDataProperties.h */,
+				F92CF6741B98848600BE0428 /* BGLeagueController+CoreDataProperties.m */,
+			);
+			name = BGLeagueController;
+			sourceTree = "<group>";
+		};
+		F92CF6951B98852800BE0428 /* BGTeamInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF6791B98848600BE0428 /* BGTeamInfo.h */,
+				F92CF67A1B98848600BE0428 /* BGTeamInfo.m */,
+				F92CF6771B98848600BE0428 /* BGTeamInfo+CoreDataProperties.h */,
+				F92CF6781B98848600BE0428 /* BGTeamInfo+CoreDataProperties.m */,
+			);
+			name = BGTeamInfo;
+			sourceTree = "<group>";
+		};
+		F92CF6961B98853500BE0428 /* BGTeamDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF67D1B98848600BE0428 /* BGTeamDetails.h */,
+				F92CF67E1B98848600BE0428 /* BGTeamDetails.m */,
+				F92CF67B1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.h */,
+				F92CF67C1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.m */,
+			);
+			name = BGTeamDetails;
+			sourceTree = "<group>";
+		};
+		F92CF6971B98854B00BE0428 /* BGPitcher */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF6811B98848600BE0428 /* BGPitcher.h */,
+				F92CF6821B98848600BE0428 /* BGPitcher.m */,
+				F92CF67F1B98848600BE0428 /* BGPitcher+CoreDataProperties.h */,
+				F92CF6801B98848600BE0428 /* BGPitcher+CoreDataProperties.m */,
+			);
+			name = BGPitcher;
+			sourceTree = "<group>";
+		};
+		F92CF6991B98865600BE0428 /* BGLeagueDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF66D1B98848500BE0428 /* BGLeagueDetails.h */,
+				F92CF66E1B98848500BE0428 /* BGLeagueDetails.m */,
+				F92CF66B1B98848500BE0428 /* BGLeagueDetails+CoreDataProperties.h */,
+				F92CF66C1B98848500BE0428 /* BGLeagueDetails+CoreDataProperties.m */,
+			);
+			name = BGLeagueDetails;
 			sourceTree = "<group>";
 		};
 		F93B22091B80E5580003312A /* Hpple */ = {
@@ -220,6 +278,7 @@
 				F96329781B7E5E6400C63105 /* ViewController.h */,
 				F96329791B7E5E6400C63105 /* ViewController.m */,
 				F963297B1B7E5E6400C63105 /* Main.storyboard */,
+				F92CF6641B987B5C00BE0428 /* BGDataModel.xcdatamodeld */,
 				F963297E1B7E5E6400C63105 /* Assets.xcassets */,
 				F96329801B7E5E6400C63105 /* LaunchScreen.storyboard */,
 				F96329831B7E5E6400C63105 /* Info.plist */,
@@ -259,24 +318,7 @@
 		F96329CB1B7E9E9A00C63105 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F9EF7C891B8FC91F006DC37F /* libxml2.tbd */,
-				F9EF7C831B8FC67B006DC37F /* libsqlite3.dylib */,
-				F9EF7C841B8FC67B006DC37F /* libz.1.1.3.dylib */,
-				F9EF7C851B8FC67B006DC37F /* libstdc++.6.dylib */,
-				F96329CD1B7E9EA700C63105 /* Parse.framework */,
-				F96329CE1B7E9EA700C63105 /* ParseCrashReporting.framework */,
-				F96329CF1B7E9EA700C63105 /* ParseFacebookUtilsV4.framework */,
-				F96329D01B7E9EA700C63105 /* ParseUI.framework */,
-				F96329B71B7E9E4B00C63105 /* UIKit.framework */,
-				F96329B81B7E9E4B00C63105 /* Foundation.framework */,
-				F96329B91B7E9E4B00C63105 /* CFNetwork.framework */,
-				F96329BA1B7E9E4B00C63105 /* SystemConfiguration.framework */,
-				F96329BB1B7E9E4B00C63105 /* AudioToolbox.framework */,
-				F96329BC1B7E9E4B00C63105 /* Security.framework */,
-				F96329BD1B7E9E4B00C63105 /* QuartzCore.framework */,
-				F96329BE1B7E9E4B00C63105 /* CoreGraphics.framework */,
-				F96329BF1B7E9E4B00C63105 /* StoreKit.framework */,
-				F96329C01B7E9E4B00C63105 /* CoreLocation.framework */,
+				F93553201B988CBE0097C98C /* CoreData.framework */,
 				62C97FF5ECC9AAA0244CACAA /* libPods-BaseballGame.a */,
 			);
 			name = Frameworks;
@@ -285,14 +327,13 @@
 		F96329E51B7E9EE400C63105 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F9EF7C8B1B8FF516006DC37F /* BGPitcher.h */,
-				F9EF7C8C1B8FF516006DC37F /* BGPitcher.m */,
-				F9EF7C8E1B8FF580006DC37F /* BGBatter.h */,
-				F9EF7C8F1B8FF580006DC37F /* BGBatter.m */,
-				F96329E01B7E9EE000C63105 /* BGTeam.h */,
-				F96329E11B7E9EE000C63105 /* BGTeam.m */,
-				F96329DE1B7E9EE000C63105 /* BGRosterController.h */,
-				F96329DF1B7E9EE000C63105 /* BGRosterController.m */,
+				F92CF6931B9884D100BE0428 /* BGBatter */,
+				F92CF6971B98854B00BE0428 /* BGPitcher */,
+				F92CF6951B98852800BE0428 /* BGTeamInfo */,
+				F92CF6961B98853500BE0428 /* BGTeamDetails */,
+				F92CF6921B9884C400BE0428 /* BGLeagueInfo */,
+				F92CF6991B98865600BE0428 /* BGLeagueDetails */,
+				F92CF6941B98851100BE0428 /* BGLeagueController */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -465,14 +506,25 @@
 			files = (
 				F93B22071B80E5530003312A /* TFHppleElement.m in Sources */,
 				F963297A1B7E5E6400C63105 /* ViewController.m in Sources */,
+				F92CF68D1B98848600BE0428 /* BGTeamDetails+CoreDataProperties.m in Sources */,
+				F92CF6881B98848600BE0428 /* BGBatter.m in Sources */,
 				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
+				F92CF68A1B98848600BE0428 /* BGLeagueController.m in Sources */,
+				F92CF6861B98848600BE0428 /* BGLeagueDetails.m in Sources */,
+				F92CF6891B98848600BE0428 /* BGLeagueController+CoreDataProperties.m in Sources */,
 				F96329741B7E5E6400C63105 /* main.m in Sources */,
-				F9EF7C8D1B8FF516006DC37F /* BGPitcher.m in Sources */,
-				F9EF7C901B8FF580006DC37F /* BGBatter.m in Sources */,
+				F92CF68C1B98848600BE0428 /* BGTeamInfo.m in Sources */,
+				F92CF68E1B98848600BE0428 /* BGTeamDetails.m in Sources */,
+				F92CF68B1B98848600BE0428 /* BGTeamInfo+CoreDataProperties.m in Sources */,
+				F92CF6661B987B5C00BE0428 /* BGDataModel.xcdatamodeld in Sources */,
+				F92CF6851B98848600BE0428 /* BGLeagueDetails+CoreDataProperties.m in Sources */,
+				F92CF6841B98848600BE0428 /* BGLeagueInfo.m in Sources */,
 				F93B22081B80E5530003312A /* XPathQuery.m in Sources */,
 				F93B22061B80E5530003312A /* TFHpple.m in Sources */,
-				F96329E31B7E9EE000C63105 /* BGRosterController.m in Sources */,
-				F96329E41B7E9EE000C63105 /* BGTeam.m in Sources */,
+				F92CF6831B98848600BE0428 /* BGLeagueInfo+CoreDataProperties.m in Sources */,
+				F92CF68F1B98848600BE0428 /* BGPitcher+CoreDataProperties.m in Sources */,
+				F92CF6871B98848600BE0428 /* BGBatter+CoreDataProperties.m in Sources */,
+				F92CF6901B98848600BE0428 /* BGPitcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +677,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor/Facebook",
+					"$(PROJECT_DIR)/Vendor/Parse",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/BaseballGame/BaseballGame-Prefix.pch";
@@ -652,6 +706,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor/Facebook",
+					"$(PROJECT_DIR)/Vendor/Parse",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/BaseballGame/BaseballGame-Prefix.pch";
@@ -756,6 +812,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F92CF6641B987B5C00BE0428 /* BGDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F92CF6651B987B5C00BE0428 /* BGDataModel.xcdatamodel */,
+			);
+			currentVersion = F92CF6651B987B5C00BE0428 /* BGDataModel.xcdatamodel */;
+			path = BGDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F96329671B7E5E6400C63105 /* Project object */;
 }

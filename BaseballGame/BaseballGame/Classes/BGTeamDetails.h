@@ -1,5 +1,5 @@
 //
-//  BGPitcher.h
+//  BGTeamDetails.h
 //  BaseballGame
 //
 //  Created by Chappy Asel on 9/3/15.
@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class BGTeamDetails;
+@class BGBatter, BGTeamInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BGPitcher : NSManagedObject
+@interface BGTeamDetails : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
 
@@ -21,4 +21,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "BGPitcher+CoreDataProperties.h"
+#import "BGTeamDetails+CoreDataProperties.h"

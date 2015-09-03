@@ -1,15 +1,13 @@
 //
-//  MessageBoard-Prefix.pch
-//  MessageBoard
+//  BaseballGame-Prefix.pch
+//  BaseballGame
 //
 //  Created by Chappy Asel on 7/15/15.
 //  Copyright © 2015 CD. All rights reserved.
 //
 
-#import <Parse/Parse.h>
-
-#ifndef MessageBoard_Prefix_pch
-#define MessageBoard_Prefix_pch
+#ifndef BaseballGame_Prefix_pch
+#define BaseballGame_Prefix_pch
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

@@ -1,14 +1,15 @@
 //
-//  BGBatter.m
+//  BGLeagueDetails.m
 //  BaseballGame
 //
 //  Created by Chappy Asel on 9/3/15.
 //  Copyright © 2015 CD. All rights reserved.
 //
 
-#import "BGBatter.h"
+#import "BGLeagueDetails.h"
+#import "BGLeagueInfo.h"
 
-@implementation BGBatter
+@implementation BGLeagueDetails
 
 // Insert code here to add functionality to your managed object subclass
 

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "UCZProgressView.h"
-#import "BGRosterController.h"
+#import "BGLeagueController.h"
 
 @interface ViewController ()
 
@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-BGRosterController *rosterController;
+BGLeagueController *rosterController;
 UCZProgressView *progressView;
 
 - (void)viewDidLoad {
@@ -30,36 +30,6 @@ UCZProgressView *progressView;
     progressView.textSize = 25.0;
     progressView.showsText = YES;
     [self.view addSubview:progressView];
-    
-    //[PFObject unpinAllObjectsWithName:@"RC"];
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"BGRosterController"];
-    //[query fromLocalDatastore];
-    NSError *error;
-    NSArray *results = [query findObjects];
-    BGRosterController *localRC = (BGRosterController *)[query getFirstObject:&error];
-    if (error) NSLog(@"%@",error);
-    rosterController = [BGRosterController sharedInstance];
-    if (localRC) {
-        rosterController = localRC;
-        [self loadTableView];
-    }
-    else {
-        rosterController = [BGRosterController object];
-        dispatch_queue_t myQueue = dispatch_queue_create("My Queue",NULL);
-        dispatch_async(myQueue, ^{
-            [rosterController loadCurrentRosterFromBBRWithProgressBlock:^void(float progress) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    progressView.progress = progress;
-                });
-            }];
-            [rosterController saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-                if (error) NSLog(@"%@",error);
-                if (succeeded) NSLog(@"SAVED ROSTER CONTROLLER");
-            }];
-            [self loadTableView];
-        });
-    }
 }
 
 - (void)loadTableView {

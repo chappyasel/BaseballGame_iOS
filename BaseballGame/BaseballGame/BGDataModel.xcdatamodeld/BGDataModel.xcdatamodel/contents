@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8193.2" systemVersion="15A263e" minimumToolsVersion="Xcode 7.0">
+    <entity name="BGBatter" representedClassName="BGBatter" syncable="YES">
+        <attribute name="clutch" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="contact" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fielding" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="power" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="vision" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamDetails" inverseName="batters" inverseEntity="BGTeamDetails" syncable="YES"/>
+    </entity>
+    <entity name="BGLeagueController" representedClassName="BGLeagueController" syncable="YES">
+        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BGLeagueInfo" syncable="YES"/>
+    </entity>
+    <entity name="BGLeagueDetails" representedClassName="BGLeagueDetails" syncable="YES">
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueInfo" inverseName="details" inverseEntity="BGLeagueInfo" syncable="YES"/>
+        <relationship name="teams" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamInfo" inverseName="league" inverseEntity="BGTeamInfo" syncable="YES"/>
+    </entity>
+    <entity name="BGLeagueInfo" representedClassName="BGLeagueInfo" syncable="YES">
+        <attribute name="isCustom" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueDetails" inverseName="info" inverseEntity="BGLeagueDetails" syncable="YES"/>
+    </entity>
+    <entity name="BGPitcher" representedClassName="BGPitcher" syncable="YES">
+        <attribute name="accuracy" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="composure" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="deception" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="endurance" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overall" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unhittable" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="velocity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamDetails" inverseName="pitchers" inverseEntity="BGTeamDetails" syncable="YES"/>
+    </entity>
+    <entity name="BGTeamDetails" representedClassName="BGTeamDetails" syncable="YES">
+        <relationship name="batters" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="BGBatter" inverseName="team" inverseEntity="BGBatter" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamInfo" inverseName="details" inverseEntity="BGTeamInfo" syncable="YES"/>
+        <relationship name="pitchers" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="BGPitcher" inverseName="team" inverseEntity="BGPitcher" syncable="YES"/>
+    </entity>
+    <entity name="BGTeamInfo" representedClassName="BGTeamInfo" syncable="YES">
+        <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BGTeamDetails" inverseName="info" inverseEntity="BGTeamDetails" syncable="YES"/>
+        <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueDetails" inverseName="teams" inverseEntity="BGLeagueDetails" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BGPitcher" positionX="-225" positionY="-234" width="128" height="208"/>
+        <element name="BGBatter" positionX="-225" positionY="-9" width="128" height="193"/>
+        <element name="BGTeamInfo" positionX="-0" positionY="-148" width="128" height="118"/>
+        <element name="BGLeagueInfo" positionX="225" positionY="-117" width="128" height="88"/>
+        <element name="BGLeagueDetails" positionX="225" positionY="-9" width="128" height="73"/>
+        <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="88"/>
+        <element name="BGLeagueController" positionX="448" positionY="-85" width="128" height="58"/>
+    </elements>
+</model>

@@ -7,18 +7,49 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
+#import <CoreData/CoreData.h>
+#import "BGLeagueController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Parse enableLocalDatastore];
-    [Parse setApplicationId:@"4RKvBnBgIjKOHP9AIdEWbhyRfoBfv7pxO7f0VQf3"
-                  clientKey:@"C6ZRa1UvSzU31ccK7lzSjMo3V3c5pC2AOawXcn50"];
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"BGLegueController" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    if (error) NSLog(@"%@",error);
+    BGLeagueController *leagueController;
+    if (!fetchedObjects) {
+        rosterController = [BGRosterController object];
+        dispatch_queue_t myQueue = dispatch_queue_create("My Queue",NULL);
+        dispatch_async(myQueue, ^{
+            [rosterController loadCurrentRosterFromBBRWithProgressBlock:^void(float progress) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    progressView.progress = progress;
+                });
+            }];
+            [rosterController saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                if (error) NSLog(@"%@",error);
+                if (succeeded) NSLog(@"SAVED ROSTER CONTROLLER");
+            }];
+            [self loadTableView];
+        });
+    }
+    else {
+        if (fetchedObjects.count != 1) NSLog(@"Error: Multiple leagueControllers");
+        leagueController = fetchedObjects.firstObject;
+    }
+    leagueController = [BGLeagueController sharedInstance];
+    leagueController = localRC;
     return YES;
 }
 
