@@ -217,6 +217,24 @@
 			name = BGLeagueDetails;
 			sourceTree = "<group>";
 		};
+		F962FEE01B98A2CD0037DC77 /* BGTeam */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF6951B98852800BE0428 /* BGTeamInfo */,
+				F92CF6961B98853500BE0428 /* BGTeamDetails */,
+			);
+			name = BGTeam;
+			sourceTree = "<group>";
+		};
+		F962FEE11B98A2DD0037DC77 /* BGLeague */ = {
+			isa = PBXGroup;
+			children = (
+				F92CF6921B9884C400BE0428 /* BGLeagueInfo */,
+				F92CF6991B98865600BE0428 /* BGLeagueDetails */,
+			);
+			name = BGLeague;
+			sourceTree = "<group>";
+		};
 		F96329661B7E5E6400C63105 = {
 			isa = PBXGroup;
 			children = (
@@ -298,10 +316,8 @@
 			children = (
 				F92CF6931B9884D100BE0428 /* BGBatter */,
 				F92CF6971B98854B00BE0428 /* BGPitcher */,
-				F92CF6951B98852800BE0428 /* BGTeamInfo */,
-				F92CF6961B98853500BE0428 /* BGTeamDetails */,
-				F92CF6921B9884C400BE0428 /* BGLeagueInfo */,
-				F92CF6991B98865600BE0428 /* BGLeagueDetails */,
+				F962FEE01B98A2CD0037DC77 /* BGTeam */,
+				F962FEE11B98A2DD0037DC77 /* BGLeague */,
 				F92CF6941B98851100BE0428 /* BGLeagueController */,
 			);
 			name = Classes;

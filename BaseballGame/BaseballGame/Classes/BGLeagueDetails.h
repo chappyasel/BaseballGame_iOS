@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BGLeagueDetails : NSManagedObject
 
+- (void)loadCurrentRosterFromBBRForYear: (int) year context: (NSManagedObjectContext *) context WithProgressBlock:(void (^)(float progress))progress;
+
 @end
 
 NS_ASSUME_NONNULL_END

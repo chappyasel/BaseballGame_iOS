@@ -15,8 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BGLeagueController : NSManagedObject
 
-+ (BGLeagueController *)sharedInstance;
-
 @end
 
 NS_ASSUME_NONNULL_END

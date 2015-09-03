@@ -23,16 +23,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BGLeagueDetails (CoreDataGeneratedAccessors)
 
-- (void)insertObject:(BGTeamInfo *)value inPitchersAtIndex:(NSUInteger)idx;
-- (void)removeObjectFromPitchersAtIndex:(NSUInteger)idx;
-- (void)insertPitchers:(NSArray<BGTeamInfo *> *)value atIndexes:(NSIndexSet *)indexes;
-- (void)removePitchersAtIndexes:(NSIndexSet *)indexes;
-- (void)replaceObjectInPitchersAtIndex:(NSUInteger)idx withObject:(BGTeamInfo *)value;
-- (void)replacePitchersAtIndexes:(NSIndexSet *)indexes withPitchers:(NSArray<BGTeamInfo *> *)values;
-- (void)addPitchersObject:(BGTeamInfo *)value;
-- (void)removePitchersObject:(BGTeamInfo *)value;
-- (void)addPitchers:(NSOrderedSet<BGTeamInfo *> *)values;
-- (void)removePitchers:(NSOrderedSet<BGTeamInfo *> *)values;
+- (void)insertObject:(BGTeamInfo *)value inTeamsAtIndex:(NSUInteger)idx;
+- (void)removeObjectFromTeamsAtIndex:(NSUInteger)idx;
+- (void)insertTeams:(NSArray *)array atIndexes:(NSIndexSet *)indexes;
+- (void)removeTeamsAtIndexes:(NSIndexSet *)indexes;
+- (void)replaceObjectInTeamsAtIndex:(NSUInteger)idx withObject:(BGTeamInfo *)value;
+- (void)replaceTeamsAtIndexes:(NSIndexSet *)indexes withTeams:(NSArray<BGTeamInfo *> *)values;
+- (void)addTeamsObject:(BGTeamInfo *)value;
+- (void)removeTeamsObject:(BGTeamInfo *)value;
+- (void)addTeams:(NSOrderedSet<BGTeamInfo *> *)values;
+- (void)removeTeams:(NSOrderedSet<BGTeamInfo *> *)values;
 
 @end
 

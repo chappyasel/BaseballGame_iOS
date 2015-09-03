@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8193.2" systemVersion="15A263e" minimumToolsVersion="Xcode 7.0">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8193.2" systemVersion="15A279b" minimumToolsVersion="Xcode 7.0">
     <entity name="BGBatter" representedClassName="BGBatter" syncable="YES">
         <attribute name="clutch" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="contact" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -46,7 +46,6 @@
     <entity name="BGTeamInfo" representedClassName="BGTeamInfo" syncable="YES">
         <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="details" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BGTeamDetails" inverseName="info" inverseEntity="BGTeamDetails" syncable="YES"/>
         <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueDetails" inverseName="teams" inverseEntity="BGLeagueDetails" syncable="YES"/>
     </entity>
@@ -57,6 +56,6 @@
         <element name="BGLeagueInfo" positionX="225" positionY="-117" width="128" height="88"/>
         <element name="BGPitcher" positionX="-225" positionY="-234" width="128" height="208"/>
         <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="88"/>
-        <element name="BGTeamInfo" positionX="-0" positionY="-148" width="128" height="118"/>
+        <element name="BGTeamInfo" positionX="-0" positionY="-148" width="128" height="103"/>
     </elements>
 </model>
