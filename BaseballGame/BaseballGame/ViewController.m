@@ -53,10 +53,17 @@ UCZProgressView *progressView;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    if (leagueController.leagues.count == 0) [self loadCurrentLeague];
+    self.title = @"Baseball Game Player Dictionary";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target: self action:@selector(editButtonPressed:)];
+    
     //[leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
     //[self loadCurrentLeague];
-    [self loadTableView];
+    if (!leagueController.leagues || leagueController.leagues.count == 0) [self loadCurrentLeague];
+    else [self loadTableView];
+}
+
+- (void)editButtonPressed: (id) sender {
+    NSLog(@"View leagues");
 }
 
 - (void)loadCurrentLeague {
@@ -71,13 +78,16 @@ UCZProgressView *progressView;
     int year = (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
     [leagueController loadLeagueForYear:year context:self.managedObjectContext WithProgressBlock:^(float progress) {
         progressView.progress = progress;
+        if (progress > .99) [self performSelector:@selector(loadTableView) withObject:nil afterDelay:1.0];
     }];
 }
 
 - (void)loadTableView {
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height)];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    self.tableView.allowsSelection = NO;
     [self.view addSubview:self.tableView];
     [self.tableView reloadData];
 }
