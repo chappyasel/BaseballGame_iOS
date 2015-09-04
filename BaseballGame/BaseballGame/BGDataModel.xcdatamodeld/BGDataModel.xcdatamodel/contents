@@ -39,9 +39,9 @@
         <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamDetails" inverseName="pitchers" inverseEntity="BGTeamDetails" syncable="YES"/>
     </entity>
     <entity name="BGTeamDetails" representedClassName="BGTeamDetails" syncable="YES">
-        <relationship name="batters" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="BGBatter" inverseName="team" inverseEntity="BGBatter" syncable="YES"/>
-        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamInfo" inverseName="details" inverseEntity="BGTeamInfo" syncable="YES"/>
-        <relationship name="pitchers" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="BGPitcher" inverseName="team" inverseEntity="BGPitcher" syncable="YES"/>
+        <relationship name="batters" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BGBatter" inverseName="team" inverseEntity="BGBatter" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BGTeamInfo" inverseName="details" inverseEntity="BGTeamInfo" syncable="YES"/>
+        <relationship name="pitchers" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BGPitcher" inverseName="team" inverseEntity="BGPitcher" syncable="YES"/>
     </entity>
     <entity name="BGTeamInfo" representedClassName="BGTeamInfo" syncable="YES">
         <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
@@ -55,7 +55,7 @@
         <element name="BGLeagueDetails" positionX="225" positionY="-9" width="128" height="73"/>
         <element name="BGLeagueInfo" positionX="225" positionY="-117" width="128" height="88"/>
         <element name="BGPitcher" positionX="-225" positionY="-234" width="128" height="208"/>
-        <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="88"/>
+        <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="90"/>
         <element name="BGTeamInfo" positionX="-0" positionY="-148" width="128" height="103"/>
     </elements>
 </model>

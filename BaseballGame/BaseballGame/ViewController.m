@@ -15,6 +15,12 @@
 #import "BGLeagueInfo.h"
 #import "BGLeagueDetails.h"
 
+#import "BGTeamInfo.h"
+#import "BGTeamDetails.h"
+
+#import "BGPitcher.h"
+#import "BGBatter.h"
+
 @interface ViewController ()
 
 @end
@@ -47,48 +53,74 @@ UCZProgressView *progressView;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    if (leagueController.leagues.count == 0) {
-        progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0, 0, 130, 130)];
-        progressView.center = self.view.center;
-        progressView.radius = 60.0;
-        progressView.textSize = 25.0;
-        progressView.showsText = YES;
-        [self.view addSubview:progressView];
-        
-        NSCalendar *gregorian = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
-        int year = (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
-        BGLeagueInfo *info = [NSEntityDescription insertNewObjectForEntityForName:@"BGLeagueInfo" inManagedObjectContext:self.managedObjectContext];
-        info.year = [NSNumber numberWithInt:year];
-        info.isCustom = [NSNumber numberWithBool:NO];
-        BGLeagueDetails *details = [NSEntityDescription insertNewObjectForEntityForName:@"BGLeagueDetails" inManagedObjectContext:self.managedObjectContext];
-        dispatch_queue_t myQueue = dispatch_queue_create("My Queue",NULL);
-        dispatch_async(myQueue, ^{
-            [details loadCurrentRosterFromBBRForYear:year context:self.managedObjectContext WithProgressBlock:^(float progress) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    progressView.progress = progress;
-                });
-            }];
-            info.details = details;
-            details.info = info;
-            [leagueController addLeaguesObject:info];
-            
-            NSError *error;
-            if (![leagueController.managedObjectContext save:&error]) {
-                NSLog(@"Couldn't save: %@", [error localizedDescription]);
-            }
-            else NSLog(@"leagueController saved");
-        });
-    }
-    [self loadTableView];
+    if (leagueController.leagues.count == 0) [self loadCurrentLeague];
+    
+    [leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
+    
+    [self loadCurrentLeague];
+    //[self loadTableView];
+}
+
+- (void)loadCurrentLeague {
+    progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0, 0, 130, 130)];
+    progressView.center = self.view.center;
+    progressView.radius = 60.0;
+    progressView.textSize = 25.0;
+    progressView.showsText = YES;
+    [self.view addSubview:progressView];
+    
+    NSCalendar *gregorian = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
+    int year = (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
+    [leagueController loadLeagueForYear:year context:self.managedObjectContext WithProgressBlock:^(float progress) {
+        progressView.progress = progress;
+    }];
 }
 
 - (void)loadTableView {
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height)];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.view addSubview:self.tableView];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - tableView datasource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return leagueController.leagues[3].details.teams.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    BGTeamDetails *details = leagueController.leagues[3].details.teams[section].details;
+    int len = (int)details.pitchers.count + (int)details.batters.count;
+    return len;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return leagueController.leagues[3].details.teams[section].name;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *MyIdentifier = @"MyReuseIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if (cell == nil) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
+    int len = (int)leagueController.leagues[3].details.teams[indexPath.section].details.batters.count;
+    if (indexPath.row < len) {
+        BGBatter *batter = leagueController.leagues[3].details.teams[indexPath.section].details.batters[indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ (%@)",batter.firstName, batter.lastName, batter.position];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Overall: %@ (%@ %@ %@ %@ %@ %@)",batter.overall,batter.contact,batter.clutch,batter.fielding,batter.power,batter.speed,batter.vision];
+    }
+    else {
+        BGPitcher *pitcher = leagueController.leagues[3].details.teams[indexPath.section].details.pitchers[indexPath.row-len];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ (%@)",pitcher.firstName, pitcher.lastName, pitcher.position];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Overall: %@ (%@ %@ %@ %@ %@ %@)",pitcher.overall,pitcher.endurance,pitcher.accuracy,pitcher.velocity,pitcher.composure,pitcher.deception,pitcher.unhittable];
+    }
+    return cell;
 }
 
 @end

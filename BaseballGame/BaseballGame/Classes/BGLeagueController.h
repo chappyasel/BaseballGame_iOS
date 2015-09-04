@@ -15,6 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BGLeagueController : NSManagedObject
 
+- (void)loadLeagueForYear: (int)year context: (NSManagedObjectContext *) context WithProgressBlock:(void (^)(float progress)) progress;
+
+- (BOOL)removeLeagueForYear: (int) year;
+
+- (void)deleteAllLeaguesWithContext: (NSManagedObjectContext *)context;
+
 @end
 
 NS_ASSUME_NONNULL_END
