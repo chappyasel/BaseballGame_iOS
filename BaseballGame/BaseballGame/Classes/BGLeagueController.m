@@ -13,7 +13,7 @@
 @implementation BGLeagueController
 
 - (void)loadLeagueForYear: (int)year context: (NSManagedObjectContext *) context WithProgressBlock:(void (^)(float progress)) block {
-    [self removeLeagueForYear:year];
+    [self removeLeagueForYear:year context:context];
     
     BGLeagueInfo *info = [NSEntityDescription insertNewObjectForEntityForName:@"BGLeagueInfo" inManagedObjectContext:self.managedObjectContext];
     info.year = [NSNumber numberWithInt:year];

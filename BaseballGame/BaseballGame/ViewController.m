@@ -54,11 +54,9 @@ UCZProgressView *progressView;
 
 - (void)viewDidAppear:(BOOL)animated {
     if (leagueController.leagues.count == 0) [self loadCurrentLeague];
-    
-    [leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
-    
-    [self loadCurrentLeague];
-    //[self loadTableView];
+    //[leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
+    //[self loadCurrentLeague];
+    [self loadTableView];
 }
 
 - (void)loadCurrentLeague {
@@ -92,33 +90,33 @@ UCZProgressView *progressView;
 #pragma mark - tableView datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return leagueController.leagues[3].details.teams.count;
+    return leagueController.leagues[0].details.teams.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    BGTeamDetails *details = leagueController.leagues[3].details.teams[section].details;
+    BGTeamDetails *details = leagueController.leagues[0].details.teams[section].details;
     int len = (int)details.pitchers.count + (int)details.batters.count;
     return len;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return leagueController.leagues[3].details.teams[section].name;
+    return leagueController.leagues[0].details.teams[section].name;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *MyIdentifier = @"MyReuseIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
-    int len = (int)leagueController.leagues[3].details.teams[indexPath.section].details.batters.count;
+    int len = (int)leagueController.leagues[0].details.teams[indexPath.section].details.batters.count;
     if (indexPath.row < len) {
-        BGBatter *batter = leagueController.leagues[3].details.teams[indexPath.section].details.batters[indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ (%@)",batter.firstName, batter.lastName, batter.position];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Overall: %@ (%@ %@ %@ %@ %@ %@)",batter.overall,batter.contact,batter.clutch,batter.fielding,batter.power,batter.speed,batter.vision];
+        BGBatter *batter = leagueController.leagues[0].details.teams[indexPath.section].details.batters[indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",batter.firstName, batter.lastName, batter.position];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (%@ %@ %@ %@ %@ %@)",batter.overall,batter.contact,batter.clutch,batter.fielding,batter.power,batter.speed,batter.vision];
     }
     else {
-        BGPitcher *pitcher = leagueController.leagues[3].details.teams[indexPath.section].details.pitchers[indexPath.row-len];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ (%@)",pitcher.firstName, pitcher.lastName, pitcher.position];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Overall: %@ (%@ %@ %@ %@ %@ %@)",pitcher.overall,pitcher.endurance,pitcher.accuracy,pitcher.velocity,pitcher.composure,pitcher.deception,pitcher.unhittable];
+        BGPitcher *pitcher = leagueController.leagues[0].details.teams[indexPath.section].details.pitchers[indexPath.row-len];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",pitcher.firstName, pitcher.lastName, pitcher.position];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (%@ %@ %@ %@ %@ %@)",pitcher.overall,pitcher.endurance,pitcher.accuracy,pitcher.velocity,pitcher.composure,pitcher.deception,pitcher.unhittable];
     }
     return cell;
 }

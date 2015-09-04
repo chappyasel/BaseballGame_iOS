@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loadLeagueForYear: (int)year context: (NSManagedObjectContext *) context WithProgressBlock:(void (^)(float progress)) progress;
 
-- (BOOL)removeLeagueForYear: (int) year;
+- (BOOL)removeLeagueForYear:(int)year context: (NSManagedObjectContext *)context;
 
 - (void)deleteAllLeaguesWithContext: (NSManagedObjectContext *)context;
 
