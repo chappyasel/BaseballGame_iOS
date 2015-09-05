@@ -110,7 +110,8 @@ UCZProgressView *progressView;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return leagueController.leagues[0].details.teams[section].name;
+    BGTeamInfo *info = leagueController.leagues[0].details.teams[section];
+    return [NSString stringWithFormat:@"%@ (%@ - %@ %@) %d %d",info.name,info.overall,info.battingOverall,info.pitchingOverall,(int)info.details.batters.count,(int)info.details.pitchers.count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

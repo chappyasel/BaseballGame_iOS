@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *name;
 @property (nullable, nonatomic, retain) NSString *abbreviation;
 
+@property (nullable, nonatomic, retain) NSNumber *overall;
+@property (nullable, nonatomic, retain) NSNumber *pitchingOverall;
+@property (nullable, nonatomic, retain) NSNumber *battingOverall;
+
 @property (nullable, nonatomic, retain) BGTeamDetails *details;
 
 @property (nullable, nonatomic, retain) BGLeagueDetails *league;

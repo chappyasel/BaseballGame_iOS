@@ -24,9 +24,9 @@
             info.name = names[i];
             info.league = self;
             BGTeamDetails *details = [NSEntityDescription insertNewObjectForEntityForName:@"BGTeamDetails" inManagedObjectContext:context];
-            [details loadTeamWithAbbrev: abbrevs[i] year: year context: context];
             info.details = details;
             details.info = info;
+            [details loadTeamWithAbbrev: abbrevs[i] year: year context: context];
             
             [self addTeamsObject:info];
             

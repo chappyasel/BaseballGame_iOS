@@ -45,7 +45,10 @@
     </entity>
     <entity name="BGTeamInfo" representedClassName="BGTeamInfo" syncable="YES">
         <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="battingOverall" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overall" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pitchingOverall" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="details" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BGTeamDetails" inverseName="info" inverseEntity="BGTeamDetails" syncable="YES"/>
         <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueDetails" inverseName="teams" inverseEntity="BGLeagueDetails" syncable="YES"/>
     </entity>
@@ -56,6 +59,6 @@
         <element name="BGLeagueInfo" positionX="225" positionY="-117" width="128" height="88"/>
         <element name="BGPitcher" positionX="-225" positionY="-234" width="128" height="208"/>
         <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="90"/>
-        <element name="BGTeamInfo" positionX="-0" positionY="-148" width="128" height="103"/>
+        <element name="BGTeamInfo" positionX="-0" positionY="-180" width="128" height="148"/>
     </elements>
 </model>
