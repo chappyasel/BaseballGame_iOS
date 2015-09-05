@@ -2,15 +2,18 @@ PODS:
   - hpple (0.2.0)
   - MGSwipeTableCell (1.5.1)
   - UCZProgressView (1.0.2)
+  - ZFDragableModalTransition (0.5.1)
 
 DEPENDENCIES:
   - hpple
   - MGSwipeTableCell
   - UCZProgressView
+  - ZFDragableModalTransition
 
 SPEC CHECKSUMS:
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   MGSwipeTableCell: a51fa670c01f0aa048f12af040acebf315223137
   UCZProgressView: 55836987c15ee6efb7cd6dfe297556602ee46c94
+  ZFDragableModalTransition: 048189eda437f91944ce6d5151618b8bf770196d
 
 COCOAPODS: 0.38.2

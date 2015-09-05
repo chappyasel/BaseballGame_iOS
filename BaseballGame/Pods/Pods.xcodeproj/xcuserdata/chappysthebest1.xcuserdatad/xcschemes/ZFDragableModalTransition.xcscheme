@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74FDE1FDAEAAD8AAFBA86708"
-               BuildableName = "libMGSwipeTableCell.a"
-               BlueprintName = "MGSwipeTableCell"
+               BlueprintIdentifier = "C29E3C8F01752B1B521CA5EE"
+               BuildableName = "libZFDragableModalTransition.a"
+               BlueprintName = "ZFDragableModalTransition"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

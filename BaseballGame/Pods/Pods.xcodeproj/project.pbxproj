@@ -7,105 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21224978829C33671F8AF7BBA1925F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */; };
+		0A4B5E4E5540B8C4834BDB3DEEC84006 /* ZFModalTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AB845C7D808313D5A0C9EBDD64BC11 /* ZFModalTransitionAnimator.h */; };
+		0BC77AB28EDCFAA407A8E18827C1A54D /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9C0455CE326D1C4A50997F26DCB929 /* MGSwipeTableCell-dummy.m */; };
 		22878267E113C5918FF18E6B35D8D168 /* TFHppleElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 151FD60310A2938E23D8E367B5F7FF3D /* TFHppleElement.h */; };
 		2D85E129124CDD30ED7D0D2746565A44 /* UCZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1205FA226F4448E9E3E31E1A3BB808E0 /* UCZProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3D330AC00CD1D69EC66F3D02CBF43520 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A37EE2741CE46B5A43F9913E32ED69E9 /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5783AF54E1C5603EFF80A51C3BD728C6 /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D07BD1CF9956FE7D8D79C63F7EBE33F /* MGSwipeTableCell-dummy.m */; };
+		4B0F5E9321B67A068F6009FA985AB7B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */; };
+		5BEA275B1BCBFCBF7BAD875C2776C8CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */; };
 		6446E8316DE5CEE9931B5ADB321FCF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */; };
 		6BFB450C0FFB0163B12291DE901B45A2 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DEF0773B27E44FB66379C8CD3AFC0F /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6D785F57E6C52C7849576B696B6E2350 /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 21855611A821E827C7D4B2B649A57577 /* MGSwipeTableCell.h */; };
 		73B487BA59945ABC813D695D1856903E /* hpple-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1C63F151DEFE0AA2859EA06B90231B /* hpple-dummy.m */; };
+		7ECA61026A2160833ECA33D3A5252250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */; };
+		81E8FB2C409049C7D014133621A73E43 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B62063751F75C7EF8EC63342D082FC36 /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9038D96F3AB4EE92E428384A701DB4FD /* XPathQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 15575DB14846D3113E68F61EE288B277 /* XPathQuery.h */; };
-		AF5AC857A776CAD7E0A546B009E5D7FD /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D83B1DBF96B9B8DDEAB696A46DFC01F1 /* MGSwipeButton.h */; };
-		B607A3E542DC5CE307DA079D7E78E19F /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB878310F97C9D2A0A29E05CBFA3C9 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BDBC233CBF3BDCD4B6C17EE820CBCACA /* Pods-BaseballGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A03A94766EEE77A28F6A9F0A8C60BD /* Pods-BaseballGame-dummy.m */; };
+		A96A9AD662993748D701395C46CE0B5B /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D0DF892B51AE18128CF333D27C228F /* MGSwipeButton.h */; };
 		C681343E4AF640A9F3CDD170DA16BCC5 /* UCZProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = A19F46817408A01A5C241BCED746B9CC /* UCZProgressView.h */; };
 		CED982EAE3A7A9B324648EE06FA3800A /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B110192CB075E473A3B3B71522E13021 /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D093B05C5FF4D078D2F2F2B71F1454DB /* ZFDragableModalTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A43FA383C2301EFC57511F38F5D9 /* ZFDragableModalTransition-dummy.m */; };
+		D45D619D2637597C6EAEEA7712B96717 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CD1DB23BA1DE14A63D00B80BB3F0F0 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D556F8A10FF3A0FCFB7106DF52E22CF2 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4109C0EEF4DD528A1DA4FC0746C366 /* TFHpple.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D70287BF81EAD62ADC361BA3572C8D3A /* TFHpple.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB1BDC8A721E341C178F98DA4EAD990 /* TFHpple.h */; };
+		E2A371973E0F0AC31DA35D9E24D9DF69 /* ZFModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E808B38446B1CBC8F7CBE7E1C30F5309 /* ZFModalTransitionAnimator.m */; };
+		F00B61FD40C3DA5E024E0A28C28E819F /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D09C71AF020C2545767B7711EBE7A2F4 /* MGSwipeTableCell.h */; };
 		F06A144FCB3FFA97F66BDD126F11929D /* UCZProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BC2E82B73CBC849B47D574563A1295 /* UCZProgressView-dummy.m */; };
 		F093BA89E9982C4BE07F68C3B8E054FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */; };
-		F9C75E4F872A11E5A276686196FB0629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */; };
+		F49DF3B4FC71DBCFE1DA90588DF6D99A /* Pods-BaseballGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E010BA64CA7A13AF698C90FF9DEBFA /* Pods-BaseballGame-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46EEEE270578954C44168B627D3A6C0B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA250BDE05647A8E5AE0B5FB0421E3CC;
-			remoteInfo = hpple;
-		};
-		8EF30F2D4E82D163C2DF53B2625BD631 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F67F712EA18C04E2293170AC7E3D114;
-			remoteInfo = MGSwipeTableCell;
-		};
-		A71400D3920FE3430D2321284EE78A0C /* PBXContainerItemProxy */ = {
+		03E4601502E7EEC9BED7EACF265E10F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 771C8EC984C88240581F298A1E92E99A;
 			remoteInfo = UCZProgressView;
 		};
+		0A7863140893E0CEF3C210B9E7F11D4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA250BDE05647A8E5AE0B5FB0421E3CC;
+			remoteInfo = hpple;
+		};
+		61B2195AF501A3FBFD72454B6F1C967B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A078242195098E771619CCCC37EDE2A9;
+			remoteInfo = MGSwipeTableCell;
+		};
+		8C81146D0066FCDF2BA34F7B18A87AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B58B8543BD310E4453F282D83A5D1155;
+			remoteInfo = ZFDragableModalTransition;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E26260F14019A7B27CBE6C7187C8EDC /* hpple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-prefix.pch"; sourceTree = "<group>"; };
 		1047DA0217C75693058C557C000C445D /* Pods-BaseballGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaseballGame-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1205FA226F4448E9E3E31E1A3BB808E0 /* UCZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UCZProgressView.m; path = Lib/UCZProgressView.m; sourceTree = "<group>"; };
 		151FD60310A2938E23D8E367B5F7FF3D /* TFHppleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
 		15575DB14846D3113E68F61EE288B277 /* XPathQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
-		1BDB878310F97C9D2A0A29E05CBFA3C9 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
-		21855611A821E827C7D4B2B649A57577 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
+		1E69A43FA383C2301EFC57511F38F5D9 /* ZFDragableModalTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZFDragableModalTransition-dummy.m"; sourceTree = "<group>"; };
 		335A81B48311C68A80B8176A4EB46A15 /* hpple-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "hpple-Private.xcconfig"; sourceTree = "<group>"; };
-		33F51D2CD3C284C89211C31832E92AA2 /* hpple.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = hpple.xcconfig; sourceTree = "<group>"; };
-		39972F04E7979AD9C987E5675ACFBA5D /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
+		3CA7534EFE518907BDA643EAC853C3AC /* libZFDragableModalTransition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZFDragableModalTransition.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E51F87B0949A65B71B978D4A3DD569D /* ZFDragableModalTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZFDragableModalTransition.xcconfig; sourceTree = "<group>"; };
 		3FBC538FD086A4BABCBD0CC19932CFBF /* Pods-BaseballGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseballGame-resources.sh"; sourceTree = "<group>"; };
 		4AF1BCF88D5707C960617EB4658D9F69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4D07BD1CF9956FE7D8D79C63F7EBE33F /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
 		4F4109C0EEF4DD528A1DA4FC0746C366 /* TFHpple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
-		534DD8F5395167BFD2B4901EC5472714 /* UCZProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-prefix.pch"; sourceTree = "<group>"; };
 		557FC50E80545E9BAF519475EFB262A7 /* UCZProgressView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UCZProgressView-Private.xcconfig"; sourceTree = "<group>"; };
-		5CBB60BC68297676922AA1AF5E6CA03D /* UCZProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UCZProgressView.xcconfig; sourceTree = "<group>"; };
-		668920BEC6181A38656B3C6C5C057489 /* MGSwipeTableCell-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MGSwipeTableCell-Private.xcconfig"; sourceTree = "<group>"; };
+		68F59BB0757456FF46589A82BD621A1C /* UCZProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UCZProgressView.xcconfig; sourceTree = "<group>"; };
 		8E8DF0ECCDB2629BD1F2E41C6E63DDF2 /* Pods-BaseballGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseballGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		93E010BA64CA7A13AF698C90FF9DEBFA /* Pods-BaseballGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseballGame-dummy.m"; sourceTree = "<group>"; };
+		97B313958A613D4AF8F8176E33C62D78 /* ZFDragableModalTransition-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ZFDragableModalTransition-Private.xcconfig"; sourceTree = "<group>"; };
+		9D9C0455CE326D1C4A50997F26DCB929 /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
 		A19F46817408A01A5C241BCED746B9CC /* UCZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UCZProgressView.h; path = Lib/UCZProgressView.h; sourceTree = "<group>"; };
-		A37EE2741CE46B5A43F9913E32ED69E9 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
-		B0A62547605083824BF2F1DE6284F553 /* libMGSwipeTableCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGSwipeTableCell.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D0DF892B51AE18128CF333D27C228F /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+		A8A3D7DB91F398C815B1188E53101B8D /* UCZProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-prefix.pch"; sourceTree = "<group>"; };
+		AAA2628F716A60FFECFF8B7B4047A946 /* hpple.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = hpple.xcconfig; sourceTree = "<group>"; };
 		B110192CB075E473A3B3B71522E13021 /* TFHppleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		B62063751F75C7EF8EC63342D082FC36 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
+		B89A9208C5A212FE7C48D46173115275 /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C06318BEC4EA0F50684CE47E4BF4BE00 /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
+		C445A91B38414F7007CC6930F928A418 /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
+		C5F062D943E2829A5C56F54A670CF7F7 /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
+		C6E539CF0312E8DF0DAE5367AEBB990F /* libMGSwipeTableCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGSwipeTableCell.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1C63F151DEFE0AA2859EA06B90231B /* hpple-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "hpple-dummy.m"; sourceTree = "<group>"; };
-		CBEF7561654038A032A1E9DF7A9B3A94 /* libPods-BaseballGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseballGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCE04D36EDB83986F1D74697F02BCD15 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
+		CED4AADD04B6DFD7F6CBA9FF9A79D06F /* ZFDragableModalTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-prefix.pch"; sourceTree = "<group>"; };
+		D09C71AF020C2545767B7711EBE7A2F4 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
+		D3CD1DB23BA1DE14A63D00B80BB3F0F0 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
 		D3DEF0773B27E44FB66379C8CD3AFC0F /* XPathQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
-		D83B1DBF96B9B8DDEAB696A46DFC01F1 /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+		D7AB845C7D808313D5A0C9EBDD64BC11 /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZFModalTransitionAnimator.h; path = Classes/ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
 		DDB607C0622BE581F71C55F2899BD959 /* libUCZProgressView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUCZProgressView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0825DDD7C17C993D91247B34B62F54 /* libPods-BaseballGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseballGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4F2EF526F01CB4D7A226EE87D34C74 /* hpple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-prefix.pch"; sourceTree = "<group>"; };
 		DFB1BDC8A721E341C178F98DA4EAD990 /* TFHpple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
-		E2A03A94766EEE77A28F6A9F0A8C60BD /* Pods-BaseballGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseballGame-dummy.m"; sourceTree = "<group>"; };
+		E7AE97E4BA6627C15AAF0340D3F19DB9 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
+		E808B38446B1CBC8F7CBE7E1C30F5309 /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZFModalTransitionAnimator.m; path = Classes/ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
+		EF64DE38C89D1C08CF06A60ACC06448B /* MGSwipeTableCell-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MGSwipeTableCell-Private.xcconfig"; sourceTree = "<group>"; };
 		F6358CD9B5E9F764F175F069455B6654 /* libhpple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhpple.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6EFDFCD7ABF9AB0FE7523D6A32207BA /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
 		F7BC2E82B73CBC849B47D574563A1295 /* UCZProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UCZProgressView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0008674A43868F9079B071789B34A639 /* Frameworks */ = {
+		58230BA4758E9695BB68E45C7382BB72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21224978829C33671F8AF7BBA1925F8B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		343B3FB9F19D47FE60405D8215561C10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F9C75E4F872A11E5A276686196FB0629 /* Foundation.framework in Frameworks */,
+				4B0F5E9321B67A068F6009FA985AB7B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +124,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6446E8316DE5CEE9931B5ADB321FCF02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757C8FB8FDBEA01B846B429BDB65AA9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECA61026A2160833ECA33D3A5252250 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B468345A9F7AFD0CE220DC080FDA9624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEA275B1BCBFCBF7BAD875C2776C8CC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,16 +154,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C91AEA3D6C5189E260A9A4D4C205B00 /* Support Files */ = {
+		2BA72AACB4893C007629FEB32C72DF7F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5CBB60BC68297676922AA1AF5E6CA03D /* UCZProgressView.xcconfig */,
-				557FC50E80545E9BAF519475EFB262A7 /* UCZProgressView-Private.xcconfig */,
-				F7BC2E82B73CBC849B47D574563A1295 /* UCZProgressView-dummy.m */,
-				534DD8F5395167BFD2B4901EC5472714 /* UCZProgressView-prefix.pch */,
+				F4CF2BBFB91C7A19D4D39C062FF15826 /* MGSwipeTableCell */,
+				C67725487EC8719C5E102B8B8583C16B /* UCZProgressView */,
+				C53E0C409651BB74D67FD2730EF08993 /* ZFDragableModalTransition */,
+				97373D68A6AD89CFCCF4398F7D3F61EC /* hpple */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49FDF47F587A6D719E80C5164CFC9701 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E51F87B0949A65B71B978D4A3DD569D /* ZFDragableModalTransition.xcconfig */,
+				97B313958A613D4AF8F8176E33C62D78 /* ZFDragableModalTransition-Private.xcconfig */,
+				1E69A43FA383C2301EFC57511F38F5D9 /* ZFDragableModalTransition-dummy.m */,
+				CED4AADD04B6DFD7F6CBA9FF9A79D06F /* ZFDragableModalTransition-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/UCZProgressView";
+			path = "../Target Support Files/ZFDragableModalTransition";
+			sourceTree = "<group>";
+		};
+		534593B4D1023DF832326A5E22383593 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAA2628F716A60FFECFF8B7B4047A946 /* hpple.xcconfig */,
+				335A81B48311C68A80B8176A4EB46A15 /* hpple-Private.xcconfig */,
+				CA1C63F151DEFE0AA2859EA06B90231B /* hpple-dummy.m */,
+				DE4F2EF526F01CB4D7A226EE87D34C74 /* hpple-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/hpple";
 			sourceTree = "<group>";
 		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
@@ -148,19 +197,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		56F222E75FADD596E3564B33A1F24029 /* MGSwipeTableCell */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				D83B1DBF96B9B8DDEAB696A46DFC01F1 /* MGSwipeButton.h */,
-				1BDB878310F97C9D2A0A29E05CBFA3C9 /* MGSwipeButton.m */,
-				21855611A821E827C7D4B2B649A57577 /* MGSwipeTableCell.h */,
-				A37EE2741CE46B5A43F9913E32ED69E9 /* MGSwipeTableCell.m */,
-				91A8FF645E802164E0F9815F0ACC75C4 /* Support Files */,
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2BA72AACB4893C007629FEB32C72DF7F /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				F3AFB2BB4A07376036DD567345371096 /* Targets Support Files */,
 			);
-			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
-		7AA033D4D99667A058CE9429F4F22627 /* hpple */ = {
+		97373D68A6AD89CFCCF4398F7D3F61EC /* hpple */ = {
 			isa = PBXGroup;
 			children = (
 				DFB1BDC8A721E341C178F98DA4EAD990 /* TFHpple.h */,
@@ -169,54 +217,9 @@
 				B110192CB075E473A3B3B71522E13021 /* TFHppleElement.m */,
 				15575DB14846D3113E68F61EE288B277 /* XPathQuery.h */,
 				D3DEF0773B27E44FB66379C8CD3AFC0F /* XPathQuery.m */,
-				818F4EFC7B53AF3D5D81337CE8AD4BF2 /* Support Files */,
+				534593B4D1023DF832326A5E22383593 /* Support Files */,
 			);
 			path = hpple;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8918228E2298C822C4E8950CCA1459CA /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				F3AFB2BB4A07376036DD567345371096 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		818F4EFC7B53AF3D5D81337CE8AD4BF2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				33F51D2CD3C284C89211C31832E92AA2 /* hpple.xcconfig */,
-				335A81B48311C68A80B8176A4EB46A15 /* hpple-Private.xcconfig */,
-				CA1C63F151DEFE0AA2859EA06B90231B /* hpple-dummy.m */,
-				0E26260F14019A7B27CBE6C7187C8EDC /* hpple-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/hpple";
-			sourceTree = "<group>";
-		};
-		8918228E2298C822C4E8950CCA1459CA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				56F222E75FADD596E3564B33A1F24029 /* MGSwipeTableCell */,
-				CE340A309F90046AB530CBC677088CE3 /* UCZProgressView */,
-				7AA033D4D99667A058CE9429F4F22627 /* hpple */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		91A8FF645E802164E0F9815F0ACC75C4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F6EFDFCD7ABF9AB0FE7523D6A32207BA /* MGSwipeTableCell.xcconfig */,
-				668920BEC6181A38656B3C6C5C057489 /* MGSwipeTableCell-Private.xcconfig */,
-				4D07BD1CF9956FE7D8D79C63F7EBE33F /* MGSwipeTableCell-dummy.m */,
-				C06318BEC4EA0F50684CE47E4BF4BE00 /* MGSwipeTableCell-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MGSwipeTableCell";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -227,25 +230,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		C53E0C409651BB74D67FD2730EF08993 /* ZFDragableModalTransition */ = {
 			isa = PBXGroup;
 			children = (
-				B0A62547605083824BF2F1DE6284F553 /* libMGSwipeTableCell.a */,
-				CBEF7561654038A032A1E9DF7A9B3A94 /* libPods-BaseballGame.a */,
-				DDB607C0622BE581F71C55F2899BD959 /* libUCZProgressView.a */,
-				F6358CD9B5E9F764F175F069455B6654 /* libhpple.a */,
+				D7AB845C7D808313D5A0C9EBDD64BC11 /* ZFModalTransitionAnimator.h */,
+				E808B38446B1CBC8F7CBE7E1C30F5309 /* ZFModalTransitionAnimator.m */,
+				49FDF47F587A6D719E80C5164CFC9701 /* Support Files */,
 			);
-			name = Products;
+			path = ZFDragableModalTransition;
 			sourceTree = "<group>";
 		};
-		CE340A309F90046AB530CBC677088CE3 /* UCZProgressView */ = {
+		C67725487EC8719C5E102B8B8583C16B /* UCZProgressView */ = {
 			isa = PBXGroup;
 			children = (
 				A19F46817408A01A5C241BCED746B9CC /* UCZProgressView.h */,
 				1205FA226F4448E9E3E31E1A3BB808E0 /* UCZProgressView.m */,
-				0C91AEA3D6C5189E260A9A4D4C205B00 /* Support Files */,
+				DDEC2A3F15164576C756E2E7C338E9B0 /* Support Files */,
 			);
 			path = UCZProgressView;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6E539CF0312E8DF0DAE5367AEBB990F /* libMGSwipeTableCell.a */,
+				DE0825DDD7C17C993D91247B34B62F54 /* libPods-BaseballGame.a */,
+				DDB607C0622BE581F71C55F2899BD959 /* libUCZProgressView.a */,
+				3CA7534EFE518907BDA643EAC853C3AC /* libZFDragableModalTransition.a */,
+				F6358CD9B5E9F764F175F069455B6654 /* libhpple.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D0BFA98DD5B98C509E26B683AC3A0A50 /* Pods-BaseballGame */ = {
@@ -253,13 +267,37 @@
 			children = (
 				1047DA0217C75693058C557C000C445D /* Pods-BaseballGame-acknowledgements.markdown */,
 				8E8DF0ECCDB2629BD1F2E41C6E63DDF2 /* Pods-BaseballGame-acknowledgements.plist */,
-				E2A03A94766EEE77A28F6A9F0A8C60BD /* Pods-BaseballGame-dummy.m */,
+				93E010BA64CA7A13AF698C90FF9DEBFA /* Pods-BaseballGame-dummy.m */,
 				3FBC538FD086A4BABCBD0CC19932CFBF /* Pods-BaseballGame-resources.sh */,
-				CCE04D36EDB83986F1D74697F02BCD15 /* Pods-BaseballGame.debug.xcconfig */,
-				39972F04E7979AD9C987E5675ACFBA5D /* Pods-BaseballGame.release.xcconfig */,
+				E7AE97E4BA6627C15AAF0340D3F19DB9 /* Pods-BaseballGame.debug.xcconfig */,
+				C445A91B38414F7007CC6930F928A418 /* Pods-BaseballGame.release.xcconfig */,
 			);
 			name = "Pods-BaseballGame";
 			path = "Target Support Files/Pods-BaseballGame";
+			sourceTree = "<group>";
+		};
+		D285E2A7D6D06709CD254FE389F0FD3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B89A9208C5A212FE7C48D46173115275 /* MGSwipeTableCell.xcconfig */,
+				EF64DE38C89D1C08CF06A60ACC06448B /* MGSwipeTableCell-Private.xcconfig */,
+				9D9C0455CE326D1C4A50997F26DCB929 /* MGSwipeTableCell-dummy.m */,
+				C5F062D943E2829A5C56F54A670CF7F7 /* MGSwipeTableCell-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MGSwipeTableCell";
+			sourceTree = "<group>";
+		};
+		DDEC2A3F15164576C756E2E7C338E9B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68F59BB0757456FF46589A82BD621A1C /* UCZProgressView.xcconfig */,
+				557FC50E80545E9BAF519475EFB262A7 /* UCZProgressView-Private.xcconfig */,
+				F7BC2E82B73CBC849B47D574563A1295 /* UCZProgressView-dummy.m */,
+				A8A3D7DB91F398C815B1188E53101B8D /* UCZProgressView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UCZProgressView";
 			sourceTree = "<group>";
 		};
 		F3AFB2BB4A07376036DD567345371096 /* Targets Support Files */ = {
@@ -270,9 +308,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F4CF2BBFB91C7A19D4D39C062FF15826 /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A5D0DF892B51AE18128CF333D27C228F /* MGSwipeButton.h */,
+				D3CD1DB23BA1DE14A63D00B80BB3F0F0 /* MGSwipeButton.m */,
+				D09C71AF020C2545767B7711EBE7A2F4 /* MGSwipeTableCell.h */,
+				B62063751F75C7EF8EC63342D082FC36 /* MGSwipeTableCell.m */,
+				D285E2A7D6D06709CD254FE389F0FD3A /* Support Files */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0B70EA813F76A2A5A70ADD1AE48D9BD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4B5E4E5540B8C4834BDB3DEEC84006 /* ZFModalTransitionAnimator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C51700F12DAE05FB4AF320A72F6DCF2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,12 +339,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4751AA7DF08A5E49715FFE5DC1A15382 /* Headers */ = {
+		7D68DA20933483AA535B3D264E9BE1A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5AC857A776CAD7E0A546B009E5D7FD /* MGSwipeButton.h in Headers */,
-				6D785F57E6C52C7849576B696B6E2350 /* MGSwipeTableCell.h in Headers */,
+				A96A9AD662993748D701395C46CE0B5B /* MGSwipeButton.h in Headers */,
+				F00B61FD40C3DA5E024E0A28C28E819F /* MGSwipeTableCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,42 +361,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		02AD7EC575F0A8EAB9AC230BD06D1D3B /* Pods-BaseballGame */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 528C37075B7032538CBB997809828D37 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */;
-			buildPhases = (
-				7BD4EAF06E3587047E7599F406D8AE13 /* Sources */,
-				0008674A43868F9079B071789B34A639 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6D34E242A1D48BDE4BAE0741793C18BE /* PBXTargetDependency */,
-				268871DE2CFDE6E16D66883BB631C2D4 /* PBXTargetDependency */,
-				25493883FE56208DF570D9BFCF2AA58C /* PBXTargetDependency */,
-			);
-			name = "Pods-BaseballGame";
-			productName = "Pods-BaseballGame";
-			productReference = CBEF7561654038A032A1E9DF7A9B3A94 /* libPods-BaseballGame.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		2F67F712EA18C04E2293170AC7E3D114 /* MGSwipeTableCell */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35ABFAA27DB4EBE4089649A4100406B5 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
-			buildPhases = (
-				2DFA128BDE354E2EDD426C13BEC47FEC /* Sources */,
-				343B3FB9F19D47FE60405D8215561C10 /* Frameworks */,
-				4751AA7DF08A5E49715FFE5DC1A15382 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MGSwipeTableCell;
-			productName = MGSwipeTableCell;
-			productReference = B0A62547605083824BF2F1DE6284F553 /* libMGSwipeTableCell.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		771C8EC984C88240581F298A1E92E99A /* UCZProgressView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8827682D7D45904D1ACC52AC99493FCD /* Build configuration list for PBXNativeTarget "UCZProgressView" */;
@@ -356,6 +378,40 @@
 			productReference = DDB607C0622BE581F71C55F2899BD959 /* libUCZProgressView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A078242195098E771619CCCC37EDE2A9 /* MGSwipeTableCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6498F594E0B5BDE9E5B09A10D0069D21 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
+			buildPhases = (
+				652EC39C67876B04A810597A41F2FC86 /* Sources */,
+				757C8FB8FDBEA01B846B429BDB65AA9A /* Frameworks */,
+				7D68DA20933483AA535B3D264E9BE1A9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGSwipeTableCell;
+			productName = MGSwipeTableCell;
+			productReference = C6E539CF0312E8DF0DAE5367AEBB990F /* libMGSwipeTableCell.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B58B8543BD310E4453F282D83A5D1155 /* ZFDragableModalTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF97E8BF8E883FC46BE199EA91253E0 /* Build configuration list for PBXNativeTarget "ZFDragableModalTransition" */;
+			buildPhases = (
+				2EAB05012ACC849D3B502AC2FE4B65F2 /* Sources */,
+				58230BA4758E9695BB68E45C7382BB72 /* Frameworks */,
+				0B70EA813F76A2A5A70ADD1AE48D9BD7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFDragableModalTransition;
+			productName = ZFDragableModalTransition;
+			productReference = 3CA7534EFE518907BDA643EAC853C3AC /* libZFDragableModalTransition.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		BA250BDE05647A8E5AE0B5FB0421E3CC /* hpple */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5174B94A1DEA774BEF5CAA03CE98815B /* Build configuration list for PBXNativeTarget "hpple" */;
@@ -371,6 +427,26 @@
 			name = hpple;
 			productName = hpple;
 			productReference = F6358CD9B5E9F764F175F069455B6654 /* libhpple.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C464F78AA8B3F2C0D44F4810F5CCE4AF /* Pods-BaseballGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E32AB9CCF82044C64677FB9B0DB9982C /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */;
+			buildPhases = (
+				D41F06134CDE28A92C36D72628632112 /* Sources */,
+				B468345A9F7AFD0CE220DC080FDA9624 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E9E11A750DEF0DC7BBC86888B99B6C3 /* PBXTargetDependency */,
+				E900A48690FBC063B776A3A4E91CE918 /* PBXTargetDependency */,
+				E36D8FBCC87E30BE177F76389D8A6E7C /* PBXTargetDependency */,
+				C75E4AEE92941E293CE5020C4E059BF8 /* PBXTargetDependency */,
+			);
+			name = "Pods-BaseballGame";
+			productName = "Pods-BaseballGame";
+			productReference = DE0825DDD7C17C993D91247B34B62F54 /* libPods-BaseballGame.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -394,9 +470,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F67F712EA18C04E2293170AC7E3D114 /* MGSwipeTableCell */,
-				02AD7EC575F0A8EAB9AC230BD06D1D3B /* Pods-BaseballGame */,
+				A078242195098E771619CCCC37EDE2A9 /* MGSwipeTableCell */,
+				C464F78AA8B3F2C0D44F4810F5CCE4AF /* Pods-BaseballGame */,
 				771C8EC984C88240581F298A1E92E99A /* UCZProgressView */,
+				B58B8543BD310E4453F282D83A5D1155 /* ZFDragableModalTransition */,
 				BA250BDE05647A8E5AE0B5FB0421E3CC /* hpple */,
 			);
 		};
@@ -414,13 +491,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DFA128BDE354E2EDD426C13BEC47FEC /* Sources */ = {
+		2EAB05012ACC849D3B502AC2FE4B65F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B607A3E542DC5CE307DA079D7E78E19F /* MGSwipeButton.m in Sources */,
-				5783AF54E1C5603EFF80A51C3BD728C6 /* MGSwipeTableCell-dummy.m in Sources */,
-				3D330AC00CD1D69EC66F3D02CBF43520 /* MGSwipeTableCell.m in Sources */,
+				D093B05C5FF4D078D2F2F2B71F1454DB /* ZFDragableModalTransition-dummy.m in Sources */,
+				E2A371973E0F0AC31DA35D9E24D9DF69 /* ZFModalTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,34 +509,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BD4EAF06E3587047E7599F406D8AE13 /* Sources */ = {
+		652EC39C67876B04A810597A41F2FC86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDBC233CBF3BDCD4B6C17EE820CBCACA /* Pods-BaseballGame-dummy.m in Sources */,
+				D45D619D2637597C6EAEEA7712B96717 /* MGSwipeButton.m in Sources */,
+				0BC77AB28EDCFAA407A8E18827C1A54D /* MGSwipeTableCell-dummy.m in Sources */,
+				81E8FB2C409049C7D014133621A73E43 /* MGSwipeTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41F06134CDE28A92C36D72628632112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49DF3B4FC71DBCFE1DA90588DF6D99A /* Pods-BaseballGame-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		25493883FE56208DF570D9BFCF2AA58C /* PBXTargetDependency */ = {
+		9E9E11A750DEF0DC7BBC86888B99B6C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MGSwipeTableCell;
+			target = A078242195098E771619CCCC37EDE2A9 /* MGSwipeTableCell */;
+			targetProxy = 61B2195AF501A3FBFD72454B6F1C967B /* PBXContainerItemProxy */;
+		};
+		C75E4AEE92941E293CE5020C4E059BF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = hpple;
 			target = BA250BDE05647A8E5AE0B5FB0421E3CC /* hpple */;
-			targetProxy = 46EEEE270578954C44168B627D3A6C0B /* PBXContainerItemProxy */;
+			targetProxy = 0A7863140893E0CEF3C210B9E7F11D4B /* PBXContainerItemProxy */;
 		};
-		268871DE2CFDE6E16D66883BB631C2D4 /* PBXTargetDependency */ = {
+		E36D8FBCC87E30BE177F76389D8A6E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZFDragableModalTransition;
+			target = B58B8543BD310E4453F282D83A5D1155 /* ZFDragableModalTransition */;
+			targetProxy = 8C81146D0066FCDF2BA34F7B18A87AFE /* PBXContainerItemProxy */;
+		};
+		E900A48690FBC063B776A3A4E91CE918 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UCZProgressView;
 			target = 771C8EC984C88240581F298A1E92E99A /* UCZProgressView */;
-			targetProxy = A71400D3920FE3430D2321284EE78A0C /* PBXContainerItemProxy */;
-		};
-		6D34E242A1D48BDE4BAE0741793C18BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MGSwipeTableCell;
-			target = 2F67F712EA18C04E2293170AC7E3D114 /* MGSwipeTableCell */;
-			targetProxy = 8EF30F2D4E82D163C2DF53B2625BD631 /* PBXContainerItemProxy */;
+			targetProxy = 03E4601502E7EEC9BED7EACF265E10F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,23 +613,6 @@
 			};
 			name = Debug;
 		};
-		62026BE35D554E19175B6F6D665556C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 668920BEC6181A38656B3C6C5C057489 /* MGSwipeTableCell-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		719D71F13360EE85D7C3B2842DFCE567 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 335A81B48311C68A80B8176A4EB46A15 /* hpple-Private.xcconfig */;
@@ -589,17 +664,17 @@
 			};
 			name = Release;
 		};
-		749459CD1FBF0B7B517F718096CB696B /* Release */ = {
+		75244719629AE28BFD861FAC9D32A924 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39972F04E7979AD9C987E5675ACFBA5D /* Pods-BaseballGame.release.xcconfig */;
+			baseConfigurationReference = 97B313958A613D4AF8F8176E33C62D78 /* ZFDragableModalTransition-Private.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -623,6 +698,57 @@
 			};
 			name = Release;
 		};
+		862A9610BF8B1C041DBAAD46800F6037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF64DE38C89D1C08CF06A60ACC06448B /* MGSwipeTableCell-Private.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D4BAACE22F9CEAD9114625EB41BF3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C445A91B38414F7007CC6930F928A418 /* Pods-BaseballGame.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A84397BA05A5D7D8108BCB076CB8B3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B313958A613D4AF8F8176E33C62D78 /* ZFDragableModalTransition-Private.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		B3E3F8D1121D96680CF8C95DD4D1B218 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 335A81B48311C68A80B8176A4EB46A15 /* hpple-Private.xcconfig */;
@@ -640,26 +766,9 @@
 			};
 			name = Debug;
 		};
-		C5DAAEBDAF0BB77CD682BC17B47079A4 /* Debug */ = {
+		D85A698D55F486CBE0DA0F24E43C2A5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 668920BEC6181A38656B3C6C5C057489 /* MGSwipeTableCell-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		EE28ABF2737287919BF6A683AC864ADD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE04D36EDB83986F1D74697F02BCD15 /* Pods-BaseballGame.debug.xcconfig */;
+			baseConfigurationReference = E7AE97E4BA6627C15AAF0340D3F19DB9 /* Pods-BaseballGame.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -674,6 +783,23 @@
 			};
 			name = Debug;
 		};
+		F996726EF036C4D34EAD7B35D355FF08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF64DE38C89D1C08CF06A60ACC06448B /* MGSwipeTableCell-Private.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -682,15 +808,6 @@
 			buildConfigurations = (
 				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
 				74857149DC1E0D599B8A01A78349A926 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35ABFAA27DB4EBE4089649A4100406B5 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5DAAEBDAF0BB77CD682BC17B47079A4 /* Debug */,
-				62026BE35D554E19175B6F6D665556C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -704,11 +821,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		528C37075B7032538CBB997809828D37 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */ = {
+		5BF97E8BF8E883FC46BE199EA91253E0 /* Build configuration list for PBXNativeTarget "ZFDragableModalTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE28ABF2737287919BF6A683AC864ADD /* Debug */,
-				749459CD1FBF0B7B517F718096CB696B /* Release */,
+				A84397BA05A5D7D8108BCB076CB8B3A0 /* Debug */,
+				75244719629AE28BFD861FAC9D32A924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6498F594E0B5BDE9E5B09A10D0069D21 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862A9610BF8B1C041DBAAD46800F6037 /* Debug */,
+				F996726EF036C4D34EAD7B35D355FF08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -718,6 +844,15 @@
 			buildConfigurations = (
 				4D65349174906FCE0FB6C6ACA91C9808 /* Debug */,
 				845A3DD2A8B5D6854D2C92A9F45CE9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E32AB9CCF82044C64677FB9B0DB9982C /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85A698D55F486CBE0DA0F24E43C2A5F /* Debug */,
+				8D4BAACE22F9CEAD9114625EB41BF3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

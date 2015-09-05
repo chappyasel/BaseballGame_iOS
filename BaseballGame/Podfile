@@ -5,6 +5,7 @@ target 'BaseballGame' do
     pod 'UCZProgressView'
     pod 'hpple'
     pod 'MGSwipeTableCell'
+    pod 'ZFDragableModalTransition'
 end
 
 target 'BaseballGameTests' do
