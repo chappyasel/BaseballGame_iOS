@@ -19,111 +19,136 @@
     self.batters = [[NSOrderedSet alloc] init];
     
     NSError *error;
-    NSURL *url = [NSURL URLWithString: [NSString stringWithFormat:@"http://baseball-reference.com/teams/%@/%d-organization-batting.shtml",abbrev,year]];
+    NSURL *url = [NSURL URLWithString: [NSString stringWithFormat:@"http://baseball-reference.com/teams/%@/%d.shtml",abbrev,year]];
     NSData *html = [NSData dataWithContentsOfURL:url options:NSDataReadingMapped error:&error];
     if (error) NSLog(@"%@",error);
     TFHpple *parser = [TFHpple hppleWithHTMLData:html];
+    
     NSString *XpathQueryString = @"//div[@id='page_content']/div";
     NSArray *nodes = [parser searchWithXPathQuery:XpathQueryString];
-    NSArray *playerTables = @[nodes[2], nodes[4], nodes[6], nodes[8], nodes[10]];
+    NSArray *playerTables = @[nodes[7], nodes[10], nodes[13]];
+    NSMutableDictionary *dwarDict = [[NSMutableDictionary alloc] init];
+    TFHppleElement *dwarTable = playerTables[2];
+    NSArray *playersd = ((TFHppleElement *)((TFHppleElement *)((TFHppleElement *)dwarTable.children[3]).children[1]).children[2*2+1]).children;
+    for (int i = 1; i < playersd.count; i += 2) {
+        TFHppleElement *playerElement = playersd[i];
+        NSArray <TFHppleElement *> *elements = playerElement.children;
+        NSString *fullName = [self findContentForTFHppleElement:elements[0*2+1]];
+        NSNumber *dwar = [NSNumber numberWithFloat: [elements[17*2+1].firstChild.content floatValue]];
+        [dwarDict setValue:dwar forKey:[NSString stringWithFormat:@"%@ %@ %@ %@",[fullName substringToIndex:2],[fullName substringFromIndex:fullName.length-2],elements[3].firstChild.content,elements[5].firstChild.content]];
+    }
     
-    for (TFHppleElement *table in playerTables) {
-        NSArray *players = ((TFHppleElement *)((TFHppleElement *)table.children[1]).children[5]).children;
-        for (int i = 1; i < MIN(7*2, players.count); i += 2) {
-            TFHppleElement *playerElement = players[i];
-            NSArray <TFHppleElement *> *elements = playerElement.children;
-            if (elements[4*2+1].firstChild.content.length > 2 && [[elements[4*2+1].firstChild.content substringToIndex:3] isEqualToString:@"MAJ"]) {
-                BGBatter *batter = [NSEntityDescription insertNewObjectForEntityForName:@"BGBatter" inManagedObjectContext:context];
-                NSArray *fullName = [elements[1*2+1].firstChild.firstChild.content componentsSeparatedByString:@", "];
-                batter.firstName = fullName[1];
-                batter.lastName = fullName[0];
-                batter.position = elements[2*2+1].firstChild.content;
-                float Avg = [elements[18*2+1].firstChild.content floatValue];
-                float G = [elements[5*2+1].firstChild.content floatValue];
-                float Ab = [elements[7*2+1].firstChild.content floatValue];
-                float SoAb = [elements[17*2+1].firstChild.content floatValue] / Ab;
-                float Slg = [elements[20*2+1].firstChild.content floatValue];
-                float SbG = [elements[14*2+1].firstChild.content floatValue] / G;
-                float csG = [elements[15*2+1].firstChild.content floatValue] / G;
-                float TbAb = [elements[11*2+1].firstChild.content floatValue] / Ab;
-                float BbAb = [elements[16*2+1].firstChild.content floatValue] / Ab;
-                float GdpAb = [elements[23*2+1].firstChild.content floatValue] / Ab;
-                float RRbiAb = ([elements[13*2+1].firstChild.content floatValue] - [elements[12*2+1].content floatValue]) / Ab;
-                float EG = [elements[28*2+1].firstChild.content floatValue] / G; //TEMPORARY (D WAR)
-                //                   MAX                           MIN     LOW  TO MAX  RANGE
-                batter.contact = MIN(@100, [NSNumber numberWithInt:65+(Avg-.180)*(35/.170)]); //Avg: 65 = .210, 100 = .350
-                batter.power = MIN(@100, [NSNumber numberWithInt:65+(Slg-.300)*(35/.330)]); //Slg: 65 = .320, 100 = .600
-                batter.speed = MIN(@100, [NSNumber numberWithInt:65+(SbG)*(35/.24691)]); //SbG: 65 = 0/162, 100 = 30/162
-                batter.vision = MIN(@100, [NSNumber numberWithInt:65+(BbAb-(20/615.0))*(35/(90/615.0))]); //BbAb: 65 = 20/615, 100 = 110/615
-                batter.clutch = MIN(@100, [NSNumber numberWithInt:65+(RRbiAb-(25/615.0))*(35/(65/615.0))]); //RRbiAb: 65 = 25/615, 100 = 90/615
-                batter.fielding = MIN(@100, [NSNumber numberWithInt:100-(EG)*(30/.100)]); //EG: 70 = .100, 100 = .000
-                [batter calculateOverall];
-                batter.team = self;
-                [self addBattersObject:batter];
-            }
+    TFHppleElement *batterTable = playerTables[0];
+    NSArray *playersb = ((TFHppleElement *)((TFHppleElement *)((TFHppleElement *)batterTable.children[3]).children[1]).children[2*2+1]).children;
+    for (int i = 1; i < MIN(20*2, playersb.count); i += 2) {
+        TFHppleElement *playerElement = playersb[i];
+        NSArray <TFHppleElement *> *elements = playerElement.children;
+        if (elements[5*2+1].firstChild.content.intValue > 100) { //PA > 100
+            BGBatter *batter = [NSEntityDescription insertNewObjectForEntityForName:@"BGBatter" inManagedObjectContext:context];
+            NSString *fullName = [self findContentForTFHppleElement:elements[2*2+1]];
+            NSArray *nameArray = [fullName componentsSeparatedByString:@" "];
+            batter.firstName = nameArray[0];
+            batter.lastName = [fullName substringFromIndex:batter.firstName.length];
+            batter.position = [self findContentForTFHppleElement:elements[1*2+1]];
+            float Avg = [elements[17*2+1].firstChild.content floatValue];
+            int G = [elements[4*2+1].firstChild.content intValue];
+            int Ab = [elements[6*2+1].firstChild.content intValue];
+            int Pa = [elements[5*2+1].firstChild.content intValue];
+            float SoPa = [elements[16*2+1].firstChild.content floatValue] / Pa;
+            float BbPa = [elements[15*2+1].firstChild.content floatValue] / Pa;
+            float Slg = [elements[19*2+1].firstChild.content floatValue];
+            float SbG = [elements[13*2+1].firstChild.content floatValue] / G;
+            float csG = [elements[14*2+1].firstChild.content floatValue] / G;
+            float TbAb = [elements[10*2+1].firstChild.content floatValue] / Ab;
+            float GdpAb = [elements[22*2+1].firstChild.content floatValue] / Ab;
+            float RRbiAb = ([elements[12*2+1].firstChild.content floatValue] - [elements[11*2+1].content floatValue]) / Ab;
+            float dwar = [[dwarDict objectForKey:[NSString stringWithFormat:@"%@ %@ %@ %@",[fullName substringToIndex:2],[fullName substringFromIndex:fullName.length-2],elements[7].firstChild.content,elements[9].firstChild.content]] floatValue];
+            //Low: bottom 10 in league (qualified), high: top 15 in league (qualified), max: top 10 individual players all time (beyond 1901)
+            batter.contact = [self ratingForStat:Avg minRating:64 low:.230 high:.310 max:.390];
+            batter.power = [self ratingForStat:Slg minRating:64 low:.345 high:.520 max:.730];
+            batter.speed = [self ratingForStat:SbG minRating:64 low:0.0/150 high:25.0/150 max:80.0/150];
+            batter.vision = [self ratingForStat:BbPa minRating:64 low:.040 high:.120 max:.215];
+            batter.clutch = [self ratingForStat:RRbiAb minRating:64 low:40.0/560 high:75.0/560 max:120.0/560];//.065 .122 .2
+            batter.fielding = [self ratingForStat:dwar minRating:64 low:-1.2 high:1.5 max:4.3];
+            [batter calculateOverall];
+            batter.team = self;
+            [self addBattersObject:batter];
         }
     }
     
-    url = [NSURL URLWithString: [NSString stringWithFormat:@"http://baseball-reference.com/teams/%@/%d-organization-pitching.shtml",abbrev,year]];
-    html = [NSData dataWithContentsOfURL:url options:NSDataReadingMapped error:&error];
-    if (error) NSLog(@"%@",error);
-    parser = [TFHpple hppleWithHTMLData:html];
-    XpathQueryString = @"//div[@id='page_content']/div";
-    nodes = [parser searchWithXPathQuery:XpathQueryString];
-    playerTables = @[nodes[2], nodes[4], nodes[6], nodes[8], nodes[10]];
-    
-    for (int t = 0; t < playerTables.count; t++) {
-        TFHppleElement *table = playerTables[t];
-        NSArray *players = ((TFHppleElement *)((TFHppleElement *)table.children[1]).children[5]).children;
-        for (int i = 1; i < MIN(8*2+1, players.count); i += 2) {
-            TFHppleElement *playerElement = players[i];
-            NSArray <TFHppleElement *> *elements = playerElement.children;
-            TFHppleElement *locationElement = elements[3*2+1].firstChild;
-            if (locationElement.content.length > 2 && [[locationElement.content substringToIndex:3] isEqualToString:@"MAJ"]) {
-                BGPitcher *pitcher = [NSEntityDescription insertNewObjectForEntityForName:@"BGPitcher" inManagedObjectContext:context];
-                NSArray *fullName = [elements[1*2+1].firstChild.firstChild.content componentsSeparatedByString:@", "];
-                pitcher.firstName = fullName[1];
-                pitcher.lastName = fullName[0];
-                if (t <= 1)      pitcher.position = @"S";
-                else if (t <= 3) pitcher.position = @"R";
-                else             pitcher.position = @"C";
-                float G = [elements[8*2+1].firstChild.content floatValue];
-                float Ip = [elements[14*2+1].firstChild.content floatValue];
-                float Baa = [elements[27*2+1].firstChild.content floatValue];
-                float So9 = [elements[32*2+1].firstChild.content floatValue];
-                float Bb9 = [elements[31*2+1].firstChild.content floatValue];
-                float SoBb = [elements[33*2+1].firstChild.content floatValue];
-                float HbpIp = [elements[17*2+1].firstChild.content floatValue] / Ip;
-                float BAbip = [elements[29*2+1].firstChild.content floatValue];
-                float HrH = [elements[18*2+1].firstChild.content floatValue] / [elements[15*2+1].firstChild.content floatValue];;
-                float IpG = Ip / G;
-                float Era = [elements[7*2+1].firstChild.content floatValue];
-                float WL = [elements[6*2+1].firstChild.content floatValue];
-                if ([pitcher.position isEqualToString:@"S"]) { //pitcher is starter
-                    //                   MAX                           MIN     LOW  TO MAX  RANGE
-                    pitcher.unhittable = MIN(@100, [NSNumber numberWithInt:100-(Baa-.205)*(35/.080)]); //Baa: 65 = .285, 100 = .205
-                    pitcher.deception = MIN(@100, [NSNumber numberWithInt:100-(BAbip-.250)*(35/.080)]); //BAbip: 65 = .330, 100 = .250
-                    pitcher.composure = MIN(@100, [NSNumber numberWithInt:100-(Era-2.3)*(35/2.7)]); //Era: 65 = 5.0, 100 = 2.3
-                    pitcher.velocity = MIN(@100, [NSNumber numberWithInt:65+(So9-5.0)*(35/5.0)]); //So9: 65 = 5.0, 100 = 10.0
-                    pitcher.accuracy = MIN(@100, [NSNumber numberWithInt:100-(Bb9-1.5)*(35/2.0)]); //Bb9: 65 = 3.5, 100 = 1.5
-                }
-                else { //pitcher is reliever or closer
-                    pitcher.unhittable = MIN(@100, [NSNumber numberWithInt:100-(Baa-.155)*(35/.130)]); //Baa: 65 = .285, 100 = .155)
-                    pitcher.deception = MIN(@100, [NSNumber numberWithInt:100-(BAbip-.220)*(35/.130)]); //BAbip: 65 = .350, 100 = .220
-                    pitcher.composure = MIN(@100, [NSNumber numberWithInt:100-(Era-1.3)*(35/3.7)]); //Era: 65 = 5.0, 100 = 1.3
-                    pitcher.velocity = MIN(@100, [NSNumber numberWithInt:65+(So9-5.0)*(35/8.0)]); //So9: 65 = 5.0, 100 = 13.0
-                    pitcher.accuracy = MIN(@100, [NSNumber numberWithInt:100-(Bb9-1.5)*(35/3.3)]); //Bb9: 65 = 4.8, 100 = 1.5
-                }
-                pitcher.endurance = MIN(@100, [NSNumber numberWithInt:20+(IpG-1.0)*(80/5.5)]); //IpG: 20 = 1.0, 100 = 6.5
-                [pitcher calculateOverall];
-                pitcher.team = self;
-                [self addPitchersObject:pitcher];
+    TFHppleElement *pitcherTable = playerTables[1];
+    NSArray *pitchers = ((TFHppleElement *)((TFHppleElement *)((TFHppleElement *)pitcherTable.children[3]).children[1]).children[2*2+1]).children;
+    for (int i = 1; i < MIN(15*2+1, pitchers.count); i += 2) {
+        TFHppleElement *playerElement = pitchers[i];
+        NSArray <TFHppleElement *> *elements = playerElement.children;
+        if (elements[8*2+1].firstChild.content.intValue > 10 && elements[14*2+1].firstChild.content.floatValue > 25 &&
+            [self findContentForTFHppleElement:elements[1*2+1]] != nil) {
+            BGPitcher *pitcher = [NSEntityDescription insertNewObjectForEntityForName:@"BGPitcher" inManagedObjectContext:context];
+            NSString *fullName = [self findContentForTFHppleElement:elements[2*2+1]];
+            NSArray *nameArray = [fullName componentsSeparatedByString:@" "];
+            pitcher.firstName = nameArray[0];
+            pitcher.lastName = [fullName substringFromIndex:pitcher.firstName.length];
+            pitcher.position = [self findContentForTFHppleElement:elements[1*2+1]];
+            int G = [elements[8*2+1].firstChild.content intValue];
+            float Ip = [elements[14*2+1].firstChild.content floatValue];
+            int H = [elements[15*2+1].firstChild.content intValue];
+            float Baa = (float)H / (Ip * 3 + H + elements[19*2+1].firstChild.content.intValue);
+            //float Baa = [elements[27*2+1].firstChild.content floatValue];
+            float So9 = [elements[32*2+1].firstChild.content floatValue];
+            float Bb9 = [elements[31*2+1].firstChild.content floatValue];
+            float SoBb = [elements[33*2+1].firstChild.content floatValue];
+            float HbpIp = [elements[17*2+1].firstChild.content floatValue] / Ip;
+            //float BAbip = [elements[29*2+1].firstChild.content floatValue];
+            float HrH = [elements[18*2+1].firstChild.content floatValue] / H;
+            float IpG = Ip / G;
+            float Era = [elements[7*2+1].firstChild.firstChild.content floatValue];
+            float WL = [elements[6*2+1].firstChild.content floatValue];
+            if ([pitcher.position isEqualToString:@"SP"]) { //pitcher is starter
+                //Low: bottom 10 in league (qualified), high: top 15 in league (qualified), max: top 10 individual players all time
+                pitcher.unhittable = [self ratingForStat:Baa minRating:64 low:.275 high:.225 max:.180];
+                pitcher.deception = [self ratingForStat:Baa /* */ minRating:64 low:0 high:0 max:0]; //BAbip: 65 = .330, 100 = .250
+                pitcher.composure = [self ratingForStat:Era minRating:64 low:4.8 high:2.8 max:1.25];
+                pitcher.velocity = [self ratingForStat:So9 minRating:64 low:6.0 high:9.2 max:11.1];
+                pitcher.accuracy = [self ratingForStat:Bb9 minRating:64 low:3.3 high:1.85 max:0.8];
             }
+            else { //pitcher is RP or CL
+                pitcher.unhittable = [self ratingForStat:Baa minRating:64 low:.280 high:.180 max:.140];
+                pitcher.deception = [self ratingForStat:Baa /* */ minRating:64 low:-1.2 high:1.5 max:4.3]; //BAbip: 65 = .350, 100 = .220
+                pitcher.composure = [self ratingForStat:Era minRating:64 low:4.55 high:1.9 max:1.0];
+                pitcher.velocity = [self ratingForStat:So9 minRating:64 low:5.5 high:11.3 max:14.7];
+                pitcher.accuracy = [self ratingForStat:Bb9 minRating:64 low:4.5 high:1.7 max:0.9];
+            }
+            pitcher.endurance = [self ratingForStat:IpG minRating:10 low:0.5 high:6.0 max:8.2];
+            [pitcher calculateOverall];
+            pitcher.team = self;
+            [self addPitchersObject:pitcher];
         }
     }
     
     //NSLog(@"%@",self);
     NSLog(@"finished loading %@",abbrev);
+}
+
+- (NSString *)findContentForTFHppleElement: (TFHppleElement *)element {
+    while (element.hasChildren) {
+        if (element.content != nil) return element.content;
+        element = element.firstChild;
+    }
+    if (element.content != nil) return element.content;
+    return nil;
+}
+
+- (NSNumber *)ratingForStat: (float) stat minRating: (int)min low: (float)low high: (float)high max: (float)max {
+    if (max < low) {
+        if (stat <= max) return @99;
+        if (stat <= high) return [NSNumber numberWithInt:90 + (stat-max)*(9.0/(high-max))];
+        if (stat <= low) return [NSNumber numberWithInt:min + (stat-high)*((90.0-min)/(low-high))];
+        return [NSNumber numberWithInt:min];
+    }
+    if (stat <= low) return [NSNumber numberWithInt:min];
+    if (stat <= high) return [NSNumber numberWithInt:min + (stat-low)*((90-min)/(high-low))];
+    if (stat <= max) return [NSNumber numberWithInt:90 + (stat-high)*(9/(max-high))];
+    return @99;
 }
 
 - (void)addBattersObject:(BGBatter *)value {

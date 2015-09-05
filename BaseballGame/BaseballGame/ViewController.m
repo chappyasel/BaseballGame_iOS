@@ -56,10 +56,10 @@ UCZProgressView *progressView;
     self.title = @"Baseball Game Player Dictionary";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target: self action:@selector(editButtonPressed:)];
     
-    //[leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
-    //[self loadCurrentLeague];
-    if (!leagueController.leagues || leagueController.leagues.count == 0) [self loadCurrentLeague];
-    else [self loadTableView];
+    [leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
+    [self loadCurrentLeague];
+    //if (!leagueController.leagues || leagueController.leagues.count == 0) [self loadCurrentLeague];
+    //else [self loadTableView];
 }
 
 - (void)editButtonPressed: (id) sender {
@@ -121,12 +121,12 @@ UCZProgressView *progressView;
     if (indexPath.row < len) {
         BGBatter *batter = leagueController.leagues[0].details.teams[indexPath.section].details.batters[indexPath.row];
         cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",batter.firstName, batter.lastName, batter.position];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (%@ %@ %@ %@ %@ %@)",batter.overall,batter.contact,batter.clutch,batter.fielding,batter.power,batter.speed,batter.vision];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (CON: %@ POW: %@ SPD: %@ VIS: %@ CLH: %@ FLD:%@)",batter.overall,batter.contact,batter.power,batter.speed,batter.vision,batter.clutch,batter.fielding];
     }
     else {
         BGPitcher *pitcher = leagueController.leagues[0].details.teams[indexPath.section].details.pitchers[indexPath.row-len];
         cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",pitcher.firstName, pitcher.lastName, pitcher.position];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (%@ %@ %@ %@ %@ %@)",pitcher.overall,pitcher.endurance,pitcher.accuracy,pitcher.velocity,pitcher.composure,pitcher.deception,pitcher.unhittable];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (UNH: %@ DEC: %@ COM: %@ VEL: %@ ACC: %@ END:%@)",pitcher.overall,pitcher.unhittable,pitcher.deception,pitcher.composure,pitcher.velocity,pitcher.accuracy,pitcher.endurance];
     }
     return cell;
 }
