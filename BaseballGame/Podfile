@@ -4,6 +4,7 @@
 target 'BaseballGame' do
     pod 'UCZProgressView'
     pod 'hpple'
+    pod 'MGSwipeTableCell'
 end
 
 target 'BaseballGameTests' do

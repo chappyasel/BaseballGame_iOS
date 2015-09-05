@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44330E52DC3FBD569F7B1D7D"
-               BuildableName = "libPods-BaseballGame.a"
-               BlueprintName = "Pods-BaseballGame"
+               BlueprintIdentifier = "A715E2EC00906B00B461D875"
+               BuildableName = "libMGSwipeTableCell.a"
+               BlueprintName = "MGSwipeTableCell"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

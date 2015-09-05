@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BaseballGame.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2EFF811BC8D03050C024942FFF4C8EAE</key>
+		<key>02AD7EC575F0A8EAB9AC230BD06D1D3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F67F712EA18C04E2293170AC7E3D114</key>
 		<dict>
 			<key>primary</key>
 			<true/>
