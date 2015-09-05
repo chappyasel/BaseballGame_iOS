@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "LeagueSelectionViewController.h"
 #import "AppDelegate.h"
 #import "UCZProgressView.h"
+#import "ZFModalTransitionAnimator.h"
 
 #import "BGLeagueController.h"
 
@@ -24,6 +26,8 @@
 @interface ViewController ()
 
 @property UCZProgressView *progressView;
+@property (nonatomic, strong) ZFModalTransitionAnimator *animator;
+
 @property BGLeagueController *leagueController;
 @property NSArray *searchResults;
 
@@ -63,10 +67,6 @@
     //[self loadCurrentLeague];
     if (!self.leagueController.leagues || self.leagueController.leagues.count == 0) [self loadCurrentLeague];
     else [self loadTableView];
-}
-
-- (void)editButtonPressed: (id) sender {
-    NSLog(@"View leagues");
 }
 
 - (void)loadCurrentLeague {
@@ -216,6 +216,22 @@
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
     self.searchResults = nil;
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+}
+
+#pragma mark - modal presentation
+
+- (void)editButtonPressed: (UIBarButtonItem *) sender {
+    LeagueSelectionViewController *modalVC = [[LeagueSelectionViewController alloc] init];
+    modalVC.modalPresentationStyle = UIModalPresentationCustom;
+    self.animator = [[ZFModalTransitionAnimator alloc] initWithModalViewController:modalVC];
+    self.animator.dragable = YES;
+    self.animator.bounces = YES;
+    self.animator.behindViewAlpha = 0.8;
+    self.animator.behindViewScale = 0.9;
+    self.animator.transitionDuration = 0.5;
+    self.animator.direction = ZFModalTransitonDirectionBottom;
+    modalVC.transitioningDelegate = self.animator;
+    [self presentViewController:modalVC animated:YES completion:nil];
 }
 
 @end
