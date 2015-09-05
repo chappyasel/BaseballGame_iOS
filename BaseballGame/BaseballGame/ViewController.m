@@ -132,8 +132,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *MyIdentifier = @"MyReuseIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    if (cell == nil) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
+    MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if (cell == nil) cell = [[MGSwipeTableCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
+    cell.delegate = self;
+    MGSwipeExpansionSettings *settings = [[MGSwipeExpansionSettings alloc] init];
+    settings.buttonIndex = 0;
+    settings.threshold = 1.8;
+    cell.leftExpansion = settings;
     if (self.searchResults) {
         if ([self.searchResults.firstObject isKindOfClass:[BGBatter class]]) {
             BGBatter *batter = self.searchResults[indexPath.row];
@@ -158,6 +163,8 @@
         cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",pitcher.firstName, pitcher.lastName, pitcher.position];
         cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (UNH: %@ DEC: %@ COM: %@ VEL: %@ ACC: %@ END:%@)",pitcher.overall,pitcher.unhittable,pitcher.deception,pitcher.composure,pitcher.velocity,pitcher.accuracy,pitcher.endurance];
     }
+    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"Details" icon:[UIImage imageNamed:@"check.png"] backgroundColor:[UIColor darkGrayColor]]];
+    cell.leftSwipeSettings.transition = MGSwipeTransitionClipCenter;
     return cell;
 }
 

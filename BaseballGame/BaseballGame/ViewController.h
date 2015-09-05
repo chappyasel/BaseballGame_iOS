@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGSwipeTableCell.h"
+#import "MGSwipeButton.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, MGSwipeTableCellDelegate>
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
