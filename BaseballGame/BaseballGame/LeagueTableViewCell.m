@@ -13,22 +13,33 @@
 
 - (void)awakeFromNib {
     self.downloadButton.delegate = self;
-    self.checkImageView.alpha = 0.0;
+    self.downloadButton.downloadedButton.tintColor = [UIColor redColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-    if (selected && self.isDownloaded) self.checkImageView.alpha = 1.0;
-    else self.checkImageView.alpha = 0.0;
+    //[super setSelected:selected animated:animated];
+    if (selected && self.isDownloaded) {
+        self.checkImageView.image = [UIImage imageNamed:@"check.png"];
+        self.downloadButton.state = kPKDownloadButtonState_Downloaded;
+    }
+    else if (self.isDownloaded){
+        self.checkImageView.image = [UIImage imageNamed:@"select_empty.png"];
+        self.downloadButton.state = kPKDownloadButtonState_Downloaded;
+    }
+    else {
+        self.checkImageView.image = nil;
+        self.downloadButton.state = kPKDownloadButtonState_StartDownload;
+    }
 }
 
 - (void)updateDownloaded {
     if (self.isDownloaded) {
         self.checkImageView.image = [UIImage imageNamed:@"select_empty.png"];
-        self.checkImageView.alpha = 1.0;
+        self.downloadButton.state = kPKDownloadButtonState_Downloaded;
     }
     else {
-        self.checkImageView.alpha = 0.0;
+        self.checkImageView.image = nil;
+        self.downloadButton.state = kPKDownloadButtonState_StartDownload;
     }
 }
 
@@ -37,7 +48,7 @@
 - (void)downloadButtonTapped:(PKDownloadButton *)downloadButton currentState:(PKDownloadButtonState)state {
     if (state == kPKDownloadButtonState_StartDownload) { //start
         downloadButton.state = kPKDownloadButtonState_Pending;
-        [self.leagueController loadLeagueForYear:(int)downloadButton.tag context:self.managedObjectContext WithProgressBlock:^(float progress) {
+        [self.leagueController loadLeagueForYear:self.year.intValue context:self.managedObjectContext WithProgressBlock:^(float progress) {
             downloadButton.state = kPKDownloadButtonState_Downloading;
             downloadButton.stopDownloadButton.progress = progress;
             if (progress > .99) {
@@ -56,8 +67,9 @@
     }
     else if (state == kPKDownloadButtonState_Downloaded) { //delete
         downloadButton.state = kPKDownloadButtonState_StartDownload;
-        [self.leagueController removeLeagueForYear:(int)downloadButton.tag context:self.managedObjectContext];
+        [self.leagueController removeLeagueForYear:self.year.intValue context:self.managedObjectContext];
         self.isDownloaded = NO;
+        [self updateDownloaded];
     }
     else NSLog(@"Incorrect downloadButton state");
 }

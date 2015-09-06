@@ -13,19 +13,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="350" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUS-pg-6QQ" customClass="PKDownloadButton">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUS-pg-6QQ" customClass="PKDownloadButton">
                         <rect key="frame" x="230" y="7" width="100" height="30"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Pnd-8f-2V5"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                 <real key="value" value="0.5"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="pyR-d7-PK2">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="pyR-d7-PK2">
                         <rect key="frame" x="12" y="12" width="20" height="20"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="81U-ZH-coo"/>
+                            <constraint firstAttribute="width" constant="20" id="itA-1t-0qc"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTA-1L-Djx">
                         <rect key="frame" x="44" y="0.0" width="150" height="44"/>

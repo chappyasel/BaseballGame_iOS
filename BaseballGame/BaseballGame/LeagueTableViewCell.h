@@ -23,4 +23,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *textView;
 @property (weak, nonatomic) IBOutlet PKDownloadButton *downloadButton;
 
+- (void)updateDownloaded;
+
 @end

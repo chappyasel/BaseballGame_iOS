@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DownloadButton/PKDownloadButton.h>
 #import "LeagueTableViewCell.h"
 
 @class BGLeagueInfo, BGLeagueController;
 
 @protocol LeagueSelectionViewControllerDelegate <NSObject>
 @required
-- (void) leagueSelectionVCWillDismissWithSelectedLeague: (BGLeagueInfo *) league;
+- (void) leagueSelectionVCDidChangeSelectedLeague: (BGLeagueInfo *) league;
 @end
 
-@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, PKDownloadButtonDelegate>
+@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 

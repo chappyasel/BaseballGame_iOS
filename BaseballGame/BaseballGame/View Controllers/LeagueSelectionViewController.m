@@ -28,10 +28,7 @@
     self.tableView.dataSource = self;
     [self loadDownloadedYears];
     [self.tableView reloadData];
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [self.delegate leagueSelectionVCWillDismissWithSelectedLeague:[self leagueForYear:self.selectedYear]];
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForItem:self.selectedYear.intValue-self.currentYear inSection:1] animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 - (BGLeagueInfo *)leagueForYear: (NSNumber *) year {
@@ -57,11 +54,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LeagueTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Identifier"];
-    if (cell == nil) cell = [[LeagueTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:@"Identifier"];
-    //cell.delegate = self;
+    if (cell == nil) {
+        cell = [[NSBundle mainBundle] loadNibNamed:@"LeagueTableViewCell" owner:self options:nil].firstObject;
+    }
     cell.year = [NSNumber numberWithLong:self.currentYear-indexPath.row];
     cell.isDownloaded = [self.downloadedYears containsObject:cell.year];
     cell.textView.text = [NSString stringWithFormat:@"%@",cell.year];
+    cell.leagueController = self.leagueController;
+    cell.managedObjectContext = self.managedObjectContext;
     return cell;
 }
 
@@ -74,18 +74,8 @@
 #pragma mark - tableView delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    if (![self.downloadedYears containsObject:[NSNumber numberWithInt:self.currentYear-(int)indexPath.row]]) {
-        return;
-    }
-    UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:self.currentYear - self.selectedYear.intValue inSection:1]];
-    [[oldCell viewWithTag:-10] removeFromSuperview];
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    UIImageView *check = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"check.png"]];
-    check.frame = CGRectMake(14, 14, 16, 16);
-    check.tag = -10;
-    [cell addSubview:check];
-    self.selectedYear = [NSNumber numberWithInt:self.currentYear - (int)indexPath.row];
+    self.selectedYear = ((LeagueTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath]).year;
+    [self.delegate leagueSelectionVCDidChangeSelectedLeague:[self leagueForYear:self.selectedYear]];
 }
 
 @end

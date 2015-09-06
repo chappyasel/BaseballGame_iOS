@@ -46,28 +46,29 @@
     }
     else NSLog(@"Passed player object is not batter or pitcher class");
     
-    if (rating <= 70) { //bronze
-        self.ratingImageView.backgroundColor = [UIColor lightGrayColor];
+    if (rating <= 72) { //bronze
+        self.ratingImageView.backgroundColor = [UIColor colorWithRed:182/255.0 green:111/255.0 blue:0/255.0 alpha:1.0];
     }
     else if (rating <= 80) { //silver
-        self.ratingImageView.backgroundColor = [UIColor grayColor];
+        self.ratingImageView.backgroundColor = [UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1.0];
     }
     else if (rating <= 85) { //gold
-        self.ratingImageView.backgroundColor = [UIColor darkGrayColor];
+        self.ratingImageView.backgroundColor = [UIColor colorWithRed:210/255.0 green:190/255.0 blue:0/255.0 alpha:1.0];
     }
     else if (rating <= 95) { //blue
-        self.ratingImageView.backgroundColor = [UIColor blueColor];
+        self.ratingImageView.backgroundColor = [UIColor colorWithRed:0/255.0 green:170/255.0 blue:255/255.0 alpha:1.0];
     }
     else { //red (legend)
-        self.ratingImageView.backgroundColor = [UIColor redColor];
+        self.ratingImageView.backgroundColor = [UIColor colorWithRed:255/255.0 green:0/255.0 blue:0/255.0 alpha:1.0];
     }
+    self.overallLabel.text = [NSString stringWithFormat:@"%d",rating];
     
     MGSwipeExpansionSettings *settings = [[MGSwipeExpansionSettings alloc] init];
     settings.buttonIndex = 0;
-    settings.threshold = 1.8;
+    settings.threshold = 1.4;
     self.leftExpansion = settings;
     
-    self.leftButtons = @[[MGSwipeButton buttonWithTitle:@"Details" icon:[UIImage imageNamed:@"check.png"] backgroundColor:self.ratingImageView.backgroundColor]];
+    self.leftButtons = @[[MGSwipeButton buttonWithTitle:@"Player Details" icon:nil backgroundColor:self.ratingImageView.backgroundColor]];
     self.leftSwipeSettings.transition = MGSwipeTransitionClipCenter;
 }
 

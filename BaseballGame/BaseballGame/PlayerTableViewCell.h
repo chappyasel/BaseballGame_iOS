@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *overallLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *statLabel2;
 @property (weak, nonatomic) IBOutlet UILabel *statLabel3;

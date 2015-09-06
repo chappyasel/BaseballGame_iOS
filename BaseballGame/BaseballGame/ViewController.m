@@ -56,15 +56,15 @@
             self.leagueController = fetchedObjects.firstObject;
         }
     }
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target: self action:@selector(editButtonPressed:)];
+    [self loadTableView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target: self action:@selector(editButtonPressed:)];
-    
     //[leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
     //[self loadCurrentLeague];
     if (!self.leagueController.leagues || self.leagueController.leagues.count == 0) [self loadCurrentLeague];
-    else [self loadTableView];
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
 }
 
 - (void)loadCurrentLeague {
@@ -129,10 +129,16 @@
     return [NSString stringWithFormat:@"%@ (%@ - %@ %@) %d %d",info.name,info.overall,info.battingOverall,info.pitchingOverall,(int)info.details.batters.count,(int)info.details.pitchers.count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.0;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *MyIdentifier = @"MyReuseIdentifier";
     PlayerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    if (cell == nil) cell = [[PlayerTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
+    if (cell == nil) {
+        cell = [[NSBundle mainBundle] loadNibNamed:@"PlayerTableViewCell" owner:self options:nil].firstObject;
+    }
     if (self.searchResults) [cell loadPlayer:self.searchResults[indexPath.row]];
     else {
         int len = (int)self.currentLeague.details.teams[indexPath.section].details.batters.count;
@@ -215,7 +221,7 @@
 
 #pragma mark - LeagueSelectionViewController delegate methods
 
-- (void)leagueSelectionVCWillDismissWithSelectedLeague:(BGLeagueInfo *)league {
+- (void)leagueSelectionVCDidChangeSelectedLeague:(BGLeagueInfo *)league {
     self.currentLeague = league;
     [self.tableView reloadData];
 }
