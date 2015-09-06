@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MGSwipeTableCell.h"
-#import "MGSwipeButton.h"
 #import <DownloadButton/PKDownloadButton.h>
+#import "LeagueTableViewCell.h"
 
 @class BGLeagueInfo, BGLeagueController;
 
@@ -18,7 +17,7 @@
 - (void) leagueSelectionVCWillDismissWithSelectedLeague: (BGLeagueInfo *) league;
 @end
 
-@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, MGSwipeTableCellDelegate, PKDownloadButtonDelegate>
+@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, PKDownloadButtonDelegate>
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 

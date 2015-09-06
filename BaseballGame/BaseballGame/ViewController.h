@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LeagueSelectionViewController.h"
-#import "MGSwipeTableCell.h"
-#import "MGSwipeButton.h"
+#import "PlayerTableViewCell.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, MGSwipeTableCellDelegate, LeagueSelectionViewControllerDelegate>
 

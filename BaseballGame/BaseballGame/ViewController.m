@@ -131,39 +131,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *MyIdentifier = @"MyReuseIdentifier";
-    MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    if (cell == nil) cell = [[MGSwipeTableCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
-    cell.delegate = self;
-    MGSwipeExpansionSettings *settings = [[MGSwipeExpansionSettings alloc] init];
-    settings.buttonIndex = 0;
-    settings.threshold = 1.8;
-    cell.leftExpansion = settings;
-    if (self.searchResults) {
-        if ([self.searchResults.firstObject isKindOfClass:[BGBatter class]]) {
-            BGBatter *batter = self.searchResults[indexPath.row];
-            cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",batter.firstName, batter.lastName, batter.position];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (CON: %@ POW: %@ SPD: %@ VIS: %@ CLH: %@ FLD:%@)",batter.overall,batter.contact,batter.power,batter.speed,batter.vision,batter.clutch,batter.fielding];
-        }
-        else {
-            BGPitcher *pitcher = self.searchResults[indexPath.row];
-            cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",pitcher.firstName, pitcher.lastName, pitcher.position];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (UNH: %@ DEC: %@ COM: %@ VEL: %@ ACC: %@ END:%@)",pitcher.overall,pitcher.unhittable,pitcher.deception,pitcher.composure,pitcher.velocity,pitcher.accuracy,pitcher.endurance];
-        }
-        return cell;
-    }
-    int len = (int)self.currentLeague.details.teams[indexPath.section].details.batters.count;
-    if (indexPath.row < len) {
-        BGBatter *batter = self.currentLeague.details.teams[indexPath.section].details.batters[indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",batter.firstName, batter.lastName, batter.position];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (CON: %@ POW: %@ SPD: %@ VIS: %@ CLH: %@ FLD:%@)",batter.overall,batter.contact,batter.power,batter.speed,batter.vision,batter.clutch,batter.fielding];
-    }
+    PlayerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if (cell == nil) cell = [[PlayerTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
+    if (self.searchResults) [cell loadPlayer:self.searchResults[indexPath.row]];
     else {
-        BGPitcher *pitcher = self.currentLeague.details.teams[indexPath.section].details.pitchers[indexPath.row-len];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",pitcher.firstName, pitcher.lastName, pitcher.position];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (UNH: %@ DEC: %@ COM: %@ VEL: %@ ACC: %@ END:%@)",pitcher.overall,pitcher.unhittable,pitcher.deception,pitcher.composure,pitcher.velocity,pitcher.accuracy,pitcher.endurance];
+        int len = (int)self.currentLeague.details.teams[indexPath.section].details.batters.count;
+        if (indexPath.row < len) [cell loadPlayer:self.currentLeague.details.teams[indexPath.section].details.batters[indexPath.row]];
+        else [cell loadPlayer:self.currentLeague.details.teams[indexPath.section].details.pitchers[indexPath.row-len]];
     }
-    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"Details" icon:[UIImage imageNamed:@"check.png"] backgroundColor:[UIColor darkGrayColor]]];
-    cell.leftSwipeSettings.transition = MGSwipeTransitionClipCenter;
+    cell.delegate = self;
     return cell;
 }
 
