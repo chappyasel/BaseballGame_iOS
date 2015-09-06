@@ -68,7 +68,7 @@
 }
 
 - (void)loadCurrentLeague {
-    self.progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0, 0, 130, 130)];
+    self.progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.progressView.center = self.view.center;
     self.progressView.radius = 60.0;
     self.progressView.textSize = 25.0;
@@ -222,14 +222,17 @@
 - (void)editButtonPressed: (UIBarButtonItem *) sender {
     LeagueSelectionViewController *modalVC = [[LeagueSelectionViewController alloc] init];
     modalVC.delegate = self;
+    modalVC.managedObjectContext = self.managedObjectContext;
+    modalVC.leagueController = self.leagueController;
     modalVC.modalPresentationStyle = UIModalPresentationCustom;
     self.animator = [[ZFModalTransitionAnimator alloc] initWithModalViewController:modalVC];
     self.animator.dragable = YES;
     self.animator.bounces = YES;
-    self.animator.behindViewAlpha = 0.8;
-    self.animator.behindViewScale = 0.9;
+    self.animator.behindViewAlpha = 0.6;
+    self.animator.behindViewScale = 0.95;
     self.animator.transitionDuration = 0.5;
     self.animator.direction = ZFModalTransitonDirectionBottom;
+    [self.animator setContentScrollView:modalVC.tableView];
     modalVC.transitioningDelegate = self.animator;
     [self presentViewController:modalVC animated:YES completion:nil];
 }

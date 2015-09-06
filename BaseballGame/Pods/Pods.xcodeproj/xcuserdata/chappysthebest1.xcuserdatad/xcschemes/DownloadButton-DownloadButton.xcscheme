@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8F2B32A0972B8857633C6E1D"
+               BlueprintIdentifier = "469845A760A330E24A65C407"
                BuildableName = "DownloadButton.bundle"
                BlueprintName = "DownloadButton-DownloadButton"
                ReferencedContainer = "container:Pods.xcodeproj">

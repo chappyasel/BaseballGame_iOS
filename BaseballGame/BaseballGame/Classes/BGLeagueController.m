@@ -38,6 +38,7 @@
     for (int i = 0; i < self.leagues.count; i++) {
         if ([self.leagues[i].year intValue] == year && [self.leagues[i].isCustom boolValue] == NO) {
             [context deleteObject:self.leagues[i]];
+            [self saveLeagueController];
             return YES;
         }
     }

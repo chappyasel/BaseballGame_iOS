@@ -26,7 +26,9 @@
     
     NSString *XpathQueryString = @"//div[@id='page_content']/div";
     NSArray *nodes = [parser searchWithXPathQuery:XpathQueryString];
-    NSArray *playerTables = @[nodes[7], nodes[10], nodes[13]];
+    NSArray *playerTables;
+    if (year == 2015) playerTables = @[nodes[7], nodes[10], nodes[13]];
+    else playerTables = @[nodes[8], nodes[11], nodes[14]];
     NSMutableDictionary *dwarDict = [[NSMutableDictionary alloc] init];
     TFHppleElement *dwarTable = playerTables[2];
     NSArray *playersd = ((TFHppleElement *)((TFHppleElement *)((TFHppleElement *)dwarTable.children[3]).children[1]).children[2*2+1]).children;
