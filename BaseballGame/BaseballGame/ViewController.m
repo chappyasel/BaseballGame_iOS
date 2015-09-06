@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "LeagueSelectionViewController.h"
 #import "AppDelegate.h"
 #import "UCZProgressView.h"
 #import "ZFModalTransitionAnimator.h"
@@ -31,7 +30,7 @@
 @property BGLeagueController *leagueController;
 @property NSArray *searchResults;
 
-@property NSNumber *currentLeagueYear;
+@property BGLeagueInfo *currentLeague;
 
 @end
 
@@ -60,7 +59,6 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    self.title = @"Baseball Game Player Dictionary";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target: self action:@selector(editButtonPressed:)];
     
     //[leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
@@ -86,7 +84,7 @@
 }
 
 - (void)loadTableView {
-    self.currentLeagueYear = self.leagueController.leagues[0].year;
+    self.currentLeague = self.leagueController.leagues[0];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     self.tableView.dataSource = self;
@@ -110,23 +108,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - tableView datasource
+#pragma mark - tableView dataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    self.title = [NSString stringWithFormat:@"Player Dictionary: %@",self.currentLeague.year];
     if (self.searchResults) return 1;
-    return self.leagueController.leagues[0].details.teams.count;
+    return self.currentLeague.details.teams.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.searchResults) return self.searchResults.count;
-    BGTeamDetails *details = self.leagueController.leagues[0].details.teams[section].details;
+    BGTeamDetails *details = self.currentLeague.details.teams[section].details;
     int len = (int)details.pitchers.count + (int)details.batters.count;
     return len;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (self.searchResults) return nil;
-    BGTeamInfo *info = self.leagueController.leagues[0].details.teams[section];
+    BGTeamInfo *info = self.currentLeague.details.teams[section];
     return [NSString stringWithFormat:@"%@ (%@ - %@ %@) %d %d",info.name,info.overall,info.battingOverall,info.pitchingOverall,(int)info.details.batters.count,(int)info.details.pitchers.count];
 }
 
@@ -152,14 +151,14 @@
         }
         return cell;
     }
-    int len = (int)self.leagueController.leagues[0].details.teams[indexPath.section].details.batters.count;
+    int len = (int)self.currentLeague.details.teams[indexPath.section].details.batters.count;
     if (indexPath.row < len) {
-        BGBatter *batter = self.leagueController.leagues[0].details.teams[indexPath.section].details.batters[indexPath.row];
+        BGBatter *batter = self.currentLeague.details.teams[indexPath.section].details.batters[indexPath.row];
         cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",batter.firstName, batter.lastName, batter.position];
         cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (CON: %@ POW: %@ SPD: %@ VIS: %@ CLH: %@ FLD:%@)",batter.overall,batter.contact,batter.power,batter.speed,batter.vision,batter.clutch,batter.fielding];
     }
     else {
-        BGPitcher *pitcher = self.leagueController.leagues[0].details.teams[indexPath.section].details.pitchers[indexPath.row-len];
+        BGPitcher *pitcher = self.currentLeague.details.teams[indexPath.section].details.pitchers[indexPath.row-len];
         cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",pitcher.firstName, pitcher.lastName, pitcher.position];
         cell.detailTextLabel.text = [NSString stringWithFormat:@"  Overall: %@     (UNH: %@ DEC: %@ COM: %@ VEL: %@ ACC: %@ END:%@)",pitcher.overall,pitcher.unhittable,pitcher.deception,pitcher.composure,pitcher.velocity,pitcher.accuracy,pitcher.endurance];
     }
@@ -181,7 +180,7 @@
         NSPredicate *lName = [NSPredicate predicateWithFormat:@"lastName CONTAINS %@", string];
         NSPredicate *fName = [NSPredicate predicateWithFormat:@"firstName CONTAINS %@", string];
         NSCompoundPredicate *compound = [NSCompoundPredicate orPredicateWithSubpredicates:@[fName, lName]];
-        NSPredicate *league = [NSPredicate predicateWithFormat:@"team.info.league.info.year == %@",self.currentLeagueYear];
+        NSPredicate *league = [NSPredicate predicateWithFormat:@"team.info.league.info.year == %@",self.currentLeague.year];
         [request setPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:@[compound, league]]];
         
         NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"overall" ascending:NO];
@@ -222,6 +221,7 @@
 
 - (void)editButtonPressed: (UIBarButtonItem *) sender {
     LeagueSelectionViewController *modalVC = [[LeagueSelectionViewController alloc] init];
+    modalVC.delegate = self;
     modalVC.modalPresentationStyle = UIModalPresentationCustom;
     self.animator = [[ZFModalTransitionAnimator alloc] initWithModalViewController:modalVC];
     self.animator.dragable = YES;
@@ -232,6 +232,13 @@
     self.animator.direction = ZFModalTransitonDirectionBottom;
     modalVC.transitioningDelegate = self.animator;
     [self presentViewController:modalVC animated:YES completion:nil];
+}
+
+#pragma mark - LeagueSelectionViewController delegate methods
+
+- (void)leagueSelectionVCWillDismissWithSelectedLeague:(BGLeagueInfo *)league {
+    self.currentLeague = league;
+    [self.tableView reloadData];
 }
 
 @end

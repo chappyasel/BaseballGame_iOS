@@ -7,6 +7,8 @@
 //
 
 #import "LeagueSelectionViewController.h"
+#import "BGLeagueInfo.h"
+#import "BGLeagueController.h"
 
 @interface LeagueSelectionViewController ()
 
@@ -16,28 +18,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [self.delegate leagueSelectionVCWillDismissWithSelectedLeague:2000];
+    [self.delegate leagueSelectionVCWillDismissWithSelectedLeague:self.leagueController.leagues[0]];
 }
 
 #pragma mark - tableView dataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.leagueController.leagues.count;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"";
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *MyIdentifier = @"MyReuseIdentifier";
+    MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if (cell == nil) cell = [[MGSwipeTableCell alloc] initWithStyle:UITableViewCellStyleSubtitle  reuseIdentifier:MyIdentifier];
+    cell.delegate = self;
+    MGSwipeExpansionSettings *settings = [[MGSwipeExpansionSettings alloc] init];
+    settings.buttonIndex = 0;
+    settings.threshold = 1.8;
+    cell.leftExpansion = settings;
+    cell.textLabel.text = @"";
+    cell.detailTextLabel.text = @"";
+    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"Details" icon:[UIImage imageNamed:@"check.png"] backgroundColor:[UIColor darkGrayColor]]];
+    cell.leftSwipeSettings.transition = MGSwipeTransitionClipCenter;
+    return cell;
+}
 
 @end

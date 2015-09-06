@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DownloadButton-DownloadButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DownloadButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MGSwipeTableCell.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +42,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6C19DBE7A74F9AF3C664EAF2C2CD9C4C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>771C8EC984C88240581F298A1E92E99A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A078242195098E771619CCCC37EDE2A9</key>
+		<key>80A088525A7BA56D57593954DAAC3189</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C25B88F0F3765A8ABFC8B55D48FF2B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C464F78AA8B3F2C0D44F4810F5CCE4AF</key>
+		<key>C0DD4D8A2E78A88A6752CE6212FC6C98</key>
 		<dict>
 			<key>primary</key>
 			<true/>

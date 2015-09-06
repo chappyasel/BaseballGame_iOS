@@ -6,6 +6,7 @@ target 'BaseballGame' do
     pod 'hpple'
     pod 'MGSwipeTableCell'
     pod 'ZFDragableModalTransition'
+    pod 'DownloadButton'
 end
 
 target 'BaseballGameTests' do

@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGSwipeTableCell.h"
+#import "MGSwipeButton.h"
+
+@class BGLeagueInfo, BGLeagueController;
 
 @protocol LeagueSelectionViewControllerDelegate <NSObject>
 @required
-- (void) leagueSelectionVCWillDismissWithSelectedLeague: (int) year;
+- (void) leagueSelectionVCWillDismissWithSelectedLeague: (BGLeagueInfo *) league;
 @end
 
-@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, MGSwipeTableCellDelegate>
 
 @property (nonatomic,weak) id<LeagueSelectionViewControllerDelegate> delegate;
+
+@property (nonatomic,strong) BGLeagueController *leagueController;
 
 @end
