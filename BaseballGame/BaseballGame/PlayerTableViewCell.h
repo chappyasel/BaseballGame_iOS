@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ratingImageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailsLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *overallLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statLabel1;

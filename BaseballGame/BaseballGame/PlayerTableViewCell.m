@@ -11,13 +11,7 @@
 @implementation PlayerTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    self.detailsLabel.alpha = 0.0;
 }
 
 - (void)loadPlayer:(id)player {
@@ -70,6 +64,34 @@
     
     self.leftButtons = @[[MGSwipeButton buttonWithTitle:@"Player Details" icon:nil backgroundColor:self.ratingImageView.backgroundColor]];
     self.leftSwipeSettings.transition = MGSwipeTransitionClipCenter;
+}
+
+#pragma mark - animation
+
+NSTimer *animationTimer;
+
+- (void)animateDetailLabel {
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    self.nameLabel.center = CGPointMake(self.nameLabel.center.x, 30-7);
+    self.detailsLabel.alpha = 1.0;
+    [UIView commitAnimations];
+    animationTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(hideDetailLabel:) userInfo:nil repeats:NO];
+}
+
+- (void)hideDetailLabel: (id) sender {
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    self.nameLabel.center = CGPointMake(self.nameLabel.center.x, 30);
+    self.detailsLabel.alpha = 0.0;
+    [UIView commitAnimations];
+    animationTimer = nil;
+}
+
+- (IBAction)userTappedCell:(UITapGestureRecognizer *)sender {
+    [self animateDetailLabel];
 }
 
 @end
