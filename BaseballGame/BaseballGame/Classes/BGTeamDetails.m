@@ -44,7 +44,7 @@
     for (int i = 1; i < MIN(20*2, playersb.count); i += 2) {
         TFHppleElement *playerElement = playersb[i];
         NSArray <TFHppleElement *> *elements = playerElement.children;
-        if (elements[5*2+1].firstChild.content.intValue > 100) { //PA > 100
+        if (elements[5*2+1].firstChild.content.intValue > 130) { //PA > 130
             BGBatter *batter = [NSEntityDescription insertNewObjectForEntityForName:@"BGBatter" inManagedObjectContext:context];
             NSString *fullName = [self findContentForTFHppleElement:elements[2*2+1]];
             NSArray *nameArray = [fullName componentsSeparatedByString:@" "];
@@ -64,13 +64,13 @@
             float GdpAb = [elements[22*2+1].firstChild.content floatValue] / Ab;
             float RbiPa = [elements[12*2+1].firstChild.content floatValue] / Pa;
             float dwar = [[dwarDict objectForKey:[NSString stringWithFormat:@"%@ %@ %@ %@",[fullName substringToIndex:2],[fullName substringFromIndex:fullName.length-2],elements[7].firstChild.content,elements[9].firstChild.content]] floatValue];
-            //Low: bottom 10 in league (150 PA), high: top 15 in league (qualified), max: top 10 individual players all time (beyond 1901)
-            batter.contact = [self ratingForStat:Avg minRating:64 low:.200 high:.310 max:.390];
-            batter.power = [self ratingForStat:Slg minRating:64 low:.285 high:.520 max:.730];
-            batter.speed = [self ratingForStat:SbG minRating:64 low:0.0/150 high:25.0/150 max:80.0/150];
-            batter.vision = [self ratingForStat:BbPa minRating:64 low:.025 high:.120 max:.215];
+            //Low: bottom 10 in league (130 PA), high: top 20 in league (qualified), max: top 25 SEASONS (qual, beyond 1901)
+            batter.contact = [self ratingForStat:Avg minRating:64 low:.190 high:.305 max:.390];
+            batter.power = [self ratingForStat:Slg minRating:64 low:.280 high:.540 max:.720];
+            batter.speed = [self ratingForStat:SbG minRating:64 low:0.0/150 high:15.0/150 max:78.0/150];
+            batter.vision = [self ratingForStat:BbPa minRating:64 low:.022 high:.120 max:.215];
             batter.clutch = [self ratingForStat:RbiPa minRating:64 low:30.0/450 high:80.0/520 max:165.0/660];//.08 .15 .25
-            batter.fielding = [self ratingForStat:dwar minRating:64 low:-1.2 high:1.5 max:4.3];
+            batter.fielding = [self ratingForStat:dwar minRating:64 low:-1.0 high:1.0 max:4.2];
             [batter calculateOverall];
             batter.team = self;
             [self addBattersObject:batter];
@@ -82,8 +82,8 @@
     for (int i = 1; i < MIN(15*2+1, pitchers.count); i += 2) {
         TFHppleElement *playerElement = pitchers[i];
         NSArray <TFHppleElement *> *elements = playerElement.children;
-        if (elements[8*2+1].firstChild.content.intValue > 10 && elements[14*2+1].firstChild.content.floatValue > 25 &&
-            [self findContentForTFHppleElement:elements[1*2+1]] != nil) {
+        if ([self findContentForTFHppleElement:elements[1*2+1]] != nil &&
+            (elements[8*2+1].firstChild.content.intValue > 18 && elements[14*2+1].firstChild.content.floatValue > 40)) {
             BGPitcher *pitcher = [NSEntityDescription insertNewObjectForEntityForName:@"BGPitcher" inManagedObjectContext:context];
             NSString *fullName = [self findContentForTFHppleElement:elements[2*2+1]];
             NSArray *nameArray = [fullName componentsSeparatedByString:@" "];
@@ -93,7 +93,7 @@
             int G = [elements[8*2+1].firstChild.content intValue];
             float Ip = [elements[14*2+1].firstChild.content floatValue];
             int H = [elements[15*2+1].firstChild.content intValue];
-            float Baa = (float)H / (Ip * 3 + H + elements[19*2+1].firstChild.content.intValue);
+            float Baa = (float)H / (Ip * 3 + H + elements[19*2+1].firstChild.content.intValue)  + .017; //need to fix
             //float Baa = [elements[27*2+1].firstChild.content floatValue];
             float So9 = [elements[32*2+1].firstChild.content floatValue];
             float Bb9 = [elements[31*2+1].firstChild.content floatValue];
@@ -105,21 +105,22 @@
             float Era = [elements[7*2+1].firstChild.firstChild.content floatValue];
             float WL = [elements[6*2+1].firstChild.content floatValue];
             if ([pitcher.position isEqualToString:@"SP"]) { //pitcher is starter
-                //Low: bottom 10 in league (25 Ip, 50 for starters), high: top 15 in league (qualified), max: top 10 individual players all time
-                pitcher.unhittable = [self ratingForStat:Baa minRating:64 low:.275 high:.225 max:.180];
-                pitcher.deception = [self ratingForStat:Hr9 minRating:64 low:1.75 high:0.67 max:0.01];
-                pitcher.composure = [self ratingForStat:Era minRating:64 low:4.8 high:2.8 max:1.25];
-                pitcher.velocity = [self ratingForStat:So9 minRating:64 low:6.0 high:9.2 max:11.1];
-                pitcher.accuracy = [self ratingForStat:Bb9 minRating:64 low:3.3 high:1.85 max:0.8];
+                //qualification == (40 Ip, 18 starts (110 IP) for starters), beyond 1901
+                //Low: bottom 15 in league, high: top 15 in league, max: top 15 indiv SEASONS all time
+                pitcher.unhittable = [self ratingForStat:Baa minRating:64 low:.273 high:.220 max:.180];
+                pitcher.deception = [self ratingForStat:Hr9 minRating:64 low:1.44 high:0.67 max:0.00];
+                pitcher.composure = [self ratingForStat:Era minRating:64 low:4.8 high:2.6 max:1.25];
+                pitcher.velocity = [self ratingForStat:So9 minRating:64 low:6.0 high:9.4 max:11.5];
+                pitcher.accuracy = [self ratingForStat:Bb9 minRating:64 low:3.25 high:1.80 max:0.76];
             }
             else { //pitcher is RP or CL
-                pitcher.unhittable = [self ratingForStat:Baa minRating:64 low:.280 high:.180 max:.140];
-                pitcher.deception = [self ratingForStat:Hr9 minRating:64 low:1.75 high:0.32 max:0.01];
-                pitcher.composure = [self ratingForStat:Era minRating:64 low:4.55 high:1.9 max:1.0];
-                pitcher.velocity = [self ratingForStat:So9 minRating:64 low:5.5 high:11.3 max:14.7];
-                pitcher.accuracy = [self ratingForStat:Bb9 minRating:64 low:4.5 high:1.7 max:0.9];
+                pitcher.unhittable = [self ratingForStat:Baa minRating:64 low:.275 high:.180 max:.140];
+                pitcher.deception = [self ratingForStat:Hr9 minRating:64 low:1.35 high:0.34 max:0.00];
+                pitcher.composure = [self ratingForStat:Era minRating:64 low:4.42 high:1.85 max:0.98];
+                pitcher.velocity = [self ratingForStat:So9 minRating:64 low:6.0 high:11.32 max:14.7];
+                pitcher.accuracy = [self ratingForStat:Bb9 minRating:64 low:4.25 high:1.7 max:0.85];
             }
-            pitcher.endurance = [self ratingForStat:IpG minRating:10 low:0.5 high:6.0 max:8.2];
+            pitcher.endurance = [self ratingForStat:IpG minRating:18 low:0.8 high:6.3 max:8.3];
             [pitcher calculateOverall];
             pitcher.team = self;
             [self addPitchersObject:pitcher];

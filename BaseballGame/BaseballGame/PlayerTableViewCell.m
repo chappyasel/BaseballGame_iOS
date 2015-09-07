@@ -18,7 +18,7 @@
     int rating = 0;
     if ([player isKindOfClass:[BGBatter class]]) {
         BGBatter *batter = (BGBatter *)player;
-        self.nameLabel.text = [NSString stringWithFormat:@"%@ %@",batter.firstName, batter.lastName];
+        self.nameLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",batter.firstName, batter.lastName, batter.position];
         self.statLabel1.text = [NSString stringWithFormat:@"CNT: %@",batter.contact];
         self.statLabel2.text = [NSString stringWithFormat:@"PWR: %@",batter.power];
         self.statLabel3.text = [NSString stringWithFormat:@"SPD: %@",batter.speed];
@@ -29,7 +29,7 @@
     }
     else if ([player isKindOfClass:[BGPitcher class]]) {
         BGPitcher *pitcher = (BGPitcher *)player;
-        self.nameLabel.text = [NSString stringWithFormat:@"%@ %@",pitcher.firstName, pitcher.lastName];
+        self.nameLabel.text = [NSString stringWithFormat:@"%@ %@ - %@",pitcher.firstName, pitcher.lastName, pitcher.position];
         self.statLabel1.text = [NSString stringWithFormat:@"UHT: %@",pitcher.unhittable];
         self.statLabel2.text = [NSString stringWithFormat:@"DCP: %@",pitcher.deception];
         self.statLabel3.text = [NSString stringWithFormat:@"CMP: %@",pitcher.composure];
