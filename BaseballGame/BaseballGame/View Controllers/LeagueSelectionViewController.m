@@ -23,7 +23,6 @@
     [super viewDidLoad];
     NSCalendar *gregorian = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
     self.currentYear = (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
-    self.selectedYear = [NSNumber numberWithInt: self.currentYear];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self loadDownloadedYears];

@@ -55,7 +55,9 @@
 
 - (void)saveLeagueController {
     NSError *error;
-    if (![self.managedObjectContext save:&error]) NSLog(@"Couldn't save: %@", [error localizedDescription]);
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Couldn't save: %@", [error localizedDescription]);
+    }
     else NSLog(@"leagueController saved");
 
 }

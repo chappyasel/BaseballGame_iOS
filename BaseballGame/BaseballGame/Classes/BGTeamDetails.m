@@ -23,15 +23,14 @@
     NSData *html = [NSData dataWithContentsOfURL:url options:NSDataReadingMapped error:&error];
     if (error) NSLog(@"%@",error);
     TFHpple *parser = [TFHpple hppleWithHTMLData:html];
+
+    NSArray <TFHppleElement *> *playerTables = @[[parser searchWithXPathQuery:@"//table[@id='team_batting']/tbody"].firstObject,
+                                                 [parser searchWithXPathQuery:@"//table[@id='team_pitching']/tbody"].firstObject,
+                                                 [parser searchWithXPathQuery:@"//table[@id='players_value_batting']/tbody"].firstObject];
     
-    NSString *XpathQueryString = @"//div[@id='page_content']/div";
-    NSArray *nodes = [parser searchWithXPathQuery:XpathQueryString];
-    NSArray *playerTables;
-    if (year == 2015) playerTables = @[nodes[7], nodes[10], nodes[13]];
-    else playerTables = @[nodes[8], nodes[11], nodes[14]];
     NSMutableDictionary *dwarDict = [[NSMutableDictionary alloc] init];
     TFHppleElement *dwarTable = playerTables[2];
-    NSArray *playersd = ((TFHppleElement *)((TFHppleElement *)((TFHppleElement *)dwarTable.children[3]).children[1]).children[2*2+1]).children;
+    NSArray *playersd = dwarTable.children;
     for (int i = 1; i < playersd.count; i += 2) {
         TFHppleElement *playerElement = playersd[i];
         NSArray <TFHppleElement *> *elements = playerElement.children;
@@ -41,7 +40,7 @@
     }
     
     TFHppleElement *batterTable = playerTables[0];
-    NSArray *playersb = ((TFHppleElement *)((TFHppleElement *)((TFHppleElement *)batterTable.children[3]).children[1]).children[2*2+1]).children;
+    NSArray *playersb = batterTable.children;
     for (int i = 1; i < MIN(20*2, playersb.count); i += 2) {
         TFHppleElement *playerElement = playersb[i];
         NSArray <TFHppleElement *> *elements = playerElement.children;
@@ -79,7 +78,7 @@
     }
     
     TFHppleElement *pitcherTable = playerTables[1];
-    NSArray *pitchers = ((TFHppleElement *)((TFHppleElement *)((TFHppleElement *)pitcherTable.children[3]).children[1]).children[2*2+1]).children;
+    NSArray *pitchers = pitcherTable.children;
     for (int i = 1; i < MIN(15*2+1, pitchers.count); i += 2) {
         TFHppleElement *playerElement = pitchers[i];
         NSArray <TFHppleElement *> *elements = playerElement.children;

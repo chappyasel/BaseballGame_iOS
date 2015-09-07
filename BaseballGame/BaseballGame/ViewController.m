@@ -142,8 +142,14 @@
     if (self.searchResults) [cell loadPlayer:self.searchResults[indexPath.row]];
     else {
         int len = (int)self.currentLeague.details.teams[indexPath.section].details.batters.count;
-        if (indexPath.row < len) [cell loadPlayer:self.currentLeague.details.teams[indexPath.section].details.batters[indexPath.row]];
-        else [cell loadPlayer:self.currentLeague.details.teams[indexPath.section].details.pitchers[indexPath.row-len]];
+        if (indexPath.row < len) {
+            BGBatter *batter= self.currentLeague.details.teams[indexPath.section].details.batters[indexPath.row];
+            [cell loadPlayer:batter];
+        }
+        else {
+            BGPitcher *pitcher = self.currentLeague.details.teams[indexPath.section].details.pitchers[indexPath.row-len];
+            [cell loadPlayer:pitcher];
+        }
     }
     cell.delegate = self;
     return cell;
@@ -206,6 +212,7 @@
     modalVC.delegate = self;
     modalVC.managedObjectContext = self.managedObjectContext;
     modalVC.leagueController = self.leagueController;
+    modalVC.selectedYear = self.currentLeague.year;
     modalVC.modalPresentationStyle = UIModalPresentationCustom;
     self.animator = [[ZFModalTransitionAnimator alloc] initWithModalViewController:modalVC];
     self.animator.dragable = YES;
