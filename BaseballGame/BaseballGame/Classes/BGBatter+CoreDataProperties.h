@@ -22,12 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSNumber *overall;
 
-@property (nullable, nonatomic, retain) NSNumber *contact;
-@property (nullable, nonatomic, retain) NSNumber *clutch;
-@property (nullable, nonatomic, retain) NSNumber *fielding;
-@property (nullable, nonatomic, retain) NSNumber *power;
-@property (nullable, nonatomic, retain) NSNumber *speed;
-@property (nullable, nonatomic, retain) NSNumber *vision;
+@property (nullable, nonatomic, retain) NSNumber *contact; //avg
+@property (nullable, nonatomic, retain) NSNumber *power; //slg
+@property (nullable, nonatomic, retain) NSNumber *speed; //SbG
+@property (nullable, nonatomic, retain) NSNumber *vision; //BbPa
+@property (nullable, nonatomic, retain) NSNumber *clutch; //RbiPa
+@property (nullable, nonatomic, retain) NSNumber *fielding; //dwar
 
 @property (nullable, nonatomic, retain) BGTeamDetails *team;
 

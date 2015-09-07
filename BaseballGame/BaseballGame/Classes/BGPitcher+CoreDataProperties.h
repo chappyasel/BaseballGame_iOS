@@ -22,12 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *position;
 
-@property (nullable, nonatomic, retain) NSNumber *unhittable;
-@property (nullable, nonatomic, retain) NSNumber *deception;
-@property (nullable, nonatomic, retain) NSNumber *composure;
-@property (nullable, nonatomic, retain) NSNumber *velocity;
-@property (nullable, nonatomic, retain) NSNumber *accuracy;
-@property (nullable, nonatomic, retain) NSNumber *endurance;
+@property (nullable, nonatomic, retain) NSNumber *unhittable; //baa
+@property (nullable, nonatomic, retain) NSNumber *deception; //Hr9
+@property (nullable, nonatomic, retain) NSNumber *composure; //Era
+@property (nullable, nonatomic, retain) NSNumber *velocity; //So9
+@property (nullable, nonatomic, retain) NSNumber *accuracy; //Bb9
+@property (nullable, nonatomic, retain) NSNumber *endurance; //IpG
 
 @property (nullable, nonatomic, retain) BGTeamDetails *team;
 

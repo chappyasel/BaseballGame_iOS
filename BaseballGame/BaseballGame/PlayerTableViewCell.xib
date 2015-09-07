@@ -29,7 +29,7 @@
                         <rect key="frame" x="47" y="29" width="167" height="21"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" red="0.32072254834254144" green="0.32072254834254144" blue="0.32072254834254144" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.62920839088397784" green="0.62920839088397784" blue="0.62920839088397784" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcd-uK-kKH">

@@ -57,6 +57,7 @@
         }
     }
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target: self action:@selector(editButtonPressed:)];
+    self.navigationController.navigationBar.translucent = NO;
     [self loadTableView];
 }
 
@@ -64,7 +65,7 @@
     //[leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
     //[self loadCurrentLeague];
     if (!self.leagueController.leagues || self.leagueController.leagues.count == 0) [self loadCurrentLeague];
-    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 - (void)loadCurrentLeague {
@@ -96,6 +97,7 @@
     self.searchController.dimsBackgroundDuringPresentation = NO;
     self.searchController.searchBar.scopeButtonTitles = @[@"Batters", @"Pitchers"];
     self.searchController.searchBar.delegate = self;
+    self.searchController.searchBar.barTintColor = [UIColor colorWithWhite:.95 alpha:1];
     self.tableView.tableHeaderView = self.searchController.searchBar;
     self.definesPresentationContext = YES;
     [self.searchController.searchBar sizeToFit];
@@ -123,10 +125,23 @@
     return len;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (self.searchResults) return nil;
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 30.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (self.searchResults != nil) return nil;
     BGTeamInfo *info = self.currentLeague.details.teams[section];
-    return [NSString stringWithFormat:@"%@ (%@ - %@ %@) %d %d",info.name,info.overall,info.battingOverall,info.pitchingOverall,(int)info.details.batters.count,(int)info.details.pitchers.count];
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 30)];
+    header.backgroundColor = [UIColor whiteColor];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 250, 30)];
+    label.text = [NSString stringWithFormat:@"%@ (%@)",info.name,info.abbreviation];
+    [header addSubview:label];
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(header.frame.size.width-100, 0, 90, 30)];
+    label2.text = [NSString stringWithFormat:@"Overall: %@",info.overall];
+    label2.textAlignment = NSTextAlignmentRight;
+    [header addSubview:label2];
+    return header;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -158,30 +173,33 @@
 #pragma mark - searchController methods
 
 - (void)searchForText: (NSString *) string scope: (NSInteger) index {
-    if (string.length < 1)  self.searchResults = nil;
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSString *searchString = (index == 0) ? @"BGBatter" : @"BGPitcher";
+    
+    [request setEntity:[NSEntityDescription entityForName:searchString inManagedObjectContext:self.managedObjectContext]];
+    
+    if (string.length == 0) {
+        NSPredicate *league = [NSPredicate predicateWithFormat:@"team.info.league.info.year == %@",self.currentLeague.year];
+        [request setPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:@[league]]];
+    }
     else {
-        NSFetchRequest *request = [[NSFetchRequest alloc] init];
-        NSString *searchString = (index == 0) ? @"BGBatter" : @"BGPitcher";
-        
-        [request setEntity:[NSEntityDescription entityForName:searchString inManagedObjectContext:self.managedObjectContext]];
-        
         NSPredicate *lName = [NSPredicate predicateWithFormat:@"lastName CONTAINS %@", string];
         NSPredicate *fName = [NSPredicate predicateWithFormat:@"firstName CONTAINS %@", string];
         NSCompoundPredicate *compound = [NSCompoundPredicate orPredicateWithSubpredicates:@[fName, lName]];
         NSPredicate *league = [NSPredicate predicateWithFormat:@"team.info.league.info.year == %@",self.currentLeague.year];
         [request setPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:@[compound, league]]];
-        
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"overall" ascending:NO];
-        [request setSortDescriptors:@[sortDescriptor]];
-        
-        NSError *error;
-        NSArray *array = [self.managedObjectContext executeFetchRequest:request error:&error];
-        if (array != nil && array.count > 0) {
-            self.searchResults = array;
-        }
-        else {
-            self.searchResults = nil; //TEMPORARY (NO RESULTS)
-        }
+    }
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"overall" ascending:NO];
+    [request setSortDescriptors:@[sortDescriptor]];
+    
+    NSError *error;
+    NSArray *array = [self.managedObjectContext executeFetchRequest:request error:&error];
+    if (array != nil && array.count > 0) {
+        self.searchResults = array;
+    }
+    else {
+        self.searchResults = nil; //TEMPORARY (NO RESULTS)
     }
 }
 

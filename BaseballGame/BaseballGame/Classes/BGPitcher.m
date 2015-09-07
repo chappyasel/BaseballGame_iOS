@@ -12,7 +12,13 @@
 @implementation BGPitcher
 
 - (void)calculateOverall {
-    self.overall = [NSNumber numberWithInt: self.unhittable.intValue*.3+self.deception.intValue*.25+self.composure.intValue*.2+self.velocity.intValue*.125+self.accuracy.intValue*.125];
+    self.overall = [NSNumber numberWithInt:
+                    self.unhittable.intValue*.3 +
+                    self.deception.intValue*.2 +
+                    self.composure.intValue*.15 +
+                    self.velocity.intValue*.15 +
+                    self.accuracy.intValue*.15 +
+                    self.endurance.intValue *.05];
 }
 
 - (NSString *)description {

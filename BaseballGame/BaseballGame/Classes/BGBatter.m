@@ -11,7 +11,13 @@
 @implementation BGBatter
 
 - (void) calculateOverall {
-    self.overall = [NSNumber numberWithInt: self.contact.intValue*.25 + self.power.intValue*.25 + self.speed.intValue*.15 + self.vision.intValue*.125 + self.clutch.intValue*.125 + self.fielding.intValue*.1];
+    self.overall = [NSNumber numberWithInt:
+                    self.contact.intValue*.25 +
+                    self.power.intValue*.25 +
+                    self.speed.intValue*.125 +
+                    self.vision.intValue*.125 +
+                    self.clutch.intValue*.125 +
+                    self.fielding.intValue*.125];
 }
 
 - (NSString *)description {
