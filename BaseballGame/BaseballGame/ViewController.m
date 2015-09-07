@@ -54,18 +54,17 @@
         else {
             if (fetchedObjects.count > 1) NSLog(@"Error: more than 1 league controller");
             self.leagueController = fetchedObjects.firstObject;
+            if (self.leagueController.leagues.count > 0) [self loadTableView];
         }
     }
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStylePlain target: self action:@selector(editButtonPressed:)];
     self.navigationController.navigationBar.translucent = NO;
-    [self loadTableView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     //[leagueController deleteAllLeaguesWithContext:self.managedObjectContext];
     //[self loadCurrentLeague];
     if (!self.leagueController.leagues || self.leagueController.leagues.count == 0) [self loadCurrentLeague];
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 - (void)loadCurrentLeague {
@@ -103,6 +102,7 @@
     [self.searchController.searchBar sizeToFit];
     self.searchController.searchBar.placeholder = @"Search by first name or last name";
     [self.tableView reloadData];
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -126,11 +126,11 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if (self.searchResults) return 0.0;
     return 30.0;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    if (self.searchResults != nil) return nil;
     BGTeamInfo *info = self.currentLeague.details.teams[section];
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 30)];
     header.backgroundColor = [UIColor whiteColor];
