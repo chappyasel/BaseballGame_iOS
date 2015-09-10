@@ -24,7 +24,8 @@
     if (error) NSLog(@"%@",error);
     TFHpple *parser = [TFHpple hppleWithHTMLData:html];
     
-    NSString *tName = ((TFHppleElement *)[parser searchWithXPathQuery:@"//div[@id='info_box']/h1"].firstObject).content;
+    TFHppleElement *t = [parser searchWithXPathQuery:@"//div[@id='info_box']/h1"].firstObject;
+    NSString *tName = t.firstChild.content;
     teamName(tName);
     
     NSArray <TFHppleElement *> *playerTables = @[[parser searchWithXPathQuery:@"//table[@id='team_batting']/tbody"].firstObject,

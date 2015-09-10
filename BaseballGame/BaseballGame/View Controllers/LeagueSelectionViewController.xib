@@ -34,14 +34,33 @@
                         <constraint firstAttribute="bottom" secondItem="Q4v-17-JZf" secondAttribute="bottom" id="lQL-wM-Od3"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnA-WQ-3pZ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="yLO-uX-ab7" appends="YES" id="u04-b5-4rG"/>
+                    </connections>
+                </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Pkx-vX-yZ4" secondAttribute="bottom" id="2of-Yq-13J"/>
+                <constraint firstItem="bnA-WQ-3pZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8T6-Vm-Ikt"/>
+                <constraint firstItem="bnA-WQ-3pZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="-300" id="9kx-5Z-Eoi"/>
                 <constraint firstAttribute="trailing" secondItem="Pkx-vX-yZ4" secondAttribute="trailing" id="puD-Po-gNN"/>
+                <constraint firstItem="bnA-WQ-3pZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rO7-Zd-DV1"/>
+                <constraint firstAttribute="trailing" secondItem="bnA-WQ-3pZ" secondAttribute="trailing" id="udA-T9-26y"/>
                 <constraint firstItem="Pkx-vX-yZ4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ypz-C5-ebB"/>
             </constraints>
         </view>
+        <tapGestureRecognizer id="yLO-uX-ab7">
+            <connections>
+                <action selector="tappedOutsideModal:" destination="-1" id="hlL-uc-tAe"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

@@ -77,4 +77,12 @@
     [self.delegate leagueSelectionVCDidChangeSelectedLeague:[self leagueForYear:self.selectedYear]];
 }
 
+#pragma mark - tap recognition
+
+- (IBAction)tappedOutsideModal:(UITapGestureRecognizer *)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
 @end
