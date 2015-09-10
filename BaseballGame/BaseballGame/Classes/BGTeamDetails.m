@@ -14,7 +14,7 @@
 
 @implementation BGTeamDetails
 
-- (void)loadTeamWithAbbrev: (NSString *) abbrev year: (int) year context: (NSManagedObjectContext *) context {
+- (void)loadTeamWithAbbrev: (NSString *) abbrev year: (int) year context: (NSManagedObjectContext *) context teamNameBlock:(void (^)(NSString *name))teamName{
     self.pitchers = [[NSOrderedSet alloc] init];
     self.batters = [[NSOrderedSet alloc] init];
     
@@ -23,7 +23,10 @@
     NSData *html = [NSData dataWithContentsOfURL:url options:NSDataReadingMapped error:&error];
     if (error) NSLog(@"%@",error);
     TFHpple *parser = [TFHpple hppleWithHTMLData:html];
-
+    
+    NSString *tName = ((TFHppleElement *)[parser searchWithXPathQuery:@"//div[@id='info_box']/h1"].firstObject).content;
+    teamName(tName);
+    
     NSArray <TFHppleElement *> *playerTables = @[[parser searchWithXPathQuery:@"//table[@id='team_batting']/tbody"].firstObject,
                                                  [parser searchWithXPathQuery:@"//table[@id='team_pitching']/tbody"].firstObject,
                                                  [parser searchWithXPathQuery:@"//table[@id='players_value_batting']/tbody"].firstObject];
