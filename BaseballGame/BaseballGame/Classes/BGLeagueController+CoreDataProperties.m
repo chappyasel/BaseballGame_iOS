@@ -15,4 +15,10 @@
 
 @dynamic leagues;
 
+- (void)addLeaguesObject:(BGLeagueInfo *)value {
+    NSMutableOrderedSet<BGLeagueInfo *> *tempSet = [[NSMutableOrderedSet alloc] initWithOrderedSet:self.leagues];
+    if (![self.leagues containsObject:value]) [tempSet addObject:value];
+    self.leagues = tempSet;
+}
+
 @end

@@ -26,6 +26,6 @@
 
 @property (nonatomic,strong) BGLeagueController *leagueController;
 
-@property NSNumber *selectedYear;
+@property BGLeagueInfo *selectedLeague;
 
 @end

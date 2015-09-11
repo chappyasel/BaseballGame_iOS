@@ -17,7 +17,8 @@
     
     BGLeagueInfo *info = [NSEntityDescription insertNewObjectForEntityForName:@"BGLeagueInfo" inManagedObjectContext:self.managedObjectContext];
     info.year = [NSNumber numberWithInt:year];
-    info.isCustom = [NSNumber numberWithBool:NO];
+    info.name = nil;
+    info.leagueController = self;
     BGLeagueDetails *details = [NSEntityDescription insertNewObjectForEntityForName:@"BGLeagueDetails" inManagedObjectContext:self.managedObjectContext];
     dispatch_queue_t myQueue = dispatch_queue_create("My Queue",NULL);
     dispatch_async(myQueue, ^{
@@ -36,7 +37,7 @@
 
 - (BOOL)removeLeagueForYear:(int)year context: (NSManagedObjectContext *)context {
     for (int i = 0; i < self.leagues.count; i++) {
-        if ([self.leagues[i].year intValue] == year && [self.leagues[i].isCustom boolValue] == NO) {
+        if ([self.leagues[i].year intValue] == year) {
             [context deleteObject:self.leagues[i]];
             [self saveLeagueController];
             return YES;

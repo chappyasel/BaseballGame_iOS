@@ -10,15 +10,19 @@
 //
 
 #import "BGLeagueInfo.h"
+#import "BGLeagueController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BGLeagueInfo (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSNumber *year;
-@property (nullable, nonatomic, retain) NSNumber *isCustom;
+
+@property (nullable, nonatomic, retain) NSString *name;
 
 @property (nullable, nonatomic, retain) BGLeagueDetails *details;
+
+@property (nullable, nonatomic, retain) BGLeagueController *leagueController;
 
 @end
 

@@ -54,6 +54,7 @@
             if (progress > .99) {
                 downloadButton.state = kPKDownloadButtonState_Downloaded;
                 self.isDownloaded = YES;
+                self.checkImageView.image = [UIImage imageNamed:@"select_empty.png"];
             }
         }];
     }

@@ -14,16 +14,17 @@
         <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGTeamDetails" inverseName="batters" inverseEntity="BGTeamDetails" syncable="YES"/>
     </entity>
     <entity name="BGLeagueController" representedClassName="BGLeagueController" syncable="YES">
-        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BGLeagueInfo" syncable="YES"/>
+        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BGLeagueInfo" inverseName="leagueController" inverseEntity="BGLeagueInfo" syncable="YES"/>
     </entity>
     <entity name="BGLeagueDetails" representedClassName="BGLeagueDetails" syncable="YES">
-        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueInfo" inverseName="details" inverseEntity="BGLeagueInfo" syncable="YES"/>
-        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="BGTeamInfo" inverseName="league" inverseEntity="BGTeamInfo" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BGLeagueInfo" inverseName="details" inverseEntity="BGLeagueInfo" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BGTeamInfo" inverseName="league" inverseEntity="BGTeamInfo" syncable="YES"/>
     </entity>
     <entity name="BGLeagueInfo" representedClassName="BGLeagueInfo" syncable="YES">
-        <attribute name="isCustom" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueDetails" inverseName="info" inverseEntity="BGLeagueDetails" syncable="YES"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BGLeagueDetails" inverseName="info" inverseEntity="BGLeagueDetails" syncable="YES"/>
+        <relationship name="leagueController" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BGLeagueController" inverseName="leagues" inverseEntity="BGLeagueController" syncable="YES"/>
     </entity>
     <entity name="BGPitcher" representedClassName="BGPitcher" syncable="YES">
         <attribute name="accuracy" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -56,7 +57,7 @@
         <element name="BGBatter" positionX="-225" positionY="-9" width="128" height="208"/>
         <element name="BGLeagueController" positionX="448" positionY="-85" width="128" height="58"/>
         <element name="BGLeagueDetails" positionX="225" positionY="-9" width="128" height="73"/>
-        <element name="BGLeagueInfo" positionX="225" positionY="-117" width="128" height="88"/>
+        <element name="BGLeagueInfo" positionX="225" positionY="-130" width="128" height="103"/>
         <element name="BGPitcher" positionX="-225" positionY="-234" width="128" height="208"/>
         <element name="BGTeamDetails" positionX="-0" positionY="-9" width="128" height="90"/>
         <element name="BGTeamInfo" positionX="-0" positionY="-180" width="128" height="148"/>

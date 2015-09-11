@@ -14,8 +14,11 @@
 @implementation BGLeagueInfo (CoreDataProperties)
 
 @dynamic year;
-@dynamic isCustom;
+
+@dynamic name;
 
 @dynamic details;
+
+@dynamic leagueController;
 
 @end

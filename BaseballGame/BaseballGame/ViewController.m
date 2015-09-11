@@ -230,7 +230,7 @@
     modalVC.delegate = self;
     modalVC.managedObjectContext = self.managedObjectContext;
     modalVC.leagueController = self.leagueController;
-    modalVC.selectedYear = self.currentLeague.year;
+    modalVC.selectedLeague = self.currentLeague;
     modalVC.modalPresentationStyle = UIModalPresentationCustom;
     self.animator = [[ZFModalTransitionAnimator alloc] initWithModalViewController:modalVC];
     self.animator.dragable = YES;
