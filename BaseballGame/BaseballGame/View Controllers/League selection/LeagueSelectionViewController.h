@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LeagueTableViewCell.h"
+#import "CustomLeagueTableViewCell.h"
 
 @class BGLeagueInfo, BGLeagueController;
 

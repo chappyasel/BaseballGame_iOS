@@ -7,14 +7,62 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomLeagueTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="Grd-JM-vfN">
+                        <rect key="frame" x="15" y="12" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Mje-rH-7DU"/>
+                            <constraint firstAttribute="height" constant="20" id="fPx-SL-BSS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Custom Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGn-92-5Uh">
+                        <rect key="frame" x="44" y="0.0" width="171" height="44"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-SW-ukz">
+                        <rect key="frame" x="230" y="7" width="100" height="30"/>
+                        <animations/>
+                        <state key="normal" title="EDIT"/>
+                        <connections>
+                            <action selector="editButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JUY-Yi-rBi"/>
+                        </connections>
+                    </button>
+                </subviews>
                 <animations/>
             </tableViewCellContentView>
             <animations/>
+            <constraints>
+                <constraint firstItem="Grd-JM-vfN" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="1nf-cd-lvb"/>
+                <constraint firstItem="MGn-92-5Uh" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" constant="-179" id="6Q1-3y-e9T"/>
+                <constraint firstAttribute="trailing" secondItem="SzJ-SW-ukz" secondAttribute="trailing" constant="20" id="AUP-y5-RdM"/>
+                <constraint firstItem="SzJ-SW-ukz" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="MaM-rA-W9L"/>
+                <constraint firstItem="MGn-92-5Uh" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="44" id="QxE-jA-e00"/>
+                <constraint firstItem="Grd-JM-vfN" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="gpT-yk-D2B"/>
+                <constraint firstItem="MGn-92-5Uh" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="jXx-EK-Tje"/>
+                <constraint firstItem="Grd-JM-vfN" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="qPu-c1-kA2"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1nf-cd-lvb"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="checkImageView" destination="Grd-JM-vfN" id="Kap-2F-7N4"/>
+                <outlet property="editButton" destination="SzJ-SW-ukz" id="k5Z-Rb-Bkj"/>
+                <outlet property="textView" destination="MGn-92-5Uh" id="VRj-an-qIa"/>
+            </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="check.png" width="800" height="800"/>
+    </resources>
 </document>

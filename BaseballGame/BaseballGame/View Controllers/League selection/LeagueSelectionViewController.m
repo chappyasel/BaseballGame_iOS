@@ -63,13 +63,12 @@
             cell.textLabel.text = @"New custom league";
             return cell;
         }
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Identifier2"];
+        CustomLeagueTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Identifier2"];
         if (cell == nil) {
-            //cell = [[NSBundle mainBundle] loadNibNamed:@"LeagueTableViewCell" owner:self options:nil].firstObject;
-            cell = [[UITableViewCell alloc] init];
+            cell = [[NSBundle mainBundle] loadNibNamed:@"CustomLeagueTableViewCell" owner:self options:nil].firstObject;
         }
-        cell.textLabel.text = [NSString stringWithFormat:@"%@",self.customLeagues[indexPath.row].name];
-        //cell.textView.text = [NSString stringWithFormat:@"%@",cell.year];
+        cell.name = self.customLeagues[indexPath.row].name;
+        cell.textView.text = [NSString stringWithFormat:@"%@",self.customLeagues[indexPath.row].name];
         //cell.leagueController = self.leagueController;
         //cell.managedObjectContext = self.managedObjectContext;
         return cell;

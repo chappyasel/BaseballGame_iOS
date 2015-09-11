@@ -9,6 +9,7 @@ target 'BaseballGame' do
     pod 'MGSwipeTableCell'
     pod 'ZFDragableModalTransition'
     pod 'DownloadButton'
+    pod 'XLForm'
 end
 
 target 'BaseballGameTests' do

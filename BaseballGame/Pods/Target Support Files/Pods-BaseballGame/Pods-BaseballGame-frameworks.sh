@@ -55,6 +55,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-BaseballGame/DownloadButton.framework'
   install_framework 'Pods-BaseballGame/MGSwipeTableCell.framework'
   install_framework 'Pods-BaseballGame/UCZProgressView.framework'
+  install_framework 'Pods-BaseballGame/XLForm.framework'
   install_framework 'Pods-BaseballGame/ZFDragableModalTransition.framework'
   install_framework 'Pods-BaseballGame/hpple.framework'
 fi
@@ -62,6 +63,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-BaseballGame/DownloadButton.framework'
   install_framework 'Pods-BaseballGame/MGSwipeTableCell.framework'
   install_framework 'Pods-BaseballGame/UCZProgressView.framework'
+  install_framework 'Pods-BaseballGame/XLForm.framework'
   install_framework 'Pods-BaseballGame/ZFDragableModalTransition.framework'
   install_framework 'Pods-BaseballGame/hpple.framework'
 fi

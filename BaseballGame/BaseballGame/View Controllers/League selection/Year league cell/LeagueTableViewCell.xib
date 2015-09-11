@@ -13,7 +13,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="350" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUS-pg-6QQ" customClass="PKDownloadButton">
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUS-pg-6QQ" customClass="PKDownloadButton">
                         <rect key="frame" x="230" y="7" width="100" height="30"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
