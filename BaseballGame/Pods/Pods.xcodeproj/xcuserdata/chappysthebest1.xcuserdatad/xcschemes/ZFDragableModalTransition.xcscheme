@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1727E40CA9A0FF7D04DED26"
+               BlueprintIdentifier = "8DBA8D667196D95A150EE80D"
                BuildableName = "ZFDragableModalTransition.framework"
                BlueprintName = "ZFDragableModalTransition"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -7,405 +7,207 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0006D2F06E2F6668C73471F332FFA51D /* XLFormDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D5FE2888C86896DD5495AC3CC8CAEA /* XLFormDatePickerCell.m */; };
-		016BEC8BFFEE5B5B103D7F91A9E062C8 /* XLFormPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F415C1276F10D1199C26D1944C2D2717 /* XLFormPickerCell.m */; };
 		031DE42FD2BC8E311C03032E8784F77B /* UCZProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B7EFF76B49250A4D1A9A3FEA340D2 /* UCZProgressView-dummy.m */; };
-		0B3D67ECD0C132CA57CBBA9ECFFAE001 /* XLFormSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 560A04AF085DCE43231DE818DF4DDB5C /* XLFormSelectorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B9319F2C2A2CDD9BE85BA0CB77A16A9 /* XLFormValidationStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1272CB81D51DAB159237A16A6C2177 /* XLFormValidationStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BD0DFDC4F9112989FD74B66A816D11B /* XLFormLeftRightSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B90B554C1B60133E5415E95C7ACCA60B /* XLFormLeftRightSelectorCell.m */; };
-		0C9B2DF935F16EBE478929796598507B /* XLForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D014651721365C483C4661C82FE39BAF /* XLForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06D1372E19BE52F32D8FD6367CA545D3 /* MGSwipeTableCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C45498E952FE82F2D80F838D7E8886E2 /* MGSwipeTableCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A458E4FF5929D2882F94D82713FC0DA /* UIImage+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB970925AB861D44AA15DBD7471C0EA /* UIImage+PKDownloadButton.m */; };
 		0E8097D9A72FC6860045629B34EA7BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		10CB2359837DCFE295085889331133F7 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5547A85F4FEBCE8F829CAFB48A2D80C /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		13435A50A5FC84139EDDEB154B8CB0F3 /* PKCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A715E1E1A9D231A221293BAFB8D27BC /* PKCircleProgressView.m */; };
-		1536795513DC44CC2873F42ECE6DBB09 /* XLFormButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F540DE6179B59E319C9F8EF982A9314 /* XLFormButtonCell.m */; };
+		124E626418979330CE45ECCF909FCE04 /* PKStopDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C95D5752E16A21781C498815F31C47CA /* PKStopDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1547CA2F17B12357B2CDF7BB3F06DDAF /* UIColor+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 55219F5D48C570D310E504C1D9C29EFD /* UIColor+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1ADF6E3BBB7B151B4D2F8512453F2734 /* UCZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BACDDF4F97058AA51AA113D1E2442ED /* UCZProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1C944AA6B69846E539C364F7CB1F0792 /* XLFormDescriptorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A140FEB09EDF421BE1DC4B45485540AC /* XLFormDescriptorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AF7032E758F45D017F832688E9DC05C /* Pods-BaseballGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CD3750DB572195E84C548AF6B1A7FA /* Pods-BaseballGame-dummy.m */; };
 		2158E1CC027D43BF99275D4569DB4DE2 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F781CF7B58F76E93BE9B918EF7D98B5 /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		21AAEA294E89768CC7E9A7C3EBA3982D /* XLFormValidationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 717E3DB4D6B4232AD0B69F4F26F33B79 /* XLFormValidationStatus.m */; };
-		22AC7E68B84AC3938FEDCEEDBB4E689F /* UIButton+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C87CF27AEFF373C899DCED48AD466C /* UIButton+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		258CC94C523DCB72754378D4BBB7B9AA /* XLFormSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90EC7B162FC9B0A37D5BC86892FE2E /* XLFormSegmentedCell.m */; };
-		29FC947E249809BD1D62D72E60C4150D /* XLFormInlineRowDescriptorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2D537117CE3057A0D971C54CE6685 /* XLFormInlineRowDescriptorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25783D9E6F12EC58434D76DB57F0C7F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
 		2A3187E1C99240069588E4818480F4C8 /* hpple-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ACD1DAD6655362D7B7BC00D0CC26C9 /* hpple-dummy.m */; };
-		2C9CE2D1FF0030BDB34BF55DFDE7F3FE /* XLFormSectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EEAC1FFD884F3C2B1280DF4E00AA64 /* XLFormSectionDescriptor.m */; };
-		2CCC7C57C54186913CDB1BFAD2B6236E /* XLFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D954728400B73166AD861CA4BA09F0C /* XLFormViewController.m */; };
-		2DEE077CED2200D74E5CEC8294E3CCD6 /* XLFormRegexValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FF7085640EA4365991A4DAFBEA8726 /* XLFormRegexValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30F0EB452093BBED9ECE73BF3A57AC6E /* XLFormRightDetailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB68B74A49D126BE2ECAA4198B05DAB /* XLFormRightDetailCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31CD387FA9E6DFCF32D198C7E0495B20 /* NSString+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88647FFBA7588CCF4BCE1647BF0E4D /* NSString+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36B6D3416AC53928C87624F1355AF5EB /* XLFormLeftRightSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5060F2D3C57B0C6FB6E1B47BC3F52FDB /* XLFormLeftRightSelectorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36DD0BDFF3FE55248BAAFE8E9F3A8772 /* XLFormOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3C096C50014BF49FA7130809F1FE7E /* XLFormOptionsViewController.m */; };
-		3807AD5404EA07E2958802EA5F416242 /* XLFormRowDescriptorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62813CDE923CCA6C91B51FFED3E6A2CB /* XLFormRowDescriptorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BC816D99A1D9E95C2931EB872AEE39D /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 835C77EB7735D22A698CD12E493B82B7 /* MGSwipeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C64E5DE76DE8CA79272B10C493E0776 /* UIImage+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A626A6DC017E22B60B92A3B48500BEF /* UIImage+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38C35F30B81C4FD2B0E5C657FFED7AB4 /* ZFModalTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0733A2FCA50A57E0A0162A47FB6C7A /* ZFModalTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		394ACA96439E09272172C8E7963820CE /* XLFormDateCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 11376061CB7A942CBE71E1D6179F943F /* XLFormDateCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A2203EFAA306DF5A256306E10353E66 /* PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9020046FE5AD35D7B3B01FC568E4972 /* PKDownloadButton.m */; };
 		3A3E8AF19C95FCCF466761C6C20A92EE /* UCZProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0468A6AFB6B971F9F67E8943DEF71F /* UCZProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E5A01C3D1B5A68DB75ACC40BC18BCE2 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAEEA0C96BCDAE469172B9F1DD32CB /* TFHpple.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		40D04B45836B1C2C67770D4526690CFC /* NSPredicate+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9516BE1A87CAF59B32CA5E4D8656EA54 /* NSPredicate+XLFormAdditions.m */; };
 		418E6CD8854ACEE7B853529F19E00207 /* TFHppleElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7651E1C5B6F30DA87824DC3D6E4D9E /* TFHppleElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42AAF6FF2A3E1467717BE55F519D7DA7 /* XLFormOptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 12934F17EA26630640D44D6CADC7D133 /* XLFormOptionsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		441355AD6C65151C3A34045FBC738B37 /* XLFormTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 01BD69ECCA50EDE6180D4E98B1DAA329 /* XLFormTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		441D382FB41E14DB89D089A53A67C668 /* UIImage+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCF0B449A0EA8A0647B0E47D2D8902F /* UIImage+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		474691770F22ADFB452430AB4B79713B /* NSArray+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F923EC58F3AFA8F3E0B773EB1A36653F /* NSArray+XLFormAdditions.m */; };
-		487140CEEE70BED7619F78F185FEE8F3 /* UIView+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 82AEA8369E9F0D33E1CBA88FFBD26767 /* UIView+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49C0D0F4E670C97BCE5BAA51C274CE7F /* XLFormInlineSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C659959AFFBBFAA8F2A048F428BE07 /* XLFormInlineSelectorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D1823A2A17B7B3F08CAFE4D91C287A0 /* XLFormBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D54CF137EE799A34047AE57D8FD10 /* XLFormBaseCell.m */; };
-		4DC126BDFCA8828C54B797D0F58EE6F6 /* PKStopDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A846B127AB675A97B76B7118115693 /* PKStopDownloadButton.m */; };
-		4E2BA0370456D70C4D6C067D21AE4453 /* NSExpression+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 88679577CF7B1D794B89F892B81B124E /* NSExpression+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E85EE843451A3DB90CD9EB34BC5E7F4 /* XLFormStepCounterCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CF0D2F70B1F6FD523EF354FD13E4AE /* XLFormStepCounterCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EC847F2CE85DC85937C8D7DC7F72B33 /* XLFormRightDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D32B27929B1A0F7866D8F4BECC670C /* XLFormRightDetailCell.m */; };
-		4F863D2265BD5F9213974B8EB94D6E1D /* XLFormDescriptorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FAC4B07F19BEB78D6F03D7AB0FFA6B /* XLFormDescriptorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		517A4F8EAF582C58E889F10B5A1D5F2C /* PKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 685B2C16269A01CAB291297E8C7E2BBD /* PKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52ADBB8E4755CFBCAC6A0136712E1E03 /* XLFormDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0ED4406B709DA4CD2689450E5EC3 /* XLFormDescriptor.m */; };
-		52F3CF2171D132DEF0D14D9F4C41D38C /* PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CF88C7CF34EAD9E145E0B65E398BA /* PKDownloadButton.m */; };
-		53A1E107FBBB9533E03E7DE8D173C722 /* XLFormValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 157778ED59AA25C3B9362C1EE0113E52 /* XLFormValidator.m */; };
-		53D851C1B907889521EB77D3D20D6D61 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 412281E6CE9EAF89FEB434E1B7C427A6 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		57DE2F21487084FE20C356FA29312449 /* XLFormStepCounterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED44305C3641D271CCDE35998DD07DAC /* XLFormStepCounterCell.m */; };
-		58A1221E1D9189CBEB76AE7126B4891F /* XLFormOptionsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 28918B94A50498FB70A71456F762D6E2 /* XLFormOptionsObject.m */; };
-		5A19862B946CFB002E3BEFD5DA1C07C0 /* DownloadButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0226595E0D42EC38F3F72A54BDA0E7 /* DownloadButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A8F07E3E948F3E3C9F54CD2C56955F2 /* NSPredicate+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 673F5F31F36D21D93D0F017EA5ED885C /* NSPredicate+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B183919B3F622130386DDCA1AF2C1EA /* Pods-BaseballGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B243F91EDFCEE0335A87F8DCDDA3BFF8 /* Pods-BaseballGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C438334AC53D4E627D098D4463EE3F6 /* XLFormRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0F0D14C448B871F17ACD1BE1771477 /* XLFormRowDescriptor.m */; };
-		5C70259FB81DF2652E96E582264D2148 /* NSLayoutConstraint+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2F07609CD549599F6DF5C5675F409F /* NSLayoutConstraint+PKDownloadButton.m */; };
-		5CA141800B1D7555FD6B41F0A3152B13 /* XLFormBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 372B2722E5D94C87A9BC5169B0C899E3 /* XLFormBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60A998A2F46F3F5F28C0A7ECDEEE5FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		6244AB73E65488AB17266CEB331E0A55 /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB16BC56D765FA9D0913153462C5589 /* MGSwipeTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64FC19341AE3907E2EECB3878C790AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679B859A516DB051E3F10D88CA7A0090 /* UIKit.framework */; };
-		650FE6E2AF8C0026B8D40CEA515FC1AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		65187F09EA3B0C01329D00D9DA80B55E /* DownloadButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 692CA49D053C892A76D827F29EBD916E /* DownloadButton.bundle */; };
-		684468FD227E00B3F5F3057F0FF201C4 /* XLFormRowDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = A62F926443982F6F509A385A0B4AA962 /* XLFormRowDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D07153C85AED92F3B61AE42FCB6DF6E /* MGSwipeTableCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B6348BA367E3FBAFFA1FB27F61EB1C /* MGSwipeTableCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DC631918E3368A610B2B00C5E09181E /* XLFormInlineSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16937FB405C335FA78C73364E59FF3B5 /* XLFormInlineSelectorCell.m */; };
-		70022F18DF849185D3846B1DE1F1737C /* XLFormTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BDA288638BCC6CEAC8EB29485C4771 /* XLFormTextView.m */; };
-		716ED1E639ACE9564F76C6E586D376C2 /* XLFormDatePickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DDC1C2886F868DBE4485BEBCC29EA5 /* XLFormDatePickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		760BF97893F3E00ED7F1A381B8AEFB2E /* XLFormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224F25C24CC089C1D4E635E7B73F1EE7 /* XLFormTextFieldCell.m */; };
-		766FB143A6A1C77B4D13574F16ABDC8C /* DownloadButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A4F5CA8E590F83EE0A8C505DE12450 /* DownloadButton-dummy.m */; };
+		5028D12049F03B54DA35ACB5EDBBF540 /* PKPendingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0FD295F2C788985773D66A4BDF5C1A /* PKPendingView.m */; };
+		52342B99AE37819DD223F43C9A0811AD /* PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F69600E57E3BEA7242CE8B9BBB0DEFC /* PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541DF8D4EDCA47E91D247F72D3E09032 /* PKCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FDC3B79B6FE7C9FFE9887E3A82526B /* PKCircleView.m */; };
+		5435530BFFD27F23094F13AD3AFEEA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
+		565765D2A38C2252C0E05BE590C4A160 /* PKCircleProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E72E30E19531B71F700667CDA60FD3 /* PKCircleProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		607D7B1F40EA53691B60A82A24CEF2F2 /* PKCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9023FC6E416857A10F05EBE077F342EE /* PKCircleProgressView.m */; };
+		62A8A0D83CDE779E473F87624F4537AF /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A399B10EC1C5E0533C6D5BF4ADB3DA24 /* MGSwipeTableCell-dummy.m */; };
+		70930883DB204E82A736F2FE774A753E /* NSLayoutConstraint+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE332D8DAA2E3FDAF2E6564AC595472 /* NSLayoutConstraint+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		731B1DD2A69A4414709E653930974E9D /* CALayer+PKDownloadButtonAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7982AC723FE5E8BDDC209D64F74E3F36 /* CALayer+PKDownloadButtonAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7490B1ACFAF4A3C813A5D6DE0EB32826 /* NSLayoutConstraint+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E5D4046E93EA90929DFE7CD47B4974 /* NSLayoutConstraint+PKDownloadButton.m */; };
 		77CABA011F96EA480BD3663C2343D1F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		7930DD6A3B1957ACF6D0FCA54944A736 /* XLFormValidatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D402060A865300D87AB9CB141CA7DC29 /* XLFormValidatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AC2A7F30E68E316C2BF40221393CEF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		7B87856BF4B1B5E2DDD4AC55BFAE4AC9 /* XLFormButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 697E863FEDE5A1DB39453C3D579A1F61 /* XLFormButtonCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CBE3AE69D61BFEE68BF0338FC80F4E8 /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 426ACAF68D1C0C575618AE0CA6F0D3A5 /* MGSwipeTableCell-dummy.m */; };
+		7F898C7BFFDC9B8326F4D1B27922E753 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97465C795EC4C8A09AB8E99765350FB4 /* UIKit.framework */; };
 		837705B454D6371B0C0D8A3D17D4C03B /* UCZProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDAF4AC4BEB94918BBD0C25A3ED02F17 /* UCZProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8655443FB8893DE26F40A1FDE1334C22 /* Pods-BaseballGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3209184CED996773807F271D08819 /* Pods-BaseballGame-dummy.m */; };
-		878575C946519119E09431DD95921171 /* XLFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AF2159221DE7C382005E83C6238F3A /* XLFormDateCell.m */; };
-		891E49FE3049E55E6B6E8FE46190D4E9 /* XLFormTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C4B6085D1349EC78ECFB6E018135A9 /* XLFormTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A2128A85F1F9B314424930DCE7B5CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		8D889273246BEF47F9C7C4CDED89EEA7 /* NSObject+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E7536EF819E18EEABA553B7017721 /* NSObject+XLFormAdditions.m */; };
-		9070D5D403BDC0AB7162EA57FECE1DAF /* XLFormDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DFAE763C0E24F0CB51D9ED3C2387CB /* XLFormDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		923418D070F44B144B813F2C924251FB /* XLFormSectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = E52C05F81F30C1158D32AA102ADB61C1 /* XLFormSectionDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9293E95410AAF76D26A5C52DF7CE7137 /* XLFormCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C210E6C6A34459481D5DC7EFE0C8B67 /* XLFormCheckCell.m */; };
-		92CC568F6F8B4E33B7734EDF7DF6EB45 /* XLFormOptionsObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3C8721AB60A3196467C66886B130B2 /* XLFormOptionsObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		946F917C916E3BDB44DA2834D0E453EF /* XLForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FC24CB8BCB665959874BBFA0C9EB6 /* XLForm.m */; };
-		9830D21434C71CE9A44E5424F3C7DDEF /* XLForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF080FA93BE9074873D09997CA6BBE1 /* XLForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9991FC191D58F43EECCFC85678B4ABAF /* NSObject+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A108B9DBB8EB12F809DE0C0B1EC9EF /* NSObject+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AFBD84B2DE1B3E7C57CCC2C96E084E4 /* XLFormSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C2C8A60533EDD423CCFE35118F1D2 /* XLFormSelectorCell.m */; };
-		A0845D1267A380740308D6E3E99D2AAB /* XLForm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FC97BA797FB4DB3538878DEDABFB0E2 /* XLForm.bundle */; };
-		A21E308A2F1B35E982EDF50249E752AD /* PKCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E2FBB3FB96FCB561867C768609877 /* PKCircleView.m */; };
-		A448E2829C925B2B9BB50A161662918C /* UIColor+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 87578578733D0219DF50737D6C033774 /* UIColor+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA269A8FFAE001C9DE6C2560A3DC6D52 /* NSString+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A19AA3510842ECEB5C0C33340C2701 /* NSString+XLFormAdditions.m */; };
-		AAC93333BAB71BF857019946F4A2553C /* PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E329792E2CC02819D0F11393B294E5A1 /* PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABCA59D24C44B099EAC8B416A2A49E7D /* NSLayoutConstraint+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4164BF2BAEB338FDDDBF2222B3ED88F3 /* NSLayoutConstraint+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE177B295C6D808A9FFDE62C8BEF5356 /* XLFormRightImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D386B63EB5B864E76BB86BDC96315A /* XLFormRightImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		859F5CF5C60EB32BB4D71EE77BDEA1E8 /* PKStopDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 514CDDF578DFAAED61BA81E0AECC6A0A /* PKStopDownloadButton.m */; };
+		863AFD17F143ABAD29B2B7A51DA1EFFF /* DownloadButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3317F3A66B825092F6AAC27EC683D74 /* DownloadButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899E554A7B37A4807FA0AB544AB243C3 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5006DE4980D268E19EAC67E1A72BE879 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9A0DDE08DF7CA4B182C8CD8E4EF4F1AB /* CALayer+PKDownloadButtonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB75497F279271B86E83F393A8DBAD /* CALayer+PKDownloadButtonAnimations.m */; };
+		A6098676B232945240434775858C52B7 /* Pods-BaseballGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A551FE9200340E5D9B65FD4E5C5BCFCD /* Pods-BaseballGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F02BB156FB5655A468CD655DBF685C /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D65692DA70594B68B1DC63ABAFC1EE /* MGSwipeTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC888A1E4B2AD7E3F1E1B005CD774EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
 		AE1CE24F6F8DD5EFB54995CC057C8713 /* XPathQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BC82DC2210071E71347112ADC0CB9D /* XPathQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3ED45FD7AA7DA55E38EB0ADBAE3A996 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679B859A516DB051E3F10D88CA7A0090 /* UIKit.framework */; };
 		B54436A0559DBCD606242AC39F638348 /* ZFModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7327F59D5E1DAF291364B55DFCB165BE /* ZFModalTransitionAnimator.m */; };
-		B564A4157584EC382DA0F01F3DC165C2 /* CALayer+PKDownloadButtonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F252073430445D27D7A117EDE3A7B77F /* CALayer+PKDownloadButtonAnimations.m */; };
-		B8FECA61FDC2D3778FCD987A8F4AC83D /* XLFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B99AA640BCB66A54D7A065C46680A2B /* XLFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAF9252AA02D0C09AF70D434C5A2069F /* ZFDragableModalTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AB2E98B14DB4C6FF9F6C0124774125 /* ZFDragableModalTransition-dummy.m */; };
+		BFCDCF986BA3B12F9C16FE0445E04045 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC454D79A8C84C6C30810062062C3 /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C0AB19CDCCBACBB095DEA2D25C4CADF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		C27FA38B4DB17A1C64D9FE07F65AD1C3 /* XLFormCheckCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3BC50F38DB467676FFF36F1DC8F141 /* XLFormCheckCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4C59492612843E7D1ECE8B5145DDAE9 /* XLFormRowNavigationAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = C085199EF5FF51DA310FC35C31C337DE /* XLFormRowNavigationAccessoryView.m */; };
-		C4D45BEB609C462476882AA197168C24 /* XLFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2C9CFFFE5E6BE86F59870125CBF76 /* XLFormSwitchCell.m */; };
-		C55FAC29AF96AEDC53023C9AE71891DF /* XLFormRegexValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E0351D493519752334EB5604D8126 /* XLFormRegexValidator.m */; };
-		C688B7E5EC2563EF7F0262ABFE712535 /* XLFormRowNavigationAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = B53F00C023147BEC356125BE5F0E787D /* XLFormRowNavigationAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAF213A0AB9F55833C4FFADC7AA6C873 /* XLFormTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC353113F166C65FF67D5CB48F52D152 /* XLFormTextViewCell.m */; };
-		CB9D209EF5CBFF09BA04EB9EB2C0EFE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4434D5B53C2A06FC6C6144B4A2598442 /* CoreGraphics.framework */; };
-		CBBB10FEF98F1E2F5E8B435765850271 /* PKCircleProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA733B97441907B33BBA735F69164F10 /* PKCircleProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCAFD8ED548315683BDB35A15AAF5627 /* NSExpression+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E851FD532CB451A2352B773DF4F2CAE3 /* NSExpression+XLFormAdditions.m */; };
-		CD903F8F6C3049FF9195A3D322EA5C99 /* UIButton+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AF254336379EEB3FF81CBCCC260F7 /* UIButton+PKDownloadButton.m */; };
-		CF5CDEB60A2CC3977F5EEF66CAAC6D6A /* UIImage+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B687BCB76DC20684A76B2FCE22ECC1 /* UIImage+PKDownloadButton.m */; };
-		D1FADA5F76E3B6137C7F2CF216F93D60 /* XLFormSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C05FD4708D575237725CC49C2E65E3CC /* XLFormSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D30C9DDCF4D6AD72C72468ACCB29D75A /* XLFormPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 07472B27D77DCC2F5EDA750981220C45 /* XLFormPickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3EF12080255D872DBC2A83A58BE99D5 /* NSArray+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E524C11D80B64506CA2E33423B28F8 /* NSArray+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6094A3CF3BD0A8763B559D1F877FD54 /* XLFormRightImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F59DDF36ED03F6D136A07AF1C2622 /* XLFormRightImageButton.m */; };
+		C31D6051361FE16FA778EDFAA4CD464A /* PKCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = E9250079B0D37ACD694A107036FD0047 /* PKCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBACD64ACA2CA23A2EA8448A125E31E6 /* DownloadButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E67E50EEE7480761FCDDF032506626 /* DownloadButton-dummy.m */; };
+		D57E5C1197B95176375B1C640A05D5C9 /* DownloadButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */; };
 		D6C8752544BAADEB414F18D47C9A1DEA /* hpple-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7545BD0E83FE16EA6614DE724DE6864 /* hpple-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA4D260F06E32807C3772E7821CD76E6 /* CALayer+PKDownloadButtonAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = C14E5BE9550B4091F638C79A8CF1D1C7 /* CALayer+PKDownloadButtonAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF41532E33B4DDE0001B6CCAE0D34696 /* XLFormSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 221B7DE4CD8E93E2A2E7FE4036CCD410 /* XLFormSliderCell.m */; };
+		D75FFE5703EA5C2B65E798F9AF860C7B /* PKPendingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9550EAC9184652A56061A32D82CBA0B7 /* PKPendingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAD127F906F76507636C1E19B79F38CA /* UIColor+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EEA06B9BFAD67FBD2EE53FE05EA2C8 /* UIColor+PKDownloadButton.m */; };
 		E082F3997A61F5D79A563CCA23EC319B /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA7FE16224F22CBEDC524A0042DDFA /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E7357F3037178FABC884C4E56496C9DD /* UIView+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F72740E06F974A9F88E9753DE60C7EF0 /* UIView+XLFormAdditions.m */; };
-		E75898CDB3FFEA49DF4EF359BE11A0E3 /* XLFormTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AD11ADC66AA12462BBDB862AFDEB2F /* XLFormTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E791D77203339BF46D697B7BDA5AB632 /* XLFormSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 613CE3BB3B13D03E2DAB24019B4487E5 /* XLFormSliderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7B7F1B64938B7036B0B8E7D60CCDF72 /* UIColor+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B12471C3D52AE6C139829731951B09 /* UIColor+PKDownloadButton.m */; };
+		E5CC48357C5AB58E3BACB9BCF4B409F7 /* UIButton+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE95ADF92950D9941FE0D6171304A4 /* UIButton+PKDownloadButton.m */; };
 		E7FB1613FACD41211C871B80BB5B03A7 /* TFHpple.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA21C063D68D45DC61A4D54608DE678 /* TFHpple.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8BEDFEF00E5B91B57BE702EC994D723 /* XLFormValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1650817D24A5592E5892AF1BF50FD324 /* XLFormValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9DA1EBC8483E51FA1CDD92046C1FDE6 /* PKCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A1188BAA6D0E67DD155BF5B25E2CCF /* PKCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA1CE72416ED53FB28F307032B666ED9 /* ZFDragableModalTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D77424D9B84A281E612B38D45194ECF /* ZFDragableModalTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECC473721C7505D11263F3EC2B17CCA7 /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFB0A355599D500B293429A0AF388C9 /* MGSwipeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDAAC0AD5C8D728C6C0A1B16E1318361 /* XLFormSegmentedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7BDF23BF14856E7486CAA70F14A361 /* XLFormSegmentedCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F112723ECD38045995C7F24D1CF4B3E5 /* XLForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB54B79B5E310C6D39B75BFFA95660 /* XLForm-dummy.m */; };
-		F11B93189677A218067EF3B9DC7A2712 /* PKStopDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 960E441AC1AA51A90BAF3DE369C5CF6C /* PKStopDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F471986092BFE255BB42DB93F8DD6154 /* PKPendingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F456FDFCD8A7ADAF5160D50A08ABC5 /* PKPendingView.m */; };
-		FF369E6090790001676DF8E25279AF0B /* PKPendingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD128F2963C4BF59651D5E20A04BAB2 /* PKPendingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3430DA23408BB15C9582F2D2EA94FF8 /* PKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C1E9ABD13B7A8C4C990DD10CCD7B6E /* PKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB98E6A6769236AF6C27D90582C115AF /* UIButton+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 22F680DB5716D5459A0AA431622C66E9 /* UIButton+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		017AE9B9CC3404AD1C486822DFDE02B6 /* PBXContainerItemProxy */ = {
+		1428688F832CA46B9B590BAD2D3FB1B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D635F027F0A6FD04B98B790907265430;
-			remoteInfo = hpple;
-		};
-		2FC708291F2BD1DEFBFABE9B6AFB7BA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD4D640006608A517982DF06A77AD3DE;
+			remoteGlobalIDString = 01D371C3A2F4D69826071E84ECC7C49B;
 			remoteInfo = MGSwipeTableCell;
 		};
-		41D8BF10E21F36E00EBB4EA0F08A2437 /* PBXContainerItemProxy */ = {
+		504B3D58B690514A86A555D7348CD251 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8568C31DB3151BD9C0C8E5F259541AE6;
-			remoteInfo = XLForm;
+			remoteGlobalIDString = 14CCA77BA23233CB53BC615C67873B64;
+			remoteInfo = DownloadButton;
 		};
-		61108F262A49E399B4381AD1C7F1F6F8 /* PBXContainerItemProxy */ = {
+		7BB0567AE343AA8E996719BEA2B95ABB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B946E11B4E7FD9C686854392CFF45B38;
 			remoteInfo = UCZProgressView;
 		};
-		65AF2D15E298F530A883F36366157FD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C0D7A25DC7488AAF3AF5B6C772756B3;
-			remoteInfo = DownloadButton;
-		};
-		A0F0189482B001B045F6CD1EAD235980 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46A8046A2422B944CBDB410069A18199;
-			remoteInfo = "DownloadButton-DownloadButton";
-		};
-		BC0263A13EA1FEF71089D2F312433261 /* PBXContainerItemProxy */ = {
+		BBFC06B83C4C58142053A2CBBEEC69E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D8CC7931C78335CEA76BFF4A010C8425;
 			remoteInfo = ZFDragableModalTransition;
 		};
+		CFB263B117AB430DFC58926ED2D75E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D635F027F0A6FD04B98B790907265430;
+			remoteInfo = hpple;
+		};
+		E652697CA559E1B09C48CF31A3D31E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF6138FB8C10457C5A09E5F590967E3;
+			remoteInfo = "DownloadButton-DownloadButton";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01BD69ECCA50EDE6180D4E98B1DAA329 /* XLFormTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextView.h; path = XLForm/XL/Helpers/Views/XLFormTextView.h; sourceTree = "<group>"; };
 		05ACD1DAD6655362D7B7BC00D0CC26C9 /* hpple-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "hpple-dummy.m"; sourceTree = "<group>"; };
-		070AF254336379EEB3FF81CBCCC260F7 /* UIButton+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+PKDownloadButton.m"; path = "Pod/Classes/UIButton+PKDownloadButton.m"; sourceTree = "<group>"; };
-		070C2C8A60533EDD423CCFE35118F1D2 /* XLFormSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSelectorCell.m; path = XLForm/XL/Cell/XLFormSelectorCell.m; sourceTree = "<group>"; };
-		07472B27D77DCC2F5EDA750981220C45 /* XLFormPickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormPickerCell.h; path = XLForm/XL/Cell/XLFormPickerCell.h; sourceTree = "<group>"; };
-		08AF2159221DE7C382005E83C6238F3A /* XLFormDateCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDateCell.m; path = XLForm/XL/Cell/XLFormDateCell.m; sourceTree = "<group>"; };
 		0906D89A0DCC633C9E971B79BC376C9C /* Pods-BaseballGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseballGame-acknowledgements.plist"; sourceTree = "<group>"; };
-		0B3C8721AB60A3196467C66886B130B2 /* XLFormOptionsObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormOptionsObject.h; path = XLForm/XL/Controllers/XLFormOptionsObject.h; sourceTree = "<group>"; };
-		0FD692E975470AB4FD8983404780A159 /* UCZProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UCZProgressView.modulemap; sourceTree = "<group>"; };
-		11376061CB7A942CBE71E1D6179F943F /* XLFormDateCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDateCell.h; path = XLForm/XL/Cell/XLFormDateCell.h; sourceTree = "<group>"; };
-		12934F17EA26630640D44D6CADC7D133 /* XLFormOptionsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormOptionsViewController.h; path = XLForm/XL/Controllers/XLFormOptionsViewController.h; sourceTree = "<group>"; };
-		12C659959AFFBBFAA8F2A048F428BE07 /* XLFormInlineSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormInlineSelectorCell.h; path = XLForm/XL/Cell/XLFormInlineSelectorCell.h; sourceTree = "<group>"; };
-		157778ED59AA25C3B9362C1EE0113E52 /* XLFormValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormValidator.m; path = XLForm/XL/Validation/XLFormValidator.m; sourceTree = "<group>"; };
-		1650817D24A5592E5892AF1BF50FD324 /* XLFormValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidator.h; path = XLForm/XL/Validation/XLFormValidator.h; sourceTree = "<group>"; };
-		16937FB405C335FA78C73364E59FF3B5 /* XLFormInlineSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormInlineSelectorCell.m; path = XLForm/XL/Cell/XLFormInlineSelectorCell.m; sourceTree = "<group>"; };
-		1EF080FA93BE9074873D09997CA6BBE1 /* XLForm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLForm.h; path = XLForm/XL/XLForm.h; sourceTree = "<group>"; };
-		1F540DE6179B59E319C9F8EF982A9314 /* XLFormButtonCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormButtonCell.m; path = XLForm/XL/Cell/XLFormButtonCell.m; sourceTree = "<group>"; };
-		1F54BD10BDCB517CB50A0260B4B2A955 /* XLForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLForm-prefix.pch"; sourceTree = "<group>"; };
+		0FDCC454D79A8C84C6C30810062062C3 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
+		118017A15B36E3C9264B8AFAAD998D5C /* UCZProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UCZProgressView.modulemap; sourceTree = "<group>"; };
+		17E72E30E19531B71F700667CDA60FD3 /* PKCircleProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleProgressView.h; path = Pod/Classes/PKCircleProgressView.h; sourceTree = "<group>"; };
+		18AE95ADF92950D9941FE0D6171304A4 /* UIButton+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+PKDownloadButton.m"; path = "Pod/Classes/UIButton+PKDownloadButton.m"; sourceTree = "<group>"; };
+		1A626A6DC017E22B60B92A3B48500BEF /* UIImage+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+PKDownloadButton.h"; path = "Pod/Classes/UIImage+PKDownloadButton.h"; sourceTree = "<group>"; };
+		1EBB75497F279271B86E83F393A8DBAD /* CALayer+PKDownloadButtonAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+PKDownloadButtonAnimations.m"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.m"; sourceTree = "<group>"; };
 		1F7651E1C5B6F30DA87824DC3D6E4D9E /* TFHppleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
 		1F781CF7B58F76E93BE9B918EF7D98B5 /* XPathQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
-		1FD128F2963C4BF59651D5E20A04BAB2 /* PKPendingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKPendingView.h; path = Pod/Classes/PKPendingView.h; sourceTree = "<group>"; };
-		221B7DE4CD8E93E2A2E7FE4036CCD410 /* XLFormSliderCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSliderCell.m; path = XLForm/XL/Cell/XLFormSliderCell.m; sourceTree = "<group>"; };
-		224F25C24CC089C1D4E635E7B73F1EE7 /* XLFormTextFieldCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextFieldCell.m; path = XLForm/XL/Cell/XLFormTextFieldCell.m; sourceTree = "<group>"; };
-		22CF0D2F70B1F6FD523EF354FD13E4AE /* XLFormStepCounterCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormStepCounterCell.h; path = XLForm/XL/Cell/XLFormStepCounterCell.h; sourceTree = "<group>"; };
-		23F456FDFCD8A7ADAF5160D50A08ABC5 /* PKPendingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKPendingView.m; path = Pod/Classes/PKPendingView.m; sourceTree = "<group>"; };
-		28918B94A50498FB70A71456F762D6E2 /* XLFormOptionsObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormOptionsObject.m; path = XLForm/XL/Controllers/XLFormOptionsObject.m; sourceTree = "<group>"; };
+		217DD38D854DBBCEFFD40ECA3E388953 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
+		22D65692DA70594B68B1DC63ABAFC1EE /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
+		22F680DB5716D5459A0AA431622C66E9 /* UIButton+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+PKDownloadButton.h"; path = "Pod/Classes/UIButton+PKDownloadButton.h"; sourceTree = "<group>"; };
+		27E5D4046E93EA90929DFE7CD47B4974 /* NSLayoutConstraint+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PKDownloadButton.m"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.m"; sourceTree = "<group>"; };
 		2BACDDF4F97058AA51AA113D1E2442ED /* UCZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UCZProgressView.m; path = Lib/UCZProgressView.m; sourceTree = "<group>"; };
 		2C183D5C70BA9C52029D1497F30F32CE /* ZFDragableModalTransition-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ZFDragableModalTransition-Private.xcconfig"; sourceTree = "<group>"; };
-		2DA3038A12CF82DD2DDCC26AF2CA33AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		303D54CF137EE799A34047AE57D8FD10 /* XLFormBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormBaseCell.m; path = XLForm/XL/Cell/XLFormBaseCell.m; sourceTree = "<group>"; };
-		32A2416EB1760DD0D16DAE53946DD0CD /* UCZProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UCZProgressView.xcconfig; sourceTree = "<group>"; };
-		33D5FE2888C86896DD5495AC3CC8CAEA /* XLFormDatePickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDatePickerCell.m; path = XLForm/XL/Cell/XLFormDatePickerCell.m; sourceTree = "<group>"; };
-		34D32B27929B1A0F7866D8F4BECC670C /* XLFormRightDetailCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRightDetailCell.m; path = XLForm/XL/Helpers/Views/XLFormRightDetailCell.m; sourceTree = "<group>"; };
-		372B2722E5D94C87A9BC5169B0C899E3 /* XLFormBaseCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormBaseCell.h; path = XLForm/XL/Cell/XLFormBaseCell.h; sourceTree = "<group>"; };
-		37B79AFD3560F71D7B5D346627D13CF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301A9E5618BFA72EC8F13EF61F5773A0 /* ZFDragableModalTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZFDragableModalTransition.xcconfig; sourceTree = "<group>"; };
+		31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MGSwipeTableCell-Private.xcconfig"; sourceTree = "<group>"; };
 		37BAEEA0C96BCDAE469172B9F1DD32CB /* TFHpple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		37CA7FE16224F22CBEDC524A0042DDFA /* TFHppleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
-		38BDA288638BCC6CEAC8EB29485C4771 /* XLFormTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextView.m; path = XLForm/XL/Helpers/Views/XLFormTextView.m; sourceTree = "<group>"; };
-		38FAC4B07F19BEB78D6F03D7AB0FFA6B /* XLFormDescriptorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptorCell.h; path = XLForm/XL/Cell/XLFormDescriptorCell.h; sourceTree = "<group>"; };
-		3CCF0B449A0EA8A0647B0E47D2D8902F /* UIImage+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+PKDownloadButton.h"; path = "Pod/Classes/UIImage+PKDownloadButton.h"; sourceTree = "<group>"; };
-		3F60D595FDDE1E561CD1FDB137373696 /* hpple.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = hpple.modulemap; sourceTree = "<group>"; };
-		412281E6CE9EAF89FEB434E1B7C427A6 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
-		4164BF2BAEB338FDDDBF2222B3ED88F3 /* NSLayoutConstraint+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PKDownloadButton.h"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.h"; sourceTree = "<group>"; };
-		426ACAF68D1C0C575618AE0CA6F0D3A5 /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
-		4434D5B53C2A06FC6C6144B4A2598442 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		46C87CF27AEFF373C899DCED48AD466C /* UIButton+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+PKDownloadButton.h"; path = "Pod/Classes/UIButton+PKDownloadButton.h"; sourceTree = "<group>"; };
+		38F87DE9F72416EEC311D5DDC3785B26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391B08F8C516A6113FF7D82AFBA9D500 /* DownloadButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DownloadButton.xcconfig; sourceTree = "<group>"; };
+		3FB970925AB861D44AA15DBD7471C0EA /* UIImage+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+PKDownloadButton.m"; path = "Pod/Classes/UIImage+PKDownloadButton.m"; sourceTree = "<group>"; };
 		479596E73E380C3E4041053D7236FA21 /* Pods-BaseballGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaseballGame-acknowledgements.markdown"; sourceTree = "<group>"; };
-		47B70D47D0582C23CB7E27220A55876F /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
-		4A3BC50F38DB467676FFF36F1DC8F141 /* XLFormCheckCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormCheckCell.h; path = XLForm/XL/Cell/XLFormCheckCell.h; sourceTree = "<group>"; };
-		4A715E1E1A9D231A221293BAFB8D27BC /* PKCircleProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleProgressView.m; path = Pod/Classes/PKCircleProgressView.m; sourceTree = "<group>"; };
+		4842DA4C352AC1D7429DB77EA3C811F3 /* ZFDragableModalTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZFDragableModalTransition.modulemap; sourceTree = "<group>"; };
+		49079830E68D7C7608896C1A498B1FC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B0468A6AFB6B971F9F67E8943DEF71F /* UCZProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-umbrella.h"; sourceTree = "<group>"; };
-		4D1E0351D493519752334EB5604D8126 /* XLFormRegexValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRegexValidator.m; path = XLForm/XL/Validation/XLFormRegexValidator.m; sourceTree = "<group>"; };
 		4D77424D9B84A281E612B38D45194ECF /* ZFDragableModalTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-umbrella.h"; sourceTree = "<group>"; };
-		4E75E7837B3B1CC782C8E14F6ED98993 /* DownloadButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-prefix.pch"; sourceTree = "<group>"; };
-		5060F2D3C57B0C6FB6E1B47BC3F52FDB /* XLFormLeftRightSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormLeftRightSelectorCell.h; path = XLForm/XL/Cell/XLFormLeftRightSelectorCell.h; sourceTree = "<group>"; };
-		518A01374A0FCE70436F5F450E384964 /* XLForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLForm.xcconfig; sourceTree = "<group>"; };
-		5197F0870104B46A3A23686A6811B027 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51B6348BA367E3FBAFFA1FB27F61EB1C /* MGSwipeTableCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-umbrella.h"; sourceTree = "<group>"; };
-		560A04AF085DCE43231DE818DF4DDB5C /* XLFormSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSelectorCell.h; path = XLForm/XL/Cell/XLFormSelectorCell.h; sourceTree = "<group>"; };
-		568ABD234F547BE83676509542043967 /* ZFDragableModalTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZFDragableModalTransition.modulemap; sourceTree = "<group>"; };
-		58E1F1C84AE324E0D2FDD2BE6E670B6F /* DownloadButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DownloadButton.modulemap; sourceTree = "<group>"; };
-		5CF68D5A65F8EDEE0D796750ACC5D469 /* hpple.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = hpple.xcconfig; sourceTree = "<group>"; };
-		5F3E7536EF819E18EEABA553B7017721 /* NSObject+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSObject+XLFormAdditions.m"; sourceTree = "<group>"; };
+		5006DE4980D268E19EAC67E1A72BE879 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
+		514CDDF578DFAAED61BA81E0AECC6A0A /* PKStopDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKStopDownloadButton.m; path = Pod/Classes/PKStopDownloadButton.m; sourceTree = "<group>"; };
+		531DD0B507D965BDA3804BEE77452539 /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
+		55219F5D48C570D310E504C1D9C29EFD /* UIColor+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+PKDownloadButton.h"; path = "Pod/Classes/UIColor+PKDownloadButton.h"; sourceTree = "<group>"; };
+		5C0FD295F2C788985773D66A4BDF5C1A /* PKPendingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKPendingView.m; path = Pod/Classes/PKPendingView.m; sourceTree = "<group>"; };
 		609B7EFF76B49250A4D1A9A3FEA340D2 /* UCZProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UCZProgressView-dummy.m"; sourceTree = "<group>"; };
-		613CE3BB3B13D03E2DAB24019B4487E5 /* XLFormSliderCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSliderCell.h; path = XLForm/XL/Cell/XLFormSliderCell.h; sourceTree = "<group>"; };
-		62813CDE923CCA6C91B51FFED3E6A2CB /* XLFormRowDescriptorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowDescriptorViewController.h; path = XLForm/XL/Controllers/XLFormRowDescriptorViewController.h; sourceTree = "<group>"; };
-		62A4F5CA8E590F83EE0A8C505DE12450 /* DownloadButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DownloadButton-dummy.m"; sourceTree = "<group>"; };
-		65A1188BAA6D0E67DD155BF5B25E2CCF /* PKCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleView.h; path = Pod/Classes/PKCircleView.h; sourceTree = "<group>"; };
-		65E524C11D80B64506CA2E33423B28F8 /* NSArray+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSArray+XLFormAdditions.h"; sourceTree = "<group>"; };
-		673F5F31F36D21D93D0F017EA5ED885C /* NSPredicate+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPredicate+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSPredicate+XLFormAdditions.h"; sourceTree = "<group>"; };
-		679B859A516DB051E3F10D88CA7A0090 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		61C1E9ABD13B7A8C4C990DD10CCD7B6E /* PKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKMacros.h; path = Pod/Classes/PKMacros.h; sourceTree = "<group>"; };
 		67BC82DC2210071E71347112ADC0CB9D /* XPathQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
-		685B2C16269A01CAB291297E8C7E2BBD /* PKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKMacros.h; path = Pod/Classes/PKMacros.h; sourceTree = "<group>"; };
-		692CA49D053C892A76D827F29EBD916E /* DownloadButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		697E863FEDE5A1DB39453C3D579A1F61 /* XLFormButtonCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormButtonCell.h; path = XLForm/XL/Cell/XLFormButtonCell.h; sourceTree = "<group>"; };
-		6A88647FFBA7588CCF4BCE1647BF0E4D /* NSString+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSString+XLFormAdditions.h"; sourceTree = "<group>"; };
-		6B0CF88C7CF34EAD9E145E0B65E398BA /* PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKDownloadButton.m; path = Pod/Classes/PKDownloadButton.m; sourceTree = "<group>"; };
-		6C210E6C6A34459481D5DC7EFE0C8B67 /* XLFormCheckCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormCheckCell.m; path = XLForm/XL/Cell/XLFormCheckCell.m; sourceTree = "<group>"; };
-		6C7E7C59528B838F63CFAF7B82D7FADA /* XLForm-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XLForm-Private.xcconfig"; sourceTree = "<group>"; };
-		6E507F8110ED5EB4B653A9BD390B1F3A /* XLForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F9F3F1F189F553124EE550A540DAF16 /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
-		6FB43F3C44F161AA94432809012BB871 /* Pods_BaseballGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseballGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70B687BCB76DC20684A76B2FCE22ECC1 /* UIImage+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+PKDownloadButton.m"; path = "Pod/Classes/UIImage+PKDownloadButton.m"; sourceTree = "<group>"; };
-		717E3DB4D6B4232AD0B69F4F26F33B79 /* XLFormValidationStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormValidationStatus.m; path = XLForm/XL/Validation/XLFormValidationStatus.m; sourceTree = "<group>"; };
-		71F56815C3843B6446BD8BD98D2A0743 /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGSwipeTableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFCB3A1A01CFCAD4718F0E6208B16D7 /* Pods_BaseballGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseballGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F69600E57E3BEA7242CE8B9BBB0DEFC /* PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKDownloadButton.h; path = Pod/Classes/PKDownloadButton.h; sourceTree = "<group>"; };
 		7327F59D5E1DAF291364B55DFCB165BE /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZFModalTransitionAnimator.m; path = Classes/ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
-		76A108B9DBB8EB12F809DE0C0B1EC9EF /* NSObject+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSObject+XLFormAdditions.h"; sourceTree = "<group>"; };
-		790F59DDF36ED03F6D136A07AF1C2622 /* XLFormRightImageButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRightImageButton.m; path = XLForm/XL/Helpers/Views/XLFormRightImageButton.m; sourceTree = "<group>"; };
-		7B99AA640BCB66A54D7A065C46680A2B /* XLFormViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormViewController.h; path = XLForm/XL/Controllers/XLFormViewController.h; sourceTree = "<group>"; };
-		7BFB54B79B5E310C6D39B75BFFA95660 /* XLForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLForm-dummy.m"; sourceTree = "<group>"; };
-		82AEA8369E9F0D33E1CBA88FFBD26767 /* UIView+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XLFormAdditions.h"; path = "XLForm/XL/Helpers/UIView+XLFormAdditions.h"; sourceTree = "<group>"; };
-		8476C5F6086F6900A575FD5C32250601 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87578578733D0219DF50737D6C033774 /* UIColor+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+PKDownloadButton.h"; path = "Pod/Classes/UIColor+PKDownloadButton.h"; sourceTree = "<group>"; };
-		88342881D264315B102A430B9F562817 /* UCZProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-prefix.pch"; sourceTree = "<group>"; };
-		88679577CF7B1D794B89F892B81B124E /* NSExpression+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSExpression+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSExpression+XLFormAdditions.h"; sourceTree = "<group>"; };
-		89A846B127AB675A97B76B7118115693 /* PKStopDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKStopDownloadButton.m; path = Pod/Classes/PKStopDownloadButton.m; sourceTree = "<group>"; };
-		8D954728400B73166AD861CA4BA09F0C /* XLFormViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormViewController.m; path = XLForm/XL/Controllers/XLFormViewController.m; sourceTree = "<group>"; };
-		8EE2D537117CE3057A0D971C54CE6685 /* XLFormInlineRowDescriptorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormInlineRowDescriptorCell.h; path = XLForm/XL/Cell/XLFormInlineRowDescriptorCell.h; sourceTree = "<group>"; };
-		8F3D2047EC5A2F7D07ED519536A013A5 /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
-		90EEAC1FFD884F3C2B1280DF4E00AA64 /* XLFormSectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSectionDescriptor.m; path = XLForm/XL/Descriptors/XLFormSectionDescriptor.m; sourceTree = "<group>"; };
+		74E67E50EEE7480761FCDDF032506626 /* DownloadButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DownloadButton-dummy.m"; sourceTree = "<group>"; };
+		7982AC723FE5E8BDDC209D64F74E3F36 /* CALayer+PKDownloadButtonAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+PKDownloadButtonAnimations.h"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.h"; sourceTree = "<group>"; };
+		835C77EB7735D22A698CD12E493B82B7 /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+		900EA76965081C20F7437947D181023B /* hpple.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = hpple.xcconfig; sourceTree = "<group>"; };
+		9023FC6E416857A10F05EBE077F342EE /* PKCircleProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleProgressView.m; path = Pod/Classes/PKCircleProgressView.m; sourceTree = "<group>"; };
+		92EB36805E3805CEF46EC48C8880727B /* hpple.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = hpple.modulemap; sourceTree = "<group>"; };
 		94CED0CDECBB2CADDE33D41D3A487A07 /* ZFDragableModalTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZFDragableModalTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9516BE1A87CAF59B32CA5E4D8656EA54 /* NSPredicate+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPredicate+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSPredicate+XLFormAdditions.m"; sourceTree = "<group>"; };
-		960E441AC1AA51A90BAF3DE369C5CF6C /* PKStopDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKStopDownloadButton.h; path = Pod/Classes/PKStopDownloadButton.h; sourceTree = "<group>"; };
-		97DDC1C2886F868DBE4485BEBCC29EA5 /* XLFormDatePickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDatePickerCell.h; path = XLForm/XL/Cell/XLFormDatePickerCell.h; sourceTree = "<group>"; };
-		9D1272CB81D51DAB159237A16A6C2177 /* XLFormValidationStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidationStatus.h; path = XLForm/XL/Validation/XLFormValidationStatus.h; sourceTree = "<group>"; };
+		9550EAC9184652A56061A32D82CBA0B7 /* PKPendingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKPendingView.h; path = Pod/Classes/PKPendingView.h; sourceTree = "<group>"; };
+		97465C795EC4C8A09AB8E99765350FB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		97FDC3B79B6FE7C9FFE9887E3A82526B /* PKCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleView.m; path = Pod/Classes/PKCircleView.m; sourceTree = "<group>"; };
+		9D0103BF5A5D6BA99AD553958B3D95EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9F90EC7B162FC9B0A37D5BC86892FE2E /* XLFormSegmentedCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSegmentedCell.m; path = XLForm/XL/Cell/XLFormSegmentedCell.m; sourceTree = "<group>"; };
-		9FC97BA797FB4DB3538878DEDABFB0E2 /* XLForm.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = XLForm.bundle; path = XLForm/XLForm.bundle; sourceTree = "<group>"; };
-		9FE2C9CFFFE5E6BE86F59870125CBF76 /* XLFormSwitchCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSwitchCell.m; path = XLForm/XL/Cell/XLFormSwitchCell.m; sourceTree = "<group>"; };
-		A140FEB09EDF421BE1DC4B45485540AC /* XLFormDescriptorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptorDelegate.h; path = XLForm/XL/Descriptors/XLFormDescriptorDelegate.h; sourceTree = "<group>"; };
-		A2C4B6085D1349EC78ECFB6E018135A9 /* XLFormTextFieldCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextFieldCell.h; path = XLForm/XL/Cell/XLFormTextFieldCell.h; sourceTree = "<group>"; };
-		A36F6D5731DBEA0A724175CFBBF2C2CF /* hpple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-prefix.pch"; sourceTree = "<group>"; };
-		A4B12471C3D52AE6C139829731951B09 /* UIColor+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PKDownloadButton.m"; path = "Pod/Classes/UIColor+PKDownloadButton.m"; sourceTree = "<group>"; };
-		A4C995B056B5C4E6F831EA561347322C /* DownloadButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DownloadButton.xcconfig; sourceTree = "<group>"; };
-		A62F926443982F6F509A385A0B4AA962 /* XLFormRowDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowDescriptor.h; path = XLForm/XL/Descriptors/XLFormRowDescriptor.h; sourceTree = "<group>"; };
-		AA733B97441907B33BBA735F69164F10 /* PKCircleProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleProgressView.h; path = Pod/Classes/PKCircleProgressView.h; sourceTree = "<group>"; };
-		ADB16BC56D765FA9D0913153462C5589 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
-		AE14C279B3327D2E2A2027A804D83FC8 /* XLForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XLForm.modulemap; sourceTree = "<group>"; };
-		AEB68B74A49D126BE2ECAA4198B05DAB /* XLFormRightDetailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRightDetailCell.h; path = XLForm/XL/Helpers/Views/XLFormRightDetailCell.h; sourceTree = "<group>"; };
-		AF7BDF23BF14856E7486CAA70F14A361 /* XLFormSegmentedCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSegmentedCell.h; path = XLForm/XL/Cell/XLFormSegmentedCell.h; sourceTree = "<group>"; };
-		B243F91EDFCEE0335A87F8DCDDA3BFF8 /* Pods-BaseballGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaseballGame-umbrella.h"; sourceTree = "<group>"; };
-		B53F00C023147BEC356125BE5F0E787D /* XLFormRowNavigationAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowNavigationAccessoryView.h; path = XLForm/XL/Helpers/Views/XLFormRowNavigationAccessoryView.h; sourceTree = "<group>"; };
-		B58E2FBB3FB96FCB561867C768609877 /* PKCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleView.m; path = Pod/Classes/PKCircleView.m; sourceTree = "<group>"; };
+		A399B10EC1C5E0533C6D5BF4ADB3DA24 /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
+		A551FE9200340E5D9B65FD4E5C5BCFCD /* Pods-BaseballGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaseballGame-umbrella.h"; sourceTree = "<group>"; };
+		A6A009196EDB94972100E72FEC1214D2 /* ZFDragableModalTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-prefix.pch"; sourceTree = "<group>"; };
+		AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DownloadButton-Private.xcconfig"; sourceTree = "<group>"; };
+		B43BB7DCF517D90DFB6450265060DD5C /* UCZProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UCZProgressView.xcconfig; sourceTree = "<group>"; };
+		B5DF193EB976ECCF667D2C4F240EDE38 /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
 		B7545BD0E83FE16EA6614DE724DE6864 /* hpple-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-umbrella.h"; sourceTree = "<group>"; };
-		B90B554C1B60133E5415E95C7ACCA60B /* XLFormLeftRightSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormLeftRightSelectorCell.m; path = XLForm/XL/Cell/XLFormLeftRightSelectorCell.m; sourceTree = "<group>"; };
-		B9A19AA3510842ECEB5C0C33340C2701 /* NSString+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSString+XLFormAdditions.m"; sourceTree = "<group>"; };
+		B80AB5247E94BCA467CBD5AECE16E3B2 /* DownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9020046FE5AD35D7B3B01FC568E4972 /* PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKDownloadButton.m; path = Pod/Classes/PKDownloadButton.m; sourceTree = "<group>"; };
 		B9AB2E98B14DB4C6FF9F6C0124774125 /* ZFDragableModalTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZFDragableModalTransition-dummy.m"; sourceTree = "<group>"; };
-		B9F3209184CED996773807F271D08819 /* Pods-BaseballGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseballGame-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BAE068AD2482A2C5D5B446C6B33CDF85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBE474275B4614DD1EC3FA65E03FA409 /* MGSwipeTableCell-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MGSwipeTableCell-Private.xcconfig"; sourceTree = "<group>"; };
-		BC353113F166C65FF67D5CB48F52D152 /* XLFormTextViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextViewCell.m; path = XLForm/XL/Cell/XLFormTextViewCell.m; sourceTree = "<group>"; };
 		BD0733A2FCA50A57E0A0162A47FB6C7A /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZFModalTransitionAnimator.h; path = Classes/ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
-		C05FD4708D575237725CC49C2E65E3CC /* XLFormSwitchCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSwitchCell.h; path = XLForm/XL/Cell/XLFormSwitchCell.h; sourceTree = "<group>"; };
-		C085199EF5FF51DA310FC35C31C337DE /* XLFormRowNavigationAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRowNavigationAccessoryView.m; path = XLForm/XL/Helpers/Views/XLFormRowNavigationAccessoryView.m; sourceTree = "<group>"; };
-		C14E5BE9550B4091F638C79A8CF1D1C7 /* CALayer+PKDownloadButtonAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+PKDownloadButtonAnimations.h"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.h"; sourceTree = "<group>"; };
-		C16E7329EE80FD7CF4A3C8F2664A7683 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
-		C2DC54451008C0719C2D08A00E050533 /* DownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2F04CFD6237DC9A721914731C16972A /* ZFDragableModalTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZFDragableModalTransition.xcconfig; sourceTree = "<group>"; };
+		C205B9DCEFCD415B53EC173C259A1DA3 /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGSwipeTableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45498E952FE82F2D80F838D7E8886E2 /* MGSwipeTableCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-umbrella.h"; sourceTree = "<group>"; };
 		C92C6489385F85D6FA8E01D6370D6507 /* Pods-BaseballGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseballGame-resources.sh"; sourceTree = "<group>"; };
-		C9FF7085640EA4365991A4DAFBEA8726 /* XLFormRegexValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRegexValidator.h; path = XLForm/XL/Validation/XLFormRegexValidator.h; sourceTree = "<group>"; };
-		CA3C096C50014BF49FA7130809F1FE7E /* XLFormOptionsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormOptionsViewController.m; path = XLForm/XL/Controllers/XLFormOptionsViewController.m; sourceTree = "<group>"; };
-		CAFB0A355599D500B293429A0AF388C9 /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+		C95D5752E16A21781C498815F31C47CA /* PKStopDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKStopDownloadButton.h; path = Pod/Classes/PKStopDownloadButton.h; sourceTree = "<group>"; };
+		CACA6E686ADF7ACD7DA0218E3C2F3164 /* DownloadButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-prefix.pch"; sourceTree = "<group>"; };
 		CB840C5BDDC945594A5C99D93552A64E /* Pods-BaseballGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseballGame-frameworks.sh"; sourceTree = "<group>"; };
-		CF0F0D14C448B871F17ACD1BE1771477 /* XLFormRowDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRowDescriptor.m; path = XLForm/XL/Descriptors/XLFormRowDescriptor.m; sourceTree = "<group>"; };
-		D014651721365C483C4661C82FE39BAF /* XLForm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLForm-umbrella.h"; sourceTree = "<group>"; };
+		CF0999550E3B836C35069AFA88B0C676 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28D3A2916E45B7B9C22A8749DE9D485 /* MGSwipeTableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MGSwipeTableCell.modulemap; sourceTree = "<group>"; };
 		D29004C6327764B5952908D709763353 /* hpple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hpple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2AB0ED4406B709DA4CD2689450E5EC3 /* XLFormDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDescriptor.m; path = XLForm/XL/Descriptors/XLFormDescriptor.m; sourceTree = "<group>"; };
 		D37B54BC08A12D9159C6F5D39F2BA2E7 /* hpple-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "hpple-Private.xcconfig"; sourceTree = "<group>"; };
-		D402060A865300D87AB9CB141CA7DC29 /* XLFormValidatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidatorProtocol.h; path = XLForm/XL/Validation/XLFormValidatorProtocol.h; sourceTree = "<group>"; };
-		D5547A85F4FEBCE8F829CAFB48A2D80C /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
-		D6DFAE763C0E24F0CB51D9ED3C2387CB /* XLFormDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptor.h; path = XLForm/XL/Descriptors/XLFormDescriptor.h; sourceTree = "<group>"; };
+		D3EEA06B9BFAD67FBD2EE53FE05EA2C8 /* UIColor+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PKDownloadButton.m"; path = "Pod/Classes/UIColor+PKDownloadButton.m"; sourceTree = "<group>"; };
+		D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF3E0A385F45F7D8682753D34CD0DF8 /* UCZProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UCZProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAF4AC4BEB94918BBD0C25A3ED02F17 /* UCZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UCZProgressView.h; path = Lib/UCZProgressView.h; sourceTree = "<group>"; };
-		DE2C2D0E090125070E389FCFAE8731BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA21C063D68D45DC61A4D54608DE678 /* TFHpple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
-		DF09C9F78844210594E5C8430C47877E /* DownloadButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DownloadButton-Private.xcconfig"; sourceTree = "<group>"; };
-		E329792E2CC02819D0F11393B294E5A1 /* PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKDownloadButton.h; path = Pod/Classes/PKDownloadButton.h; sourceTree = "<group>"; };
-		E3D386B63EB5B864E76BB86BDC96315A /* XLFormRightImageButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRightImageButton.h; path = XLForm/XL/Helpers/Views/XLFormRightImageButton.h; sourceTree = "<group>"; };
-		E52C05F81F30C1158D32AA102ADB61C1 /* XLFormSectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSectionDescriptor.h; path = XLForm/XL/Descriptors/XLFormSectionDescriptor.h; sourceTree = "<group>"; };
-		E851FD532CB451A2352B773DF4F2CAE3 /* NSExpression+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSExpression+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSExpression+XLFormAdditions.m"; sourceTree = "<group>"; };
-		EA2F07609CD549599F6DF5C5675F409F /* NSLayoutConstraint+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PKDownloadButton.m"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.m"; sourceTree = "<group>"; };
+		DF16D21E7FC3E98E56F3C1E49A1C63E7 /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
+		E1F1578789FC21FD5AEB9437EBE00AEC /* hpple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-prefix.pch"; sourceTree = "<group>"; };
+		E7CD3750DB572195E84C548AF6B1A7FA /* Pods-BaseballGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseballGame-dummy.m"; sourceTree = "<group>"; };
+		E9250079B0D37ACD694A107036FD0047 /* PKCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleView.h; path = Pod/Classes/PKCircleView.h; sourceTree = "<group>"; };
+		EA75807875F5B3A56DF5992848FB6F8D /* DownloadButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DownloadButton.modulemap; sourceTree = "<group>"; };
 		EBD963534736FDF5E0152B37C0E1434C /* Pods-BaseballGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BaseballGame.modulemap"; sourceTree = "<group>"; };
-		ED2D0C09AFF5746DF946A97D04F0C876 /* MGSwipeTableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MGSwipeTableCell.modulemap; sourceTree = "<group>"; };
-		ED44305C3641D271CCDE35998DD07DAC /* XLFormStepCounterCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormStepCounterCell.m; path = XLForm/XL/Cell/XLFormStepCounterCell.m; sourceTree = "<group>"; };
-		F252073430445D27D7A117EDE3A7B77F /* CALayer+PKDownloadButtonAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+PKDownloadButtonAnimations.m"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.m"; sourceTree = "<group>"; };
-		F415C1276F10D1199C26D1944C2D2717 /* XLFormPickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormPickerCell.m; path = XLForm/XL/Cell/XLFormPickerCell.m; sourceTree = "<group>"; };
+		EC41E82CE39C3476FA3D805D0DF58AB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3317F3A66B825092F6AAC27EC683D74 /* DownloadButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-umbrella.h"; sourceTree = "<group>"; };
 		F4ECB34881D829F1DC3EE75BA43537C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A1C6745EF0778DB1B116E18E1DEA5B /* UCZProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-prefix.pch"; sourceTree = "<group>"; };
 		F6361AB55BC380211317E4233EB2D4DD /* UCZProgressView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UCZProgressView-Private.xcconfig"; sourceTree = "<group>"; };
-		F72740E06F974A9F88E9753DE60C7EF0 /* UIView+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XLFormAdditions.m"; path = "XLForm/XL/Helpers/UIView+XLFormAdditions.m"; sourceTree = "<group>"; };
-		F8AD11ADC66AA12462BBDB862AFDEB2F /* XLFormTextViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextViewCell.h; path = XLForm/XL/Cell/XLFormTextViewCell.h; sourceTree = "<group>"; };
-		F923EC58F3AFA8F3E0B773EB1A36653F /* NSArray+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSArray+XLFormAdditions.m"; sourceTree = "<group>"; };
-		FA2AC1F42CDFB7C26A948A942ED993AC /* ZFDragableModalTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-prefix.pch"; sourceTree = "<group>"; };
-		FC0226595E0D42EC38F3F72A54BDA0E7 /* DownloadButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-umbrella.h"; sourceTree = "<group>"; };
-		FD4FC24CB8BCB665959874BBFA0C9EB6 /* XLForm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLForm.m; path = XLForm/XL/XLForm.m; sourceTree = "<group>"; };
+		FFE332D8DAA2E3FDAF2E6564AC595472 /* NSLayoutConstraint+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PKDownloadButton.h"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C3C711098ECE51253584A7D43A9B95C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60A998A2F46F3F5F28C0A7ECDEEE5FD2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		116694BF03475A4ABE67AF0011F8FC42 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AC2A7F30E68E316C2BF40221393CEF6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2916B96E78A924B44871F44CD35034B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0E8097D9A72FC6860045629B34EA7BB9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D054A25E910DF9C5DBB9CDAE4496AE6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				650FE6E2AF8C0026B8D40CEA515FC1AA /* Foundation.framework in Frameworks */,
-				B3ED45FD7AA7DA55E38EB0ADBAE3A996 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +219,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41A02FB87A52DA7EC69F08424D13D033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC888A1E4B2AD7E3F1E1B005CD774EE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB6D325D82C76CB48AC71BE2D84A342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5435530BFFD27F23094F13AD3AFEEA7F /* Foundation.framework in Frameworks */,
+				7F898C7BFFDC9B8326F4D1B27922E753 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7521FBAC0A5262B277C0F1BD785E56A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25783D9E6F12EC58434D76DB57F0C7F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA5C3330EFF871BF008211B17DB6F096 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,324 +252,218 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC1DE869CF33227A119010A7B155DC01 /* Frameworks */ = {
+		FD21176F03317618BEC1BB4F8CDD5EAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDD81EBCF9D88115877C3CCB8B7EC444 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB9D209EF5CBFF09BA04EB9EB2C0EFE2 /* CoreGraphics.framework in Frameworks */,
-				8A2128A85F1F9B314424930DCE7B5CF7 /* Foundation.framework in Frameworks */,
-				64FC19341AE3907E2EECB3878C790AAD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06571A3835EA16B2753D2F415A007E02 /* Support Files */ = {
+		04C61F21D7816194A38071F1C4F16057 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5197F0870104B46A3A23686A6811B027 /* Info.plist */,
-				AE14C279B3327D2E2A2027A804D83FC8 /* XLForm.modulemap */,
-				518A01374A0FCE70436F5F450E384964 /* XLForm.xcconfig */,
-				6C7E7C59528B838F63CFAF7B82D7FADA /* XLForm-Private.xcconfig */,
-				7BFB54B79B5E310C6D39B75BFFA95660 /* XLForm-dummy.m */,
-				1F54BD10BDCB517CB50A0260B4B2A955 /* XLForm-prefix.pch */,
-				D014651721365C483C4661C82FE39BAF /* XLForm-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/XLForm";
-			sourceTree = "<group>";
-		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				39CF33B2E976FD3E12A7D9F562B97919 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		39CF33B2E976FD3E12A7D9F562B97919 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				4434D5B53C2A06FC6C6144B4A2598442 /* CoreGraphics.framework */,
-				9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */,
-				679B859A516DB051E3F10D88CA7A0090 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5971D6262B810E46F569EB689FD372C5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2DA3038A12CF82DD2DDCC26AF2CA33AC /* Info.plist */,
-				0FD692E975470AB4FD8983404780A159 /* UCZProgressView.modulemap */,
-				32A2416EB1760DD0D16DAE53946DD0CD /* UCZProgressView.xcconfig */,
-				F6361AB55BC380211317E4233EB2D4DD /* UCZProgressView-Private.xcconfig */,
-				609B7EFF76B49250A4D1A9A3FEA340D2 /* UCZProgressView-dummy.m */,
-				88342881D264315B102A430B9F562817 /* UCZProgressView-prefix.pch */,
-				4B0468A6AFB6B971F9F67E8943DEF71F /* UCZProgressView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UCZProgressView";
-			sourceTree = "<group>";
-		};
-		6211743CF53AC02A13A28952AE991B3B /* UCZProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				DDAF4AC4BEB94918BBD0C25A3ED02F17 /* UCZProgressView.h */,
-				2BACDDF4F97058AA51AA113D1E2442ED /* UCZProgressView.m */,
-				5971D6262B810E46F569EB689FD372C5 /* Support Files */,
-			);
-			path = UCZProgressView;
-			sourceTree = "<group>";
-		};
-		67C44F9A49B081E691BFF341C28908F7 /* ZFDragableModalTransition */ = {
-			isa = PBXGroup;
-			children = (
-				BD0733A2FCA50A57E0A0162A47FB6C7A /* ZFModalTransitionAnimator.h */,
-				7327F59D5E1DAF291364B55DFCB165BE /* ZFModalTransitionAnimator.m */,
-				9FD5860DF3EA4F8F489E17E55DF59CCF /* Support Files */,
-			);
-			path = ZFDragableModalTransition;
-			sourceTree = "<group>";
-		};
-		7BC3090A551C8ED10B6B70506A121A65 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				37B79AFD3560F71D7B5D346627D13CF3 /* Info.plist */,
-				3F60D595FDDE1E561CD1FDB137373696 /* hpple.modulemap */,
-				5CF68D5A65F8EDEE0D796750ACC5D469 /* hpple.xcconfig */,
-				D37B54BC08A12D9159C6F5D39F2BA2E7 /* hpple-Private.xcconfig */,
-				05ACD1DAD6655362D7B7BC00D0CC26C9 /* hpple-dummy.m */,
-				A36F6D5731DBEA0A724175CFBBF2C2CF /* hpple-prefix.pch */,
-				B7545BD0E83FE16EA6614DE724DE6864 /* hpple-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/hpple";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				B4E46F86E2B2869210178D17EF0E8DB0 /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				F167BC3BB85FF6A74DEAB70C7CB6E2DB /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		86DD64939F00BB642A4DBB3AE1DFC51B /* MGSwipeTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				CAFB0A355599D500B293429A0AF388C9 /* MGSwipeButton.h */,
-				412281E6CE9EAF89FEB434E1B7C427A6 /* MGSwipeButton.m */,
-				ADB16BC56D765FA9D0913153462C5589 /* MGSwipeTableCell.h */,
-				D5547A85F4FEBCE8F829CAFB48A2D80C /* MGSwipeTableCell.m */,
-				97DAF88C98888DE0203AB27ED4191D32 /* Support Files */,
-			);
-			path = MGSwipeTableCell;
-			sourceTree = "<group>";
-		};
-		9178194285B7B7054ABB5B652C459A24 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9FC97BA797FB4DB3538878DEDABFB0E2 /* XLForm.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		97DAF88C98888DE0203AB27ED4191D32 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8476C5F6086F6900A575FD5C32250601 /* Info.plist */,
-				ED2D0C09AFF5746DF946A97D04F0C876 /* MGSwipeTableCell.modulemap */,
-				8F3D2047EC5A2F7D07ED519536A013A5 /* MGSwipeTableCell.xcconfig */,
-				BBE474275B4614DD1EC3FA65E03FA409 /* MGSwipeTableCell-Private.xcconfig */,
-				426ACAF68D1C0C575618AE0CA6F0D3A5 /* MGSwipeTableCell-dummy.m */,
-				47B70D47D0582C23CB7E27220A55876F /* MGSwipeTableCell-prefix.pch */,
-				51B6348BA367E3FBAFFA1FB27F61EB1C /* MGSwipeTableCell-umbrella.h */,
+				CF0999550E3B836C35069AFA88B0C676 /* Info.plist */,
+				D28D3A2916E45B7B9C22A8749DE9D485 /* MGSwipeTableCell.modulemap */,
+				DF16D21E7FC3E98E56F3C1E49A1C63E7 /* MGSwipeTableCell.xcconfig */,
+				31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */,
+				A399B10EC1C5E0533C6D5BF4ADB3DA24 /* MGSwipeTableCell-dummy.m */,
+				531DD0B507D965BDA3804BEE77452539 /* MGSwipeTableCell-prefix.pch */,
+				C45498E952FE82F2D80F838D7E8886E2 /* MGSwipeTableCell-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MGSwipeTableCell";
 			sourceTree = "<group>";
 		};
-		9FD5860DF3EA4F8F489E17E55DF59CCF /* Support Files */ = {
+		2465709E8535329FA6641DD8EC729238 /* MGSwipeTableCell */ = {
 			isa = PBXGroup;
 			children = (
-				BAE068AD2482A2C5D5B446C6B33CDF85 /* Info.plist */,
-				568ABD234F547BE83676509542043967 /* ZFDragableModalTransition.modulemap */,
-				C2F04CFD6237DC9A721914731C16972A /* ZFDragableModalTransition.xcconfig */,
+				835C77EB7735D22A698CD12E493B82B7 /* MGSwipeButton.h */,
+				5006DE4980D268E19EAC67E1A72BE879 /* MGSwipeButton.m */,
+				22D65692DA70594B68B1DC63ABAFC1EE /* MGSwipeTableCell.h */,
+				0FDCC454D79A8C84C6C30810062062C3 /* MGSwipeTableCell.m */,
+				04C61F21D7816194A38071F1C4F16057 /* Support Files */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		785DA6D64E4EBEB64867FA7FD629F503 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA75807875F5B3A56DF5992848FB6F8D /* DownloadButton.modulemap */,
+				391B08F8C516A6113FF7D82AFBA9D500 /* DownloadButton.xcconfig */,
+				AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */,
+				74E67E50EEE7480761FCDDF032506626 /* DownloadButton-dummy.m */,
+				CACA6E686ADF7ACD7DA0218E3C2F3164 /* DownloadButton-prefix.pch */,
+				F3317F3A66B825092F6AAC27EC683D74 /* DownloadButton-umbrella.h */,
+				9D0103BF5A5D6BA99AD553958B3D95EC /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DownloadButton";
+			sourceTree = "<group>";
+		};
+		78E93856A6C2EEEFE636026106826813 /* UCZProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF4AC4BEB94918BBD0C25A3ED02F17 /* UCZProgressView.h */,
+				2BACDDF4F97058AA51AA113D1E2442ED /* UCZProgressView.m */,
+				EB1A846BD0A4C4612406295D7058B726 /* Support Files */,
+			);
+			path = UCZProgressView;
+			sourceTree = "<group>";
+		};
+		7C5D02BFBAD3765518EEFCE35DC214F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49079830E68D7C7608896C1A498B1FC5 /* Info.plist */,
+				4842DA4C352AC1D7429DB77EA3C811F3 /* ZFDragableModalTransition.modulemap */,
+				301A9E5618BFA72EC8F13EF61F5773A0 /* ZFDragableModalTransition.xcconfig */,
 				2C183D5C70BA9C52029D1497F30F32CE /* ZFDragableModalTransition-Private.xcconfig */,
 				B9AB2E98B14DB4C6FF9F6C0124774125 /* ZFDragableModalTransition-dummy.m */,
-				FA2AC1F42CDFB7C26A948A942ED993AC /* ZFDragableModalTransition-prefix.pch */,
+				A6A009196EDB94972100E72FEC1214D2 /* ZFDragableModalTransition-prefix.pch */,
 				4D77424D9B84A281E612B38D45194ECF /* ZFDragableModalTransition-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ZFDragableModalTransition";
 			sourceTree = "<group>";
 		};
-		A3BF9D6C8ACF97BC657370A1B1C646AA /* XLForm */ = {
+		7C9B1ADD056DE1E189C9ED37757CB5E9 /* DownloadButton */ = {
 			isa = PBXGroup;
 			children = (
-				65E524C11D80B64506CA2E33423B28F8 /* NSArray+XLFormAdditions.h */,
-				F923EC58F3AFA8F3E0B773EB1A36653F /* NSArray+XLFormAdditions.m */,
-				88679577CF7B1D794B89F892B81B124E /* NSExpression+XLFormAdditions.h */,
-				E851FD532CB451A2352B773DF4F2CAE3 /* NSExpression+XLFormAdditions.m */,
-				76A108B9DBB8EB12F809DE0C0B1EC9EF /* NSObject+XLFormAdditions.h */,
-				5F3E7536EF819E18EEABA553B7017721 /* NSObject+XLFormAdditions.m */,
-				673F5F31F36D21D93D0F017EA5ED885C /* NSPredicate+XLFormAdditions.h */,
-				9516BE1A87CAF59B32CA5E4D8656EA54 /* NSPredicate+XLFormAdditions.m */,
-				6A88647FFBA7588CCF4BCE1647BF0E4D /* NSString+XLFormAdditions.h */,
-				B9A19AA3510842ECEB5C0C33340C2701 /* NSString+XLFormAdditions.m */,
-				82AEA8369E9F0D33E1CBA88FFBD26767 /* UIView+XLFormAdditions.h */,
-				F72740E06F974A9F88E9753DE60C7EF0 /* UIView+XLFormAdditions.m */,
-				1EF080FA93BE9074873D09997CA6BBE1 /* XLForm.h */,
-				FD4FC24CB8BCB665959874BBFA0C9EB6 /* XLForm.m */,
-				372B2722E5D94C87A9BC5169B0C899E3 /* XLFormBaseCell.h */,
-				303D54CF137EE799A34047AE57D8FD10 /* XLFormBaseCell.m */,
-				697E863FEDE5A1DB39453C3D579A1F61 /* XLFormButtonCell.h */,
-				1F540DE6179B59E319C9F8EF982A9314 /* XLFormButtonCell.m */,
-				4A3BC50F38DB467676FFF36F1DC8F141 /* XLFormCheckCell.h */,
-				6C210E6C6A34459481D5DC7EFE0C8B67 /* XLFormCheckCell.m */,
-				11376061CB7A942CBE71E1D6179F943F /* XLFormDateCell.h */,
-				08AF2159221DE7C382005E83C6238F3A /* XLFormDateCell.m */,
-				97DDC1C2886F868DBE4485BEBCC29EA5 /* XLFormDatePickerCell.h */,
-				33D5FE2888C86896DD5495AC3CC8CAEA /* XLFormDatePickerCell.m */,
-				D6DFAE763C0E24F0CB51D9ED3C2387CB /* XLFormDescriptor.h */,
-				D2AB0ED4406B709DA4CD2689450E5EC3 /* XLFormDescriptor.m */,
-				38FAC4B07F19BEB78D6F03D7AB0FFA6B /* XLFormDescriptorCell.h */,
-				A140FEB09EDF421BE1DC4B45485540AC /* XLFormDescriptorDelegate.h */,
-				8EE2D537117CE3057A0D971C54CE6685 /* XLFormInlineRowDescriptorCell.h */,
-				12C659959AFFBBFAA8F2A048F428BE07 /* XLFormInlineSelectorCell.h */,
-				16937FB405C335FA78C73364E59FF3B5 /* XLFormInlineSelectorCell.m */,
-				5060F2D3C57B0C6FB6E1B47BC3F52FDB /* XLFormLeftRightSelectorCell.h */,
-				B90B554C1B60133E5415E95C7ACCA60B /* XLFormLeftRightSelectorCell.m */,
-				0B3C8721AB60A3196467C66886B130B2 /* XLFormOptionsObject.h */,
-				28918B94A50498FB70A71456F762D6E2 /* XLFormOptionsObject.m */,
-				12934F17EA26630640D44D6CADC7D133 /* XLFormOptionsViewController.h */,
-				CA3C096C50014BF49FA7130809F1FE7E /* XLFormOptionsViewController.m */,
-				07472B27D77DCC2F5EDA750981220C45 /* XLFormPickerCell.h */,
-				F415C1276F10D1199C26D1944C2D2717 /* XLFormPickerCell.m */,
-				C9FF7085640EA4365991A4DAFBEA8726 /* XLFormRegexValidator.h */,
-				4D1E0351D493519752334EB5604D8126 /* XLFormRegexValidator.m */,
-				AEB68B74A49D126BE2ECAA4198B05DAB /* XLFormRightDetailCell.h */,
-				34D32B27929B1A0F7866D8F4BECC670C /* XLFormRightDetailCell.m */,
-				E3D386B63EB5B864E76BB86BDC96315A /* XLFormRightImageButton.h */,
-				790F59DDF36ED03F6D136A07AF1C2622 /* XLFormRightImageButton.m */,
-				A62F926443982F6F509A385A0B4AA962 /* XLFormRowDescriptor.h */,
-				CF0F0D14C448B871F17ACD1BE1771477 /* XLFormRowDescriptor.m */,
-				62813CDE923CCA6C91B51FFED3E6A2CB /* XLFormRowDescriptorViewController.h */,
-				B53F00C023147BEC356125BE5F0E787D /* XLFormRowNavigationAccessoryView.h */,
-				C085199EF5FF51DA310FC35C31C337DE /* XLFormRowNavigationAccessoryView.m */,
-				E52C05F81F30C1158D32AA102ADB61C1 /* XLFormSectionDescriptor.h */,
-				90EEAC1FFD884F3C2B1280DF4E00AA64 /* XLFormSectionDescriptor.m */,
-				AF7BDF23BF14856E7486CAA70F14A361 /* XLFormSegmentedCell.h */,
-				9F90EC7B162FC9B0A37D5BC86892FE2E /* XLFormSegmentedCell.m */,
-				560A04AF085DCE43231DE818DF4DDB5C /* XLFormSelectorCell.h */,
-				070C2C8A60533EDD423CCFE35118F1D2 /* XLFormSelectorCell.m */,
-				613CE3BB3B13D03E2DAB24019B4487E5 /* XLFormSliderCell.h */,
-				221B7DE4CD8E93E2A2E7FE4036CCD410 /* XLFormSliderCell.m */,
-				22CF0D2F70B1F6FD523EF354FD13E4AE /* XLFormStepCounterCell.h */,
-				ED44305C3641D271CCDE35998DD07DAC /* XLFormStepCounterCell.m */,
-				C05FD4708D575237725CC49C2E65E3CC /* XLFormSwitchCell.h */,
-				9FE2C9CFFFE5E6BE86F59870125CBF76 /* XLFormSwitchCell.m */,
-				A2C4B6085D1349EC78ECFB6E018135A9 /* XLFormTextFieldCell.h */,
-				224F25C24CC089C1D4E635E7B73F1EE7 /* XLFormTextFieldCell.m */,
-				01BD69ECCA50EDE6180D4E98B1DAA329 /* XLFormTextView.h */,
-				38BDA288638BCC6CEAC8EB29485C4771 /* XLFormTextView.m */,
-				F8AD11ADC66AA12462BBDB862AFDEB2F /* XLFormTextViewCell.h */,
-				BC353113F166C65FF67D5CB48F52D152 /* XLFormTextViewCell.m */,
-				9D1272CB81D51DAB159237A16A6C2177 /* XLFormValidationStatus.h */,
-				717E3DB4D6B4232AD0B69F4F26F33B79 /* XLFormValidationStatus.m */,
-				1650817D24A5592E5892AF1BF50FD324 /* XLFormValidator.h */,
-				157778ED59AA25C3B9362C1EE0113E52 /* XLFormValidator.m */,
-				D402060A865300D87AB9CB141CA7DC29 /* XLFormValidatorProtocol.h */,
-				7B99AA640BCB66A54D7A065C46680A2B /* XLFormViewController.h */,
-				8D954728400B73166AD861CA4BA09F0C /* XLFormViewController.m */,
-				9178194285B7B7054ABB5B652C459A24 /* Resources */,
-				06571A3835EA16B2753D2F415A007E02 /* Support Files */,
-			);
-			path = XLForm;
-			sourceTree = "<group>";
-		};
-		B1864F203B1793778D25DF74A6E971C8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				58E1F1C84AE324E0D2FDD2BE6E670B6F /* DownloadButton.modulemap */,
-				A4C995B056B5C4E6F831EA561347322C /* DownloadButton.xcconfig */,
-				DF09C9F78844210594E5C8430C47877E /* DownloadButton-Private.xcconfig */,
-				62A4F5CA8E590F83EE0A8C505DE12450 /* DownloadButton-dummy.m */,
-				4E75E7837B3B1CC782C8E14F6ED98993 /* DownloadButton-prefix.pch */,
-				FC0226595E0D42EC38F3F72A54BDA0E7 /* DownloadButton-umbrella.h */,
-				DE2C2D0E090125070E389FCFAE8731BA /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DownloadButton";
-			sourceTree = "<group>";
-		};
-		B4E46F86E2B2869210178D17EF0E8DB0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C77828560976506AE9D0E43C9085730B /* DownloadButton */,
-				86DD64939F00BB642A4DBB3AE1DFC51B /* MGSwipeTableCell */,
-				6211743CF53AC02A13A28952AE991B3B /* UCZProgressView */,
-				A3BF9D6C8ACF97BC657370A1B1C646AA /* XLForm */,
-				67C44F9A49B081E691BFF341C28908F7 /* ZFDragableModalTransition */,
-				F2BB9CA5E58A842FD4AD42E37D502BC6 /* hpple */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C77828560976506AE9D0E43C9085730B /* DownloadButton */ = {
-			isa = PBXGroup;
-			children = (
-				C14E5BE9550B4091F638C79A8CF1D1C7 /* CALayer+PKDownloadButtonAnimations.h */,
-				F252073430445D27D7A117EDE3A7B77F /* CALayer+PKDownloadButtonAnimations.m */,
-				4164BF2BAEB338FDDDBF2222B3ED88F3 /* NSLayoutConstraint+PKDownloadButton.h */,
-				EA2F07609CD549599F6DF5C5675F409F /* NSLayoutConstraint+PKDownloadButton.m */,
-				AA733B97441907B33BBA735F69164F10 /* PKCircleProgressView.h */,
-				4A715E1E1A9D231A221293BAFB8D27BC /* PKCircleProgressView.m */,
-				65A1188BAA6D0E67DD155BF5B25E2CCF /* PKCircleView.h */,
-				B58E2FBB3FB96FCB561867C768609877 /* PKCircleView.m */,
-				E329792E2CC02819D0F11393B294E5A1 /* PKDownloadButton.h */,
-				6B0CF88C7CF34EAD9E145E0B65E398BA /* PKDownloadButton.m */,
-				685B2C16269A01CAB291297E8C7E2BBD /* PKMacros.h */,
-				1FD128F2963C4BF59651D5E20A04BAB2 /* PKPendingView.h */,
-				23F456FDFCD8A7ADAF5160D50A08ABC5 /* PKPendingView.m */,
-				960E441AC1AA51A90BAF3DE369C5CF6C /* PKStopDownloadButton.h */,
-				89A846B127AB675A97B76B7118115693 /* PKStopDownloadButton.m */,
-				46C87CF27AEFF373C899DCED48AD466C /* UIButton+PKDownloadButton.h */,
-				070AF254336379EEB3FF81CBCCC260F7 /* UIButton+PKDownloadButton.m */,
-				87578578733D0219DF50737D6C033774 /* UIColor+PKDownloadButton.h */,
-				A4B12471C3D52AE6C139829731951B09 /* UIColor+PKDownloadButton.m */,
-				3CCF0B449A0EA8A0647B0E47D2D8902F /* UIImage+PKDownloadButton.h */,
-				70B687BCB76DC20684A76B2FCE22ECC1 /* UIImage+PKDownloadButton.m */,
-				B1864F203B1793778D25DF74A6E971C8 /* Support Files */,
+				7982AC723FE5E8BDDC209D64F74E3F36 /* CALayer+PKDownloadButtonAnimations.h */,
+				1EBB75497F279271B86E83F393A8DBAD /* CALayer+PKDownloadButtonAnimations.m */,
+				FFE332D8DAA2E3FDAF2E6564AC595472 /* NSLayoutConstraint+PKDownloadButton.h */,
+				27E5D4046E93EA90929DFE7CD47B4974 /* NSLayoutConstraint+PKDownloadButton.m */,
+				17E72E30E19531B71F700667CDA60FD3 /* PKCircleProgressView.h */,
+				9023FC6E416857A10F05EBE077F342EE /* PKCircleProgressView.m */,
+				E9250079B0D37ACD694A107036FD0047 /* PKCircleView.h */,
+				97FDC3B79B6FE7C9FFE9887E3A82526B /* PKCircleView.m */,
+				6F69600E57E3BEA7242CE8B9BBB0DEFC /* PKDownloadButton.h */,
+				B9020046FE5AD35D7B3B01FC568E4972 /* PKDownloadButton.m */,
+				61C1E9ABD13B7A8C4C990DD10CCD7B6E /* PKMacros.h */,
+				9550EAC9184652A56061A32D82CBA0B7 /* PKPendingView.h */,
+				5C0FD295F2C788985773D66A4BDF5C1A /* PKPendingView.m */,
+				C95D5752E16A21781C498815F31C47CA /* PKStopDownloadButton.h */,
+				514CDDF578DFAAED61BA81E0AECC6A0A /* PKStopDownloadButton.m */,
+				22F680DB5716D5459A0AA431622C66E9 /* UIButton+PKDownloadButton.h */,
+				18AE95ADF92950D9941FE0D6171304A4 /* UIButton+PKDownloadButton.m */,
+				55219F5D48C570D310E504C1D9C29EFD /* UIColor+PKDownloadButton.h */,
+				D3EEA06B9BFAD67FBD2EE53FE05EA2C8 /* UIColor+PKDownloadButton.m */,
+				1A626A6DC017E22B60B92A3B48500BEF /* UIImage+PKDownloadButton.h */,
+				3FB970925AB861D44AA15DBD7471C0EA /* UIImage+PKDownloadButton.m */,
+				785DA6D64E4EBEB64867FA7FD629F503 /* Support Files */,
 			);
 			path = DownloadButton;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				DC18DB9A9C0AF28178B2E9CF186A8DE3 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				F167BC3BB85FF6A74DEAB70C7CB6E2DB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC35E9CDDDCB95D5A9F16A18444C17A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38F87DE9F72416EEC311D5DDC3785B26 /* Info.plist */,
+				92EB36805E3805CEF46EC48C8880727B /* hpple.modulemap */,
+				900EA76965081C20F7437947D181023B /* hpple.xcconfig */,
+				D37B54BC08A12D9159C6F5D39F2BA2E7 /* hpple-Private.xcconfig */,
+				05ACD1DAD6655362D7B7BC00D0CC26C9 /* hpple-dummy.m */,
+				E1F1578789FC21FD5AEB9437EBE00AEC /* hpple-prefix.pch */,
+				B7545BD0E83FE16EA6614DE724DE6864 /* hpple-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/hpple";
+			sourceTree = "<group>";
+		};
+		906952F49379A440798CC04631C708DB /* ZFDragableModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				BD0733A2FCA50A57E0A0162A47FB6C7A /* ZFModalTransitionAnimator.h */,
+				7327F59D5E1DAF291364B55DFCB165BE /* ZFModalTransitionAnimator.m */,
+				7C5D02BFBAD3765518EEFCE35DC214F9 /* Support Files */,
+			);
+			path = ZFDragableModalTransition;
+			sourceTree = "<group>";
+		};
+		B2F3BCBF5D7E152824C1747C46AA973B /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				DEA21C063D68D45DC61A4D54608DE678 /* TFHpple.h */,
+				37BAEEA0C96BCDAE469172B9F1DD32CB /* TFHpple.m */,
+				1F7651E1C5B6F30DA87824DC3D6E4D9E /* TFHppleElement.h */,
+				37CA7FE16224F22CBEDC524A0042DDFA /* TFHppleElement.m */,
+				67BC82DC2210071E71347112ADC0CB9D /* XPathQuery.h */,
+				1F781CF7B58F76E93BE9B918EF7D98B5 /* XPathQuery.m */,
+				8EC35E9CDDDCB95D5A9F16A18444C17A /* Support Files */,
+			);
+			path = hpple;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				692CA49D053C892A76D827F29EBD916E /* DownloadButton.bundle */,
-				C2DC54451008C0719C2D08A00E050533 /* DownloadButton.framework */,
-				71F56815C3843B6446BD8BD98D2A0743 /* MGSwipeTableCell.framework */,
-				6FB43F3C44F161AA94432809012BB871 /* Pods_BaseballGame.framework */,
+				D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */,
+				B80AB5247E94BCA467CBD5AECE16E3B2 /* DownloadButton.framework */,
+				C205B9DCEFCD415B53EC173C259A1DA3 /* MGSwipeTableCell.framework */,
+				6EFCB3A1A01CFCAD4718F0E6208B16D7 /* Pods_BaseballGame.framework */,
 				DAF3E0A385F45F7D8682753D34CD0DF8 /* UCZProgressView.framework */,
-				6E507F8110ED5EB4B653A9BD390B1F3A /* XLForm.framework */,
 				94CED0CDECBB2CADDE33D41D3A487A07 /* ZFDragableModalTransition.framework */,
 				D29004C6327764B5952908D709763353 /* hpple.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */,
+				97465C795EC4C8A09AB8E99765350FB4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC18DB9A9C0AF28178B2E9CF186A8DE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C9B1ADD056DE1E189C9ED37757CB5E9 /* DownloadButton */,
+				2465709E8535329FA6641DD8EC729238 /* MGSwipeTableCell */,
+				78E93856A6C2EEEFE636026106826813 /* UCZProgressView */,
+				906952F49379A440798CC04631C708DB /* ZFDragableModalTransition */,
+				B2F3BCBF5D7E152824C1747C46AA973B /* hpple */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB1A846BD0A4C4612406295D7058B726 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC41E82CE39C3476FA3D805D0DF58AB4 /* Info.plist */,
+				118017A15B36E3C9264B8AFAAD998D5C /* UCZProgressView.modulemap */,
+				B43BB7DCF517D90DFB6450265060DD5C /* UCZProgressView.xcconfig */,
+				F6361AB55BC380211317E4233EB2D4DD /* UCZProgressView-Private.xcconfig */,
+				609B7EFF76B49250A4D1A9A3FEA340D2 /* UCZProgressView-dummy.m */,
+				F5A1C6745EF0778DB1B116E18E1DEA5B /* UCZProgressView-prefix.pch */,
+				4B0468A6AFB6B971F9F67E8943DEF71F /* UCZProgressView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UCZProgressView";
 			sourceTree = "<group>";
 		};
 		F167BC3BB85FF6A74DEAB70C7CB6E2DB /* Targets Support Files */ = {
@@ -753,20 +474,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F2BB9CA5E58A842FD4AD42E37D502BC6 /* hpple */ = {
-			isa = PBXGroup;
-			children = (
-				DEA21C063D68D45DC61A4D54608DE678 /* TFHpple.h */,
-				37BAEEA0C96BCDAE469172B9F1DD32CB /* TFHpple.m */,
-				1F7651E1C5B6F30DA87824DC3D6E4D9E /* TFHppleElement.h */,
-				37CA7FE16224F22CBEDC524A0042DDFA /* TFHppleElement.m */,
-				67BC82DC2210071E71347112ADC0CB9D /* XPathQuery.h */,
-				1F781CF7B58F76E93BE9B918EF7D98B5 /* XPathQuery.m */,
-				7BC3090A551C8ED10B6B70506A121A65 /* Support Files */,
-			);
-			path = hpple;
-			sourceTree = "<group>";
-		};
 		F52AFCC1AA83DD524591F8D8A4F57EB0 /* Pods-BaseballGame */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,12 +481,12 @@
 				EBD963534736FDF5E0152B37C0E1434C /* Pods-BaseballGame.modulemap */,
 				479596E73E380C3E4041053D7236FA21 /* Pods-BaseballGame-acknowledgements.markdown */,
 				0906D89A0DCC633C9E971B79BC376C9C /* Pods-BaseballGame-acknowledgements.plist */,
-				B9F3209184CED996773807F271D08819 /* Pods-BaseballGame-dummy.m */,
+				E7CD3750DB572195E84C548AF6B1A7FA /* Pods-BaseballGame-dummy.m */,
 				CB840C5BDDC945594A5C99D93552A64E /* Pods-BaseballGame-frameworks.sh */,
 				C92C6489385F85D6FA8E01D6370D6507 /* Pods-BaseballGame-resources.sh */,
-				B243F91EDFCEE0335A87F8DCDDA3BFF8 /* Pods-BaseballGame-umbrella.h */,
-				C16E7329EE80FD7CF4A3C8F2664A7683 /* Pods-BaseballGame.debug.xcconfig */,
-				6F9F3F1F189F553124EE550A540DAF16 /* Pods-BaseballGame.release.xcconfig */,
+				A551FE9200340E5D9B65FD4E5C5BCFCD /* Pods-BaseballGame-umbrella.h */,
+				217DD38D854DBBCEFFD40ECA3E388953 /* Pods-BaseballGame.debug.xcconfig */,
+				B5DF193EB976ECCF667D2C4F240EDE38 /* Pods-BaseballGame.release.xcconfig */,
 			);
 			name = "Pods-BaseballGame";
 			path = "Target Support Files/Pods-BaseballGame";
@@ -797,70 +504,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2129CCEB5094C44409B9070724AE952A /* Headers */ = {
+		46104C9008FC6A0295E878607ABAEBD9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EF12080255D872DBC2A83A58BE99D5 /* NSArray+XLFormAdditions.h in Headers */,
-				4E2BA0370456D70C4D6C067D21AE4453 /* NSExpression+XLFormAdditions.h in Headers */,
-				9991FC191D58F43EECCFC85678B4ABAF /* NSObject+XLFormAdditions.h in Headers */,
-				5A8F07E3E948F3E3C9F54CD2C56955F2 /* NSPredicate+XLFormAdditions.h in Headers */,
-				31CD387FA9E6DFCF32D198C7E0495B20 /* NSString+XLFormAdditions.h in Headers */,
-				487140CEEE70BED7619F78F185FEE8F3 /* UIView+XLFormAdditions.h in Headers */,
-				0C9B2DF935F16EBE478929796598507B /* XLForm-umbrella.h in Headers */,
-				9830D21434C71CE9A44E5424F3C7DDEF /* XLForm.h in Headers */,
-				5CA141800B1D7555FD6B41F0A3152B13 /* XLFormBaseCell.h in Headers */,
-				7B87856BF4B1B5E2DDD4AC55BFAE4AC9 /* XLFormButtonCell.h in Headers */,
-				C27FA38B4DB17A1C64D9FE07F65AD1C3 /* XLFormCheckCell.h in Headers */,
-				394ACA96439E09272172C8E7963820CE /* XLFormDateCell.h in Headers */,
-				716ED1E639ACE9564F76C6E586D376C2 /* XLFormDatePickerCell.h in Headers */,
-				9070D5D403BDC0AB7162EA57FECE1DAF /* XLFormDescriptor.h in Headers */,
-				4F863D2265BD5F9213974B8EB94D6E1D /* XLFormDescriptorCell.h in Headers */,
-				1C944AA6B69846E539C364F7CB1F0792 /* XLFormDescriptorDelegate.h in Headers */,
-				29FC947E249809BD1D62D72E60C4150D /* XLFormInlineRowDescriptorCell.h in Headers */,
-				49C0D0F4E670C97BCE5BAA51C274CE7F /* XLFormInlineSelectorCell.h in Headers */,
-				36B6D3416AC53928C87624F1355AF5EB /* XLFormLeftRightSelectorCell.h in Headers */,
-				92CC568F6F8B4E33B7734EDF7DF6EB45 /* XLFormOptionsObject.h in Headers */,
-				42AAF6FF2A3E1467717BE55F519D7DA7 /* XLFormOptionsViewController.h in Headers */,
-				D30C9DDCF4D6AD72C72468ACCB29D75A /* XLFormPickerCell.h in Headers */,
-				2DEE077CED2200D74E5CEC8294E3CCD6 /* XLFormRegexValidator.h in Headers */,
-				30F0EB452093BBED9ECE73BF3A57AC6E /* XLFormRightDetailCell.h in Headers */,
-				AE177B295C6D808A9FFDE62C8BEF5356 /* XLFormRightImageButton.h in Headers */,
-				684468FD227E00B3F5F3057F0FF201C4 /* XLFormRowDescriptor.h in Headers */,
-				3807AD5404EA07E2958802EA5F416242 /* XLFormRowDescriptorViewController.h in Headers */,
-				C688B7E5EC2563EF7F0262ABFE712535 /* XLFormRowNavigationAccessoryView.h in Headers */,
-				923418D070F44B144B813F2C924251FB /* XLFormSectionDescriptor.h in Headers */,
-				EDAAC0AD5C8D728C6C0A1B16E1318361 /* XLFormSegmentedCell.h in Headers */,
-				0B3D67ECD0C132CA57CBBA9ECFFAE001 /* XLFormSelectorCell.h in Headers */,
-				E791D77203339BF46D697B7BDA5AB632 /* XLFormSliderCell.h in Headers */,
-				4E85EE843451A3DB90CD9EB34BC5E7F4 /* XLFormStepCounterCell.h in Headers */,
-				D1FADA5F76E3B6137C7F2CF216F93D60 /* XLFormSwitchCell.h in Headers */,
-				891E49FE3049E55E6B6E8FE46190D4E9 /* XLFormTextFieldCell.h in Headers */,
-				441355AD6C65151C3A34045FBC738B37 /* XLFormTextView.h in Headers */,
-				E75898CDB3FFEA49DF4EF359BE11A0E3 /* XLFormTextViewCell.h in Headers */,
-				0B9319F2C2A2CDD9BE85BA0CB77A16A9 /* XLFormValidationStatus.h in Headers */,
-				E8BEDFEF00E5B91B57BE702EC994D723 /* XLFormValidator.h in Headers */,
-				7930DD6A3B1957ACF6D0FCA54944A736 /* XLFormValidatorProtocol.h in Headers */,
-				B8FECA61FDC2D3778FCD987A8F4AC83D /* XLFormViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BC90A49A0BBD647C7FA85C55DB20F85 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA4D260F06E32807C3772E7821CD76E6 /* CALayer+PKDownloadButtonAnimations.h in Headers */,
-				5A19862B946CFB002E3BEFD5DA1C07C0 /* DownloadButton-umbrella.h in Headers */,
-				ABCA59D24C44B099EAC8B416A2A49E7D /* NSLayoutConstraint+PKDownloadButton.h in Headers */,
-				CBBB10FEF98F1E2F5E8B435765850271 /* PKCircleProgressView.h in Headers */,
-				E9DA1EBC8483E51FA1CDD92046C1FDE6 /* PKCircleView.h in Headers */,
-				AAC93333BAB71BF857019946F4A2553C /* PKDownloadButton.h in Headers */,
-				517A4F8EAF582C58E889F10B5A1D5F2C /* PKMacros.h in Headers */,
-				FF369E6090790001676DF8E25279AF0B /* PKPendingView.h in Headers */,
-				F11B93189677A218067EF3B9DC7A2712 /* PKStopDownloadButton.h in Headers */,
-				22AC7E68B84AC3938FEDCEEDBB4E689F /* UIButton+PKDownloadButton.h in Headers */,
-				A448E2829C925B2B9BB50A161662918C /* UIColor+PKDownloadButton.h in Headers */,
-				441D382FB41E14DB89D089A53A67C668 /* UIImage+PKDownloadButton.h in Headers */,
+				A6098676B232945240434775858C52B7 /* Pods-BaseballGame-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,13 +521,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FD9991565D21C858B9BF25DBD9040E6 /* Headers */ = {
+		8E8A0E33A41FC48F30D10984CD63F403 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC473721C7505D11263F3EC2B17CCA7 /* MGSwipeButton.h in Headers */,
-				6D07153C85AED92F3B61AE42FCB6DF6E /* MGSwipeTableCell-umbrella.h in Headers */,
-				6244AB73E65488AB17266CEB331E0A55 /* MGSwipeTableCell.h in Headers */,
+				2BC816D99A1D9E95C2931EB872AEE39D /* MGSwipeButton.h in Headers */,
+				06D1372E19BE52F32D8FD6367CA545D3 /* MGSwipeTableCell-umbrella.h in Headers */,
+				A7F02BB156FB5655A468CD655DBF685C /* MGSwipeTableCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,43 +542,93 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2808FA64646E044440770E13104FC3F /* Headers */ = {
+		FD923A2CA6E54CAEC9D7AB7786A3DB23 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B183919B3F622130386DDCA1AF2C1EA /* Pods-BaseballGame-umbrella.h in Headers */,
+				731B1DD2A69A4414709E653930974E9D /* CALayer+PKDownloadButtonAnimations.h in Headers */,
+				863AFD17F143ABAD29B2B7A51DA1EFFF /* DownloadButton-umbrella.h in Headers */,
+				70930883DB204E82A736F2FE774A753E /* NSLayoutConstraint+PKDownloadButton.h in Headers */,
+				565765D2A38C2252C0E05BE590C4A160 /* PKCircleProgressView.h in Headers */,
+				C31D6051361FE16FA778EDFAA4CD464A /* PKCircleView.h in Headers */,
+				52342B99AE37819DD223F43C9A0811AD /* PKDownloadButton.h in Headers */,
+				F3430DA23408BB15C9582F2D2EA94FF8 /* PKMacros.h in Headers */,
+				D75FFE5703EA5C2B65E798F9AF860C7B /* PKPendingView.h in Headers */,
+				124E626418979330CE45ECCF909FCE04 /* PKStopDownloadButton.h in Headers */,
+				FB98E6A6769236AF6C27D90582C115AF /* UIButton+PKDownloadButton.h in Headers */,
+				1547CA2F17B12357B2CDF7BB3F06DDAF /* UIColor+PKDownloadButton.h in Headers */,
+				2C64E5DE76DE8CA79272B10C493E0776 /* UIImage+PKDownloadButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C0D7A25DC7488AAF3AF5B6C772756B3 /* DownloadButton */ = {
+		01D371C3A2F4D69826071E84ECC7C49B /* MGSwipeTableCell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 375EF29C396F245F6A2B12E2958E56A8 /* Build configuration list for PBXNativeTarget "DownloadButton" */;
+			buildConfigurationList = 76CD5D2324217CB21509E59C48C7F7CA /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
 			buildPhases = (
-				AEE4C91540161BFC60E7B176EDD660B3 /* Sources */,
-				2D054A25E910DF9C5DBB9CDAE4496AE6 /* Frameworks */,
-				EE6788E9143C37BAA6281ED39604F83F /* Resources */,
-				4BC90A49A0BBD647C7FA85C55DB20F85 /* Headers */,
+				4DCEECA4BFE48762AA477FF94F3F7145 /* Sources */,
+				41A02FB87A52DA7EC69F08424D13D033 /* Frameworks */,
+				8E8A0E33A41FC48F30D10984CD63F403 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				485D319A65045303AB51D1370FC50E7B /* PBXTargetDependency */,
+			);
+			name = MGSwipeTableCell;
+			productName = MGSwipeTableCell;
+			productReference = C205B9DCEFCD415B53EC173C259A1DA3 /* MGSwipeTableCell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		14CCA77BA23233CB53BC615C67873B64 /* DownloadButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FB4CD772333B4E2857ED582190A310 /* Build configuration list for PBXNativeTarget "DownloadButton" */;
+			buildPhases = (
+				222928425C6182C7E3D28405A85018FB /* Sources */,
+				ADB6D325D82C76CB48AC71BE2D84A342 /* Frameworks */,
+				53A47166642D1BC3D5333C563914A564 /* Resources */,
+				FD923A2CA6E54CAEC9D7AB7786A3DB23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E0771460E41C748C295714EFF95DF77 /* PBXTargetDependency */,
 			);
 			name = DownloadButton;
 			productName = DownloadButton;
-			productReference = C2DC54451008C0719C2D08A00E050533 /* DownloadButton.framework */;
+			productReference = B80AB5247E94BCA467CBD5AECE16E3B2 /* DownloadButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		46A8046A2422B944CBDB410069A18199 /* DownloadButton-DownloadButton */ = {
+		A27589AD74E9AA7F6B1FFF28AF2CBB71 /* Pods-BaseballGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2964D2B46DA143EF8BCFFAC2CE114E20 /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */;
+			buildConfigurationList = C8CA4734278C4515294B13A911A9BB95 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */;
 			buildPhases = (
-				06FDCB132D4E2015B776E3C8F2386A55 /* Sources */,
-				EC1DE869CF33227A119010A7B155DC01 /* Frameworks */,
-				34C66B572EE57A5175D1E6C155E89090 /* Resources */,
+				93AF5EFEE551A031D4142B2702ECA9A0 /* Sources */,
+				B7521FBAC0A5262B277C0F1BD785E56A /* Frameworks */,
+				46104C9008FC6A0295E878607ABAEBD9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5659154B72CC0E61309D824F9E2196 /* PBXTargetDependency */,
+				79B4771E6314FE547C65A5B6C864A4BE /* PBXTargetDependency */,
+				E25B6271840B2C4B90C13DB6C5AE8F45 /* PBXTargetDependency */,
+				FEF6B255646D05FF0978EFD0382CF2FF /* PBXTargetDependency */,
+				3DA8A45C42B65FA5E374A14D122655C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-BaseballGame";
+			productName = "Pods-BaseballGame";
+			productReference = 6EFCB3A1A01CFCAD4718F0E6208B16D7 /* Pods_BaseballGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADF6138FB8C10457C5A09E5F590967E3 /* DownloadButton-DownloadButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B1BBBB22CFAD1C52AB51F69A928C3C /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */;
+			buildPhases = (
+				EC6EDF62631E0CDAE196FE64DF22EE23 /* Sources */,
+				FD21176F03317618BEC1BB4F8CDD5EAF /* Frameworks */,
+				82CDE3D3DCEEAA252F983C3D49A6F709 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -938,26 +636,8 @@
 			);
 			name = "DownloadButton-DownloadButton";
 			productName = "DownloadButton-DownloadButton";
-			productReference = 692CA49D053C892A76D827F29EBD916E /* DownloadButton.bundle */;
+			productReference = D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		8568C31DB3151BD9C0C8E5F259541AE6 /* XLForm */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 17129E3E4FA90C90126247EECF55AD62 /* Build configuration list for PBXNativeTarget "XLForm" */;
-			buildPhases = (
-				52363A646D94538AB6C702DCC13FFAB5 /* Sources */,
-				FDD81EBCF9D88115877C3CCB8B7EC444 /* Frameworks */,
-				2129CCEB5094C44409B9070724AE952A /* Headers */,
-				067DCDF7FC8948888A6D80DC9EA65C45 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = XLForm;
-			productName = XLForm;
-			productReference = 6E507F8110ED5EB4B653A9BD390B1F3A /* XLForm.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		B946E11B4E7FD9C686854392CFF45B38 /* UCZProgressView */ = {
 			isa = PBXNativeTarget;
@@ -1010,46 +690,6 @@
 			productReference = 94CED0CDECBB2CADDE33D41D3A487A07 /* ZFDragableModalTransition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DD4D640006608A517982DF06A77AD3DE /* MGSwipeTableCell */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9555D499E9482CD71C5A0106D955ACF8 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
-			buildPhases = (
-				15621585C0F51160BC7615B54C5818B4 /* Sources */,
-				0C3C711098ECE51253584A7D43A9B95C /* Frameworks */,
-				9FD9991565D21C858B9BF25DBD9040E6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MGSwipeTableCell;
-			productName = MGSwipeTableCell;
-			productReference = 71F56815C3843B6446BD8BD98D2A0743 /* MGSwipeTableCell.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F470225BBA8EEE080D8E5BE765125E94 /* Pods-BaseballGame */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 34AE09506E7F90AB57014EF8C534CCB8 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */;
-			buildPhases = (
-				AEBF798DA2C7356EF713DCD8FC0DD4F7 /* Sources */,
-				116694BF03475A4ABE67AF0011F8FC42 /* Frameworks */,
-				C2808FA64646E044440770E13104FC3F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0D3122ED1AE9DF187EA22FB3A16FD7AE /* PBXTargetDependency */,
-				F8923F7CEC9D39980C1D701083117528 /* PBXTargetDependency */,
-				3E62053BC1BFE081E1B8E618535931AC /* PBXTargetDependency */,
-				A1643241090B424277F7C8F0FF4DC1FE /* PBXTargetDependency */,
-				B70412900189DB002F09824D917C073D /* PBXTargetDependency */,
-				98E6515976A2F9BD46AA1D08610D2B4E /* PBXTargetDependency */,
-			);
-			name = "Pods-BaseballGame";
-			productName = "Pods-BaseballGame";
-			productReference = 6FB43F3C44F161AA94432809012BB871 /* Pods_BaseballGame.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1071,12 +711,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C0D7A25DC7488AAF3AF5B6C772756B3 /* DownloadButton */,
-				46A8046A2422B944CBDB410069A18199 /* DownloadButton-DownloadButton */,
-				DD4D640006608A517982DF06A77AD3DE /* MGSwipeTableCell */,
-				F470225BBA8EEE080D8E5BE765125E94 /* Pods-BaseballGame */,
+				14CCA77BA23233CB53BC615C67873B64 /* DownloadButton */,
+				ADF6138FB8C10457C5A09E5F590967E3 /* DownloadButton-DownloadButton */,
+				01D371C3A2F4D69826071E84ECC7C49B /* MGSwipeTableCell */,
+				A27589AD74E9AA7F6B1FFF28AF2CBB71 /* Pods-BaseballGame */,
 				B946E11B4E7FD9C686854392CFF45B38 /* UCZProgressView */,
-				8568C31DB3151BD9C0C8E5F259541AE6 /* XLForm */,
 				D8CC7931C78335CEA76BFF4A010C8425 /* ZFDragableModalTransition */,
 				D635F027F0A6FD04B98B790907265430 /* hpple */,
 			);
@@ -1084,39 +723,24 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		067DCDF7FC8948888A6D80DC9EA65C45 /* Resources */ = {
+		53A47166642D1BC3D5333C563914A564 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0845D1267A380740308D6E3E99D2AAB /* XLForm.bundle in Resources */,
+				D57E5C1197B95176375B1C640A05D5C9 /* DownloadButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34C66B572EE57A5175D1E6C155E89090 /* Resources */ = {
+		82CDE3D3DCEEAA252F983C3D49A6F709 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE6788E9143C37BAA6281ED39604F83F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65187F09EA3B0C01329D00D9DA80B55E /* DownloadButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06FDCB132D4E2015B776E3C8F2386A55 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1495E49C51330085CE3920488429C490 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1126,13 +750,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15621585C0F51160BC7615B54C5818B4 /* Sources */ = {
+		222928425C6182C7E3D28405A85018FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D851C1B907889521EB77D3D20D6D61 /* MGSwipeButton.m in Sources */,
-				7CBE3AE69D61BFEE68BF0338FC80F4E8 /* MGSwipeTableCell-dummy.m in Sources */,
-				10CB2359837DCFE295085889331133F7 /* MGSwipeTableCell.m in Sources */,
+				9A0DDE08DF7CA4B182C8CD8E4EF4F1AB /* CALayer+PKDownloadButtonAnimations.m in Sources */,
+				CBACD64ACA2CA23A2EA8448A125E31E6 /* DownloadButton-dummy.m in Sources */,
+				7490B1ACFAF4A3C813A5D6DE0EB32826 /* NSLayoutConstraint+PKDownloadButton.m in Sources */,
+				607D7B1F40EA53691B60A82A24CEF2F2 /* PKCircleProgressView.m in Sources */,
+				541DF8D4EDCA47E91D247F72D3E09032 /* PKCircleView.m in Sources */,
+				3A2203EFAA306DF5A256306E10353E66 /* PKDownloadButton.m in Sources */,
+				5028D12049F03B54DA35ACB5EDBBF540 /* PKPendingView.m in Sources */,
+				859F5CF5C60EB32BB4D71EE77BDEA1E8 /* PKStopDownloadButton.m in Sources */,
+				E5CC48357C5AB58E3BACB9BCF4B409F7 /* UIButton+PKDownloadButton.m in Sources */,
+				DAD127F906F76507636C1E19B79F38CA /* UIColor+PKDownloadButton.m in Sources */,
+				0A458E4FF5929D2882F94D82713FC0DA /* UIImage+PKDownloadButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,119 +788,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52363A646D94538AB6C702DCC13FFAB5 /* Sources */ = {
+		4DCEECA4BFE48762AA477FF94F3F7145 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				474691770F22ADFB452430AB4B79713B /* NSArray+XLFormAdditions.m in Sources */,
-				CCAFD8ED548315683BDB35A15AAF5627 /* NSExpression+XLFormAdditions.m in Sources */,
-				8D889273246BEF47F9C7C4CDED89EEA7 /* NSObject+XLFormAdditions.m in Sources */,
-				40D04B45836B1C2C67770D4526690CFC /* NSPredicate+XLFormAdditions.m in Sources */,
-				AA269A8FFAE001C9DE6C2560A3DC6D52 /* NSString+XLFormAdditions.m in Sources */,
-				E7357F3037178FABC884C4E56496C9DD /* UIView+XLFormAdditions.m in Sources */,
-				F112723ECD38045995C7F24D1CF4B3E5 /* XLForm-dummy.m in Sources */,
-				946F917C916E3BDB44DA2834D0E453EF /* XLForm.m in Sources */,
-				4D1823A2A17B7B3F08CAFE4D91C287A0 /* XLFormBaseCell.m in Sources */,
-				1536795513DC44CC2873F42ECE6DBB09 /* XLFormButtonCell.m in Sources */,
-				9293E95410AAF76D26A5C52DF7CE7137 /* XLFormCheckCell.m in Sources */,
-				878575C946519119E09431DD95921171 /* XLFormDateCell.m in Sources */,
-				0006D2F06E2F6668C73471F332FFA51D /* XLFormDatePickerCell.m in Sources */,
-				52ADBB8E4755CFBCAC6A0136712E1E03 /* XLFormDescriptor.m in Sources */,
-				6DC631918E3368A610B2B00C5E09181E /* XLFormInlineSelectorCell.m in Sources */,
-				0BD0DFDC4F9112989FD74B66A816D11B /* XLFormLeftRightSelectorCell.m in Sources */,
-				58A1221E1D9189CBEB76AE7126B4891F /* XLFormOptionsObject.m in Sources */,
-				36DD0BDFF3FE55248BAAFE8E9F3A8772 /* XLFormOptionsViewController.m in Sources */,
-				016BEC8BFFEE5B5B103D7F91A9E062C8 /* XLFormPickerCell.m in Sources */,
-				C55FAC29AF96AEDC53023C9AE71891DF /* XLFormRegexValidator.m in Sources */,
-				4EC847F2CE85DC85937C8D7DC7F72B33 /* XLFormRightDetailCell.m in Sources */,
-				D6094A3CF3BD0A8763B559D1F877FD54 /* XLFormRightImageButton.m in Sources */,
-				5C438334AC53D4E627D098D4463EE3F6 /* XLFormRowDescriptor.m in Sources */,
-				C4C59492612843E7D1ECE8B5145DDAE9 /* XLFormRowNavigationAccessoryView.m in Sources */,
-				2C9CE2D1FF0030BDB34BF55DFDE7F3FE /* XLFormSectionDescriptor.m in Sources */,
-				258CC94C523DCB72754378D4BBB7B9AA /* XLFormSegmentedCell.m in Sources */,
-				9AFBD84B2DE1B3E7C57CCC2C96E084E4 /* XLFormSelectorCell.m in Sources */,
-				DF41532E33B4DDE0001B6CCAE0D34696 /* XLFormSliderCell.m in Sources */,
-				57DE2F21487084FE20C356FA29312449 /* XLFormStepCounterCell.m in Sources */,
-				C4D45BEB609C462476882AA197168C24 /* XLFormSwitchCell.m in Sources */,
-				760BF97893F3E00ED7F1A381B8AEFB2E /* XLFormTextFieldCell.m in Sources */,
-				70022F18DF849185D3846B1DE1F1737C /* XLFormTextView.m in Sources */,
-				CAF213A0AB9F55833C4FFADC7AA6C873 /* XLFormTextViewCell.m in Sources */,
-				21AAEA294E89768CC7E9A7C3EBA3982D /* XLFormValidationStatus.m in Sources */,
-				53A1E107FBBB9533E03E7DE8D173C722 /* XLFormValidator.m in Sources */,
-				2CCC7C57C54186913CDB1BFAD2B6236E /* XLFormViewController.m in Sources */,
+				899E554A7B37A4807FA0AB544AB243C3 /* MGSwipeButton.m in Sources */,
+				62A8A0D83CDE779E473F87624F4537AF /* MGSwipeTableCell-dummy.m in Sources */,
+				BFCDCF986BA3B12F9C16FE0445E04045 /* MGSwipeTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEBF798DA2C7356EF713DCD8FC0DD4F7 /* Sources */ = {
+		93AF5EFEE551A031D4142B2702ECA9A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8655443FB8893DE26F40A1FDE1334C22 /* Pods-BaseballGame-dummy.m in Sources */,
+				1AF7032E758F45D017F832688E9DC05C /* Pods-BaseballGame-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEE4C91540161BFC60E7B176EDD660B3 /* Sources */ = {
+		EC6EDF62631E0CDAE196FE64DF22EE23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B564A4157584EC382DA0F01F3DC165C2 /* CALayer+PKDownloadButtonAnimations.m in Sources */,
-				766FB143A6A1C77B4D13574F16ABDC8C /* DownloadButton-dummy.m in Sources */,
-				5C70259FB81DF2652E96E582264D2148 /* NSLayoutConstraint+PKDownloadButton.m in Sources */,
-				13435A50A5FC84139EDDEB154B8CB0F3 /* PKCircleProgressView.m in Sources */,
-				A21E308A2F1B35E982EDF50249E752AD /* PKCircleView.m in Sources */,
-				52F3CF2171D132DEF0D14D9F4C41D38C /* PKDownloadButton.m in Sources */,
-				F471986092BFE255BB42DB93F8DD6154 /* PKPendingView.m in Sources */,
-				4DC126BDFCA8828C54B797D0F58EE6F6 /* PKStopDownloadButton.m in Sources */,
-				CD903F8F6C3049FF9195A3D322EA5C99 /* UIButton+PKDownloadButton.m in Sources */,
-				E7B7F1B64938B7036B0B8E7D60CCDF72 /* UIColor+PKDownloadButton.m in Sources */,
-				CF5CDEB60A2CC3977F5EEF66CAAC6D6A /* UIImage+PKDownloadButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D3122ED1AE9DF187EA22FB3A16FD7AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DownloadButton;
-			target = 2C0D7A25DC7488AAF3AF5B6C772756B3 /* DownloadButton */;
-			targetProxy = 65AF2D15E298F530A883F36366157FD0 /* PBXContainerItemProxy */;
-		};
-		3E62053BC1BFE081E1B8E618535931AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UCZProgressView;
-			target = B946E11B4E7FD9C686854392CFF45B38 /* UCZProgressView */;
-			targetProxy = 61108F262A49E399B4381AD1C7F1F6F8 /* PBXContainerItemProxy */;
-		};
-		485D319A65045303AB51D1370FC50E7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "DownloadButton-DownloadButton";
-			target = 46A8046A2422B944CBDB410069A18199 /* DownloadButton-DownloadButton */;
-			targetProxy = A0F0189482B001B045F6CD1EAD235980 /* PBXContainerItemProxy */;
-		};
-		98E6515976A2F9BD46AA1D08610D2B4E /* PBXTargetDependency */ = {
+		3DA8A45C42B65FA5E374A14D122655C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = hpple;
 			target = D635F027F0A6FD04B98B790907265430 /* hpple */;
-			targetProxy = 017AE9B9CC3404AD1C486822DFDE02B6 /* PBXContainerItemProxy */;
+			targetProxy = CFB263B117AB430DFC58926ED2D75E34 /* PBXContainerItemProxy */;
 		};
-		A1643241090B424277F7C8F0FF4DC1FE /* PBXTargetDependency */ = {
+		5A5659154B72CC0E61309D824F9E2196 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = XLForm;
-			target = 8568C31DB3151BD9C0C8E5F259541AE6 /* XLForm */;
-			targetProxy = 41D8BF10E21F36E00EBB4EA0F08A2437 /* PBXContainerItemProxy */;
+			name = DownloadButton;
+			target = 14CCA77BA23233CB53BC615C67873B64 /* DownloadButton */;
+			targetProxy = 504B3D58B690514A86A555D7348CD251 /* PBXContainerItemProxy */;
 		};
-		B70412900189DB002F09824D917C073D /* PBXTargetDependency */ = {
+		79B4771E6314FE547C65A5B6C864A4BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MGSwipeTableCell;
+			target = 01D371C3A2F4D69826071E84ECC7C49B /* MGSwipeTableCell */;
+			targetProxy = 1428688F832CA46B9B590BAD2D3FB1B5 /* PBXContainerItemProxy */;
+		};
+		9E0771460E41C748C295714EFF95DF77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DownloadButton-DownloadButton";
+			target = ADF6138FB8C10457C5A09E5F590967E3 /* DownloadButton-DownloadButton */;
+			targetProxy = E652697CA559E1B09C48CF31A3D31E7C /* PBXContainerItemProxy */;
+		};
+		E25B6271840B2C4B90C13DB6C5AE8F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UCZProgressView;
+			target = B946E11B4E7FD9C686854392CFF45B38 /* UCZProgressView */;
+			targetProxy = 7BB0567AE343AA8E996719BEA2B95ABB /* PBXContainerItemProxy */;
+		};
+		FEF6B255646D05FF0978EFD0382CF2FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZFDragableModalTransition;
 			target = D8CC7931C78335CEA76BFF4A010C8425 /* ZFDragableModalTransition */;
-			targetProxy = BC0263A13EA1FEF71089D2F312433261 /* PBXContainerItemProxy */;
-		};
-		F8923F7CEC9D39980C1D701083117528 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MGSwipeTableCell;
-			target = DD4D640006608A517982DF06A77AD3DE /* MGSwipeTableCell */;
-			targetProxy = 2FC708291F2BD1DEFBFABE9B6AFB7BA9 /* PBXContainerItemProxy */;
+			targetProxy = BBFC06B83C4C58142053A2CBBEEC69E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1301,39 +883,21 @@
 			};
 			name = Debug;
 		};
-		1E98917F74EC01AFDF5BFBC3F178FFAA /* Release */ = {
+		214208F2ADB7BB1A7A0F0CB3F50FDC21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F9F3F1F189F553124EE550A540DAF16 /* Pods-BaseballGame.release.xcconfig */;
+			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BaseballGame/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BaseballGame/Pods-BaseballGame.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BaseballGame;
+				PRODUCT_NAME = DownloadButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
-		3E70ED308423DCF7199D69B93755F87C /* Debug */ = {
+		49485A5641FF2485D6B004FCF0A43FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE474275B4614DD1EC3FA65E03FA409 /* MGSwipeTableCell-Private.xcconfig */;
+			baseConfigurationReference = 31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1359,50 +923,28 @@
 			};
 			name = Debug;
 		};
-		4F2D91383191FCAB0497F51B3C7559B6 /* Release */ = {
+		66FF493A045A5662D695BA018CEAAAF7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF09C9F78844210594E5C8430C47877E /* DownloadButton-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DownloadButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		4F69CD0C2FC5C8FCCC8C9BD76D56F6BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF09C9F78844210594E5C8430C47877E /* DownloadButton-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DownloadButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		6159BF3674491ACA1FC8DFC6D2CF21E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE474275B4614DD1EC3FA65E03FA409 /* MGSwipeTableCell-Private.xcconfig */;
+			baseConfigurationReference = B5DF193EB976ECCF667D2C4F240EDE38 /* Pods-BaseballGame.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.5.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaseballGame/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-BaseballGame/Pods-BaseballGame.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MGSwipeTableCell;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BaseballGame;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1523,63 +1065,33 @@
 			};
 			name = Release;
 		};
-		8B7823685A66DC220F097B6CA2A0C10A /* Debug */ = {
+		8DA79610884B64193864EB6F7225069D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF09C9F78844210594E5C8430C47877E /* DownloadButton-Private.xcconfig */;
+			baseConfigurationReference = 31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
+				CURRENT_PROJECT_VERSION = 1.5.1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DownloadButton/DownloadButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DownloadButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DownloadButton/DownloadButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DownloadButton;
+				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MGSwipeTableCell;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		96C336951E2D8C413CD20FDE01FBF4BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C16E7329EE80FD7CF4A3C8F2664A7683 /* Pods-BaseballGame.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BaseballGame/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BaseballGame/Pods-BaseballGame.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BaseballGame;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 		9BDF6F53CF03F820F0067087ADB906BE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1609,31 +1121,15 @@
 			};
 			name = Debug;
 		};
-		A5EE3BF1F3254FD5B236395E9B876241 /* Release */ = {
+		9CE46335BDB81E2B54C2A0E7F6B2F411 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF09C9F78844210594E5C8430C47877E /* DownloadButton-Private.xcconfig */;
+			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DownloadButton/DownloadButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DownloadButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DownloadButton/DownloadButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = DownloadButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1676,26 +1172,54 @@
 			};
 			name = Debug;
 		};
-		A9F6266EE95A53B24B01FAD1DE299A44 /* Debug */ = {
+		B974ECD9DF43F616DEAA1443400CEB90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7E7C59528B838F63CFAF7B82D7FADA /* XLForm-Private.xcconfig */;
+			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 3.0.2;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 3;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XLForm/XLForm-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLForm/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DownloadButton/DownloadButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DownloadButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XLForm/XLForm.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DownloadButton/DownloadButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DownloadButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDE42F2B061C74FDDA42F3F6A346B6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DownloadButton/DownloadButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DownloadButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DownloadButton/DownloadButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = XLForm;
+				PRODUCT_NAME = DownloadButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1704,33 +1228,35 @@
 			};
 			name = Debug;
 		};
-		D1B3BBF2B3CB7FF28710F9AB92152DAF /* Release */ = {
+		F98D7E8EF93EF185F242D1CF414EF33D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7E7C59528B838F63CFAF7B82D7FADA /* XLForm-Private.xcconfig */;
+			baseConfigurationReference = 217DD38D854DBBCEFFD40ECA3E388953 /* Pods-BaseballGame.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 3.0.2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 3;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XLForm/XLForm-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLForm/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaseballGame/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XLForm/XLForm.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = XLForm;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaseballGame/Pods-BaseballGame.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BaseballGame;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1769,20 +1295,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17129E3E4FA90C90126247EECF55AD62 /* Build configuration list for PBXNativeTarget "XLForm" */ = {
+		07B1BBBB22CFAD1C52AB51F69A928C3C /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9F6266EE95A53B24B01FAD1DE299A44 /* Debug */,
-				D1B3BBF2B3CB7FF28710F9AB92152DAF /* Release */,
+				214208F2ADB7BB1A7A0F0CB3F50FDC21 /* Debug */,
+				9CE46335BDB81E2B54C2A0E7F6B2F411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2964D2B46DA143EF8BCFFAC2CE114E20 /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */ = {
+		13FB4CD772333B4E2857ED582190A310 /* Build configuration list for PBXNativeTarget "DownloadButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F69CD0C2FC5C8FCCC8C9BD76D56F6BE /* Debug */,
-				4F2D91383191FCAB0497F51B3C7559B6 /* Release */,
+				EDE42F2B061C74FDDA42F3F6A346B6E0 /* Debug */,
+				B974ECD9DF43F616DEAA1443400CEB90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1792,24 +1318,6 @@
 			buildConfigurations = (
 				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
 				FB45FFD90572718D82AB9092B750F0CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		34AE09506E7F90AB57014EF8C534CCB8 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				96C336951E2D8C413CD20FDE01FBF4BE /* Debug */,
-				1E98917F74EC01AFDF5BFBC3F178FFAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		375EF29C396F245F6A2B12E2958E56A8 /* Build configuration list for PBXNativeTarget "DownloadButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B7823685A66DC220F097B6CA2A0C10A /* Debug */,
-				A5EE3BF1F3254FD5B236395E9B876241 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1832,11 +1340,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9555D499E9482CD71C5A0106D955ACF8 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
+		76CD5D2324217CB21509E59C48C7F7CA /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E70ED308423DCF7199D69B93755F87C /* Debug */,
-				6159BF3674491ACA1FC8DFC6D2CF21E4 /* Release */,
+				49485A5641FF2485D6B004FCF0A43FD2 /* Debug */,
+				8DA79610884B64193864EB6F7225069D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CA4734278C4515294B13A911A9BB95 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98D7E8EF93EF185F242D1CF414EF33D /* Debug */,
+				66FF493A045A5662D695BA018CEAAAF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

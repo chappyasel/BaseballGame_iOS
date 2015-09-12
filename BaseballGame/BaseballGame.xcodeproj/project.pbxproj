@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		929AD73FB7FD75554EAD8650 /* Pods_BaseballGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDAA9072C38CBCB66D0E1DB /* Pods_BaseballGame.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F9248D121BA3DED100918152 /* LeagueSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9248D101BA3DED100918152 /* LeagueSelectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F9248D131BA3DED100918152 /* LeagueSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9248D111BA3DED100918152 /* LeagueSelectionViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		F9248D171BA3DEDA00918152 /* CustomLeagueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9248D151BA3DEDA00918152 /* CustomLeagueTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		F9248D181BA3DEDA00918152 /* CustomLeagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9248D161BA3DEDA00918152 /* CustomLeagueTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		F9248D1C1BA3DEE400918152 /* LeagueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9248D1A1BA3DEE400918152 /* LeagueTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		F9248D1D1BA3DEE400918152 /* LeagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9248D1B1BA3DEE400918152 /* LeagueTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		F9248D211BA3DEF000918152 /* PlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9248D1F1BA3DEF000918152 /* PlayerTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		F9248D221BA3DEF000918152 /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9248D201BA3DEF000918152 /* PlayerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		F9248D251BA3DEF500918152 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9248D241BA3DEF500918152 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F9248D291BA3DF3600918152 /* CreateLeagueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9248D271BA3DF3600918152 /* CreateLeagueViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F9248D2A1BA3DF3600918152 /* CreateLeagueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9248D281BA3DF3600918152 /* CreateLeagueViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		F92CF6661B987B5C00BE0428 /* BGDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F92CF6641B987B5C00BE0428 /* BGDataModel.xcdatamodeld */; };
 		F93553211B988CBE0097C98C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93553201B988CBE0097C98C /* CoreData.framework */; };
 		F961A2A11B9C002E006A0F2C /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = F961A2A01B9C002E006A0F2C /* check.png */; settings = {ASSET_TAGS = (); }; };
@@ -33,15 +44,6 @@
 		F9FEEA651BA265FD00ED1D6C /* BGLeagueInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA631BA265FD00ED1D6C /* BGLeagueInfo+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		F9FEEA6A1BA2660900ED1D6C /* BGLeagueController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA671BA2660900ED1D6C /* BGLeagueController.m */; settings = {ASSET_TAGS = (); }; };
 		F9FEEA6B1BA2660900ED1D6C /* BGLeagueController+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA691BA2660900ED1D6C /* BGLeagueController+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA6F1BA2662100ED1D6C /* PlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA6D1BA2662100ED1D6C /* PlayerTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA701BA2662100ED1D6C /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FEEA6E1BA2662100ED1D6C /* PlayerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA731BA2662900ED1D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA721BA2662900ED1D6C /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA771BA2663A00ED1D6C /* CustomLeagueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA751BA2663A00ED1D6C /* CustomLeagueTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA781BA2663A00ED1D6C /* CustomLeagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FEEA761BA2663A00ED1D6C /* CustomLeagueTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA7C1BA2664000ED1D6C /* LeagueSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA7A1BA2664000ED1D6C /* LeagueSelectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA7D1BA2664000ED1D6C /* LeagueSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FEEA7B1BA2664000ED1D6C /* LeagueSelectionViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA811BA2664700ED1D6C /* LeagueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA7F1BA2664700ED1D6C /* LeagueTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		F9FEEA821BA2664700ED1D6C /* LeagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FEEA801BA2664700ED1D6C /* LeagueTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,23 @@
 		3C75A9A78BC9A3887F1B8E3C /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
 		6DD54B9FC1FC2732F66B3FBA /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseballGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
 		8DDAA9072C38CBCB66D0E1DB /* Pods_BaseballGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseballGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9248D0F1BA3DED100918152 /* LeagueSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeagueSelectionViewController.h; path = "User Interface/League selection/LeagueSelectionViewController.h"; sourceTree = "<group>"; };
+		F9248D101BA3DED100918152 /* LeagueSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeagueSelectionViewController.m; path = "User Interface/League selection/LeagueSelectionViewController.m"; sourceTree = "<group>"; };
+		F9248D111BA3DED100918152 /* LeagueSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeagueSelectionViewController.xib; path = "User Interface/League selection/LeagueSelectionViewController.xib"; sourceTree = "<group>"; };
+		F9248D141BA3DEDA00918152 /* CustomLeagueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomLeagueTableViewCell.h; path = "User Interface/League selection/Custom league cell/CustomLeagueTableViewCell.h"; sourceTree = "<group>"; };
+		F9248D151BA3DEDA00918152 /* CustomLeagueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomLeagueTableViewCell.m; path = "User Interface/League selection/Custom league cell/CustomLeagueTableViewCell.m"; sourceTree = "<group>"; };
+		F9248D161BA3DEDA00918152 /* CustomLeagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomLeagueTableViewCell.xib; path = "User Interface/League selection/Custom league cell/CustomLeagueTableViewCell.xib"; sourceTree = "<group>"; };
+		F9248D191BA3DEE400918152 /* LeagueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeagueTableViewCell.h; path = "User Interface/League selection/Year league cell/LeagueTableViewCell.h"; sourceTree = "<group>"; };
+		F9248D1A1BA3DEE400918152 /* LeagueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeagueTableViewCell.m; path = "User Interface/League selection/Year league cell/LeagueTableViewCell.m"; sourceTree = "<group>"; };
+		F9248D1B1BA3DEE400918152 /* LeagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeagueTableViewCell.xib; path = "User Interface/League selection/Year league cell/LeagueTableViewCell.xib"; sourceTree = "<group>"; };
+		F9248D1E1BA3DEF000918152 /* PlayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerTableViewCell.h; path = "User Interface/Main/Player cell/PlayerTableViewCell.h"; sourceTree = "<group>"; };
+		F9248D1F1BA3DEF000918152 /* PlayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerTableViewCell.m; path = "User Interface/Main/Player cell/PlayerTableViewCell.m"; sourceTree = "<group>"; };
+		F9248D201BA3DEF000918152 /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerTableViewCell.xib; path = "User Interface/Main/Player cell/PlayerTableViewCell.xib"; sourceTree = "<group>"; };
+		F9248D231BA3DEF500918152 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "User Interface/Main/ViewController.h"; sourceTree = "<group>"; };
+		F9248D241BA3DEF500918152 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "User Interface/Main/ViewController.m"; sourceTree = "<group>"; };
+		F9248D261BA3DF3600918152 /* CreateLeagueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateLeagueViewController.h; path = "User Interface/Create league/Create league/CreateLeagueViewController.h"; sourceTree = "<group>"; };
+		F9248D271BA3DF3600918152 /* CreateLeagueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateLeagueViewController.m; path = "User Interface/Create league/Create league/CreateLeagueViewController.m"; sourceTree = "<group>"; };
+		F9248D281BA3DF3600918152 /* CreateLeagueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateLeagueViewController.xib; path = "User Interface/Create league/Create league/CreateLeagueViewController.xib"; sourceTree = "<group>"; };
 		F92CF6651B987B5C00BE0428 /* BGDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BGDataModel.xcdatamodel; sourceTree = "<group>"; };
 		F93553201B988CBE0097C98C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F961A2A01B9C002E006A0F2C /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = Assets/check.png; sourceTree = "<group>"; };
@@ -112,20 +131,6 @@
 		F9FEEA671BA2660900ED1D6C /* BGLeagueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGLeagueController.m; path = Classes/BGLeagueController/BGLeagueController.m; sourceTree = "<group>"; };
 		F9FEEA681BA2660900ED1D6C /* BGLeagueController+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGLeagueController+CoreDataProperties.h"; path = "Classes/BGLeagueController/BGLeagueController+CoreDataProperties.h"; sourceTree = "<group>"; };
 		F9FEEA691BA2660900ED1D6C /* BGLeagueController+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BGLeagueController+CoreDataProperties.m"; path = "Classes/BGLeagueController/BGLeagueController+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F9FEEA6C1BA2662100ED1D6C /* PlayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerTableViewCell.h; path = "View Controllers/Main/Player cell/PlayerTableViewCell.h"; sourceTree = "<group>"; };
-		F9FEEA6D1BA2662100ED1D6C /* PlayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerTableViewCell.m; path = "View Controllers/Main/Player cell/PlayerTableViewCell.m"; sourceTree = "<group>"; };
-		F9FEEA6E1BA2662100ED1D6C /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerTableViewCell.xib; path = "View Controllers/Main/Player cell/PlayerTableViewCell.xib"; sourceTree = "<group>"; };
-		F9FEEA711BA2662900ED1D6C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "View Controllers/Main/ViewController.h"; sourceTree = "<group>"; };
-		F9FEEA721BA2662900ED1D6C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "View Controllers/Main/ViewController.m"; sourceTree = "<group>"; };
-		F9FEEA741BA2663A00ED1D6C /* CustomLeagueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomLeagueTableViewCell.h; path = "View Controllers/League selection/Custom league cell/CustomLeagueTableViewCell.h"; sourceTree = "<group>"; };
-		F9FEEA751BA2663A00ED1D6C /* CustomLeagueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomLeagueTableViewCell.m; path = "View Controllers/League selection/Custom league cell/CustomLeagueTableViewCell.m"; sourceTree = "<group>"; };
-		F9FEEA761BA2663A00ED1D6C /* CustomLeagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomLeagueTableViewCell.xib; path = "View Controllers/League selection/Custom league cell/CustomLeagueTableViewCell.xib"; sourceTree = "<group>"; };
-		F9FEEA791BA2664000ED1D6C /* LeagueSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeagueSelectionViewController.h; path = "View Controllers/League selection/LeagueSelectionViewController.h"; sourceTree = "<group>"; };
-		F9FEEA7A1BA2664000ED1D6C /* LeagueSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeagueSelectionViewController.m; path = "View Controllers/League selection/LeagueSelectionViewController.m"; sourceTree = "<group>"; };
-		F9FEEA7B1BA2664000ED1D6C /* LeagueSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeagueSelectionViewController.xib; path = "View Controllers/League selection/LeagueSelectionViewController.xib"; sourceTree = "<group>"; };
-		F9FEEA7E1BA2664700ED1D6C /* LeagueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeagueTableViewCell.h; path = "View Controllers/League selection/Year league cell/LeagueTableViewCell.h"; sourceTree = "<group>"; };
-		F9FEEA7F1BA2664700ED1D6C /* LeagueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeagueTableViewCell.m; path = "View Controllers/League selection/Year league cell/LeagueTableViewCell.m"; sourceTree = "<group>"; };
-		F9FEEA801BA2664700ED1D6C /* LeagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeagueTableViewCell.xib; path = "View Controllers/League selection/Year league cell/LeagueTableViewCell.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +167,16 @@
 				6DD54B9FC1FC2732F66B3FBA /* Pods-BaseballGame.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9248D2B1BA3DF3B00918152 /* Create League */ = {
+			isa = PBXGroup;
+			children = (
+				F9248D261BA3DF3600918152 /* CreateLeagueViewController.h */,
+				F9248D271BA3DF3600918152 /* CreateLeagueViewController.m */,
+				F9248D281BA3DF3600918152 /* CreateLeagueViewController.xib */,
+			);
+			name = "Create League";
 			sourceTree = "<group>";
 		};
 		F92CF6921B9884C400BE0428 /* BGLeagueInfo */ = {
@@ -244,9 +259,9 @@
 		F934D5BF1B9CE37900FEAEC5 /* Player cell */ = {
 			isa = PBXGroup;
 			children = (
-				F9FEEA6C1BA2662100ED1D6C /* PlayerTableViewCell.h */,
-				F9FEEA6D1BA2662100ED1D6C /* PlayerTableViewCell.m */,
-				F9FEEA6E1BA2662100ED1D6C /* PlayerTableViewCell.xib */,
+				F9248D1E1BA3DEF000918152 /* PlayerTableViewCell.h */,
+				F9248D1F1BA3DEF000918152 /* PlayerTableViewCell.m */,
+				F9248D201BA3DEF000918152 /* PlayerTableViewCell.xib */,
 			);
 			name = "Player cell";
 			sourceTree = "<group>";
@@ -306,7 +321,7 @@
 				F96329751B7E5E6400C63105 /* AppDelegate.h */,
 				F96329761B7E5E6400C63105 /* AppDelegate.m */,
 				F96329E51B7E9EE400C63105 /* Classes */,
-				F993A7F31B9B80DB00CB1A5B /* View Controlllers */,
+				F993A7F31B9B80DB00CB1A5B /* User Interface */,
 				F963297B1B7E5E6400C63105 /* Main.storyboard */,
 				F92CF6641B987B5C00BE0428 /* BGDataModel.xcdatamodeld */,
 				F961A2A21B9C0033006A0F2C /* Assets */,
@@ -366,53 +381,62 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		F96453141BA3806500FA119A /* Create league VC */ = {
+			isa = PBXGroup;
+			children = (
+				F9248D2B1BA3DF3B00918152 /* Create League */,
+			);
+			name = "Create league VC";
+			sourceTree = "<group>";
+		};
 		F972E8601B9C9A2D0043DDB1 /* Year league cell */ = {
 			isa = PBXGroup;
 			children = (
-				F9FEEA7E1BA2664700ED1D6C /* LeagueTableViewCell.h */,
-				F9FEEA7F1BA2664700ED1D6C /* LeagueTableViewCell.m */,
-				F9FEEA801BA2664700ED1D6C /* LeagueTableViewCell.xib */,
+				F9248D191BA3DEE400918152 /* LeagueTableViewCell.h */,
+				F9248D1A1BA3DEE400918152 /* LeagueTableViewCell.m */,
+				F9248D1B1BA3DEE400918152 /* LeagueTableViewCell.xib */,
 			);
 			name = "Year league cell";
 			sourceTree = "<group>";
 		};
-		F993A7F11B9B80B900CB1A5B /* LeagueSelection */ = {
+		F993A7F11B9B80B900CB1A5B /* League selection VC */ = {
 			isa = PBXGroup;
 			children = (
-				F9FEEA791BA2664000ED1D6C /* LeagueSelectionViewController.h */,
-				F9FEEA7A1BA2664000ED1D6C /* LeagueSelectionViewController.m */,
-				F9FEEA7B1BA2664000ED1D6C /* LeagueSelectionViewController.xib */,
+				F9248D0F1BA3DED100918152 /* LeagueSelectionViewController.h */,
+				F9248D101BA3DED100918152 /* LeagueSelectionViewController.m */,
+				F9248D111BA3DED100918152 /* LeagueSelectionViewController.xib */,
 				F9FEEA411BA2648600ED1D6C /* Custom league cell */,
 				F972E8601B9C9A2D0043DDB1 /* Year league cell */,
 			);
-			name = LeagueSelection;
+			name = "League selection VC";
 			sourceTree = "<group>";
 		};
-		F993A7F21B9B80C800CB1A5B /* Main */ = {
+		F993A7F21B9B80C800CB1A5B /* Main VC */ = {
 			isa = PBXGroup;
 			children = (
-				F9FEEA711BA2662900ED1D6C /* ViewController.h */,
-				F9FEEA721BA2662900ED1D6C /* ViewController.m */,
+				F9248D231BA3DEF500918152 /* ViewController.h */,
+				F9248D241BA3DEF500918152 /* ViewController.m */,
 				F934D5BF1B9CE37900FEAEC5 /* Player cell */,
 			);
-			name = Main;
+			name = "Main VC";
 			sourceTree = "<group>";
 		};
-		F993A7F31B9B80DB00CB1A5B /* View Controlllers */ = {
+		F993A7F31B9B80DB00CB1A5B /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				F993A7F21B9B80C800CB1A5B /* Main */,
-				F993A7F11B9B80B900CB1A5B /* LeagueSelection */,
+				F993A7F21B9B80C800CB1A5B /* Main VC */,
+				F993A7F11B9B80B900CB1A5B /* League selection VC */,
+				F96453141BA3806500FA119A /* Create league VC */,
 			);
-			name = "View Controlllers";
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 		F9FEEA411BA2648600ED1D6C /* Custom league cell */ = {
 			isa = PBXGroup;
 			children = (
-				F9FEEA741BA2663A00ED1D6C /* CustomLeagueTableViewCell.h */,
-				F9FEEA751BA2663A00ED1D6C /* CustomLeagueTableViewCell.m */,
-				F9FEEA761BA2663A00ED1D6C /* CustomLeagueTableViewCell.xib */,
+				F9248D141BA3DEDA00918152 /* CustomLeagueTableViewCell.h */,
+				F9248D151BA3DEDA00918152 /* CustomLeagueTableViewCell.m */,
+				F9248D161BA3DEDA00918152 /* CustomLeagueTableViewCell.xib */,
 			);
 			name = "Custom league cell";
 			sourceTree = "<group>";
@@ -524,13 +548,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9248D131BA3DED100918152 /* LeagueSelectionViewController.xib in Resources */,
 				F96329821B7E5E6400C63105 /* LaunchScreen.storyboard in Resources */,
-				F9FEEA821BA2664700ED1D6C /* LeagueTableViewCell.xib in Resources */,
-				F9FEEA7D1BA2664000ED1D6C /* LeagueSelectionViewController.xib in Resources */,
-				F9FEEA701BA2662100ED1D6C /* PlayerTableViewCell.xib in Resources */,
-				F9FEEA781BA2663A00ED1D6C /* CustomLeagueTableViewCell.xib in Resources */,
+				F9248D221BA3DEF000918152 /* PlayerTableViewCell.xib in Resources */,
+				F9248D2A1BA3DF3600918152 /* CreateLeagueViewController.xib in Resources */,
+				F9248D1D1BA3DEE400918152 /* LeagueTableViewCell.xib in Resources */,
 				F961A2A11B9C002E006A0F2C /* check.png in Resources */,
 				F963297F1B7E5E6400C63105 /* Assets.xcassets in Resources */,
+				F9248D181BA3DEDA00918152 /* CustomLeagueTableViewCell.xib in Resources */,
 				F972E8621B9CC3960043DDB1 /* select_empty.png in Resources */,
 				F963297D1B7E5E6400C63105 /* Main.storyboard in Resources */,
 			);
@@ -606,24 +631,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9FEEA521BA265E000ED1D6C /* BGTeamInfo.m in Sources */,
+				F9248D171BA3DEDA00918152 /* CustomLeagueTableViewCell.m in Sources */,
 				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
 				F9FEEA6B1BA2660900ED1D6C /* BGLeagueController+CoreDataProperties.m in Sources */,
 				F9FEEA651BA265FD00ED1D6C /* BGLeagueInfo+CoreDataProperties.m in Sources */,
-				F9FEEA7C1BA2664000ED1D6C /* LeagueSelectionViewController.m in Sources */,
 				F9FEEA641BA265FD00ED1D6C /* BGLeagueInfo.m in Sources */,
 				F96329741B7E5E6400C63105 /* main.m in Sources */,
 				F9FEEA531BA265E000ED1D6C /* BGTeamInfo+CoreDataProperties.m in Sources */,
-				F9FEEA811BA2664700ED1D6C /* LeagueTableViewCell.m in Sources */,
-				F9FEEA6F1BA2662100ED1D6C /* PlayerTableViewCell.m in Sources */,
+				F9248D121BA3DED100918152 /* LeagueSelectionViewController.m in Sources */,
+				F9248D211BA3DEF000918152 /* PlayerTableViewCell.m in Sources */,
 				F9FEEA581BA265E700ED1D6C /* BGTeamDetails.m in Sources */,
 				F92CF6661B987B5C00BE0428 /* BGDataModel.xcdatamodeld in Sources */,
 				F9FEEA5F1BA265F600ED1D6C /* BGLeagueDetails+CoreDataProperties.m in Sources */,
+				F9248D291BA3DF3600918152 /* CreateLeagueViewController.m in Sources */,
 				F9FEEA471BA265C500ED1D6C /* BGBatter+CoreDataProperties.m in Sources */,
+				F9248D1C1BA3DEE400918152 /* LeagueTableViewCell.m in Sources */,
 				F9FEEA4D1BA265CE00ED1D6C /* BGPitcher+CoreDataProperties.m in Sources */,
 				F9FEEA461BA265C500ED1D6C /* BGBatter.m in Sources */,
+				F9248D251BA3DEF500918152 /* ViewController.m in Sources */,
 				F9FEEA5E1BA265F600ED1D6C /* BGLeagueDetails.m in Sources */,
-				F9FEEA731BA2662900ED1D6C /* ViewController.m in Sources */,
-				F9FEEA771BA2663A00ED1D6C /* CustomLeagueTableViewCell.m in Sources */,
 				F9FEEA6A1BA2660900ED1D6C /* BGLeagueController.m in Sources */,
 				F9FEEA591BA265E700ED1D6C /* BGTeamDetails+CoreDataProperties.m in Sources */,
 				F9FEEA4C1BA265CE00ED1D6C /* BGPitcher.m in Sources */,
