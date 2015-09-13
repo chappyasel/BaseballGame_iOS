@@ -8,8 +8,9 @@
 
 #import "LeagueSelectionViewController.h"
 #import "BGLeagueInfo.h"
+#import "BGLeagueDetails.h"
 #import "BGLeagueController.h"
-#import "CustomLeagueViewController.h"
+#import "CreateLeagueViewController.h"
 
 @interface LeagueSelectionViewController ()
 
@@ -119,8 +120,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (indexPath.row == self.customLeagues.count) { //new custom league
-            CustomLeagueViewController *vc = [[CustomLeagueViewController alloc] init];
-            [self presentViewController:vc animated:YES completion:nil];
+            //CreateLeagueViewController *vc = [[CreateLeagueViewController alloc] init];
+            //vc.managedObjectContext = self.managedObjectContext;
+            //[self presentViewController:vc animated:YES completion:nil];
+            [self.customLeagues addObject:[self createEmptyLeague]];
+            [self.tableView reloadData];
         }
         else [self.delegate leagueSelectionVCDidChangeSelectedLeague:self.customLeagues[indexPath.row]];
     }
@@ -128,6 +132,16 @@
         NSNumber *year = ((LeagueTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath]).year;
         [self.delegate leagueSelectionVCDidChangeSelectedLeague:[self leagueForYear:year]];
     }
+}
+
+- (BGLeagueInfo *)createEmptyLeague {
+    BGLeagueInfo *info = [NSEntityDescription insertNewObjectForEntityForName:@"BGLeagueInfo" inManagedObjectContext:self.managedObjectContext];
+    BGLeagueDetails *details = [NSEntityDescription insertNewObjectForEntityForName:@"BGLeagueDetails" inManagedObjectContext:self.managedObjectContext];
+    info.name = @"Untitled League";
+    info.leagueController = self.leagueController;
+    info.details = details;
+    details.info = info;
+    return info;
 }
 
 #pragma mark - tap recognition

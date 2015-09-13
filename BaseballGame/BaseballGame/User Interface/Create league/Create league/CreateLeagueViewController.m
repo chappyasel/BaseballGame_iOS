@@ -7,6 +7,9 @@
 //
 
 #import "CreateLeagueViewController.h"
+#import "BGLeagueDetails.h"
+#import "BGTeamInfo.h"
+#import "BGTeamDetails.h"
 
 @interface CreateLeagueViewController ()
 
@@ -16,7 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.nameField.delegate = self;
+    self.teamsTableView.dataSource = self;
+    self.teamsTableView.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +30,49 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - table view data source
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.createdLeagueInfo.details.teams.count + 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    if (self.createdLeagueInfo.details.teams.count == indexPath.row) {
+        cell.textLabel.text = @"Add new team";
+        return cell;
+    }
+    cell.textLabel.text = @"New team";
+    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+    return cell;
+}
+
+#pragma mark - table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == self.createdLeagueInfo.details.teams.count) {
+        [self.createdLeagueInfo.details addTeamsObject:[self createEmptyTeam]];
+        [self.teamsTableView reloadData];
+    }
+}
+         
+#pragma mark - helper methods
+         
+- (BGTeamInfo *)createEmptyTeam {
+    BGTeamInfo *info = [NSEntityDescription insertNewObjectForEntityForName:@"BGTeamInfo" inManagedObjectContext:self.managedObjectContext];
+    info.league = self.createdLeagueInfo.details;
+    BGTeamDetails *details = [NSEntityDescription insertNewObjectForEntityForName:@"BGTeamDetails" inManagedObjectContext:self.managedObjectContext];
+    info.details = details;
+    details.info = info;
+    return info;
+}
 
 @end
