@@ -69,10 +69,11 @@
         if (cell == nil) {
             cell = [[NSBundle mainBundle] loadNibNamed:@"CustomLeagueTableViewCell" owner:self options:nil].firstObject;
         }
-        cell.name = self.customLeagues[indexPath.row].name;
+        cell.textView.text = self.customLeagues[indexPath.row].name;
         cell.textView.text = [NSString stringWithFormat:@"%@",self.customLeagues[indexPath.row].name];
-        //cell.leagueController = self.leagueController;
-        //cell.managedObjectContext = self.managedObjectContext;
+        cell.customLeague = self.customLeagues[indexPath.row];
+        cell.delegate = self;
+        [cell updateView];
         return cell;
     }
     else {
@@ -120,10 +121,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (indexPath.row == self.customLeagues.count) { //new custom league
-            //CreateLeagueViewController *vc = [[CreateLeagueViewController alloc] init];
-            //vc.managedObjectContext = self.managedObjectContext;
-            //[self presentViewController:vc animated:YES completion:nil];
-            [self.customLeagues addObject:[self createEmptyLeague]];
+            BGLeagueInfo *newLeague = [self createEmptyLeague];
+            [self.customLeagues addObject:newLeague];
+            [self.leagueController addLeaguesObject:newLeague];
+            [self.leagueController saveLeagueController];
             [self.tableView reloadData];
         }
         else [self.delegate leagueSelectionVCDidChangeSelectedLeague:self.customLeagues[indexPath.row]];
@@ -142,6 +143,22 @@
     info.details = details;
     details.info = info;
     return info;
+}
+
+#pragma mark - custom league delegate
+
+- (void)shouldBeginEditingCusomLeague:(BGLeagueInfo *)league {
+    CreateLeagueViewController *vc = [[CreateLeagueViewController alloc] init];
+    vc.managedObjectContext = self.managedObjectContext;
+    vc.customLeague = league;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)shouldDeleteCustomLeague:(BGLeagueInfo *)league {
+    [self.customLeagues removeObject:league];
+    [self.managedObjectContext deleteObject:league];
+    [self.leagueController saveLeagueController];
+    [self.tableView reloadData];
 }
 
 #pragma mark - tap recognition

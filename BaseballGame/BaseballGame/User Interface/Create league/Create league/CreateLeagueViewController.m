@@ -37,7 +37,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.createdLeagueInfo.details.teams.count + 1;
+    return self.customLeague.details.teams.count + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -46,7 +46,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    if (self.createdLeagueInfo.details.teams.count == indexPath.row) {
+    if (self.customLeague.details.teams.count == indexPath.row) {
         cell.textLabel.text = @"Add new team";
         return cell;
     }
@@ -58,8 +58,8 @@
 #pragma mark - table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == self.createdLeagueInfo.details.teams.count) {
-        [self.createdLeagueInfo.details addTeamsObject:[self createEmptyTeam]];
+    if (indexPath.row == self.customLeague.details.teams.count) {
+        [self.customLeague.details addTeamsObject:[self createEmptyTeam]];
         [self.teamsTableView reloadData];
     }
 }
@@ -68,7 +68,7 @@
          
 - (BGTeamInfo *)createEmptyTeam {
     BGTeamInfo *info = [NSEntityDescription insertNewObjectForEntityForName:@"BGTeamInfo" inManagedObjectContext:self.managedObjectContext];
-    info.league = self.createdLeagueInfo.details;
+    info.league = self.customLeague.details;
     BGTeamDetails *details = [NSEntityDescription insertNewObjectForEntityForName:@"BGTeamDetails" inManagedObjectContext:self.managedObjectContext];
     info.details = details;
     details.info = info;

@@ -17,7 +17,7 @@
 - (void) leagueSelectionVCDidChangeSelectedLeague: (BGLeagueInfo *) league;
 @end
 
-@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, CustomLeagueTableViewCellDelegate>
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 

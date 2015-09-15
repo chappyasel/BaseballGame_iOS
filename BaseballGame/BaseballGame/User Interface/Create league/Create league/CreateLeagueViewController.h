@@ -16,6 +16,6 @@
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
-@property BGLeagueInfo *createdLeagueInfo;
+@property BGLeagueInfo *customLeague;
 
 @end

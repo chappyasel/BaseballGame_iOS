@@ -22,15 +22,29 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Custom Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGn-92-5Uh">
-                        <rect key="frame" x="44" y="0.0" width="171" height="44"/>
+                        <rect key="frame" x="44" y="0.0" width="126" height="43"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-SW-ukz">
-                        <rect key="frame" x="230" y="7" width="100" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KE4-Oj-9Sv">
+                        <rect key="frame" x="180" y="7" width="80" height="30"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="4w9-SD-mil"/>
+                        </constraints>
+                        <state key="normal" title="REMOVE"/>
+                        <connections>
+                            <action selector="removeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TwR-NV-CUq"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-SW-ukz">
+                        <rect key="frame" x="280" y="7" width="50" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="mCa-UN-V8f"/>
+                        </constraints>
                         <state key="normal" title="EDIT"/>
                         <connections>
                             <action selector="editButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JUY-Yi-rBi"/>
@@ -42,10 +56,13 @@
             <animations/>
             <constraints>
                 <constraint firstItem="Grd-JM-vfN" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="1nf-cd-lvb"/>
+                <constraint firstAttribute="trailing" secondItem="MGn-92-5Uh" secondAttribute="trailing" constant="180" id="3QI-gF-tIo"/>
                 <constraint firstItem="MGn-92-5Uh" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" constant="-179" id="6Q1-3y-e9T"/>
                 <constraint firstAttribute="trailing" secondItem="SzJ-SW-ukz" secondAttribute="trailing" constant="20" id="AUP-y5-RdM"/>
+                <constraint firstItem="KE4-Oj-9Sv" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="JFa-Xf-HxA"/>
                 <constraint firstItem="SzJ-SW-ukz" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="MaM-rA-W9L"/>
                 <constraint firstItem="MGn-92-5Uh" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="44" id="QxE-jA-e00"/>
+                <constraint firstAttribute="trailing" secondItem="KE4-Oj-9Sv" secondAttribute="trailing" constant="90" id="Tdv-TH-tXI"/>
                 <constraint firstItem="Grd-JM-vfN" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="gpT-yk-D2B"/>
                 <constraint firstItem="MGn-92-5Uh" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="jXx-EK-Tje"/>
                 <constraint firstItem="Grd-JM-vfN" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="qPu-c1-kA2"/>
@@ -53,11 +70,13 @@
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="1nf-cd-lvb"/>
+                    <exclude reference="6Q1-3y-e9T"/>
                 </mask>
             </variation>
             <connections>
                 <outlet property="checkImageView" destination="Grd-JM-vfN" id="Kap-2F-7N4"/>
                 <outlet property="editButton" destination="SzJ-SW-ukz" id="k5Z-Rb-Bkj"/>
+                <outlet property="removeButton" destination="KE4-Oj-9Sv" id="UMK-q8-9IE"/>
                 <outlet property="textView" destination="MGn-92-5Uh" id="VRj-an-qIa"/>
             </connections>
         </tableViewCell>

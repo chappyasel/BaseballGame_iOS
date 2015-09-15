@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)deleteAllLeaguesWithContext: (NSManagedObjectContext *)context;
 
+- (void)saveLeagueController;
+
 @end
 
 NS_ASSUME_NONNULL_END
