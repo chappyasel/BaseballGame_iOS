@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LeagueTableViewCell.h"
 #import "CustomLeagueTableViewCell.h"
+#import "CreateLeagueViewController.h"
 
 @class BGLeagueInfo, BGLeagueController;
 
@@ -17,7 +18,7 @@
 - (void) leagueSelectionVCDidChangeSelectedLeague: (BGLeagueInfo *) league;
 @end
 
-@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, CustomLeagueTableViewCellDelegate>
+@interface LeagueSelectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, CustomLeagueTableViewCellDelegate, CreateLeagueViewControllerDelegate>
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 

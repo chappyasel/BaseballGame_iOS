@@ -17,6 +17,7 @@
 @property NSMutableArray <NSNumber *> *downloadedYears;
 @property NSMutableArray <BGLeagueInfo *> *customLeagues;
 @property int currentYear;
+@property int selectedCustomLeagueIndex;
 
 @end
 
@@ -148,9 +149,11 @@
 #pragma mark - custom league delegate
 
 - (void)shouldBeginEditingCusomLeague:(BGLeagueInfo *)league {
+    self.selectedCustomLeagueIndex = (int)[self.customLeagues indexOfObject:league];
     CreateLeagueViewController *vc = [[CreateLeagueViewController alloc] init];
     vc.managedObjectContext = self.managedObjectContext;
     vc.customLeague = league;
+    vc.delegate = self;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -167,6 +170,15 @@
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
+}
+
+#pragma mark - create league vc delegate
+
+- (void)createLeagueViewControllerWillDismissWithResultLeague:(BGLeagueInfo *)league {
+    self.customLeagues[self.selectedCustomLeagueIndex] = league;
+    [self.leagueController addLeaguesObject:league];
+    [self.leagueController saveLeagueController];
+    [self.tableView reloadData];
 }
 
 @end

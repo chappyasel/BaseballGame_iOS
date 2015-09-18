@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateLeagueViewController">
@@ -49,23 +49,39 @@
                         </mask>
                     </variation>
                 </tableView>
+                <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6H-Ec-CP9">
+                    <rect key="frame" x="0.0" y="17" width="600" height="44"/>
+                    <animations/>
+                    <color key="barTintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <items>
+                        <navigationItem title="Custom League" id="yVn-l0-DNo">
+                            <barButtonItem key="rightBarButtonItem" title="Save" id="9HK-oN-oVn">
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="-1" id="Wcg-fS-Gbl"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="7IN-Tz-LfZ" secondAttribute="bottom" id="0h5-FO-nF5"/>
                 <constraint firstAttribute="trailing" secondItem="7IN-Tz-LfZ" secondAttribute="trailing" constant="24" id="5Qi-Af-vAr"/>
+                <constraint firstItem="F6H-Ec-CP9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6jD-uC-y3L"/>
                 <constraint firstItem="giI-sh-Tci" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="DWN-ke-c61"/>
                 <constraint firstItem="giI-sh-Tci" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="GVH-xH-Phf"/>
                 <constraint firstItem="B9U-mP-w07" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="JrI-s1-hb6"/>
                 <constraint firstItem="eJj-VT-L6f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Jvf-ae-MW4"/>
+                <constraint firstAttribute="trailing" secondItem="F6H-Ec-CP9" secondAttribute="trailing" id="Mlo-gA-vAn"/>
                 <constraint firstItem="B9U-mP-w07" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="170" id="PIV-dJ-dp2"/>
                 <constraint firstItem="7IN-Tz-LfZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="210" id="mM5-Oi-4a8"/>
                 <constraint firstItem="eJj-VT-L6f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="n6q-6w-rp9"/>
                 <constraint firstItem="7IN-Tz-LfZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="oMN-hC-h5z"/>
                 <constraint firstAttribute="trailing" secondItem="eJj-VT-L6f" secondAttribute="trailing" constant="24" id="pgJ-Ve-7Fd"/>
             </constraints>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <nil key="simulatedTopBarMetrics"/>
         </view>
     </objects>
 </document>

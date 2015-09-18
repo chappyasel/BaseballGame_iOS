@@ -13,6 +13,8 @@
 
 @interface CreateLeagueViewController ()
 
+@property NSMutableArray <BGTeamInfo *> *teams;
+
 @end
 
 @implementation CreateLeagueViewController
@@ -23,11 +25,22 @@
     self.teamsTableView.dataSource = self;
     self.teamsTableView.delegate = self;
     
+    self.nameField.text = self.customLeague.name;
+    self.teams = [[NSMutableArray alloc] initWithArray:self.customLeague.details.teams.array];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)saveButtonPressed:(UIBarButtonItem *)sender {
+    self.customLeague.name = self.nameField.text;
+    self.customLeague.details.teams = [[NSOrderedSet alloc] initWithArray:self.teams];
+    [self.delegate createLeagueViewControllerWillDismissWithResultLeague:self.customLeague];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 #pragma mark - table view data source
@@ -41,17 +54,26 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
     if (self.customLeague.details.teams.count == indexPath.row) {
+        static NSString *CellIdentifier = @"Cell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
         cell.textLabel.text = @"Add new team";
         return cell;
     }
-    cell.textLabel.text = @"New team";
-    cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
+    BGTeamInfo *team = self.teams[indexPath.row];
+    static NSString *CellIdentifier = @"CreateTeamCell";
+    CreateTeamTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[NSBundle mainBundle] loadNibNamed:@"CreateTeamTableViewCell" owner:self options:nil].firstObject;
+    }
+    cell.nameLabel.text = team.name;
+    cell.abbrevLabel.text = team.abbreviation;
+    cell.pitchingLabel.text = [NSString stringWithFormat:@"PTH: %@",team.pitchingOverall];
+    cell.battingLabel.text = [NSString stringWithFormat:@"BAT: %@",team.battingOverall];
+    cell.overallLabel.text = [NSString stringWithFormat:@"%@",team.overall];
     return cell;
 }
 
@@ -59,15 +81,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == self.customLeague.details.teams.count) {
-        [self.customLeague.details addTeamsObject:[self createEmptyTeam]];
+        [self.teams addObject:[self createEmptyTeam]];
         [self.teamsTableView reloadData];
     }
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    BGTeamInfo *teamToEdit = self.teams[indexPath.row];
+    NSLog(@"%@",teamToEdit);
 }
          
 #pragma mark - helper methods
          
 - (BGTeamInfo *)createEmptyTeam {
     BGTeamInfo *info = [NSEntityDescription insertNewObjectForEntityForName:@"BGTeamInfo" inManagedObjectContext:self.managedObjectContext];
+    info.name = @"Untitled Team";
+    info.abbreviation = @"---";
+    info.pitchingOverall = @0;
+    info.battingOverall = @0;
+    info.overall = @0;
     info.league = self.customLeague.details;
     BGTeamDetails *details = [NSEntityDescription insertNewObjectForEntityForName:@"BGTeamDetails" inManagedObjectContext:self.managedObjectContext];
     info.details = details;
