@@ -9,13 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "BGLeagueInfo.h"
 #import "CreateTeamTableViewCell.h"
+#import "CreateTeamViewController.h"
 
 @protocol CreateLeagueViewControllerDelegate <NSObject>
 @required
 - (void) createLeagueViewControllerWillDismissWithResultLeague: (BGLeagueInfo *) league;
 @end
 
-@interface CreateLeagueViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface CreateLeagueViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, CreateTeamTableViewCellDelegate, CreateTeamViewControllerDelegate>
 
 @property id <CreateLeagueViewControllerDelegate> delegate;
 

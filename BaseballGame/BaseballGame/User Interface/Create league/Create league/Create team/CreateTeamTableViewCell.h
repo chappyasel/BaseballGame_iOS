@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "BGTeamInfo.h"
 
+@protocol CreateTeamTableViewCellDelegate <NSObject>
+@required
+- (void) shouldBeginEditingCusomTeamAtIndex: (int) index;
+@end
+
 @interface CreateTeamTableViewCell : UITableViewCell
+
+@property int cellIndex;
+@property id <CreateTeamTableViewCellDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *abbrevLabel;

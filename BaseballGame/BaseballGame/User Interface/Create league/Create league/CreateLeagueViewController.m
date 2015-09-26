@@ -74,6 +74,8 @@
     cell.pitchingLabel.text = [NSString stringWithFormat:@"PTH: %@",team.pitchingOverall];
     cell.battingLabel.text = [NSString stringWithFormat:@"BAT: %@",team.battingOverall];
     cell.overallLabel.text = [NSString stringWithFormat:@"%@",team.overall];
+    cell.delegate = self;
+    cell.cellIndex = (int)indexPath.row;
     return cell;
 }
 
@@ -86,9 +88,32 @@
     }
 }
 
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-    BGTeamInfo *teamToEdit = self.teams[indexPath.row];
-    NSLog(@"%@",teamToEdit);
+#pragma mark - teamTableViewCell delegate
+
+- (void)shouldBeginEditingCusomTeamAtIndex:(int)index {
+    BGTeamInfo *team = self.teams[index];
+    CreateTeamViewController *vc = [[CreateTeamViewController alloc] init];
+    vc.managedObjectContext = self.managedObjectContext;
+    vc.customTeam = team;
+    vc.delegate = self;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+/*
+
+- (void)shouldDeleteCustomLeague:(BGLeagueInfo *)league {
+    [self.customLeagues removeObject:league];
+    [self.managedObjectContext deleteObject:league];
+    [self.leagueController saveLeagueController];
+    [self.tableView reloadData];
+}
+ 
+*/
+
+#pragma mark - teamVC delegate
+
+- (void) createTeamViewControllerWillDismissWithResultTeam: (BGTeamInfo *) team {
+    NSLog(@"Dismissed");
 }
          
 #pragma mark - helper methods

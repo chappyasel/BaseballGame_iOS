@@ -32,6 +32,8 @@
 		F963298D1B7E5E6500C63105 /* BaseballGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F963298C1B7E5E6500C63105 /* BaseballGameTests.m */; };
 		F96329981B7E5E6500C63105 /* BaseballGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96329971B7E5E6500C63105 /* BaseballGameUITests.m */; };
 		F972E8621B9CC3960043DDB1 /* select_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = F972E8611B9CC3960043DDB1 /* select_empty.png */; };
+		F98C84FC1BB75E2C00584370 /* CreateTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98C84FA1BB75E2C00584370 /* CreateTeamViewController.m */; };
+		F98C84FD1BB75E2C00584370 /* CreateTeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98C84FB1BB75E2C00584370 /* CreateTeamViewController.xib */; };
 		F9FEEA461BA265C500ED1D6C /* BGBatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA431BA265C500ED1D6C /* BGBatter.m */; };
 		F9FEEA471BA265C500ED1D6C /* BGBatter+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA451BA265C500ED1D6C /* BGBatter+CoreDataProperties.m */; };
 		F9FEEA4C1BA265CE00ED1D6C /* BGPitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA491BA265CE00ED1D6C /* BGPitcher.m */; };
@@ -108,6 +110,9 @@
 		F96329991B7E5E6500C63105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96329E61B7EA12A00C63105 /* BaseballGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseballGame-Prefix.pch"; sourceTree = "<group>"; };
 		F972E8611B9CC3960043DDB1 /* select_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = select_empty.png; path = Assets/select_empty.png; sourceTree = "<group>"; };
+		F98C84F91BB75E2C00584370 /* CreateTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateTeamViewController.h; path = "User Interface/Create league/Create league/CreateTeamVC/CreateTeamViewController.h"; sourceTree = "<group>"; };
+		F98C84FA1BB75E2C00584370 /* CreateTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateTeamViewController.m; path = "User Interface/Create league/Create league/CreateTeamVC/CreateTeamViewController.m"; sourceTree = "<group>"; };
+		F98C84FB1BB75E2C00584370 /* CreateTeamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateTeamViewController.xib; path = "User Interface/Create league/Create league/CreateTeamVC/CreateTeamViewController.xib"; sourceTree = "<group>"; };
 		F9FEEA421BA265C500ED1D6C /* BGBatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGBatter.h; path = Classes/BGBatter/BGBatter.h; sourceTree = "<group>"; };
 		F9FEEA431BA265C500ED1D6C /* BGBatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGBatter.m; path = Classes/BGBatter/BGBatter.m; sourceTree = "<group>"; };
 		F9FEEA441BA265C500ED1D6C /* BGBatter+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGBatter+CoreDataProperties.h"; path = "Classes/BGBatter/BGBatter+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -190,6 +195,7 @@
 				F9248D261BA3DF3600918152 /* CreateLeagueViewController.h */,
 				F9248D271BA3DF3600918152 /* CreateLeagueViewController.m */,
 				F9248D281BA3DF3600918152 /* CreateLeagueViewController.xib */,
+				F98C84FE1BB75E3100584370 /* Create team VC */,
 				F91451761BAB9FA4005FB205 /* Create team cell */,
 			);
 			name = "Create League";
@@ -415,6 +421,16 @@
 			name = "Year league cell";
 			sourceTree = "<group>";
 		};
+		F98C84FE1BB75E3100584370 /* Create team VC */ = {
+			isa = PBXGroup;
+			children = (
+				F98C84F91BB75E2C00584370 /* CreateTeamViewController.h */,
+				F98C84FA1BB75E2C00584370 /* CreateTeamViewController.m */,
+				F98C84FB1BB75E2C00584370 /* CreateTeamViewController.xib */,
+			);
+			name = "Create team VC";
+			sourceTree = "<group>";
+		};
 		F993A7F11B9B80B900CB1A5B /* League selection VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +591,7 @@
 				F972E8621B9CC3960043DDB1 /* select_empty.png in Resources */,
 				F963297D1B7E5E6400C63105 /* Main.storyboard in Resources */,
 				F91451751BAB9F9E005FB205 /* CreateTeamTableViewCell.xib in Resources */,
+				F98C84FD1BB75E2C00584370 /* CreateTeamViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +669,7 @@
 				F91451741BAB9F9E005FB205 /* CreateTeamTableViewCell.m in Sources */,
 				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
 				F9FEEA6B1BA2660900ED1D6C /* BGLeagueController+CoreDataProperties.m in Sources */,
+				F98C84FC1BB75E2C00584370 /* CreateTeamViewController.m in Sources */,
 				F9FEEA651BA265FD00ED1D6C /* BGLeagueInfo+CoreDataProperties.m in Sources */,
 				F9FEEA641BA265FD00ED1D6C /* BGLeagueInfo.m in Sources */,
 				F96329741B7E5E6400C63105 /* main.m in Sources */,

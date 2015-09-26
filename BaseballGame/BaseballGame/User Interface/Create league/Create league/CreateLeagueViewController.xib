@@ -16,13 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giI-sh-Tci">
-                    <rect key="frame" x="25" y="90" width="50" height="21"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJj-VT-L6f">
                     <rect key="frame" x="25" y="120" width="551" height="30"/>
                     <animations/>
@@ -49,7 +42,7 @@
                         </mask>
                     </variation>
                 </tableView>
-                <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6H-Ec-CP9">
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6H-Ec-CP9">
                     <rect key="frame" x="0.0" y="17" width="600" height="44"/>
                     <animations/>
                     <color key="barTintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -63,6 +56,13 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giI-sh-Tci">
+                    <rect key="frame" x="25" y="90" width="99" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -70,6 +70,7 @@
                 <constraint firstAttribute="bottom" secondItem="7IN-Tz-LfZ" secondAttribute="bottom" id="0h5-FO-nF5"/>
                 <constraint firstAttribute="trailing" secondItem="7IN-Tz-LfZ" secondAttribute="trailing" constant="24" id="5Qi-Af-vAr"/>
                 <constraint firstItem="F6H-Ec-CP9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6jD-uC-y3L"/>
+                <constraint firstItem="F6H-Ec-CP9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="17" id="6nE-zm-mDw"/>
                 <constraint firstItem="giI-sh-Tci" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="DWN-ke-c61"/>
                 <constraint firstItem="giI-sh-Tci" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="GVH-xH-Phf"/>
                 <constraint firstItem="B9U-mP-w07" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="JrI-s1-hb6"/>
