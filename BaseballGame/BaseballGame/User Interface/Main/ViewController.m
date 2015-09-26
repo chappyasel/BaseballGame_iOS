@@ -54,6 +54,7 @@
         else {
             if (fetchedObjects.count > 1) NSLog(@"Error: more than 1 league controller");
             self.leagueController = fetchedObjects.firstObject;
+            [self determineCurrentLeague];
             if (self.leagueController.leagues.count > 0) [self loadTableView];
         }
     }
@@ -67,6 +68,21 @@
     if (!self.leagueController.leagues || self.leagueController.leagues.count == 0) [self loadCurrentLeague];
 }
 
+- (void)determineCurrentLeague {
+    if (self.leagueController.leagues.count == 1) self.currentLeague = self.leagueController.leagues[0];
+    else {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"BGLeagueInfo" inManagedObjectContext:self.managedObjectContext];
+        [fetchRequest setEntity:entity];
+        NSError *error;
+        int year = [self currentYear];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"year == %d",year]];
+        NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+        self.currentLeague = (BGLeagueInfo *)results[0];
+        if (!self.currentLeague) self.currentLeague = self.leagueController.leagues[0];
+    }
+}
+
 - (void)loadCurrentLeague {
     self.progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.progressView.center = self.view.center;
@@ -74,17 +90,19 @@
     self.progressView.textSize = 25.0;
     self.progressView.showsText = YES;
     [self.view addSubview:self.progressView];
-    
-    NSCalendar *gregorian = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
-    int year = (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
-    [self.leagueController loadLeagueForYear:year context:self.managedObjectContext WithProgressBlock:^(float progress) {
+    [self.leagueController loadLeagueForYear:[self currentYear] context:self.managedObjectContext WithProgressBlock:^(float progress) {
         self.progressView.progress = progress;
         if (progress > .99) [self performSelector:@selector(loadTableView) withObject:nil afterDelay:1.0];
     }];
+    [self determineCurrentLeague];
+}
+
+- (int)currentYear {
+    NSCalendar *gregorian = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
+    return (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
 }
 
 - (void)loadTableView {
-    self.currentLeague = self.leagueController.leagues[0];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     self.tableView.dataSource = self;
