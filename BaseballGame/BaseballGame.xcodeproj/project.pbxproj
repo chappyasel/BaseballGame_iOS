@@ -34,6 +34,12 @@
 		F972E8621B9CC3960043DDB1 /* select_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = F972E8611B9CC3960043DDB1 /* select_empty.png */; };
 		F98C84FC1BB75E2C00584370 /* CreateTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98C84FA1BB75E2C00584370 /* CreateTeamViewController.m */; };
 		F98C84FD1BB75E2C00584370 /* CreateTeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98C84FB1BB75E2C00584370 /* CreateTeamViewController.xib */; };
+		F98C85011BB7836F00584370 /* CreatePlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F98C85001BB7836F00584370 /* CreatePlayerTableViewCell.m */; };
+		F98C85031BB783A600584370 /* CreatePlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98C85021BB783A600584370 /* CreatePlayerTableViewCell.xib */; };
+		F98C85081BB78F3F00584370 /* CreatePitcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98C85061BB78F3F00584370 /* CreatePitcherViewController.m */; };
+		F98C85091BB78F3F00584370 /* CreatePitcherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98C85071BB78F3F00584370 /* CreatePitcherViewController.xib */; };
+		F98C850E1BB78F7300584370 /* CreateBatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98C850C1BB78F7300584370 /* CreateBatterViewController.m */; };
+		F98C850F1BB78F7300584370 /* CreateBatterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98C850D1BB78F7300584370 /* CreateBatterViewController.xib */; };
 		F9FEEA461BA265C500ED1D6C /* BGBatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA431BA265C500ED1D6C /* BGBatter.m */; };
 		F9FEEA471BA265C500ED1D6C /* BGBatter+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA451BA265C500ED1D6C /* BGBatter+CoreDataProperties.m */; };
 		F9FEEA4C1BA265CE00ED1D6C /* BGPitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEEA491BA265CE00ED1D6C /* BGPitcher.m */; };
@@ -113,6 +119,15 @@
 		F98C84F91BB75E2C00584370 /* CreateTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateTeamViewController.h; path = "User Interface/Create league/Create league/CreateTeamVC/CreateTeamViewController.h"; sourceTree = "<group>"; };
 		F98C84FA1BB75E2C00584370 /* CreateTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateTeamViewController.m; path = "User Interface/Create league/Create league/CreateTeamVC/CreateTeamViewController.m"; sourceTree = "<group>"; };
 		F98C84FB1BB75E2C00584370 /* CreateTeamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateTeamViewController.xib; path = "User Interface/Create league/Create league/CreateTeamVC/CreateTeamViewController.xib"; sourceTree = "<group>"; };
+		F98C84FF1BB7836F00584370 /* CreatePlayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatePlayerTableViewCell.h; path = "User Interface/Create league/Create league/CreateTeamVC/Create player cell/CreatePlayerTableViewCell.h"; sourceTree = "<group>"; };
+		F98C85001BB7836F00584370 /* CreatePlayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatePlayerTableViewCell.m; path = "User Interface/Create league/Create league/CreateTeamVC/Create player cell/CreatePlayerTableViewCell.m"; sourceTree = "<group>"; };
+		F98C85021BB783A600584370 /* CreatePlayerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreatePlayerTableViewCell.xib; path = "User Interface/Create league/Create league/CreateTeamVC/Create player cell/CreatePlayerTableViewCell.xib"; sourceTree = "<group>"; };
+		F98C85051BB78F3F00584370 /* CreatePitcherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatePitcherViewController.h; path = "User Interface/Create league/Create league/CreateTeamVC/Create player VC/CreatePitcherViewController.h"; sourceTree = "<group>"; };
+		F98C85061BB78F3F00584370 /* CreatePitcherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatePitcherViewController.m; path = "User Interface/Create league/Create league/CreateTeamVC/Create player VC/CreatePitcherViewController.m"; sourceTree = "<group>"; };
+		F98C85071BB78F3F00584370 /* CreatePitcherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreatePitcherViewController.xib; path = "User Interface/Create league/Create league/CreateTeamVC/Create player VC/CreatePitcherViewController.xib"; sourceTree = "<group>"; };
+		F98C850B1BB78F7300584370 /* CreateBatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateBatterViewController.h; path = "User Interface/Create league/Create league/CreateTeamVC/Create player VC/Create batter/CreateBatterViewController.h"; sourceTree = "<group>"; };
+		F98C850C1BB78F7300584370 /* CreateBatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateBatterViewController.m; path = "User Interface/Create league/Create league/CreateTeamVC/Create player VC/Create batter/CreateBatterViewController.m"; sourceTree = "<group>"; };
+		F98C850D1BB78F7300584370 /* CreateBatterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateBatterViewController.xib; path = "User Interface/Create league/Create league/CreateTeamVC/Create player VC/Create batter/CreateBatterViewController.xib"; sourceTree = "<group>"; };
 		F9FEEA421BA265C500ED1D6C /* BGBatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGBatter.h; path = Classes/BGBatter/BGBatter.h; sourceTree = "<group>"; };
 		F9FEEA431BA265C500ED1D6C /* BGBatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGBatter.m; path = Classes/BGBatter/BGBatter.m; sourceTree = "<group>"; };
 		F9FEEA441BA265C500ED1D6C /* BGBatter+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BGBatter+CoreDataProperties.h"; path = "Classes/BGBatter/BGBatter+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -189,7 +204,7 @@
 			name = "Create team cell";
 			sourceTree = "<group>";
 		};
-		F9248D2B1BA3DF3B00918152 /* Create League */ = {
+		F9248D2B1BA3DF3B00918152 /* Create league */ = {
 			isa = PBXGroup;
 			children = (
 				F9248D261BA3DF3600918152 /* CreateLeagueViewController.h */,
@@ -198,7 +213,7 @@
 				F98C84FE1BB75E3100584370 /* Create team VC */,
 				F91451761BAB9FA4005FB205 /* Create team cell */,
 			);
-			name = "Create League";
+			name = "Create league";
 			sourceTree = "<group>";
 		};
 		F92CF6921B9884C400BE0428 /* BGLeagueInfo */ = {
@@ -406,7 +421,7 @@
 		F96453141BA3806500FA119A /* Create league VC */ = {
 			isa = PBXGroup;
 			children = (
-				F9248D2B1BA3DF3B00918152 /* Create League */,
+				F9248D2B1BA3DF3B00918152 /* Create league */,
 			);
 			name = "Create league VC";
 			sourceTree = "<group>";
@@ -427,8 +442,49 @@
 				F98C84F91BB75E2C00584370 /* CreateTeamViewController.h */,
 				F98C84FA1BB75E2C00584370 /* CreateTeamViewController.m */,
 				F98C84FB1BB75E2C00584370 /* CreateTeamViewController.xib */,
+				F98C85111BB78F8A00584370 /* Create player VCs */,
+				F98C85041BB783B000584370 /* Create player cell */,
 			);
 			name = "Create team VC";
+			sourceTree = "<group>";
+		};
+		F98C85041BB783B000584370 /* Create player cell */ = {
+			isa = PBXGroup;
+			children = (
+				F98C84FF1BB7836F00584370 /* CreatePlayerTableViewCell.h */,
+				F98C85001BB7836F00584370 /* CreatePlayerTableViewCell.m */,
+				F98C85021BB783A600584370 /* CreatePlayerTableViewCell.xib */,
+			);
+			name = "Create player cell";
+			sourceTree = "<group>";
+		};
+		F98C850A1BB78F4600584370 /* Create pitcher VC */ = {
+			isa = PBXGroup;
+			children = (
+				F98C85051BB78F3F00584370 /* CreatePitcherViewController.h */,
+				F98C85061BB78F3F00584370 /* CreatePitcherViewController.m */,
+				F98C85071BB78F3F00584370 /* CreatePitcherViewController.xib */,
+			);
+			name = "Create pitcher VC";
+			sourceTree = "<group>";
+		};
+		F98C85101BB78F7900584370 /* Create batter VC */ = {
+			isa = PBXGroup;
+			children = (
+				F98C850B1BB78F7300584370 /* CreateBatterViewController.h */,
+				F98C850C1BB78F7300584370 /* CreateBatterViewController.m */,
+				F98C850D1BB78F7300584370 /* CreateBatterViewController.xib */,
+			);
+			name = "Create batter VC";
+			sourceTree = "<group>";
+		};
+		F98C85111BB78F8A00584370 /* Create player VCs */ = {
+			isa = PBXGroup;
+			children = (
+				F98C85101BB78F7900584370 /* Create batter VC */,
+				F98C850A1BB78F4600584370 /* Create pitcher VC */,
+			);
+			name = "Create player VCs";
 			sourceTree = "<group>";
 		};
 		F993A7F11B9B80B900CB1A5B /* League selection VC */ = {
@@ -582,13 +638,16 @@
 			files = (
 				F9248D131BA3DED100918152 /* LeagueSelectionViewController.xib in Resources */,
 				F96329821B7E5E6400C63105 /* LaunchScreen.storyboard in Resources */,
+				F98C850F1BB78F7300584370 /* CreateBatterViewController.xib in Resources */,
 				F9248D221BA3DEF000918152 /* PlayerTableViewCell.xib in Resources */,
 				F9248D2A1BA3DF3600918152 /* CreateLeagueViewController.xib in Resources */,
 				F9248D1D1BA3DEE400918152 /* LeagueTableViewCell.xib in Resources */,
 				F961A2A11B9C002E006A0F2C /* check.png in Resources */,
+				F98C85091BB78F3F00584370 /* CreatePitcherViewController.xib in Resources */,
 				F963297F1B7E5E6400C63105 /* Assets.xcassets in Resources */,
 				F9248D181BA3DEDA00918152 /* CustomLeagueTableViewCell.xib in Resources */,
 				F972E8621B9CC3960043DDB1 /* select_empty.png in Resources */,
+				F98C85031BB783A600584370 /* CreatePlayerTableViewCell.xib in Resources */,
 				F963297D1B7E5E6400C63105 /* Main.storyboard in Resources */,
 				F91451751BAB9F9E005FB205 /* CreateTeamTableViewCell.xib in Resources */,
 				F98C84FD1BB75E2C00584370 /* CreateTeamViewController.xib in Resources */,
@@ -668,6 +727,7 @@
 				F9248D171BA3DEDA00918152 /* CustomLeagueTableViewCell.m in Sources */,
 				F91451741BAB9F9E005FB205 /* CreateTeamTableViewCell.m in Sources */,
 				F96329771B7E5E6400C63105 /* AppDelegate.m in Sources */,
+				F98C85081BB78F3F00584370 /* CreatePitcherViewController.m in Sources */,
 				F9FEEA6B1BA2660900ED1D6C /* BGLeagueController+CoreDataProperties.m in Sources */,
 				F98C84FC1BB75E2C00584370 /* CreateTeamViewController.m in Sources */,
 				F9FEEA651BA265FD00ED1D6C /* BGLeagueInfo+CoreDataProperties.m in Sources */,
@@ -683,9 +743,11 @@
 				F9FEEA471BA265C500ED1D6C /* BGBatter+CoreDataProperties.m in Sources */,
 				F9248D1C1BA3DEE400918152 /* LeagueTableViewCell.m in Sources */,
 				F9FEEA4D1BA265CE00ED1D6C /* BGPitcher+CoreDataProperties.m in Sources */,
+				F98C850E1BB78F7300584370 /* CreateBatterViewController.m in Sources */,
 				F9FEEA461BA265C500ED1D6C /* BGBatter.m in Sources */,
 				F9248D251BA3DEF500918152 /* ViewController.m in Sources */,
 				F9FEEA5E1BA265F600ED1D6C /* BGLeagueDetails.m in Sources */,
+				F98C85011BB7836F00584370 /* CreatePlayerTableViewCell.m in Sources */,
 				F9FEEA6A1BA2660900ED1D6C /* BGLeagueController.m in Sources */,
 				F9FEEA591BA265E700ED1D6C /* BGTeamDetails+CoreDataProperties.m in Sources */,
 				F9FEEA4C1BA265CE00ED1D6C /* BGPitcher.m in Sources */,

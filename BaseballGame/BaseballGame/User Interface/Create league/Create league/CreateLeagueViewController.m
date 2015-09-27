@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.nameField.delegate = self;
     self.teamsTableView.dataSource = self;
     self.teamsTableView.delegate = self;
     
@@ -74,8 +73,8 @@
     cell.pitchingLabel.text = [NSString stringWithFormat:@"PTH: %@",team.pitchingOverall];
     cell.battingLabel.text = [NSString stringWithFormat:@"BAT: %@",team.battingOverall];
     cell.overallLabel.text = [NSString stringWithFormat:@"%@",team.overall];
+    cell.team = team;
     cell.delegate = self;
-    cell.cellIndex = (int)indexPath.row;
     return cell;
 }
 
@@ -90,8 +89,7 @@
 
 #pragma mark - teamTableViewCell delegate
 
-- (void)shouldBeginEditingCusomTeamAtIndex:(int)index {
-    BGTeamInfo *team = self.teams[index];
+- (void)shouldBeginEditingCusomTeam:(BGTeamInfo *)team {
     CreateTeamViewController *vc = [[CreateTeamViewController alloc] init];
     vc.managedObjectContext = self.managedObjectContext;
     vc.customTeam = team;

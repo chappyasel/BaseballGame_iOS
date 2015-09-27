@@ -8,18 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "BGTeamInfo.h"
+#import "CreatePlayerTableViewCell.h"
 
 @protocol CreateTeamViewControllerDelegate <NSObject>
 @required
 - (void) createTeamViewControllerWillDismissWithResultTeam: (BGTeamInfo *) team;
 @end
 
-@interface CreateTeamViewController : UIViewController
+@interface CreateTeamViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CreatePlayerTableViewCellDelegate>
 
 @property id <CreateTeamViewControllerDelegate> delegate;
 
-@property (weak, nonatomic) IBOutlet UISwitch *loadExistingSwitch;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *abbrevTextField;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 

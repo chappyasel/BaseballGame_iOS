@@ -20,7 +20,7 @@
 }
 
 - (IBAction)detailsButtonPressed:(UIButton *)sender {
-    [self.delegate shouldBeginEditingCusomTeamAtIndex:self.cellIndex];
+    [self.delegate shouldBeginEditingCusomTeam:self.team];
 }
 
 @end

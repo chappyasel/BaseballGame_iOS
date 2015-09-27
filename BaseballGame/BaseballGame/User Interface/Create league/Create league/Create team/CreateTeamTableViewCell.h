@@ -11,12 +11,11 @@
 
 @protocol CreateTeamTableViewCellDelegate <NSObject>
 @required
-- (void) shouldBeginEditingCusomTeamAtIndex: (int) index;
+- (void) shouldBeginEditingCusomTeam: (BGTeamInfo *) team;
 @end
 
 @interface CreateTeamTableViewCell : UITableViewCell
 
-@property int cellIndex;
 @property id <CreateTeamTableViewCellDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -26,5 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *battingLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *overallLabel;
+
+@property BGTeamInfo *team;
 
 @end

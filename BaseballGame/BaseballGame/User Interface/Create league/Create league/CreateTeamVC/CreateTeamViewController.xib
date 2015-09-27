@@ -6,8 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateTeamViewController">
             <connections>
-                <outlet property="loadExistingSwitch" destination="6wX-aA-auP" id="goL-gz-lDc"/>
-                <outlet property="scrollView" destination="g2o-Ku-x9r" id="Z1X-ft-jrE"/>
+                <outlet property="nameTextField" destination="0va-Cd-2VV" id="KYK-jn-ARa"/>
+                <outlet property="tableView" destination="Mxq-oA-HWe" id="qPI-e6-vg6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,88 +30,88 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6wX-aA-auP">
-                    <rect key="frame" x="402" y="76" width="51" height="31"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBq-Jb-mAb">
+                    <rect key="frame" x="175" y="76" width="250" height="30"/>
                     <animations/>
-                </switch>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Load team from existing leauge:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFk-RD-ZWf">
-                    <rect key="frame" x="150" y="81" width="244" height="21"/>
+                    <state key="normal" title="Load team from existing league"/>
+                    <connections>
+                        <action selector="loadExistingTeamPressed:" destination="-1" eventType="touchUpInside" id="A6c-n6-6Vn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmv-FV-oDy">
+                    <rect key="frame" x="25" y="116" width="96" height="21"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2o-Ku-x9r">
-                    <rect key="frame" x="0.0" y="115" width="600" height="485"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0va-Cd-2VV">
+                    <rect key="frame" x="22" y="145" width="551" height="30"/>
                     <animations/>
-                </scrollView>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Abbreviation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-XV-zOL">
+                    <rect key="frame" x="25" y="183" width="148" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j52-r3-432">
+                    <rect key="frame" x="22" y="212" width="551" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buI-Md-9mI">
+                    <rect key="frame" x="25" y="250" width="60" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mxq-oA-HWe">
+                    <rect key="frame" x="22" y="279" width="551" height="321"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="390" id="eBm-6E-APp"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eBm-6E-APp"/>
+                        </mask>
+                    </variation>
+                </tableView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mxq-oA-HWe" secondAttribute="bottom" id="0AS-Ub-I4h"/>
                 <constraint firstItem="5GR-a2-Ep9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="0bl-ct-Hj2"/>
                 <constraint firstItem="5GR-a2-Ep9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4uL-su-ysE"/>
+                <constraint firstItem="fif-XV-zOL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="183" id="DDC-UY-jnB"/>
+                <constraint firstItem="fif-XV-zOL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Fbw-SY-vgW"/>
+                <constraint firstItem="buI-Md-9mI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="250" id="LAE-Ah-ddx"/>
+                <constraint firstAttribute="trailing" secondItem="j52-r3-432" secondAttribute="trailing" constant="27" id="MbU-zq-DhA"/>
+                <constraint firstItem="eBq-Jb-mAb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="NpC-ho-HCV"/>
+                <constraint firstItem="Mxq-oA-HWe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="OXX-bO-CgF"/>
+                <constraint firstItem="tmv-FV-oDy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="OtM-aW-sYf"/>
+                <constraint firstItem="j52-r3-432" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="Qsx-QA-mRg"/>
+                <constraint firstItem="tmv-FV-oDy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="116" id="XmU-1D-gWF"/>
+                <constraint firstItem="Mxq-oA-HWe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="279" id="bcK-KP-ZmF"/>
+                <constraint firstItem="0va-Cd-2VV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="chR-RO-FQv"/>
                 <constraint firstAttribute="trailing" secondItem="5GR-a2-Ep9" secondAttribute="trailing" id="cqK-t0-FUu"/>
+                <constraint firstAttribute="trailing" secondItem="0va-Cd-2VV" secondAttribute="trailing" constant="27" id="f4D-rm-oeP"/>
+                <constraint firstItem="eBq-Jb-mAb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iZg-HM-FUQ"/>
+                <constraint firstItem="j52-r3-432" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="212" id="jFx-Ag-vtN"/>
+                <constraint firstItem="buI-Md-9mI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="jXr-Lb-CFt"/>
+                <constraint firstAttribute="trailing" secondItem="Mxq-oA-HWe" secondAttribute="trailing" constant="27" id="nN2-oR-9wG"/>
+                <constraint firstItem="0va-Cd-2VV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="145" id="qti-Fc-gLO"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="489" y="191"/>
-        </view>
-        <view contentMode="scaleToFill" id="fOW-1s-Jrm">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-ml-dtK">
-                    <rect key="frame" x="11" y="148" width="60" height="21"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2j-Eh-Ow7">
-                    <rect key="frame" x="28" y="8" width="96" height="21"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJ8-Iz-Kwg">
-                    <rect key="frame" x="25" y="38" width="551" height="30"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gkr-kn-6AU">
-                    <rect key="frame" x="25" y="177" width="551" height="393"/>
-                    <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="390" id="6rM-Tu-lcK"/>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="6rM-Tu-lcK"/>
-                        </mask>
-                    </variation>
-                </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Abbreviation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep9-X8-xHd">
-                    <rect key="frame" x="28" y="81" width="148" height="21"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBL-Wh-9rM">
-                    <rect key="frame" x="25" y="110" width="551" height="30"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-            </subviews>
-            <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="1158" y="176"/>
         </view>
         <view contentMode="scaleToFill" id="FbT-sE-UxN">
             <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
@@ -151,7 +151,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="1836" y="176"/>
+            <point key="canvasLocation" x="1784" y="176"/>
         </view>
     </objects>
 </document>
