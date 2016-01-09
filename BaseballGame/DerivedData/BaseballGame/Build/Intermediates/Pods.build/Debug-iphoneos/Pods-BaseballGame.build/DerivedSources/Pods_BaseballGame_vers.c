@@ -1,0 +1,1 @@
+ const unsigned char Pods_BaseballGameVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_BaseballGame  PROJECT:Pods-1" "\n"; const double Pods_BaseballGameVersionNumber __attribute__ ((used)) = (double)1.;

@@ -1,0 +1,1 @@
+ const unsigned char UCZProgressViewVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:UCZProgressView  PROJECT:Pods-1.0.2" "\n"; const double UCZProgressViewVersionNumber __attribute__ ((used)) = (double)1.0;

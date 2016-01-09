@@ -1,0 +1,1 @@
+ const unsigned char ZFDragableModalTransitionVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:ZFDragableModalTransition  PROJECT:Pods-0.5.1" "\n"; const double ZFDragableModalTransitionVersionNumber __attribute__ ((used)) = (double)0.5;

@@ -1,0 +1,258 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/DownloadButton.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CALayer+PKDownloadButtonAnimations.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/CALayer+PKDownloadButtonAnimations.h"
+        },
+        {
+          'type': 'file',
+          'name': "DownloadButton-Swift.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/DownloadButton.framework/Headers/DownloadButton-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DownloadButton-umbrella.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/Target Support Files/DownloadButton/DownloadButton-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSLayoutConstraint+PKDownloadButton.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/NSLayoutConstraint+PKDownloadButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKCircleProgressView.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/PKCircleProgressView.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKCircleView.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/PKCircleView.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKDownloadButton.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/PKDownloadButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKMacros.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/PKMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKPendingView.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/PKPendingView.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKStopDownloadButton.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/PKStopDownloadButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+PKDownloadButton.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/UIButton+PKDownloadButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+PKDownloadButton.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/UIColor+PKDownloadButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+PKDownloadButton.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/DownloadButton/Pod/Classes/UIImage+PKDownloadButton.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/DownloadButton.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Intermediates/Pods.build/Debug-iphoneos/DownloadButton.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/MGSwipeTableCell.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MGSwipeButton.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "MGSwipeTableCell-Swift.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/MGSwipeTableCell.framework/Headers/MGSwipeTableCell-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MGSwipeTableCell-umbrella.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/Target Support Files/MGSwipeTableCell/MGSwipeTableCell-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "MGSwipeTableCell.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeTableCell.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/MGSwipeTableCell.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Intermediates/Pods.build/Debug-iphoneos/MGSwipeTableCell.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/Pods_BaseballGame.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-BaseballGame-umbrella.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/Target Support Files/Pods-BaseballGame/Pods-BaseballGame-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_BaseballGame-Swift.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/Pods_BaseballGame.framework/Headers/Pods_BaseballGame-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/Pods_BaseballGame.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-BaseballGame.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/UCZProgressView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "UCZProgressView-Swift.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/UCZProgressView.framework/Headers/UCZProgressView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "UCZProgressView-umbrella.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/Target Support Files/UCZProgressView/UCZProgressView-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "UCZProgressView.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/UCZProgressView/Lib/UCZProgressView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/UCZProgressView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Intermediates/Pods.build/Debug-iphoneos/UCZProgressView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/ZFDragableModalTransition.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ZFDragableModalTransition-Swift.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/ZFDragableModalTransition.framework/Headers/ZFDragableModalTransition-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFDragableModalTransition-umbrella.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFModalTransitionAnimator.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/ZFDragableModalTransition/Classes/ZFModalTransitionAnimator.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/ZFDragableModalTransition.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Intermediates/Pods.build/Debug-iphoneos/ZFDragableModalTransition.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/hpple.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TFHpple.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/hpple/TFHpple.h"
+        },
+        {
+          'type': 'file',
+          'name': "TFHppleElement.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/hpple/TFHppleElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "XPathQuery.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/hpple/XPathQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "hpple-Swift.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/hpple.framework/Headers/hpple-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "hpple-umbrella.h",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/Pods/Target Support Files/hpple/hpple-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Products/Debug-iphoneos/hpple.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chappysthebest1/Desktop/Github Repos/BaseballGame_iOS/BaseballGame/DerivedData/BaseballGame/Build/Intermediates/Pods.build/Debug-iphoneos/hpple.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

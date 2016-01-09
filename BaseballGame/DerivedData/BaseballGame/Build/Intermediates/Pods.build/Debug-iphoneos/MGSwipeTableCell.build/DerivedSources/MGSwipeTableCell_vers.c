@@ -1,0 +1,1 @@
+ const unsigned char MGSwipeTableCellVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:MGSwipeTableCell  PROJECT:Pods-1.5.1" "\n"; const double MGSwipeTableCellVersionNumber __attribute__ ((used)) = (double)1.5;

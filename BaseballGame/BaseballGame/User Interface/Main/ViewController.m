@@ -99,7 +99,7 @@
 
 - (int)currentYear {
     NSCalendar *gregorian = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
-    return (int)[gregorian component:NSCalendarUnitYear fromDate:NSDate.date];
+    return (int)[gregorian component:NSCalendarUnitYear fromDate:[NSDate dateWithTimeIntervalSinceNow:-60*60*24*31*4]]; //early april
 }
 
 - (void)loadTableView {

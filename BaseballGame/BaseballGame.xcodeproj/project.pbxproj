@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		929AD73FB7FD75554EAD8650 /* Pods_BaseballGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDAA9072C38CBCB66D0E1DB /* Pods_BaseballGame.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		929AD73FB7FD75554EAD8650 /* Pods_BaseballGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDAA9072C38CBCB66D0E1DB /* Pods_BaseballGame.framework */; };
 		F91451741BAB9F9E005FB205 /* CreateTeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F91451721BAB9F9E005FB205 /* CreateTeamTableViewCell.m */; };
 		F91451751BAB9F9E005FB205 /* CreateTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91451731BAB9F9E005FB205 /* CreateTeamTableViewCell.xib */; };
 		F9248D121BA3DED100918152 /* LeagueSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9248D101BA3DED100918152 /* LeagueSelectionViewController.m */; };

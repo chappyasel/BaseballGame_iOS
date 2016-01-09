@@ -7,240 +7,234 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		031DE42FD2BC8E311C03032E8784F77B /* UCZProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B7EFF76B49250A4D1A9A3FEA340D2 /* UCZProgressView-dummy.m */; };
-		06D1372E19BE52F32D8FD6367CA545D3 /* MGSwipeTableCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C45498E952FE82F2D80F838D7E8886E2 /* MGSwipeTableCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A458E4FF5929D2882F94D82713FC0DA /* UIImage+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB970925AB861D44AA15DBD7471C0EA /* UIImage+PKDownloadButton.m */; };
-		0E8097D9A72FC6860045629B34EA7BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		124E626418979330CE45ECCF909FCE04 /* PKStopDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C95D5752E16A21781C498815F31C47CA /* PKStopDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1547CA2F17B12357B2CDF7BB3F06DDAF /* UIColor+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 55219F5D48C570D310E504C1D9C29EFD /* UIColor+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1ADF6E3BBB7B151B4D2F8512453F2734 /* UCZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BACDDF4F97058AA51AA113D1E2442ED /* UCZProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1AF7032E758F45D017F832688E9DC05C /* Pods-BaseballGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CD3750DB572195E84C548AF6B1A7FA /* Pods-BaseballGame-dummy.m */; };
-		2158E1CC027D43BF99275D4569DB4DE2 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F781CF7B58F76E93BE9B918EF7D98B5 /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		25783D9E6F12EC58434D76DB57F0C7F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		2A3187E1C99240069588E4818480F4C8 /* hpple-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ACD1DAD6655362D7B7BC00D0CC26C9 /* hpple-dummy.m */; };
-		2BC816D99A1D9E95C2931EB872AEE39D /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 835C77EB7735D22A698CD12E493B82B7 /* MGSwipeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C64E5DE76DE8CA79272B10C493E0776 /* UIImage+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A626A6DC017E22B60B92A3B48500BEF /* UIImage+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38C35F30B81C4FD2B0E5C657FFED7AB4 /* ZFModalTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0733A2FCA50A57E0A0162A47FB6C7A /* ZFModalTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A2203EFAA306DF5A256306E10353E66 /* PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9020046FE5AD35D7B3B01FC568E4972 /* PKDownloadButton.m */; };
-		3A3E8AF19C95FCCF466761C6C20A92EE /* UCZProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0468A6AFB6B971F9F67E8943DEF71F /* UCZProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E5A01C3D1B5A68DB75ACC40BC18BCE2 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAEEA0C96BCDAE469172B9F1DD32CB /* TFHpple.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		418E6CD8854ACEE7B853529F19E00207 /* TFHppleElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7651E1C5B6F30DA87824DC3D6E4D9E /* TFHppleElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5028D12049F03B54DA35ACB5EDBBF540 /* PKPendingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0FD295F2C788985773D66A4BDF5C1A /* PKPendingView.m */; };
-		52342B99AE37819DD223F43C9A0811AD /* PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F69600E57E3BEA7242CE8B9BBB0DEFC /* PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		541DF8D4EDCA47E91D247F72D3E09032 /* PKCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FDC3B79B6FE7C9FFE9887E3A82526B /* PKCircleView.m */; };
-		5435530BFFD27F23094F13AD3AFEEA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		565765D2A38C2252C0E05BE590C4A160 /* PKCircleProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E72E30E19531B71F700667CDA60FD3 /* PKCircleProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		607D7B1F40EA53691B60A82A24CEF2F2 /* PKCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9023FC6E416857A10F05EBE077F342EE /* PKCircleProgressView.m */; };
-		62A8A0D83CDE779E473F87624F4537AF /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A399B10EC1C5E0533C6D5BF4ADB3DA24 /* MGSwipeTableCell-dummy.m */; };
-		70930883DB204E82A736F2FE774A753E /* NSLayoutConstraint+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE332D8DAA2E3FDAF2E6564AC595472 /* NSLayoutConstraint+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		731B1DD2A69A4414709E653930974E9D /* CALayer+PKDownloadButtonAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7982AC723FE5E8BDDC209D64F74E3F36 /* CALayer+PKDownloadButtonAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7490B1ACFAF4A3C813A5D6DE0EB32826 /* NSLayoutConstraint+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E5D4046E93EA90929DFE7CD47B4974 /* NSLayoutConstraint+PKDownloadButton.m */; };
-		77CABA011F96EA480BD3663C2343D1F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		7F898C7BFFDC9B8326F4D1B27922E753 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97465C795EC4C8A09AB8E99765350FB4 /* UIKit.framework */; };
-		837705B454D6371B0C0D8A3D17D4C03B /* UCZProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDAF4AC4BEB94918BBD0C25A3ED02F17 /* UCZProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		859F5CF5C60EB32BB4D71EE77BDEA1E8 /* PKStopDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 514CDDF578DFAAED61BA81E0AECC6A0A /* PKStopDownloadButton.m */; };
-		863AFD17F143ABAD29B2B7A51DA1EFFF /* DownloadButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3317F3A66B825092F6AAC27EC683D74 /* DownloadButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		899E554A7B37A4807FA0AB544AB243C3 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5006DE4980D268E19EAC67E1A72BE879 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9A0DDE08DF7CA4B182C8CD8E4EF4F1AB /* CALayer+PKDownloadButtonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB75497F279271B86E83F393A8DBAD /* CALayer+PKDownloadButtonAnimations.m */; };
-		A6098676B232945240434775858C52B7 /* Pods-BaseballGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A551FE9200340E5D9B65FD4E5C5BCFCD /* Pods-BaseballGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7F02BB156FB5655A468CD655DBF685C /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D65692DA70594B68B1DC63ABAFC1EE /* MGSwipeTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC888A1E4B2AD7E3F1E1B005CD774EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		AE1CE24F6F8DD5EFB54995CC057C8713 /* XPathQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BC82DC2210071E71347112ADC0CB9D /* XPathQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B54436A0559DBCD606242AC39F638348 /* ZFModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7327F59D5E1DAF291364B55DFCB165BE /* ZFModalTransitionAnimator.m */; };
-		BAF9252AA02D0C09AF70D434C5A2069F /* ZFDragableModalTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AB2E98B14DB4C6FF9F6C0124774125 /* ZFDragableModalTransition-dummy.m */; };
-		BFCDCF986BA3B12F9C16FE0445E04045 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC454D79A8C84C6C30810062062C3 /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C0AB19CDCCBACBB095DEA2D25C4CADF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */; };
-		C31D6051361FE16FA778EDFAA4CD464A /* PKCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = E9250079B0D37ACD694A107036FD0047 /* PKCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBACD64ACA2CA23A2EA8448A125E31E6 /* DownloadButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E67E50EEE7480761FCDDF032506626 /* DownloadButton-dummy.m */; };
-		D57E5C1197B95176375B1C640A05D5C9 /* DownloadButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */; };
-		D6C8752544BAADEB414F18D47C9A1DEA /* hpple-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7545BD0E83FE16EA6614DE724DE6864 /* hpple-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D75FFE5703EA5C2B65E798F9AF860C7B /* PKPendingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9550EAC9184652A56061A32D82CBA0B7 /* PKPendingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAD127F906F76507636C1E19B79F38CA /* UIColor+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EEA06B9BFAD67FBD2EE53FE05EA2C8 /* UIColor+PKDownloadButton.m */; };
-		E082F3997A61F5D79A563CCA23EC319B /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA7FE16224F22CBEDC524A0042DDFA /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E5CC48357C5AB58E3BACB9BCF4B409F7 /* UIButton+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE95ADF92950D9941FE0D6171304A4 /* UIButton+PKDownloadButton.m */; };
-		E7FB1613FACD41211C871B80BB5B03A7 /* TFHpple.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA21C063D68D45DC61A4D54608DE678 /* TFHpple.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA1CE72416ED53FB28F307032B666ED9 /* ZFDragableModalTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D77424D9B84A281E612B38D45194ECF /* ZFDragableModalTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3430DA23408BB15C9582F2D2EA94FF8 /* PKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C1E9ABD13B7A8C4C990DD10CCD7B6E /* PKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB98E6A6769236AF6C27D90582C115AF /* UIButton+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 22F680DB5716D5459A0AA431622C66E9 /* UIButton+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093EDF10F34C7BDDE683F1CBF89C613E /* DownloadButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04836CFA2E7F982306AA0D26361186F7 /* DownloadButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AABE5BC9FC34DC459AC3DA8C5D6854C /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCF5609CAACB4315B44F7C7205F2EB /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0D3FF902AB94E284CDDF66F41269ADA6 /* PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B87838AC4C573B3B0EE7C63528EFCF83 /* PKDownloadButton.m */; };
+		0DA2E895166462760C2078E7CD4065CE /* UCZProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EF7309D953AC6AE0B710F66BAA11EA /* UCZProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FE8920FD336C0DFE028C80A9972B75D /* ZFModalTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E9710788880BFBC86A96F024AA8F7DB /* ZFModalTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		109FBD9302B4FB3DEC18FB292D75377C /* UIImage+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA91ABD4711EE7EAE863BCCEC3A4DFD /* UIImage+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		124A2503394B86ED9AD2B907CF45DC23 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A17DCC16FA385A8C5C75242962494E /* TFHpple.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1A26857DB207E4C7AADAEE2FF86AA822 /* PKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB0C3D703BF120976B7B45E9FA29D5E /* PKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D54E6EC43B2B4250E1FE53B0C0A6662 /* MGSwipeTableCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B23E7B95777DBF843C9623E876A062 /* MGSwipeTableCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F2A856027BBAE4B70A5FE1FBB4006E3 /* CALayer+PKDownloadButtonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166610EF2262D86F78DBB531FF8B8B6 /* CALayer+PKDownloadButtonAnimations.m */; };
+		21AC8AA455C10276AAAAE76955BE74D5 /* ZFModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7189F8725D3F6B59B94D3C197DD9DF8A /* ZFModalTransitionAnimator.m */; };
+		230048578F6382C5C27C5A567763B330 /* UIImage+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DE5FEAEF11C47F4ADFCB130AAF9320 /* UIImage+PKDownloadButton.m */; };
+		252E5AF5CA3B40E782BA714B6EE2FE86 /* PKCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A758D118BE5410A29B67BB9721899FFB /* PKCircleView.m */; };
+		2AD0973B3324DB5BA880C49D20F66DF3 /* UCZProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 581D507D8B8698D249F1F937F6DF9F20 /* UCZProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33FD033E67751B35EA26C5D00A6505D9 /* PKCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409A4058F7DE361AB93ED3C8231673DC /* PKCircleProgressView.m */; };
+		3435152E248CB115A63ACC4F9FB2CC27 /* TFHppleElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F859A6F87A33DE6AFBB361FD830DE755 /* TFHppleElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		350F03C58C7E13EB7E928F0AF228B6F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		39A6E22D4370BD7EE9C5DB97B29784CC /* PKStopDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 038041DE8041B1D77D3027E0E147F743 /* PKStopDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FD4B7A2C25DA93FF9B497D2ECB62CA3 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3838F21D852B3FB95EF6C355E6AD3930 /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		446CA6F748C1D8F18C8AB4A5E35A515F /* UCZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AEE4036ABC541D2F27C3863C9FDDE /* UCZProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		467A8ED56DC19CBFC842B68FC6412754 /* XPathQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C5D53FC8649316F71F11CC86F2CEA3 /* XPathQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		569D057F4C7A6F69AEA4AB0BD6D9900E /* MGSwipeTableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F8F56EC9FFE35789D4AAED0FC032E1 /* MGSwipeTableCell-dummy.m */; };
+		58E5CD7685DC767CF7E557E073A43999 /* PKCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3602B9085C76612A6C36887746598D5B /* PKCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A9D3D48B182CC30C8EFBC078D89EA05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		5D074B71672031B8CBDAE21DF8E44C00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		63DC27806C23AFFC9B7115E5EEAB9CBF /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA98CDA9CC54A914A74E596D7932907 /* MGSwipeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67558B72295110F846C2420C9540A52A /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 087573AC258084A3780398E20B80A6C0 /* MGSwipeTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		704FAB2467EB9C3529845C5650A800F9 /* UCZProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59334C4808279D7AEBBABDDC99DB0E7A /* UCZProgressView-dummy.m */; };
+		7C46086F57FBA4A932C75BB65D38E11A /* UIColor+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EA51FF545D4614986EE2D3985373D090 /* UIColor+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E28E5D11F7F5A64EE7CEC79C07119EF /* ZFDragableModalTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DE34614D16648B78B7207FF9D3FED /* ZFDragableModalTransition-dummy.m */; };
+		826E3A95F0EE8804C644BFA3F40689F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		8376C8751DDFF82D670540E1002275AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		84D46DBFFF2584712C3393531EA4E0A5 /* PKCircleProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB0F916B532F8D9C9F73E2A898D7E54 /* PKCircleProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89338DBC09FDAEE9AABF9DB3786E6081 /* NSLayoutConstraint+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 963B94CA4515B2AF281128C8DA9C24EE /* NSLayoutConstraint+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E6A2261D1596123A915CF6EFFD2CA6C /* ZFDragableModalTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A66A6689DCAB6F33B80A47D41B7817 /* ZFDragableModalTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FCE04C7936855626D9C81BA7AAD045B /* NSLayoutConstraint+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 594250529BF9D9BF3DA9136672DC0536 /* NSLayoutConstraint+PKDownloadButton.m */; };
+		9452C04D1CB7EB156FA118E782A86CB3 /* UIButton+PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1EBB763EC1F02D1848BFB5BD691CB1 /* UIButton+PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		956005620ADDCAD66A726F4F091BF944 /* DownloadButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8121E894CC6C6DACED7C02791C0BF9B0 /* DownloadButton.bundle */; };
+		95E41293E05A8ABB9866D6F3AED0CA10 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9398F0811304E031170E1FEEAFDB2A /* MGSwipeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		96EAD029CF446D7E4200135923A52E02 /* CALayer+PKDownloadButtonAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBCB2256A9ADD11AC10F4930D55700F /* CALayer+PKDownloadButtonAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DB40F40A9B0EB6377B4A8BAE3A90B03 /* UIColor+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E8264108943248B7B91818F32AC86DE6 /* UIColor+PKDownloadButton.m */; };
+		A2F932BCDF7E6DD68A4FC9FC712E005D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		A2FD8DE1BBF2BC4B713D8AF1112FF5D6 /* PKStopDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA50437019A67B024948AD1C0AE32E1 /* PKStopDownloadButton.m */; };
+		A4A7DD338775B404370E1FDF544003D8 /* Pods-BaseballGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B0BDA673CB477C0EBD3C4FA6A1D003 /* Pods-BaseballGame-dummy.m */; };
+		BBDCB67183B02F28BED4F442EBC81BC0 /* hpple-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 532692EBC5192E4071CD9CB40E7E1717 /* hpple-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D9819F5EF224D49079E8DEC6A31B6B /* PKDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 93DA073153E380291D6AD6A01FA7DDAC /* PKDownloadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FD669C32DE47E548CBB0153988C1E2 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FB606DE04AE59909631B35811983D6 /* MGSwipeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C9CD60484C20BE89633568E044D1734D /* PKPendingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6DA05FE2885EF08796B3EC3103336D /* PKPendingView.m */; };
+		D4C439628CE9B8F5D6A7902D7DF09435 /* UIButton+PKDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6249B07F0B08958D43C14688F0107 /* UIButton+PKDownloadButton.m */; };
+		DF78F12C98E769925F7846388321F3EA /* DownloadButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF38026B4ADF37FD8B72AB8F67A69D2 /* DownloadButton-dummy.m */; };
+		EB3618F5A629C4A4E2FBF4511D9B00B9 /* TFHpple.h in Headers */ = {isa = PBXBuildFile; fileRef = 260A0FC5B6C16D069CFCD08ECA87A987 /* TFHpple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB85CE3581CFEFD73780A45B80A6D0FB /* Pods-BaseballGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8825C3359D168D846B2273625CD17C /* Pods-BaseballGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDB0CE9640A3E5DEF82A8E9B4763D81B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		FACB565F4B2F9C68458EFEBA9852FF6B /* hpple-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3852D79D467847C49E5AA2B427B28DF4 /* hpple-dummy.m */; };
+		FE75B12CE42647C92EB5EE62A3D46237 /* PKPendingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9B1C1A7D2014BE93F0820293A2DD5B /* PKPendingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1428688F832CA46B9B590BAD2D3FB1B5 /* PBXContainerItemProxy */ = {
+		1BB94F92FB87C2961D0070A7E56F4C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 01D371C3A2F4D69826071E84ECC7C49B;
-			remoteInfo = MGSwipeTableCell;
+			remoteGlobalIDString = 141796DBA3CE87B499A356EF9B750024;
+			remoteInfo = "DownloadButton-DownloadButton";
 		};
-		504B3D58B690514A86A555D7348CD251 /* PBXContainerItemProxy */ = {
+		24EBDC55B155809B4227BBAEEE6BAD48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 14CCA77BA23233CB53BC615C67873B64;
-			remoteInfo = DownloadButton;
-		};
-		7BB0567AE343AA8E996719BEA2B95ABB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B946E11B4E7FD9C686854392CFF45B38;
+			remoteGlobalIDString = 79545012CD9A65FF5D659B0AA5ACE91C;
 			remoteInfo = UCZProgressView;
 		};
-		BBFC06B83C4C58142053A2CBBEEC69E6 /* PBXContainerItemProxy */ = {
+		395E2A305C54020F7BF6C24103B44CD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8CC7931C78335CEA76BFF4A010C8425;
+			remoteGlobalIDString = 4E1263BFF45F6446CF3DE29AE234C893;
+			remoteInfo = MGSwipeTableCell;
+		};
+		5C187751F82DBDD775B751AE016EA4AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A0D1ACFECD6EE6032927F49354D917D;
 			remoteInfo = ZFDragableModalTransition;
 		};
-		CFB263B117AB430DFC58926ED2D75E34 /* PBXContainerItemProxy */ = {
+		A71ACAE24630D001CC61FEBBAFD97C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6E29098392497E07DC60FAC6F1C804B;
+			remoteInfo = DownloadButton;
+		};
+		AC9198CDD21C2C4BCF3C24C00B87A685 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D635F027F0A6FD04B98B790907265430;
 			remoteInfo = hpple;
 		};
-		E652697CA559E1B09C48CF31A3D31E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADF6138FB8C10457C5A09E5F590967E3;
-			remoteInfo = "DownloadButton-DownloadButton";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05ACD1DAD6655362D7B7BC00D0CC26C9 /* hpple-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "hpple-dummy.m"; sourceTree = "<group>"; };
+		038041DE8041B1D77D3027E0E147F743 /* PKStopDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKStopDownloadButton.h; path = Pod/Classes/PKStopDownloadButton.h; sourceTree = "<group>"; };
+		04836CFA2E7F982306AA0D26361186F7 /* DownloadButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-umbrella.h"; sourceTree = "<group>"; };
+		05FB606DE04AE59909631B35811983D6 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
+		087573AC258084A3780398E20B80A6C0 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
 		0906D89A0DCC633C9E971B79BC376C9C /* Pods-BaseballGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseballGame-acknowledgements.plist"; sourceTree = "<group>"; };
-		0FDCC454D79A8C84C6C30810062062C3 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
-		118017A15B36E3C9264B8AFAAD998D5C /* UCZProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UCZProgressView.modulemap; sourceTree = "<group>"; };
-		17E72E30E19531B71F700667CDA60FD3 /* PKCircleProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleProgressView.h; path = Pod/Classes/PKCircleProgressView.h; sourceTree = "<group>"; };
-		18AE95ADF92950D9941FE0D6171304A4 /* UIButton+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+PKDownloadButton.m"; path = "Pod/Classes/UIButton+PKDownloadButton.m"; sourceTree = "<group>"; };
-		1A626A6DC017E22B60B92A3B48500BEF /* UIImage+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+PKDownloadButton.h"; path = "Pod/Classes/UIImage+PKDownloadButton.h"; sourceTree = "<group>"; };
-		1EBB75497F279271B86E83F393A8DBAD /* CALayer+PKDownloadButtonAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+PKDownloadButtonAnimations.m"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.m"; sourceTree = "<group>"; };
-		1F7651E1C5B6F30DA87824DC3D6E4D9E /* TFHppleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
-		1F781CF7B58F76E93BE9B918EF7D98B5 /* XPathQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
-		217DD38D854DBBCEFFD40ECA3E388953 /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
-		22D65692DA70594B68B1DC63ABAFC1EE /* MGSwipeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTableCell.h; path = MGSwipeTableCell/MGSwipeTableCell.h; sourceTree = "<group>"; };
-		22F680DB5716D5459A0AA431622C66E9 /* UIButton+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+PKDownloadButton.h"; path = "Pod/Classes/UIButton+PKDownloadButton.h"; sourceTree = "<group>"; };
-		27E5D4046E93EA90929DFE7CD47B4974 /* NSLayoutConstraint+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PKDownloadButton.m"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.m"; sourceTree = "<group>"; };
-		2BACDDF4F97058AA51AA113D1E2442ED /* UCZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UCZProgressView.m; path = Lib/UCZProgressView.m; sourceTree = "<group>"; };
-		2C183D5C70BA9C52029D1497F30F32CE /* ZFDragableModalTransition-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ZFDragableModalTransition-Private.xcconfig"; sourceTree = "<group>"; };
-		301A9E5618BFA72EC8F13EF61F5773A0 /* ZFDragableModalTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZFDragableModalTransition.xcconfig; sourceTree = "<group>"; };
-		31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MGSwipeTableCell-Private.xcconfig"; sourceTree = "<group>"; };
-		37BAEEA0C96BCDAE469172B9F1DD32CB /* TFHpple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
-		37CA7FE16224F22CBEDC524A0042DDFA /* TFHppleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
-		38F87DE9F72416EEC311D5DDC3785B26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		391B08F8C516A6113FF7D82AFBA9D500 /* DownloadButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DownloadButton.xcconfig; sourceTree = "<group>"; };
-		3FB970925AB861D44AA15DBD7471C0EA /* UIImage+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+PKDownloadButton.m"; path = "Pod/Classes/UIImage+PKDownloadButton.m"; sourceTree = "<group>"; };
+		0F6DA05FE2885EF08796B3EC3103336D /* PKPendingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKPendingView.m; path = Pod/Classes/PKPendingView.m; sourceTree = "<group>"; };
+		1532D19C1392A8931357AEDA04958392 /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
+		1B9398F0811304E031170E1FEEAFDB2A /* MGSwipeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTableCell.m; path = MGSwipeTableCell/MGSwipeTableCell.m; sourceTree = "<group>"; };
+		1C00BBF00C45535F29FD4F9C3973287F /* hpple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-prefix.pch"; sourceTree = "<group>"; };
+		1FDCF5609CAACB4315B44F7C7205F2EB /* TFHppleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		2166610EF2262D86F78DBB531FF8B8B6 /* CALayer+PKDownloadButtonAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+PKDownloadButtonAnimations.m"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.m"; sourceTree = "<group>"; };
+		260A0FC5B6C16D069CFCD08ECA87A987 /* TFHpple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		2BAB078397674500EA1D2F1DCB350276 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDCA6EA51B843CE10257477AC25A349 /* ZFDragableModalTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-prefix.pch"; sourceTree = "<group>"; };
+		2DF38026B4ADF37FD8B72AB8F67A69D2 /* DownloadButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DownloadButton-dummy.m"; sourceTree = "<group>"; };
+		31A17DCC16FA385A8C5C75242962494E /* TFHpple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		3602B9085C76612A6C36887746598D5B /* PKCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleView.h; path = Pod/Classes/PKCircleView.h; sourceTree = "<group>"; };
+		3838F21D852B3FB95EF6C355E6AD3930 /* XPathQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		3852D79D467847C49E5AA2B427B28DF4 /* hpple-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "hpple-dummy.m"; sourceTree = "<group>"; };
+		3B9B1C1A7D2014BE93F0820293A2DD5B /* PKPendingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKPendingView.h; path = Pod/Classes/PKPendingView.h; sourceTree = "<group>"; };
+		409A4058F7DE361AB93ED3C8231673DC /* PKCircleProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleProgressView.m; path = Pod/Classes/PKCircleProgressView.m; sourceTree = "<group>"; };
+		4121F2DFD56B4D12D2E6E4916363998C /* Pods-BaseballGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.debug.xcconfig"; sourceTree = "<group>"; };
+		43C5D53FC8649316F71F11CC86F2CEA3 /* XPathQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		4437ED27BCECDA987923AA0355438581 /* UCZProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UCZProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		479596E73E380C3E4041053D7236FA21 /* Pods-BaseballGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaseballGame-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4842DA4C352AC1D7429DB77EA3C811F3 /* ZFDragableModalTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZFDragableModalTransition.modulemap; sourceTree = "<group>"; };
-		49079830E68D7C7608896C1A498B1FC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B0468A6AFB6B971F9F67E8943DEF71F /* UCZProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-umbrella.h"; sourceTree = "<group>"; };
-		4D77424D9B84A281E612B38D45194ECF /* ZFDragableModalTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-umbrella.h"; sourceTree = "<group>"; };
-		5006DE4980D268E19EAC67E1A72BE879 /* MGSwipeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeButton.m; path = MGSwipeTableCell/MGSwipeButton.m; sourceTree = "<group>"; };
-		514CDDF578DFAAED61BA81E0AECC6A0A /* PKStopDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKStopDownloadButton.m; path = Pod/Classes/PKStopDownloadButton.m; sourceTree = "<group>"; };
-		531DD0B507D965BDA3804BEE77452539 /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
-		55219F5D48C570D310E504C1D9C29EFD /* UIColor+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+PKDownloadButton.h"; path = "Pod/Classes/UIColor+PKDownloadButton.h"; sourceTree = "<group>"; };
-		5C0FD295F2C788985773D66A4BDF5C1A /* PKPendingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKPendingView.m; path = Pod/Classes/PKPendingView.m; sourceTree = "<group>"; };
-		609B7EFF76B49250A4D1A9A3FEA340D2 /* UCZProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UCZProgressView-dummy.m"; sourceTree = "<group>"; };
-		61C1E9ABD13B7A8C4C990DD10CCD7B6E /* PKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKMacros.h; path = Pod/Classes/PKMacros.h; sourceTree = "<group>"; };
-		67BC82DC2210071E71347112ADC0CB9D /* XPathQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
-		6EFCB3A1A01CFCAD4718F0E6208B16D7 /* Pods_BaseballGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseballGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F69600E57E3BEA7242CE8B9BBB0DEFC /* PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKDownloadButton.h; path = Pod/Classes/PKDownloadButton.h; sourceTree = "<group>"; };
-		7327F59D5E1DAF291364B55DFCB165BE /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZFModalTransitionAnimator.m; path = Classes/ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
-		74E67E50EEE7480761FCDDF032506626 /* DownloadButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DownloadButton-dummy.m"; sourceTree = "<group>"; };
-		7982AC723FE5E8BDDC209D64F74E3F36 /* CALayer+PKDownloadButtonAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+PKDownloadButtonAnimations.h"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.h"; sourceTree = "<group>"; };
-		835C77EB7735D22A698CD12E493B82B7 /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
-		900EA76965081C20F7437947D181023B /* hpple.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = hpple.xcconfig; sourceTree = "<group>"; };
-		9023FC6E416857A10F05EBE077F342EE /* PKCircleProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleProgressView.m; path = Pod/Classes/PKCircleProgressView.m; sourceTree = "<group>"; };
-		92EB36805E3805CEF46EC48C8880727B /* hpple.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = hpple.modulemap; sourceTree = "<group>"; };
-		94CED0CDECBB2CADDE33D41D3A487A07 /* ZFDragableModalTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZFDragableModalTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9550EAC9184652A56061A32D82CBA0B7 /* PKPendingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKPendingView.h; path = Pod/Classes/PKPendingView.h; sourceTree = "<group>"; };
-		97465C795EC4C8A09AB8E99765350FB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		97FDC3B79B6FE7C9FFE9887E3A82526B /* PKCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleView.m; path = Pod/Classes/PKCircleView.m; sourceTree = "<group>"; };
-		9D0103BF5A5D6BA99AD553958B3D95EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A399B10EC1C5E0533C6D5BF4ADB3DA24 /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
-		A551FE9200340E5D9B65FD4E5C5BCFCD /* Pods-BaseballGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaseballGame-umbrella.h"; sourceTree = "<group>"; };
-		A6A009196EDB94972100E72FEC1214D2 /* ZFDragableModalTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-prefix.pch"; sourceTree = "<group>"; };
-		AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DownloadButton-Private.xcconfig"; sourceTree = "<group>"; };
-		B43BB7DCF517D90DFB6450265060DD5C /* UCZProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UCZProgressView.xcconfig; sourceTree = "<group>"; };
-		B5DF193EB976ECCF667D2C4F240EDE38 /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
-		B7545BD0E83FE16EA6614DE724DE6864 /* hpple-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-umbrella.h"; sourceTree = "<group>"; };
-		B80AB5247E94BCA467CBD5AECE16E3B2 /* DownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9020046FE5AD35D7B3B01FC568E4972 /* PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKDownloadButton.m; path = Pod/Classes/PKDownloadButton.m; sourceTree = "<group>"; };
-		B9AB2E98B14DB4C6FF9F6C0124774125 /* ZFDragableModalTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZFDragableModalTransition-dummy.m"; sourceTree = "<group>"; };
+		4819F6D4308F42D1AAC0ADCA38058450 /* UCZProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-prefix.pch"; sourceTree = "<group>"; };
+		495882C663F3E18CDE85D24CDD57C422 /* ZFDragableModalTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZFDragableModalTransition.modulemap; sourceTree = "<group>"; };
+		4B87ADA5EA9A5193FF7C77538F7E1468 /* UCZProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UCZProgressView.xcconfig; sourceTree = "<group>"; };
+		532692EBC5192E4071CD9CB40E7E1717 /* hpple-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-umbrella.h"; sourceTree = "<group>"; };
+		581D507D8B8698D249F1F937F6DF9F20 /* UCZProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-umbrella.h"; sourceTree = "<group>"; };
+		59334C4808279D7AEBBABDDC99DB0E7A /* UCZProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UCZProgressView-dummy.m"; sourceTree = "<group>"; };
+		594250529BF9D9BF3DA9136672DC0536 /* NSLayoutConstraint+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PKDownloadButton.m"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.m"; sourceTree = "<group>"; };
+		5D69F293412F9587F2F62EEF5698CF78 /* hpple.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = hpple.xcconfig; sourceTree = "<group>"; };
+		613FCE5BB4A6571E3D0F201C883A7094 /* UCZProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UCZProgressView.modulemap; sourceTree = "<group>"; };
+		64A66A6689DCAB6F33B80A47D41B7817 /* ZFDragableModalTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-umbrella.h"; sourceTree = "<group>"; };
+		6B8825C3359D168D846B2273625CD17C /* Pods-BaseballGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaseballGame-umbrella.h"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6E9710788880BFBC86A96F024AA8F7DB /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZFModalTransitionAnimator.h; path = Classes/ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
+		6FA98CDA9CC54A914A74E596D7932907 /* MGSwipeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeButton.h; path = MGSwipeTableCell/MGSwipeButton.h; sourceTree = "<group>"; };
+		7189F8725D3F6B59B94D3C197DD9DF8A /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZFModalTransitionAnimator.m; path = Classes/ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
+		7547706CAF564E3B9744D8DB6EDA73B7 /* MGSwipeTableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MGSwipeTableCell.modulemap; sourceTree = "<group>"; };
+		8121E894CC6C6DACED7C02791C0BF9B0 /* DownloadButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EF7309D953AC6AE0B710F66BAA11EA /* UCZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UCZProgressView.h; path = Lib/UCZProgressView.h; sourceTree = "<group>"; };
+		8EA2933A6E0180865509CDB4A3183DF0 /* DownloadButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DownloadButton.modulemap; sourceTree = "<group>"; };
+		93DA073153E380291D6AD6A01FA7DDAC /* PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKDownloadButton.h; path = Pod/Classes/PKDownloadButton.h; sourceTree = "<group>"; };
+		95B23E7B95777DBF843C9623E876A062 /* MGSwipeTableCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-umbrella.h"; sourceTree = "<group>"; };
+		963B94CA4515B2AF281128C8DA9C24EE /* NSLayoutConstraint+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PKDownloadButton.h"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.h"; sourceTree = "<group>"; };
+		9865AA3BDA886B0C1AE5EBE65BB40AD7 /* Pods_BaseballGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseballGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A071E7805F75B9D66296B5FACD1A3FEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A758D118BE5410A29B67BB9721899FFB /* PKCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCircleView.m; path = Pod/Classes/PKCircleView.m; sourceTree = "<group>"; };
+		AB1AEE4036ABC541D2F27C3863C9FDDE /* UCZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UCZProgressView.m; path = Lib/UCZProgressView.m; sourceTree = "<group>"; };
+		AB8B2190A2F7E7FCC8561ACFB09B32BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA50437019A67B024948AD1C0AE32E1 /* PKStopDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKStopDownloadButton.m; path = Pod/Classes/PKStopDownloadButton.m; sourceTree = "<group>"; };
+		B53F3C23CC3EC5C1F559976D8B1F979F /* ZFDragableModalTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZFDragableModalTransition.xcconfig; sourceTree = "<group>"; };
+		B87838AC4C573B3B0EE7C63528EFCF83 /* PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKDownloadButton.m; path = Pod/Classes/PKDownloadButton.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD0733A2FCA50A57E0A0162A47FB6C7A /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZFModalTransitionAnimator.h; path = Classes/ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
-		C205B9DCEFCD415B53EC173C259A1DA3 /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGSwipeTableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C45498E952FE82F2D80F838D7E8886E2 /* MGSwipeTableCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-umbrella.h"; sourceTree = "<group>"; };
+		BF163E15BEEED2D8760950FDDE5A05F3 /* ZFDragableModalTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZFDragableModalTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB0C3D703BF120976B7B45E9FA29D5E /* PKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKMacros.h; path = Pod/Classes/PKMacros.h; sourceTree = "<group>"; };
+		C0F8F56EC9FFE35789D4AAED0FC032E1 /* MGSwipeTableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell-dummy.m"; sourceTree = "<group>"; };
+		C2B0BDA673CB477C0EBD3C4FA6A1D003 /* Pods-BaseballGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseballGame-dummy.m"; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C55D5F0B4CD76FF77E512D6D805F746F /* DownloadButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DownloadButton.xcconfig; sourceTree = "<group>"; };
+		C571D31A0E08E5E9EDE21884AFD082E3 /* MGSwipeTableCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSwipeTableCell-prefix.pch"; sourceTree = "<group>"; };
+		C87DE34614D16648B78B7207FF9D3FED /* ZFDragableModalTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZFDragableModalTransition-dummy.m"; sourceTree = "<group>"; };
 		C92C6489385F85D6FA8E01D6370D6507 /* Pods-BaseballGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseballGame-resources.sh"; sourceTree = "<group>"; };
-		C95D5752E16A21781C498815F31C47CA /* PKStopDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKStopDownloadButton.h; path = Pod/Classes/PKStopDownloadButton.h; sourceTree = "<group>"; };
-		CACA6E686ADF7ACD7DA0218E3C2F3164 /* DownloadButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-prefix.pch"; sourceTree = "<group>"; };
+		CB024BA45A54DB09B606ACCD305D19AA /* DownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB840C5BDDC945594A5C99D93552A64E /* Pods-BaseballGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseballGame-frameworks.sh"; sourceTree = "<group>"; };
-		CF0999550E3B836C35069AFA88B0C676 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D28D3A2916E45B7B9C22A8749DE9D485 /* MGSwipeTableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MGSwipeTableCell.modulemap; sourceTree = "<group>"; };
-		D29004C6327764B5952908D709763353 /* hpple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hpple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D37B54BC08A12D9159C6F5D39F2BA2E7 /* hpple-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "hpple-Private.xcconfig"; sourceTree = "<group>"; };
-		D3EEA06B9BFAD67FBD2EE53FE05EA2C8 /* UIColor+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PKDownloadButton.m"; path = "Pod/Classes/UIColor+PKDownloadButton.m"; sourceTree = "<group>"; };
-		D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAF3E0A385F45F7D8682753D34CD0DF8 /* UCZProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UCZProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDAF4AC4BEB94918BBD0C25A3ED02F17 /* UCZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UCZProgressView.h; path = Lib/UCZProgressView.h; sourceTree = "<group>"; };
-		DEA21C063D68D45DC61A4D54608DE678 /* TFHpple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
-		DF16D21E7FC3E98E56F3C1E49A1C63E7 /* MGSwipeTableCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSwipeTableCell.xcconfig; sourceTree = "<group>"; };
-		E1F1578789FC21FD5AEB9437EBE00AEC /* hpple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "hpple-prefix.pch"; sourceTree = "<group>"; };
-		E7CD3750DB572195E84C548AF6B1A7FA /* Pods-BaseballGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseballGame-dummy.m"; sourceTree = "<group>"; };
-		E9250079B0D37ACD694A107036FD0047 /* PKCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleView.h; path = Pod/Classes/PKCircleView.h; sourceTree = "<group>"; };
-		EA75807875F5B3A56DF5992848FB6F8D /* DownloadButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DownloadButton.modulemap; sourceTree = "<group>"; };
+		CEBCB2256A9ADD11AC10F4930D55700F /* CALayer+PKDownloadButtonAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+PKDownloadButtonAnimations.h"; path = "Pod/Classes/CALayer+PKDownloadButtonAnimations.h"; sourceTree = "<group>"; };
+		D5BFD4EB159B731A24E6621BF32C1915 /* hpple.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = hpple.modulemap; sourceTree = "<group>"; };
+		DCA91ABD4711EE7EAE863BCCEC3A4DFD /* UIImage+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+PKDownloadButton.h"; path = "Pod/Classes/UIImage+PKDownloadButton.h"; sourceTree = "<group>"; };
+		DDC1EB23605A448C42D756507F37B7BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1EBB763EC1F02D1848BFB5BD691CB1 /* UIButton+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+PKDownloadButton.h"; path = "Pod/Classes/UIButton+PKDownloadButton.h"; sourceTree = "<group>"; };
+		E2E6249B07F0B08958D43C14688F0107 /* UIButton+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+PKDownloadButton.m"; path = "Pod/Classes/UIButton+PKDownloadButton.m"; sourceTree = "<group>"; };
+		E3EB39AB73EE3BE709D5848047A8CC58 /* hpple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hpple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8264108943248B7B91818F32AC86DE6 /* UIColor+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PKDownloadButton.m"; path = "Pod/Classes/UIColor+PKDownloadButton.m"; sourceTree = "<group>"; };
+		EA51FF545D4614986EE2D3985373D090 /* UIColor+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+PKDownloadButton.h"; path = "Pod/Classes/UIColor+PKDownloadButton.h"; sourceTree = "<group>"; };
 		EBD963534736FDF5E0152B37C0E1434C /* Pods-BaseballGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BaseballGame.modulemap"; sourceTree = "<group>"; };
-		EC41E82CE39C3476FA3D805D0DF58AB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3317F3A66B825092F6AAC27EC683D74 /* DownloadButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-umbrella.h"; sourceTree = "<group>"; };
+		ED74AD0746BEADD87944AFCE54E8B41D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB0F916B532F8D9C9F73E2A898D7E54 /* PKCircleProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCircleProgressView.h; path = Pod/Classes/PKCircleProgressView.h; sourceTree = "<group>"; };
+		EF8A449E59838528D92FF60C42B3AEEF /* Pods-BaseballGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseballGame.release.xcconfig"; sourceTree = "<group>"; };
+		F00DD5F0CA37DBA52302E8DF6185D1D0 /* DownloadButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadButton-prefix.pch"; sourceTree = "<group>"; };
+		F0DE5FEAEF11C47F4ADFCB130AAF9320 /* UIImage+PKDownloadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+PKDownloadButton.m"; path = "Pod/Classes/UIImage+PKDownloadButton.m"; sourceTree = "<group>"; };
 		F4ECB34881D829F1DC3EE75BA43537C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5A1C6745EF0778DB1B116E18E1DEA5B /* UCZProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UCZProgressView-prefix.pch"; sourceTree = "<group>"; };
-		F6361AB55BC380211317E4233EB2D4DD /* UCZProgressView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UCZProgressView-Private.xcconfig"; sourceTree = "<group>"; };
-		FFE332D8DAA2E3FDAF2E6564AC595472 /* NSLayoutConstraint+PKDownloadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PKDownloadButton.h"; path = "Pod/Classes/NSLayoutConstraint+PKDownloadButton.h"; sourceTree = "<group>"; };
+		F859A6F87A33DE6AFBB361FD830DE755 /* TFHppleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		FB2E69AAFDB09897065982703F48B960 /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGSwipeTableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2916B96E78A924B44871F44CD35034B3 /* Frameworks */ = {
+		1205908B448666057A0FC89ED5199C71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E8097D9A72FC6860045629B34EA7BB9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F11AC9E18C291C1DCBBD980A4D28DA4 /* Frameworks */ = {
+		346B724A07296686E832F33CD42F170A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0AB19CDCCBACBB095DEA2D25C4CADF7 /* Foundation.framework in Frameworks */,
+				EDB0CE9640A3E5DEF82A8E9B4763D81B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41A02FB87A52DA7EC69F08424D13D033 /* Frameworks */ = {
+		AC0271E88F65B17975F56915CAAD607F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC888A1E4B2AD7E3F1E1B005CD774EE0 /* Foundation.framework in Frameworks */,
+				5A9D3D48B182CC30C8EFBC078D89EA05 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADB6D325D82C76CB48AC71BE2D84A342 /* Frameworks */ = {
+		C7190E28D516ED843D90B13BCF3F64F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5435530BFFD27F23094F13AD3AFEEA7F /* Foundation.framework in Frameworks */,
-				7F898C7BFFDC9B8326F4D1B27922E753 /* UIKit.framework in Frameworks */,
+				5D074B71672031B8CBDAE21DF8E44C00 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7521FBAC0A5262B277C0F1BD785E56A /* Frameworks */ = {
+		D3743CAE135E332B13BBC9A12597CBB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25783D9E6F12EC58434D76DB57F0C7F5 /* Foundation.framework in Frameworks */,
+				A2F932BCDF7E6DD68A4FC9FC712E005D /* Foundation.framework in Frameworks */,
+				350F03C58C7E13EB7E928F0AF228B6F2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,122 +242,131 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CABA011F96EA480BD3663C2343D1F7 /* Foundation.framework in Frameworks */,
+				826E3A95F0EE8804C644BFA3F40689F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD21176F03317618BEC1BB4F8CDD5EAF /* Frameworks */ = {
+		E9D330783E48D6E36190F6725C04A67C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8376C8751DDFF82D670540E1002275AE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C61F21D7816194A38071F1C4F16057 /* Support Files */ = {
+		16D028DD3E69135EE0B05BAD360C4757 /* DownloadButton */ = {
 			isa = PBXGroup;
 			children = (
-				CF0999550E3B836C35069AFA88B0C676 /* Info.plist */,
-				D28D3A2916E45B7B9C22A8749DE9D485 /* MGSwipeTableCell.modulemap */,
-				DF16D21E7FC3E98E56F3C1E49A1C63E7 /* MGSwipeTableCell.xcconfig */,
-				31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */,
-				A399B10EC1C5E0533C6D5BF4ADB3DA24 /* MGSwipeTableCell-dummy.m */,
-				531DD0B507D965BDA3804BEE77452539 /* MGSwipeTableCell-prefix.pch */,
-				C45498E952FE82F2D80F838D7E8886E2 /* MGSwipeTableCell-umbrella.h */,
+				CEBCB2256A9ADD11AC10F4930D55700F /* CALayer+PKDownloadButtonAnimations.h */,
+				2166610EF2262D86F78DBB531FF8B8B6 /* CALayer+PKDownloadButtonAnimations.m */,
+				963B94CA4515B2AF281128C8DA9C24EE /* NSLayoutConstraint+PKDownloadButton.h */,
+				594250529BF9D9BF3DA9136672DC0536 /* NSLayoutConstraint+PKDownloadButton.m */,
+				EDB0F916B532F8D9C9F73E2A898D7E54 /* PKCircleProgressView.h */,
+				409A4058F7DE361AB93ED3C8231673DC /* PKCircleProgressView.m */,
+				3602B9085C76612A6C36887746598D5B /* PKCircleView.h */,
+				A758D118BE5410A29B67BB9721899FFB /* PKCircleView.m */,
+				93DA073153E380291D6AD6A01FA7DDAC /* PKDownloadButton.h */,
+				B87838AC4C573B3B0EE7C63528EFCF83 /* PKDownloadButton.m */,
+				BFB0C3D703BF120976B7B45E9FA29D5E /* PKMacros.h */,
+				3B9B1C1A7D2014BE93F0820293A2DD5B /* PKPendingView.h */,
+				0F6DA05FE2885EF08796B3EC3103336D /* PKPendingView.m */,
+				038041DE8041B1D77D3027E0E147F743 /* PKStopDownloadButton.h */,
+				ADA50437019A67B024948AD1C0AE32E1 /* PKStopDownloadButton.m */,
+				DE1EBB763EC1F02D1848BFB5BD691CB1 /* UIButton+PKDownloadButton.h */,
+				E2E6249B07F0B08958D43C14688F0107 /* UIButton+PKDownloadButton.m */,
+				EA51FF545D4614986EE2D3985373D090 /* UIColor+PKDownloadButton.h */,
+				E8264108943248B7B91818F32AC86DE6 /* UIColor+PKDownloadButton.m */,
+				DCA91ABD4711EE7EAE863BCCEC3A4DFD /* UIImage+PKDownloadButton.h */,
+				F0DE5FEAEF11C47F4ADFCB130AAF9320 /* UIImage+PKDownloadButton.m */,
+				6216A9AB91E59A05FD340BD20D70EB9C /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MGSwipeTableCell";
+			path = DownloadButton;
 			sourceTree = "<group>";
 		};
-		2465709E8535329FA6641DD8EC729238 /* MGSwipeTableCell */ = {
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				835C77EB7735D22A698CD12E493B82B7 /* MGSwipeButton.h */,
-				5006DE4980D268E19EAC67E1A72BE879 /* MGSwipeButton.m */,
-				22D65692DA70594B68B1DC63ABAFC1EE /* MGSwipeTableCell.h */,
-				0FDCC454D79A8C84C6C30810062062C3 /* MGSwipeTableCell.m */,
-				04C61F21D7816194A38071F1C4F16057 /* Support Files */,
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
 			);
-			path = MGSwipeTableCell;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		785DA6D64E4EBEB64867FA7FD629F503 /* Support Files */ = {
+		6216A9AB91E59A05FD340BD20D70EB9C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA75807875F5B3A56DF5992848FB6F8D /* DownloadButton.modulemap */,
-				391B08F8C516A6113FF7D82AFBA9D500 /* DownloadButton.xcconfig */,
-				AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */,
-				74E67E50EEE7480761FCDDF032506626 /* DownloadButton-dummy.m */,
-				CACA6E686ADF7ACD7DA0218E3C2F3164 /* DownloadButton-prefix.pch */,
-				F3317F3A66B825092F6AAC27EC683D74 /* DownloadButton-umbrella.h */,
-				9D0103BF5A5D6BA99AD553958B3D95EC /* Info.plist */,
+				8EA2933A6E0180865509CDB4A3183DF0 /* DownloadButton.modulemap */,
+				C55D5F0B4CD76FF77E512D6D805F746F /* DownloadButton.xcconfig */,
+				2DF38026B4ADF37FD8B72AB8F67A69D2 /* DownloadButton-dummy.m */,
+				F00DD5F0CA37DBA52302E8DF6185D1D0 /* DownloadButton-prefix.pch */,
+				04836CFA2E7F982306AA0D26361186F7 /* DownloadButton-umbrella.h */,
+				A071E7805F75B9D66296B5FACD1A3FEE /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DownloadButton";
 			sourceTree = "<group>";
 		};
-		78E93856A6C2EEEFE636026106826813 /* UCZProgressView */ = {
+		6CA0F193D087AAA761FB9A036D2ABD94 /* hpple */ = {
 			isa = PBXGroup;
 			children = (
-				DDAF4AC4BEB94918BBD0C25A3ED02F17 /* UCZProgressView.h */,
-				2BACDDF4F97058AA51AA113D1E2442ED /* UCZProgressView.m */,
-				EB1A846BD0A4C4612406295D7058B726 /* Support Files */,
+				260A0FC5B6C16D069CFCD08ECA87A987 /* TFHpple.h */,
+				31A17DCC16FA385A8C5C75242962494E /* TFHpple.m */,
+				F859A6F87A33DE6AFBB361FD830DE755 /* TFHppleElement.h */,
+				1FDCF5609CAACB4315B44F7C7205F2EB /* TFHppleElement.m */,
+				43C5D53FC8649316F71F11CC86F2CEA3 /* XPathQuery.h */,
+				3838F21D852B3FB95EF6C355E6AD3930 /* XPathQuery.m */,
+				D7DBD560C7864A4163D616440471DEB7 /* Support Files */,
 			);
-			path = UCZProgressView;
+			path = hpple;
 			sourceTree = "<group>";
 		};
-		7C5D02BFBAD3765518EEFCE35DC214F9 /* Support Files */ = {
+		74A916B4DF7FF6C0DA56176FDD91B211 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49079830E68D7C7608896C1A498B1FC5 /* Info.plist */,
-				4842DA4C352AC1D7429DB77EA3C811F3 /* ZFDragableModalTransition.modulemap */,
-				301A9E5618BFA72EC8F13EF61F5773A0 /* ZFDragableModalTransition.xcconfig */,
-				2C183D5C70BA9C52029D1497F30F32CE /* ZFDragableModalTransition-Private.xcconfig */,
-				B9AB2E98B14DB4C6FF9F6C0124774125 /* ZFDragableModalTransition-dummy.m */,
-				A6A009196EDB94972100E72FEC1214D2 /* ZFDragableModalTransition-prefix.pch */,
-				4D77424D9B84A281E612B38D45194ECF /* ZFDragableModalTransition-umbrella.h */,
+				AB8B2190A2F7E7FCC8561ACFB09B32BF /* Info.plist */,
+				7547706CAF564E3B9744D8DB6EDA73B7 /* MGSwipeTableCell.modulemap */,
+				1532D19C1392A8931357AEDA04958392 /* MGSwipeTableCell.xcconfig */,
+				C0F8F56EC9FFE35789D4AAED0FC032E1 /* MGSwipeTableCell-dummy.m */,
+				C571D31A0E08E5E9EDE21884AFD082E3 /* MGSwipeTableCell-prefix.pch */,
+				95B23E7B95777DBF843C9623E876A062 /* MGSwipeTableCell-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ZFDragableModalTransition";
+			path = "../Target Support Files/MGSwipeTableCell";
 			sourceTree = "<group>";
 		};
-		7C9B1ADD056DE1E189C9ED37757CB5E9 /* DownloadButton */ = {
+		77A0BBF7160EF93D38420EEB04282617 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7982AC723FE5E8BDDC209D64F74E3F36 /* CALayer+PKDownloadButtonAnimations.h */,
-				1EBB75497F279271B86E83F393A8DBAD /* CALayer+PKDownloadButtonAnimations.m */,
-				FFE332D8DAA2E3FDAF2E6564AC595472 /* NSLayoutConstraint+PKDownloadButton.h */,
-				27E5D4046E93EA90929DFE7CD47B4974 /* NSLayoutConstraint+PKDownloadButton.m */,
-				17E72E30E19531B71F700667CDA60FD3 /* PKCircleProgressView.h */,
-				9023FC6E416857A10F05EBE077F342EE /* PKCircleProgressView.m */,
-				E9250079B0D37ACD694A107036FD0047 /* PKCircleView.h */,
-				97FDC3B79B6FE7C9FFE9887E3A82526B /* PKCircleView.m */,
-				6F69600E57E3BEA7242CE8B9BBB0DEFC /* PKDownloadButton.h */,
-				B9020046FE5AD35D7B3B01FC568E4972 /* PKDownloadButton.m */,
-				61C1E9ABD13B7A8C4C990DD10CCD7B6E /* PKMacros.h */,
-				9550EAC9184652A56061A32D82CBA0B7 /* PKPendingView.h */,
-				5C0FD295F2C788985773D66A4BDF5C1A /* PKPendingView.m */,
-				C95D5752E16A21781C498815F31C47CA /* PKStopDownloadButton.h */,
-				514CDDF578DFAAED61BA81E0AECC6A0A /* PKStopDownloadButton.m */,
-				22F680DB5716D5459A0AA431622C66E9 /* UIButton+PKDownloadButton.h */,
-				18AE95ADF92950D9941FE0D6171304A4 /* UIButton+PKDownloadButton.m */,
-				55219F5D48C570D310E504C1D9C29EFD /* UIColor+PKDownloadButton.h */,
-				D3EEA06B9BFAD67FBD2EE53FE05EA2C8 /* UIColor+PKDownloadButton.m */,
-				1A626A6DC017E22B60B92A3B48500BEF /* UIImage+PKDownloadButton.h */,
-				3FB970925AB861D44AA15DBD7471C0EA /* UIImage+PKDownloadButton.m */,
-				785DA6D64E4EBEB64867FA7FD629F503 /* Support Files */,
+				8121E894CC6C6DACED7C02791C0BF9B0 /* DownloadButton.bundle */,
+				CB024BA45A54DB09B606ACCD305D19AA /* DownloadButton.framework */,
+				E3EB39AB73EE3BE709D5848047A8CC58 /* hpple.framework */,
+				FB2E69AAFDB09897065982703F48B960 /* MGSwipeTableCell.framework */,
+				9865AA3BDA886B0C1AE5EBE65BB40AD7 /* Pods_BaseballGame.framework */,
+				4437ED27BCECDA987923AA0355438581 /* UCZProgressView.framework */,
+				BF163E15BEEED2D8760950FDDE5A05F3 /* ZFDragableModalTransition.framework */,
 			);
-			path = DownloadButton;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BBF84B762372DB485BFA3792CB5CAF1 /* UCZProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				89EF7309D953AC6AE0B710F66BAA11EA /* UCZProgressView.h */,
+				AB1AEE4036ABC541D2F27C3863C9FDDE /* UCZProgressView.m */,
+				E7955CA271A639F779DA839A2162DB96 /* Support Files */,
+			);
+			path = UCZProgressView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -371,96 +374,59 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				DC18DB9A9C0AF28178B2E9CF186A8DE3 /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				F7012FC352F709627ECBA3FA9AA1F995 /* Pods */,
+				77A0BBF7160EF93D38420EEB04282617 /* Products */,
 				F167BC3BB85FF6A74DEAB70C7CB6E2DB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8EC35E9CDDDCB95D5A9F16A18444C17A /* Support Files */ = {
+		C284B2C5B65F6A7A7756A45AA62A6C15 /* ZFDragableModalTransition */ = {
 			isa = PBXGroup;
 			children = (
-				38F87DE9F72416EEC311D5DDC3785B26 /* Info.plist */,
-				92EB36805E3805CEF46EC48C8880727B /* hpple.modulemap */,
-				900EA76965081C20F7437947D181023B /* hpple.xcconfig */,
-				D37B54BC08A12D9159C6F5D39F2BA2E7 /* hpple-Private.xcconfig */,
-				05ACD1DAD6655362D7B7BC00D0CC26C9 /* hpple-dummy.m */,
-				E1F1578789FC21FD5AEB9437EBE00AEC /* hpple-prefix.pch */,
-				B7545BD0E83FE16EA6614DE724DE6864 /* hpple-umbrella.h */,
+				6E9710788880BFBC86A96F024AA8F7DB /* ZFModalTransitionAnimator.h */,
+				7189F8725D3F6B59B94D3C197DD9DF8A /* ZFModalTransitionAnimator.m */,
+				DF2A12DA4BCE24D2D4F0A6AF0A73A2B4 /* Support Files */,
+			);
+			path = ZFDragableModalTransition;
+			sourceTree = "<group>";
+		};
+		D7DBD560C7864A4163D616440471DEB7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5BFD4EB159B731A24E6621BF32C1915 /* hpple.modulemap */,
+				5D69F293412F9587F2F62EEF5698CF78 /* hpple.xcconfig */,
+				3852D79D467847C49E5AA2B427B28DF4 /* hpple-dummy.m */,
+				1C00BBF00C45535F29FD4F9C3973287F /* hpple-prefix.pch */,
+				532692EBC5192E4071CD9CB40E7E1717 /* hpple-umbrella.h */,
+				ED74AD0746BEADD87944AFCE54E8B41D /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/hpple";
 			sourceTree = "<group>";
 		};
-		906952F49379A440798CC04631C708DB /* ZFDragableModalTransition */ = {
+		DF2A12DA4BCE24D2D4F0A6AF0A73A2B4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD0733A2FCA50A57E0A0162A47FB6C7A /* ZFModalTransitionAnimator.h */,
-				7327F59D5E1DAF291364B55DFCB165BE /* ZFModalTransitionAnimator.m */,
-				7C5D02BFBAD3765518EEFCE35DC214F9 /* Support Files */,
+				2BAB078397674500EA1D2F1DCB350276 /* Info.plist */,
+				495882C663F3E18CDE85D24CDD57C422 /* ZFDragableModalTransition.modulemap */,
+				B53F3C23CC3EC5C1F559976D8B1F979F /* ZFDragableModalTransition.xcconfig */,
+				C87DE34614D16648B78B7207FF9D3FED /* ZFDragableModalTransition-dummy.m */,
+				2BDCA6EA51B843CE10257477AC25A349 /* ZFDragableModalTransition-prefix.pch */,
+				64A66A6689DCAB6F33B80A47D41B7817 /* ZFDragableModalTransition-umbrella.h */,
 			);
-			path = ZFDragableModalTransition;
+			name = "Support Files";
+			path = "../Target Support Files/ZFDragableModalTransition";
 			sourceTree = "<group>";
 		};
-		B2F3BCBF5D7E152824C1747C46AA973B /* hpple */ = {
+		E7955CA271A639F779DA839A2162DB96 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DEA21C063D68D45DC61A4D54608DE678 /* TFHpple.h */,
-				37BAEEA0C96BCDAE469172B9F1DD32CB /* TFHpple.m */,
-				1F7651E1C5B6F30DA87824DC3D6E4D9E /* TFHppleElement.h */,
-				37CA7FE16224F22CBEDC524A0042DDFA /* TFHppleElement.m */,
-				67BC82DC2210071E71347112ADC0CB9D /* XPathQuery.h */,
-				1F781CF7B58F76E93BE9B918EF7D98B5 /* XPathQuery.m */,
-				8EC35E9CDDDCB95D5A9F16A18444C17A /* Support Files */,
-			);
-			path = hpple;
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */,
-				B80AB5247E94BCA467CBD5AECE16E3B2 /* DownloadButton.framework */,
-				C205B9DCEFCD415B53EC173C259A1DA3 /* MGSwipeTableCell.framework */,
-				6EFCB3A1A01CFCAD4718F0E6208B16D7 /* Pods_BaseballGame.framework */,
-				DAF3E0A385F45F7D8682753D34CD0DF8 /* UCZProgressView.framework */,
-				94CED0CDECBB2CADDE33D41D3A487A07 /* ZFDragableModalTransition.framework */,
-				D29004C6327764B5952908D709763353 /* hpple.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9F47DCBD996BB4708252D6006C66E8DA /* Foundation.framework */,
-				97465C795EC4C8A09AB8E99765350FB4 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DC18DB9A9C0AF28178B2E9CF186A8DE3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7C9B1ADD056DE1E189C9ED37757CB5E9 /* DownloadButton */,
-				2465709E8535329FA6641DD8EC729238 /* MGSwipeTableCell */,
-				78E93856A6C2EEEFE636026106826813 /* UCZProgressView */,
-				906952F49379A440798CC04631C708DB /* ZFDragableModalTransition */,
-				B2F3BCBF5D7E152824C1747C46AA973B /* hpple */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EB1A846BD0A4C4612406295D7058B726 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EC41E82CE39C3476FA3D805D0DF58AB4 /* Info.plist */,
-				118017A15B36E3C9264B8AFAAD998D5C /* UCZProgressView.modulemap */,
-				B43BB7DCF517D90DFB6450265060DD5C /* UCZProgressView.xcconfig */,
-				F6361AB55BC380211317E4233EB2D4DD /* UCZProgressView-Private.xcconfig */,
-				609B7EFF76B49250A4D1A9A3FEA340D2 /* UCZProgressView-dummy.m */,
-				F5A1C6745EF0778DB1B116E18E1DEA5B /* UCZProgressView-prefix.pch */,
-				4B0468A6AFB6B971F9F67E8943DEF71F /* UCZProgressView-umbrella.h */,
+				DDC1EB23605A448C42D756507F37B7BB /* Info.plist */,
+				613FCE5BB4A6571E3D0F201C883A7094 /* UCZProgressView.modulemap */,
+				4B87ADA5EA9A5193FF7C77538F7E1468 /* UCZProgressView.xcconfig */,
+				59334C4808279D7AEBBABDDC99DB0E7A /* UCZProgressView-dummy.m */,
+				4819F6D4308F42D1AAC0ADCA38058450 /* UCZProgressView-prefix.pch */,
+				581D507D8B8698D249F1F937F6DF9F20 /* UCZProgressView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UCZProgressView";
@@ -481,154 +447,120 @@
 				EBD963534736FDF5E0152B37C0E1434C /* Pods-BaseballGame.modulemap */,
 				479596E73E380C3E4041053D7236FA21 /* Pods-BaseballGame-acknowledgements.markdown */,
 				0906D89A0DCC633C9E971B79BC376C9C /* Pods-BaseballGame-acknowledgements.plist */,
-				E7CD3750DB572195E84C548AF6B1A7FA /* Pods-BaseballGame-dummy.m */,
+				C2B0BDA673CB477C0EBD3C4FA6A1D003 /* Pods-BaseballGame-dummy.m */,
 				CB840C5BDDC945594A5C99D93552A64E /* Pods-BaseballGame-frameworks.sh */,
 				C92C6489385F85D6FA8E01D6370D6507 /* Pods-BaseballGame-resources.sh */,
-				A551FE9200340E5D9B65FD4E5C5BCFCD /* Pods-BaseballGame-umbrella.h */,
-				217DD38D854DBBCEFFD40ECA3E388953 /* Pods-BaseballGame.debug.xcconfig */,
-				B5DF193EB976ECCF667D2C4F240EDE38 /* Pods-BaseballGame.release.xcconfig */,
+				6B8825C3359D168D846B2273625CD17C /* Pods-BaseballGame-umbrella.h */,
+				4121F2DFD56B4D12D2E6E4916363998C /* Pods-BaseballGame.debug.xcconfig */,
+				EF8A449E59838528D92FF60C42B3AEEF /* Pods-BaseballGame.release.xcconfig */,
 			);
 			name = "Pods-BaseballGame";
 			path = "Target Support Files/Pods-BaseballGame";
 			sourceTree = "<group>";
 		};
+		F7012FC352F709627ECBA3FA9AA1F995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16D028DD3E69135EE0B05BAD360C4757 /* DownloadButton */,
+				6CA0F193D087AAA761FB9A036D2ABD94 /* hpple */,
+				FAABEFA20F679E2514EAB657172494B0 /* MGSwipeTableCell */,
+				7BBF84B762372DB485BFA3792CB5CAF1 /* UCZProgressView */,
+				C284B2C5B65F6A7A7756A45AA62A6C15 /* ZFDragableModalTransition */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAABEFA20F679E2514EAB657172494B0 /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				6FA98CDA9CC54A914A74E596D7932907 /* MGSwipeButton.h */,
+				05FB606DE04AE59909631B35811983D6 /* MGSwipeButton.m */,
+				087573AC258084A3780398E20B80A6C0 /* MGSwipeTableCell.h */,
+				1B9398F0811304E031170E1FEEAFDB2A /* MGSwipeTableCell.m */,
+				74A916B4DF7FF6C0DA56176FDD91B211 /* Support Files */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		19E444526249C68D7D0AF7AB8E1B3A1F /* Headers */ = {
+		05FDF200D9558E7D0801C7D7CA767E89 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1CE72416ED53FB28F307032B666ED9 /* ZFDragableModalTransition-umbrella.h in Headers */,
-				38C35F30B81C4FD2B0E5C657FFED7AB4 /* ZFModalTransitionAnimator.h in Headers */,
+				BBDCB67183B02F28BED4F442EBC81BC0 /* hpple-umbrella.h in Headers */,
+				EB3618F5A629C4A4E2FBF4511D9B00B9 /* TFHpple.h in Headers */,
+				3435152E248CB115A63ACC4F9FB2CC27 /* TFHppleElement.h in Headers */,
+				467A8ED56DC19CBFC842B68FC6412754 /* XPathQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46104C9008FC6A0295E878607ABAEBD9 /* Headers */ = {
+		1E754E9D399930F33BC210A07296168D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6098676B232945240434775858C52B7 /* Pods-BaseballGame-umbrella.h in Headers */,
+				63DC27806C23AFFC9B7115E5EEAB9CBF /* MGSwipeButton.h in Headers */,
+				1D54E6EC43B2B4250E1FE53B0C0A6662 /* MGSwipeTableCell-umbrella.h in Headers */,
+				67558B72295110F846C2420C9540A52A /* MGSwipeTableCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F510E89F8932D4F247499D47B0A96F9 /* Headers */ = {
+		3589159B7BCD2F4AA4EDCF81A9225F1B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3E8AF19C95FCCF466761C6C20A92EE /* UCZProgressView-umbrella.h in Headers */,
-				837705B454D6371B0C0D8A3D17D4C03B /* UCZProgressView.h in Headers */,
+				96EAD029CF446D7E4200135923A52E02 /* CALayer+PKDownloadButtonAnimations.h in Headers */,
+				093EDF10F34C7BDDE683F1CBF89C613E /* DownloadButton-umbrella.h in Headers */,
+				89338DBC09FDAEE9AABF9DB3786E6081 /* NSLayoutConstraint+PKDownloadButton.h in Headers */,
+				84D46DBFFF2584712C3393531EA4E0A5 /* PKCircleProgressView.h in Headers */,
+				58E5CD7685DC767CF7E557E073A43999 /* PKCircleView.h in Headers */,
+				C2D9819F5EF224D49079E8DEC6A31B6B /* PKDownloadButton.h in Headers */,
+				1A26857DB207E4C7AADAEE2FF86AA822 /* PKMacros.h in Headers */,
+				FE75B12CE42647C92EB5EE62A3D46237 /* PKPendingView.h in Headers */,
+				39A6E22D4370BD7EE9C5DB97B29784CC /* PKStopDownloadButton.h in Headers */,
+				9452C04D1CB7EB156FA118E782A86CB3 /* UIButton+PKDownloadButton.h in Headers */,
+				7C46086F57FBA4A932C75BB65D38E11A /* UIColor+PKDownloadButton.h in Headers */,
+				109FBD9302B4FB3DEC18FB292D75377C /* UIImage+PKDownloadButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E8A0E33A41FC48F30D10984CD63F403 /* Headers */ = {
+		A53DD77E1D318F1ACA3448B204CAF1C5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC816D99A1D9E95C2931EB872AEE39D /* MGSwipeButton.h in Headers */,
-				06D1372E19BE52F32D8FD6367CA545D3 /* MGSwipeTableCell-umbrella.h in Headers */,
-				A7F02BB156FB5655A468CD655DBF685C /* MGSwipeTableCell.h in Headers */,
+				8E6A2261D1596123A915CF6EFFD2CA6C /* ZFDragableModalTransition-umbrella.h in Headers */,
+				0FE8920FD336C0DFE028C80A9972B75D /* ZFModalTransitionAnimator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADB38CFE1D21CD44DE6515BAD24176B3 /* Headers */ = {
+		ABC9384DC5DB12DC0A5EB27768899DBF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7FB1613FACD41211C871B80BB5B03A7 /* TFHpple.h in Headers */,
-				418E6CD8854ACEE7B853529F19E00207 /* TFHppleElement.h in Headers */,
-				AE1CE24F6F8DD5EFB54995CC057C8713 /* XPathQuery.h in Headers */,
-				D6C8752544BAADEB414F18D47C9A1DEA /* hpple-umbrella.h in Headers */,
+				2AD0973B3324DB5BA880C49D20F66DF3 /* UCZProgressView-umbrella.h in Headers */,
+				0DA2E895166462760C2078E7CD4065CE /* UCZProgressView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD923A2CA6E54CAEC9D7AB7786A3DB23 /* Headers */ = {
+		D352F491795CF94E7A68E95B4B83A6D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731B1DD2A69A4414709E653930974E9D /* CALayer+PKDownloadButtonAnimations.h in Headers */,
-				863AFD17F143ABAD29B2B7A51DA1EFFF /* DownloadButton-umbrella.h in Headers */,
-				70930883DB204E82A736F2FE774A753E /* NSLayoutConstraint+PKDownloadButton.h in Headers */,
-				565765D2A38C2252C0E05BE590C4A160 /* PKCircleProgressView.h in Headers */,
-				C31D6051361FE16FA778EDFAA4CD464A /* PKCircleView.h in Headers */,
-				52342B99AE37819DD223F43C9A0811AD /* PKDownloadButton.h in Headers */,
-				F3430DA23408BB15C9582F2D2EA94FF8 /* PKMacros.h in Headers */,
-				D75FFE5703EA5C2B65E798F9AF860C7B /* PKPendingView.h in Headers */,
-				124E626418979330CE45ECCF909FCE04 /* PKStopDownloadButton.h in Headers */,
-				FB98E6A6769236AF6C27D90582C115AF /* UIButton+PKDownloadButton.h in Headers */,
-				1547CA2F17B12357B2CDF7BB3F06DDAF /* UIColor+PKDownloadButton.h in Headers */,
-				2C64E5DE76DE8CA79272B10C493E0776 /* UIImage+PKDownloadButton.h in Headers */,
+				EB85CE3581CFEFD73780A45B80A6D0FB /* Pods-BaseballGame-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		01D371C3A2F4D69826071E84ECC7C49B /* MGSwipeTableCell */ = {
+		141796DBA3CE87B499A356EF9B750024 /* DownloadButton-DownloadButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76CD5D2324217CB21509E59C48C7F7CA /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
+			buildConfigurationList = 87CC34BB87EBFF31BE72715391010C7B /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */;
 			buildPhases = (
-				4DCEECA4BFE48762AA477FF94F3F7145 /* Sources */,
-				41A02FB87A52DA7EC69F08424D13D033 /* Frameworks */,
-				8E8A0E33A41FC48F30D10984CD63F403 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MGSwipeTableCell;
-			productName = MGSwipeTableCell;
-			productReference = C205B9DCEFCD415B53EC173C259A1DA3 /* MGSwipeTableCell.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		14CCA77BA23233CB53BC615C67873B64 /* DownloadButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 13FB4CD772333B4E2857ED582190A310 /* Build configuration list for PBXNativeTarget "DownloadButton" */;
-			buildPhases = (
-				222928425C6182C7E3D28405A85018FB /* Sources */,
-				ADB6D325D82C76CB48AC71BE2D84A342 /* Frameworks */,
-				53A47166642D1BC3D5333C563914A564 /* Resources */,
-				FD923A2CA6E54CAEC9D7AB7786A3DB23 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9E0771460E41C748C295714EFF95DF77 /* PBXTargetDependency */,
-			);
-			name = DownloadButton;
-			productName = DownloadButton;
-			productReference = B80AB5247E94BCA467CBD5AECE16E3B2 /* DownloadButton.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A27589AD74E9AA7F6B1FFF28AF2CBB71 /* Pods-BaseballGame */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C8CA4734278C4515294B13A911A9BB95 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */;
-			buildPhases = (
-				93AF5EFEE551A031D4142B2702ECA9A0 /* Sources */,
-				B7521FBAC0A5262B277C0F1BD785E56A /* Frameworks */,
-				46104C9008FC6A0295E878607ABAEBD9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5A5659154B72CC0E61309D824F9E2196 /* PBXTargetDependency */,
-				79B4771E6314FE547C65A5B6C864A4BE /* PBXTargetDependency */,
-				E25B6271840B2C4B90C13DB6C5AE8F45 /* PBXTargetDependency */,
-				FEF6B255646D05FF0978EFD0382CF2FF /* PBXTargetDependency */,
-				3DA8A45C42B65FA5E374A14D122655C6 /* PBXTargetDependency */,
-			);
-			name = "Pods-BaseballGame";
-			productName = "Pods-BaseballGame";
-			productReference = 6EFCB3A1A01CFCAD4718F0E6208B16D7 /* Pods_BaseballGame.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		ADF6138FB8C10457C5A09E5F590967E3 /* DownloadButton-DownloadButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 07B1BBBB22CFAD1C52AB51F69A928C3C /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */;
-			buildPhases = (
-				EC6EDF62631E0CDAE196FE64DF22EE23 /* Sources */,
-				FD21176F03317618BEC1BB4F8CDD5EAF /* Frameworks */,
-				82CDE3D3DCEEAA252F983C3D49A6F709 /* Resources */,
+				7C5E842BA21DBF937B42E42149537200 /* Sources */,
+				1205908B448666057A0FC89ED5199C71 /* Frameworks */,
+				499075235522A941078292E7B41F990B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -636,16 +568,33 @@
 			);
 			name = "DownloadButton-DownloadButton";
 			productName = "DownloadButton-DownloadButton";
-			productReference = D83E32E352C739625E6BEA4889424142 /* DownloadButton.bundle */;
+			productReference = 8121E894CC6C6DACED7C02791C0BF9B0 /* DownloadButton.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		B946E11B4E7FD9C686854392CFF45B38 /* UCZProgressView */ = {
+		4E1263BFF45F6446CF3DE29AE234C893 /* MGSwipeTableCell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2BA8BF2CC8520C3EA0816BE3FD61E79 /* Build configuration list for PBXNativeTarget "UCZProgressView" */;
+			buildConfigurationList = 7B05C24F339BF84D6E16E6538A947C90 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */;
 			buildPhases = (
-				3190E145D8850A3EE5D56B0601CF1FA5 /* Sources */,
-				2916B96E78A924B44871F44CD35034B3 /* Frameworks */,
-				4F510E89F8932D4F247499D47B0A96F9 /* Headers */,
+				C8C13026DC462129E945B064D7D89D95 /* Sources */,
+				AC0271E88F65B17975F56915CAAD607F /* Frameworks */,
+				1E754E9D399930F33BC210A07296168D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGSwipeTableCell;
+			productName = MGSwipeTableCell;
+			productReference = FB2E69AAFDB09897065982703F48B960 /* MGSwipeTableCell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79545012CD9A65FF5D659B0AA5ACE91C /* UCZProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538552DF3808DE8F61F852128C491B33 /* Build configuration list for PBXNativeTarget "UCZProgressView" */;
+			buildPhases = (
+				7E6B856D72E139EB0B2B24C8AA77120A /* Sources */,
+				346B724A07296686E832F33CD42F170A /* Frameworks */,
+				ABC9384DC5DB12DC0A5EB27768899DBF /* Headers */,
 			);
 			buildRules = (
 			);
@@ -653,33 +602,16 @@
 			);
 			name = UCZProgressView;
 			productName = UCZProgressView;
-			productReference = DAF3E0A385F45F7D8682753D34CD0DF8 /* UCZProgressView.framework */;
+			productReference = 4437ED27BCECDA987923AA0355438581 /* UCZProgressView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D635F027F0A6FD04B98B790907265430 /* hpple */ = {
+		9A0D1ACFECD6EE6032927F49354D917D /* ZFDragableModalTransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B212058BC2F91B000B3AEF445A11D3D /* Build configuration list for PBXNativeTarget "hpple" */;
+			buildConfigurationList = 688732159952284B4D5FE94C46EE12AA /* Build configuration list for PBXNativeTarget "ZFDragableModalTransition" */;
 			buildPhases = (
-				307F193DDDAA6AC92256BBB208B0E6B1 /* Sources */,
-				DA5C3330EFF871BF008211B17DB6F096 /* Frameworks */,
-				ADB38CFE1D21CD44DE6515BAD24176B3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = hpple;
-			productName = hpple;
-			productReference = D29004C6327764B5952908D709763353 /* hpple.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D8CC7931C78335CEA76BFF4A010C8425 /* ZFDragableModalTransition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69F9A41873775EB9F7A1ED73ABC78353 /* Build configuration list for PBXNativeTarget "ZFDragableModalTransition" */;
-			buildPhases = (
-				1495E49C51330085CE3920488429C490 /* Sources */,
-				3F11AC9E18C291C1DCBBD980A4D28DA4 /* Frameworks */,
-				19E444526249C68D7D0AF7AB8E1B3A1F /* Headers */,
+				6DC64769D7059DDD2239F5420019A875 /* Sources */,
+				C7190E28D516ED843D90B13BCF3F64F6 /* Frameworks */,
+				A53DD77E1D318F1ACA3448B204CAF1C5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -687,7 +619,65 @@
 			);
 			name = ZFDragableModalTransition;
 			productName = ZFDragableModalTransition;
-			productReference = 94CED0CDECBB2CADDE33D41D3A487A07 /* ZFDragableModalTransition.framework */;
+			productReference = BF163E15BEEED2D8760950FDDE5A05F3 /* ZFDragableModalTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4B5A5FDEF4F890A93E66BCADA96FC10 /* Pods-BaseballGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA970EBE0DC3C73BE7E2F53609640A9B /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */;
+			buildPhases = (
+				08086DF22F53707F29B507345E9949CE /* Sources */,
+				E9D330783E48D6E36190F6725C04A67C /* Frameworks */,
+				D352F491795CF94E7A68E95B4B83A6D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F7075CF7DEACD0A6B24B802DCDBDA8 /* PBXTargetDependency */,
+				E1E41817AF4D44C48364398541F70D69 /* PBXTargetDependency */,
+				83111F64BEAED35E6CD71FF99256FF11 /* PBXTargetDependency */,
+				8E18F891EA56A28D5B62F71EDD4E2745 /* PBXTargetDependency */,
+				9321F8499F3B45722EA17D15C6172702 /* PBXTargetDependency */,
+			);
+			name = "Pods-BaseballGame";
+			productName = "Pods-BaseballGame";
+			productReference = 9865AA3BDA886B0C1AE5EBE65BB40AD7 /* Pods_BaseballGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6E29098392497E07DC60FAC6F1C804B /* DownloadButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72CAF54B046B2B76F9B4D4256FBF91C7 /* Build configuration list for PBXNativeTarget "DownloadButton" */;
+			buildPhases = (
+				0DF8D8D37F8148F16A11EF97B76118D4 /* Sources */,
+				D3743CAE135E332B13BBC9A12597CBB0 /* Frameworks */,
+				2ABBBA1BF9851E083D9F0F34FA5E5009 /* Resources */,
+				3589159B7BCD2F4AA4EDCF81A9225F1B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B4D467D0ADF8B5F16AD3D434A58A71F /* PBXTargetDependency */,
+			);
+			name = DownloadButton;
+			productName = DownloadButton;
+			productReference = CB024BA45A54DB09B606ACCD305D19AA /* DownloadButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D635F027F0A6FD04B98B790907265430 /* hpple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B212058BC2F91B000B3AEF445A11D3D /* Build configuration list for PBXNativeTarget "hpple" */;
+			buildPhases = (
+				B1236A1C902899066F5F48679DBAD7CF /* Sources */,
+				DA5C3330EFF871BF008211B17DB6F096 /* Frameworks */,
+				05FDF200D9558E7D0801C7D7CA767E89 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hpple;
+			productName = hpple;
+			productReference = E3EB39AB73EE3BE709D5848047A8CC58 /* hpple.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -707,31 +697,31 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = 77A0BBF7160EF93D38420EEB04282617 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14CCA77BA23233CB53BC615C67873B64 /* DownloadButton */,
-				ADF6138FB8C10457C5A09E5F590967E3 /* DownloadButton-DownloadButton */,
-				01D371C3A2F4D69826071E84ECC7C49B /* MGSwipeTableCell */,
-				A27589AD74E9AA7F6B1FFF28AF2CBB71 /* Pods-BaseballGame */,
-				B946E11B4E7FD9C686854392CFF45B38 /* UCZProgressView */,
-				D8CC7931C78335CEA76BFF4A010C8425 /* ZFDragableModalTransition */,
+				C6E29098392497E07DC60FAC6F1C804B /* DownloadButton */,
+				141796DBA3CE87B499A356EF9B750024 /* DownloadButton-DownloadButton */,
 				D635F027F0A6FD04B98B790907265430 /* hpple */,
+				4E1263BFF45F6446CF3DE29AE234C893 /* MGSwipeTableCell */,
+				B4B5A5FDEF4F890A93E66BCADA96FC10 /* Pods-BaseballGame */,
+				79545012CD9A65FF5D659B0AA5ACE91C /* UCZProgressView */,
+				9A0D1ACFECD6EE6032927F49354D917D /* ZFDragableModalTransition */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		53A47166642D1BC3D5333C563914A564 /* Resources */ = {
+		2ABBBA1BF9851E083D9F0F34FA5E5009 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57E5C1197B95176375B1C640A05D5C9 /* DownloadButton.bundle in Resources */,
+				956005620ADDCAD66A726F4F091BF944 /* DownloadButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82CDE3D3DCEEAA252F983C3D49A6F709 /* Resources */ = {
+		499075235522A941078292E7B41F990B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -741,191 +731,123 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1495E49C51330085CE3920488429C490 /* Sources */ = {
+		08086DF22F53707F29B507345E9949CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAF9252AA02D0C09AF70D434C5A2069F /* ZFDragableModalTransition-dummy.m in Sources */,
-				B54436A0559DBCD606242AC39F638348 /* ZFModalTransitionAnimator.m in Sources */,
+				A4A7DD338775B404370E1FDF544003D8 /* Pods-BaseballGame-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		222928425C6182C7E3D28405A85018FB /* Sources */ = {
+		0DF8D8D37F8148F16A11EF97B76118D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0DDE08DF7CA4B182C8CD8E4EF4F1AB /* CALayer+PKDownloadButtonAnimations.m in Sources */,
-				CBACD64ACA2CA23A2EA8448A125E31E6 /* DownloadButton-dummy.m in Sources */,
-				7490B1ACFAF4A3C813A5D6DE0EB32826 /* NSLayoutConstraint+PKDownloadButton.m in Sources */,
-				607D7B1F40EA53691B60A82A24CEF2F2 /* PKCircleProgressView.m in Sources */,
-				541DF8D4EDCA47E91D247F72D3E09032 /* PKCircleView.m in Sources */,
-				3A2203EFAA306DF5A256306E10353E66 /* PKDownloadButton.m in Sources */,
-				5028D12049F03B54DA35ACB5EDBBF540 /* PKPendingView.m in Sources */,
-				859F5CF5C60EB32BB4D71EE77BDEA1E8 /* PKStopDownloadButton.m in Sources */,
-				E5CC48357C5AB58E3BACB9BCF4B409F7 /* UIButton+PKDownloadButton.m in Sources */,
-				DAD127F906F76507636C1E19B79F38CA /* UIColor+PKDownloadButton.m in Sources */,
-				0A458E4FF5929D2882F94D82713FC0DA /* UIImage+PKDownloadButton.m in Sources */,
+				1F2A856027BBAE4B70A5FE1FBB4006E3 /* CALayer+PKDownloadButtonAnimations.m in Sources */,
+				DF78F12C98E769925F7846388321F3EA /* DownloadButton-dummy.m in Sources */,
+				8FCE04C7936855626D9C81BA7AAD045B /* NSLayoutConstraint+PKDownloadButton.m in Sources */,
+				33FD033E67751B35EA26C5D00A6505D9 /* PKCircleProgressView.m in Sources */,
+				252E5AF5CA3B40E782BA714B6EE2FE86 /* PKCircleView.m in Sources */,
+				0D3FF902AB94E284CDDF66F41269ADA6 /* PKDownloadButton.m in Sources */,
+				C9CD60484C20BE89633568E044D1734D /* PKPendingView.m in Sources */,
+				A2FD8DE1BBF2BC4B713D8AF1112FF5D6 /* PKStopDownloadButton.m in Sources */,
+				D4C439628CE9B8F5D6A7902D7DF09435 /* UIButton+PKDownloadButton.m in Sources */,
+				9DB40F40A9B0EB6377B4A8BAE3A90B03 /* UIColor+PKDownloadButton.m in Sources */,
+				230048578F6382C5C27C5A567763B330 /* UIImage+PKDownloadButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		307F193DDDAA6AC92256BBB208B0E6B1 /* Sources */ = {
+		6DC64769D7059DDD2239F5420019A875 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E5A01C3D1B5A68DB75ACC40BC18BCE2 /* TFHpple.m in Sources */,
-				E082F3997A61F5D79A563CCA23EC319B /* TFHppleElement.m in Sources */,
-				2158E1CC027D43BF99275D4569DB4DE2 /* XPathQuery.m in Sources */,
-				2A3187E1C99240069588E4818480F4C8 /* hpple-dummy.m in Sources */,
+				7E28E5D11F7F5A64EE7CEC79C07119EF /* ZFDragableModalTransition-dummy.m in Sources */,
+				21AC8AA455C10276AAAAE76955BE74D5 /* ZFModalTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3190E145D8850A3EE5D56B0601CF1FA5 /* Sources */ = {
+		7C5E842BA21DBF937B42E42149537200 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031DE42FD2BC8E311C03032E8784F77B /* UCZProgressView-dummy.m in Sources */,
-				1ADF6E3BBB7B151B4D2F8512453F2734 /* UCZProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DCEECA4BFE48762AA477FF94F3F7145 /* Sources */ = {
+		7E6B856D72E139EB0B2B24C8AA77120A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899E554A7B37A4807FA0AB544AB243C3 /* MGSwipeButton.m in Sources */,
-				62A8A0D83CDE779E473F87624F4537AF /* MGSwipeTableCell-dummy.m in Sources */,
-				BFCDCF986BA3B12F9C16FE0445E04045 /* MGSwipeTableCell.m in Sources */,
+				704FAB2467EB9C3529845C5650A800F9 /* UCZProgressView-dummy.m in Sources */,
+				446CA6F748C1D8F18C8AB4A5E35A515F /* UCZProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93AF5EFEE551A031D4142B2702ECA9A0 /* Sources */ = {
+		B1236A1C902899066F5F48679DBAD7CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF7032E758F45D017F832688E9DC05C /* Pods-BaseballGame-dummy.m in Sources */,
+				FACB565F4B2F9C68458EFEBA9852FF6B /* hpple-dummy.m in Sources */,
+				124A2503394B86ED9AD2B907CF45DC23 /* TFHpple.m in Sources */,
+				0AABE5BC9FC34DC459AC3DA8C5D6854C /* TFHppleElement.m in Sources */,
+				3FD4B7A2C25DA93FF9B497D2ECB62CA3 /* XPathQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC6EDF62631E0CDAE196FE64DF22EE23 /* Sources */ = {
+		C8C13026DC462129E945B064D7D89D95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FD669C32DE47E548CBB0153988C1E2 /* MGSwipeButton.m in Sources */,
+				569D057F4C7A6F69AEA4AB0BD6D9900E /* MGSwipeTableCell-dummy.m in Sources */,
+				95E41293E05A8ABB9866D6F3AED0CA10 /* MGSwipeTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3DA8A45C42B65FA5E374A14D122655C6 /* PBXTargetDependency */ = {
+		00F7075CF7DEACD0A6B24B802DCDBDA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DownloadButton;
+			target = C6E29098392497E07DC60FAC6F1C804B /* DownloadButton */;
+			targetProxy = A71ACAE24630D001CC61FEBBAFD97C40 /* PBXContainerItemProxy */;
+		};
+		5B4D467D0ADF8B5F16AD3D434A58A71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DownloadButton-DownloadButton";
+			target = 141796DBA3CE87B499A356EF9B750024 /* DownloadButton-DownloadButton */;
+			targetProxy = 1BB94F92FB87C2961D0070A7E56F4C45 /* PBXContainerItemProxy */;
+		};
+		83111F64BEAED35E6CD71FF99256FF11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UCZProgressView;
+			target = 79545012CD9A65FF5D659B0AA5ACE91C /* UCZProgressView */;
+			targetProxy = 24EBDC55B155809B4227BBAEEE6BAD48 /* PBXContainerItemProxy */;
+		};
+		8E18F891EA56A28D5B62F71EDD4E2745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZFDragableModalTransition;
+			target = 9A0D1ACFECD6EE6032927F49354D917D /* ZFDragableModalTransition */;
+			targetProxy = 5C187751F82DBDD775B751AE016EA4AC /* PBXContainerItemProxy */;
+		};
+		9321F8499F3B45722EA17D15C6172702 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = hpple;
 			target = D635F027F0A6FD04B98B790907265430 /* hpple */;
-			targetProxy = CFB263B117AB430DFC58926ED2D75E34 /* PBXContainerItemProxy */;
+			targetProxy = AC9198CDD21C2C4BCF3C24C00B87A685 /* PBXContainerItemProxy */;
 		};
-		5A5659154B72CC0E61309D824F9E2196 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DownloadButton;
-			target = 14CCA77BA23233CB53BC615C67873B64 /* DownloadButton */;
-			targetProxy = 504B3D58B690514A86A555D7348CD251 /* PBXContainerItemProxy */;
-		};
-		79B4771E6314FE547C65A5B6C864A4BE /* PBXTargetDependency */ = {
+		E1E41817AF4D44C48364398541F70D69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MGSwipeTableCell;
-			target = 01D371C3A2F4D69826071E84ECC7C49B /* MGSwipeTableCell */;
-			targetProxy = 1428688F832CA46B9B590BAD2D3FB1B5 /* PBXContainerItemProxy */;
-		};
-		9E0771460E41C748C295714EFF95DF77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "DownloadButton-DownloadButton";
-			target = ADF6138FB8C10457C5A09E5F590967E3 /* DownloadButton-DownloadButton */;
-			targetProxy = E652697CA559E1B09C48CF31A3D31E7C /* PBXContainerItemProxy */;
-		};
-		E25B6271840B2C4B90C13DB6C5AE8F45 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UCZProgressView;
-			target = B946E11B4E7FD9C686854392CFF45B38 /* UCZProgressView */;
-			targetProxy = 7BB0567AE343AA8E996719BEA2B95ABB /* PBXContainerItemProxy */;
-		};
-		FEF6B255646D05FF0978EFD0382CF2FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZFDragableModalTransition;
-			target = D8CC7931C78335CEA76BFF4A010C8425 /* ZFDragableModalTransition */;
-			targetProxy = BBFC06B83C4C58142053A2CBBEEC69E6 /* PBXContainerItemProxy */;
+			target = 4E1263BFF45F6446CF3DE29AE234C893 /* MGSwipeTableCell */;
+			targetProxy = 395E2A305C54020F7BF6C24103B44CD2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DB551680D22BC282D088D5D56672F5B /* Debug */ = {
+		0EA6BDF2CEAEF87037144839058DECF2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D37B54BC08A12D9159C6F5D39F2BA2E7 /* hpple-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.2.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/hpple/hpple-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/hpple/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/hpple/hpple.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = hpple;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		214208F2ADB7BB1A7A0F0CB3F50FDC21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DownloadButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		49485A5641FF2485D6B004FCF0A43FD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.5.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MGSwipeTableCell;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		66FF493A045A5662D695BA018CEAAAF7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5DF193EB976ECCF667D2C4F240EDE38 /* Pods-BaseballGame.release.xcconfig */;
+			baseConfigurationReference = EF8A449E59838528D92FF60C42B3AEEF /* Pods-BaseballGame.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -939,6 +861,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BaseballGame/Pods-BaseballGame.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -953,16 +876,16 @@
 			};
 			name = Release;
 		};
-		67DC855C44193E535C6D61A7A9EDAAE9 /* Release */ = {
+		3026B2B4F601DB2844CB70B4E45262FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D37B54BC08A12D9159C6F5D39F2BA2E7 /* hpple-Private.xcconfig */;
+			baseConfigurationReference = 5D69F293412F9587F2F62EEF5698CF78 /* hpple.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.2.0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/hpple/hpple-prefix.pch";
@@ -971,64 +894,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/hpple/hpple.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = hpple;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6D5A132E01D024641A99532CB5AB9BAB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6361AB55BC380211317E4233EB2D4DD /* UCZProgressView-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.2;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UCZProgressView/UCZProgressView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UCZProgressView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UCZProgressView/UCZProgressView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UCZProgressView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6DF8D516B7B1F8EC9C04587C37A7142C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6361AB55BC380211317E4233EB2D4DD /* UCZProgressView-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.2;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UCZProgressView/UCZProgressView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UCZProgressView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UCZProgressView/UCZProgressView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UCZProgressView;
+				PRODUCT_NAME = hpple;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1037,44 +904,16 @@
 			};
 			name = Debug;
 		};
-		843A58A43254B2B34DF1ABD7A142B856 /* Release */ = {
+		30CC665EBD4593B6B1BB3E1456ED3427 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C183D5C70BA9C52029D1497F30F32CE /* ZFDragableModalTransition-Private.xcconfig */;
+			baseConfigurationReference = 1532D19C1392A8931357AEDA04958392 /* MGSwipeTableCell.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.5.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.5.1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZFDragableModalTransition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ZFDragableModalTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DA79610884B64193864EB6F7225069D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31208A041CD9AECC7D66E7CF98F67D85 /* MGSwipeTableCell-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.5.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
@@ -1093,16 +932,44 @@
 			};
 			name = Release;
 		};
-		9BDF6F53CF03F820F0067087ADB906BE /* Debug */ = {
+		33DC4B8746E820F33B9A0E63E066FED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C183D5C70BA9C52029D1497F30F32CE /* ZFDragableModalTransition-Private.xcconfig */;
+			baseConfigurationReference = 1532D19C1392A8931357AEDA04958392 /* MGSwipeTableCell.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.5.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.5.1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGSwipeTableCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGSwipeTableCell/MGSwipeTableCell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MGSwipeTableCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		379A1F479812413D0972FA56B10B7247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B53F3C23CC3EC5C1F559976D8B1F979F /* ZFDragableModalTransition.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-prefix.pch";
@@ -1121,9 +988,21 @@
 			};
 			name = Debug;
 		};
-		9CE46335BDB81E2B54C2A0E7F6B2F411 /* Release */ = {
+		3C352816DF5EFB3F934AAAAB8C1A9A25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
+			baseConfigurationReference = C55D5F0B4CD76FF77E512D6D805F746F /* DownloadButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DownloadButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		49E4BC91D062737487F3C0352E7E49FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55D5F0B4CD76FF77E512D6D805F746F /* DownloadButton.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = DownloadButton;
@@ -1132,6 +1011,149 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
+		};
+		521FF5DFFD687A990F291EB41E67A512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B87ADA5EA9A5193FF7C77538F7E1468 /* UCZProgressView.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UCZProgressView/UCZProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UCZProgressView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UCZProgressView/UCZProgressView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UCZProgressView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C1E5E040D3DBB30CDD547107A1279C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B87ADA5EA9A5193FF7C77538F7E1468 /* UCZProgressView.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UCZProgressView/UCZProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UCZProgressView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UCZProgressView/UCZProgressView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UCZProgressView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C430CEFC0A881AE8369C5C5BED46D43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4121F2DFD56B4D12D2E6E4916363998C /* Pods-BaseballGame.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BaseballGame/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaseballGame/Pods-BaseballGame.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BaseballGame;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61E4A115C739AA5460F201C829834A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D69F293412F9587F2F62EEF5698CF78 /* hpple.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/hpple/hpple-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/hpple/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/hpple/hpple.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = hpple;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CA009EB6E921C3FE86968083B389676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55D5F0B4CD76FF77E512D6D805F746F /* DownloadButton.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DownloadButton/DownloadButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DownloadButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DownloadButton/DownloadButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DownloadButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1172,16 +1194,16 @@
 			};
 			name = Debug;
 		};
-		B974ECD9DF43F616DEAA1443400CEB90 /* Release */ = {
+		CAB5582AB1217E877210A78FD73306B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
+			baseConfigurationReference = C55D5F0B4CD76FF77E512D6D805F746F /* DownloadButton.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DownloadButton/DownloadButton-prefix.pch";
@@ -1200,37 +1222,9 @@
 			};
 			name = Release;
 		};
-		EDE42F2B061C74FDDA42F3F6A346B6E0 /* Debug */ = {
+		D724C7E45E00C8228B366F83C600C5CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC8B606EBD0EAD793B7BFBBF4D691A2A /* DownloadButton-Private.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DownloadButton/DownloadButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DownloadButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DownloadButton/DownloadButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DownloadButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F98D7E8EF93EF185F242D1CF414EF33D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 217DD38D854DBBCEFFD40ECA3E388953 /* Pods-BaseballGame.debug.xcconfig */;
+			baseConfigurationReference = B53F3C23CC3EC5C1F559976D8B1F979F /* ZFDragableModalTransition.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1240,23 +1234,21 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BaseballGame/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZFDragableModalTransition/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BaseballGame/Pods-BaseballGame.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BaseballGame;
+				MODULEMAP_FILE = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZFDragableModalTransition;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1295,24 +1287,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07B1BBBB22CFAD1C52AB51F69A928C3C /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				214208F2ADB7BB1A7A0F0CB3F50FDC21 /* Debug */,
-				9CE46335BDB81E2B54C2A0E7F6B2F411 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		13FB4CD772333B4E2857ED582190A310 /* Build configuration list for PBXNativeTarget "DownloadButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EDE42F2B061C74FDDA42F3F6A346B6E0 /* Debug */,
-				B974ECD9DF43F616DEAA1443400CEB90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1325,44 +1299,62 @@
 		3B212058BC2F91B000B3AEF445A11D3D /* Build configuration list for PBXNativeTarget "hpple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DB551680D22BC282D088D5D56672F5B /* Debug */,
-				67DC855C44193E535C6D61A7A9EDAAE9 /* Release */,
+				3026B2B4F601DB2844CB70B4E45262FC /* Debug */,
+				61E4A115C739AA5460F201C829834A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69F9A41873775EB9F7A1ED73ABC78353 /* Build configuration list for PBXNativeTarget "ZFDragableModalTransition" */ = {
+		538552DF3808DE8F61F852128C491B33 /* Build configuration list for PBXNativeTarget "UCZProgressView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BDF6F53CF03F820F0067087ADB906BE /* Debug */,
-				843A58A43254B2B34DF1ABD7A142B856 /* Release */,
+				521FF5DFFD687A990F291EB41E67A512 /* Debug */,
+				5C1E5E040D3DBB30CDD547107A1279C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76CD5D2324217CB21509E59C48C7F7CA /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
+		688732159952284B4D5FE94C46EE12AA /* Build configuration list for PBXNativeTarget "ZFDragableModalTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49485A5641FF2485D6B004FCF0A43FD2 /* Debug */,
-				8DA79610884B64193864EB6F7225069D /* Release */,
+				379A1F479812413D0972FA56B10B7247 /* Debug */,
+				D724C7E45E00C8228B366F83C600C5CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8CA4734278C4515294B13A911A9BB95 /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */ = {
+		72CAF54B046B2B76F9B4D4256FBF91C7 /* Build configuration list for PBXNativeTarget "DownloadButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F98D7E8EF93EF185F242D1CF414EF33D /* Debug */,
-				66FF493A045A5662D695BA018CEAAAF7 /* Release */,
+				6CA009EB6E921C3FE86968083B389676 /* Debug */,
+				CAB5582AB1217E877210A78FD73306B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2BA8BF2CC8520C3EA0816BE3FD61E79 /* Build configuration list for PBXNativeTarget "UCZProgressView" */ = {
+		7B05C24F339BF84D6E16E6538A947C90 /* Build configuration list for PBXNativeTarget "MGSwipeTableCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DF8D516B7B1F8EC9C04587C37A7142C /* Debug */,
-				6D5A132E01D024641A99532CB5AB9BAB /* Release */,
+				33DC4B8746E820F33B9A0E63E066FED9 /* Debug */,
+				30CC665EBD4593B6B1BB3E1456ED3427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87CC34BB87EBFF31BE72715391010C7B /* Build configuration list for PBXNativeTarget "DownloadButton-DownloadButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C352816DF5EFB3F934AAAAB8C1A9A25 /* Debug */,
+				49E4BC91D062737487F3C0352E7E49FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA970EBE0DC3C73BE7E2F53609640A9B /* Build configuration list for PBXNativeTarget "Pods-BaseballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C430CEFC0A881AE8369C5C5BED46D43 /* Debug */,
+				0EA6BDF2CEAEF87037144839058DECF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
